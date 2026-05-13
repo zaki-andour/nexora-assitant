@@ -1,0 +1,421 @@
+employee_id,name,department,role,manager_id,salary_band,location,contract_type,start_date,email,access_level
+1,Alexandra Chen,Executive,CEO,0,Band5,London,Full-Time,2018-03-01,a.chen@nexora.com,hr_leadership
+2,Paul Davis,Engineering,CTO,1,Band5,London,Full-Time,2023-01-15,p.davis@nexora.com,hr_leadership
+3,Patricia White,Product,CPO,1,Band5,London,Full-Time,2024-12-22,p.white@nexora.com,hr_leadership
+4,Stefan Bell,Finance,CFO,1,Band5,Berlin,Full-Time,2025-02-23,s.bell@nexora.com,hr_leadership
+5,Maria Baker,HR,CHRO,1,Band5,London,Full-Time,2025-10-15,m.baker@nexora.com,hr_leadership
+6,Fatima Jackson,Sales,CRO,1,Band5,London,Full-Time,2020-06-16,f.jackson@nexora.com,hr_leadership
+7,Nathan Johnson,Marketing,CMO,1,Band5,Berlin,Full-Time,2023-11-23,n.johnson@nexora.com,hr_leadership
+8,Uma Sanchez,Legal,General Counsel,1,Band5,Berlin,Full-Time,2020-01-05,u.sanchez@nexora.com,hr_leadership
+9,Amir White,Operations,COO,1,Band5,Paris,Full-Time,2019-07-08,a.white@nexora.com,hr_leadership
+10,Rachel Cooper,Security,CISO,1,Band5,London,Full-Time,2024-05-02,r.cooper@nexora.com,hr_leadership
+11,Tariq Baker,Data,Chief Data Officer,1,Band5,Paris,Full-Time,2023-01-03,t.baker@nexora.com,hr_leadership
+12,Julia Jackson,Engineering,Engineering Manager,2,Band2,Dubai,Full-Time,2024-12-23,j.jackson@nexora.com,employee
+13,Fatima Nguyen,Engineering,VP Engineering,2,Band2,Paris,Full-Time,2022-02-05,f.nguyen@nexora.com,employee
+14,Erik Scott,Product,Product Manager,3,Band3,Amsterdam,Full-Time,2025-08-21,e.scott@nexora.com,employee
+15,Victor Carter,Product,Senior Product Manager,3,Band3,Paris,Full-Time,2021-11-17,v.carter@nexora.com,employee
+16,Fatima Campbell,Product,Principal Product Manager,3,Band3,Amsterdam,Full-Time,2019-01-28,f.campbell@nexora.com,employee
+17,Olivia Brooks,Finance,Finance Manager,4,Band3,Dubai,Full-Time,2019-08-26,o.brooks@nexora.com,employee
+18,Mohamed Cook,Finance,Finance Director,4,Band4,Paris,Full-Time,2025-08-11,m.cook@nexora.com,employee
+19,Rania White,HR,HR Manager,5,Band3,Amsterdam,Full-Time,2025-03-25,r.white@nexora.com,hr_staff
+20,Erik White,HR,HR Director,5,Band4,Paris,Full-Time,2021-11-11,e.white@nexora.com,hr_leadership
+21,Rachel Carter,Sales,Sales Manager,6,Band3,Dubai,Full-Time,2024-04-19,r.carter@nexora.com,employee
+22,Xena Scott,Sales,VP Sales,6,Band5,Berlin,Full-Time,2018-08-10,x.scott@nexora.com,employee
+23,Rachel Reed,Marketing,Marketing Manager,7,Band3,Paris,Full-Time,2019-04-17,r.reed@nexora.com,employee
+24,Paul Anderson,Marketing,Senior Marketing Manager,7,Band3,Berlin,Full-Time,2024-04-16,p.anderson@nexora.com,employee
+25,Dina Nguyen,Marketing,VP Marketing,7,Band5,Amsterdam,Full-Time,2018-12-12,d.nguyen@nexora.com,employee
+26,Tariq Campbell,Operations,Operations Manager,9,Band3,Berlin,Full-Time,2018-06-12,t.campbell@nexora.com,employee
+27,Umar Cox,Operations,Senior Operations Manager,9,Band3,London,Full-Time,2023-07-22,u.cox@nexora.com,employee
+28,Connor Williams,Operations,VP Operations,9,Band5,Dubai,Full-Time,2021-08-16,c.williams@nexora.com,employee
+29,Rachel Jones,Security,Security Manager,10,Band3,Berlin,Full-Time,2019-10-06,r.jones@nexora.com,employee
+30,Gabriel Cook,Data,Head of Data,11,Band4,Dubai,Full-Time,2023-09-28,g.cook@nexora.com,employee
+31,Dina Wilson,Operations,Project Manager,28,Band3,Berlin,Full-Time,2019-10-30,d.wilson31@nexora.com,employee
+32,Helen Evans,Security,Security Engineer,29,Band2,Berlin,Full-Time,2024-07-28,h.evans32@nexora.com,employee
+33,Xavier Brown,Security,IT Support Specialist,29,Band2,Madrid,Contractor,2018-06-29,x.brown33@nexora.com,employee
+34,Yusuf Nguyen,Legal,Paralegal,8,Band1,Casablanca,Full-Time,2020-03-10,y.nguyen34@nexora.com,employee
+35,Stefan Morgan,Sales,Sales Analyst,21,Band1,Amsterdam,Full-Time,2018-12-08,s.morgan35@nexora.com,employee
+36,Beatrice Anderson,Marketing,Marketing Coordinator,24,Band1,Amsterdam,Full-Time,2020-07-05,b.anderson36@nexora.com,employee
+37,Fatou Stewart,Finance,Controller,17,Band3,Berlin,Full-Time,2024-05-29,f.stewart37@nexora.com,employee
+38,Yasmin Sanders,Marketing,Marketing Manager,25,Band3,London,Full-Time,2019-05-29,y.sanders38@nexora.com,employee
+39,Hannah Sanders,Marketing,Content Specialist,23,Band1,Amsterdam,Full-Time,2023-06-10,h.sanders39@nexora.com,employee
+40,Fatima Morgan,Engineering,Senior Software Engineer,12,Band2,Paris,Full-Time,2020-02-25,f.morgan40@nexora.com,employee
+41,Khadija Anderson,Finance,Senior Financial Analyst,18,Band1,Tunis,Full-Time,2023-10-01,k.anderson41@nexora.com,employee
+42,Zara Morris,Security,Senior Security Analyst,29,Band1,Casablanca,Full-Time,2020-04-27,z.morris42@nexora.com,employee
+43,Omar Jones,Operations,Operations Analyst,26,Band1,Berlin,Full-Time,2019-07-11,o.jones43@nexora.com,employee
+44,Uma Stewart,HR,HR Coordinator,19,Band1,Paris,Full-Time,2025-10-09,u.stewart44@nexora.com,hr_staff
+45,Patricia Thompson,Marketing,Marketing Coordinator,25,Band1,Berlin,Full-Time,2020-01-29,p.thompson45@nexora.com,employee
+46,Patricia Rivera,Finance,Controller,18,Band3,Tunis,Full-Time,2023-12-28,p.rivera46@nexora.com,employee
+47,Beatrice Scott,Product,Product Manager,16,Band3,Casablanca,Full-Time,2025-07-08,b.scott47@nexora.com,employee
+48,Victor Wright,Product,Product Manager,15,Band2,Berlin,Contractor,2023-12-23,v.wright48@nexora.com,employee
+49,Ivan Baker,HR,Recruiter,20,Band2,Casablanca,Full-Time,2023-04-28,i.baker49@nexora.com,hr_staff
+50,George Brown,Product,Product Analyst,16,Band1,London,Full-Time,2025-01-28,g.brown50@nexora.com,employee
+51,Freya Mitchell,HR,HR Business Partner,20,Band2,Tunis,Full-Time,2025-06-19,f.mitchell51@nexora.com,hr_staff
+52,Yusuf Martin,Finance,Accountant,17,Band3,Amsterdam,Contractor,2021-05-19,y.martin52@nexora.com,employee
+53,Mohamed Young,Security,IT Support Specialist,29,Band1,London,Full-Time,2019-08-18,m.young53@nexora.com,employee
+54,Diana Brown,Security,Security Analyst,29,Band1,Madrid,Full-Time,2025-06-27,d.brown54@nexora.com,employee
+55,Ethan Edwards,Security,Security Analyst,29,Band1,Berlin,Full-Time,2021-08-06,e.edwards55@nexora.com,employee
+56,Maria Edwards,Product,UX Designer,14,Band2,Paris,Full-Time,2021-06-03,m.edwards56@nexora.com,employee
+57,Jana Martin,Data,Data Engineer,30,Band2,Dubai,Full-Time,2023-06-13,j.martin57@nexora.com,employee
+58,Rania Sanchez,Sales,Sales Manager,21,Band3,Dubai,Full-Time,2025-04-23,r.sanchez58@nexora.com,employee
+59,Ethan Phillips,Engineering,Engineering Manager,12,Band2,Amsterdam,Full-Time,2024-08-21,e.phillips59@nexora.com,employee
+60,Xena Young,Marketing,Marketing Coordinator,23,Band1,Amsterdam,Full-Time,2019-04-07,x.young60@nexora.com,employee
+61,Jana Morris,Security,Security Analyst,29,Band1,Madrid,Full-Time,2023-02-27,j.morris61@nexora.com,employee
+62,Khadija Wilson,Product,Product Manager,16,Band3,Berlin,Full-Time,2022-04-12,k.wilson62@nexora.com,employee
+63,Hassan Perez,HR,L&D Specialist,20,Band1,London,Full-Time,2025-02-01,h.perez63@nexora.com,hr_staff
+64,Alice Wright,Legal,Associate General Counsel,8,Band3,Madrid,Contractor,2021-03-03,a.wright64@nexora.com,employee
+65,Hannah Jones,Security,IT Support Specialist,29,Band2,London,Contractor,2021-12-25,h.jones65@nexora.com,employee
+66,Beatrice Lopez,Data,Data Engineer,30,Band2,Dubai,Full-Time,2025-09-04,b.lopez66@nexora.com,employee
+67,Patricia Morris,Marketing,Marketing Manager,25,Band3,Tunis,Full-Time,2019-03-01,p.morris67@nexora.com,employee
+68,Bianca Cooper,Finance,Senior Financial Analyst,17,Band1,Tunis,Full-Time,2025-11-05,b.cooper68@nexora.com,employee
+69,Bianca Morris,Finance,Finance Manager,18,Band2,Amsterdam,Contractor,2024-05-03,b.morris69@nexora.com,employee
+70,Erik Mitchell,Product,Product Analyst,14,Band1,Casablanca,Full-Time,2022-03-15,e.mitchell70@nexora.com,employee
+71,Bob Morris,Sales,Account Executive,21,Band2,Dubai,Full-Time,2022-12-31,b.morris71@nexora.com,employee
+72,Quinn Roberts,Product,Principal Product Manager,15,Band3,Dubai,Full-Time,2025-10-24,q.roberts72@nexora.com,employee
+73,Maria Martin,Product,Principal Product Manager,14,Band3,Tunis,Full-Time,2022-04-01,m.martin73@nexora.com,employee
+74,Hassan Davis,Marketing,Content Specialist,25,Band1,Berlin,Full-Time,2023-04-08,h.davis74@nexora.com,employee
+75,Alice Turner,Engineering,QA Engineer,13,Band2,Dubai,Contractor,2021-04-15,a.turner75@nexora.com,employee
+76,Umar Morris,Product,Principal Product Manager,16,Band3,Amsterdam,Contractor,2018-08-24,u.morris76@nexora.com,employee
+77,Tariq Young,Legal,Associate General Counsel,8,Band2,Berlin,Full-Time,2021-05-29,t.young77@nexora.com,employee
+78,Olivia Parker,Legal,Compliance Officer,8,Band5,London,Full-Time,2022-09-19,o.parker78@nexora.com,employee
+79,Ahmed Evans,Sales,Account Executive,22,Band2,Dubai,Full-Time,2020-11-28,a.evans79@nexora.com,employee
+80,Nina Roberts,Operations,Project Manager,28,Band3,Madrid,Full-Time,2018-09-26,n.roberts80@nexora.com,employee
+81,Rania Stewart,Product,Principal Product Manager,16,Band3,Paris,Full-Time,2023-06-28,r.stewart81@nexora.com,employee
+82,Julia Johnson,Sales,Account Executive,21,Band2,Casablanca,Full-Time,2019-04-09,j.johnson82@nexora.com,employee
+83,Gabriel Stewart,Product,Product Analyst,15,Band1,Tunis,Full-Time,2020-07-31,g.stewart83@nexora.com,employee
+84,Quinn Reed,Legal,Senior Legal Counsel,8,Band3,Paris,Full-Time,2021-05-10,q.reed84@nexora.com,employee
+85,Diana Campbell,HR,HR Business Partner,20,Band2,Paris,Full-Time,2021-01-02,d.campbell85@nexora.com,hr_staff
+86,Xavier Watson,Finance,Accountant,18,Band2,Tunis,Full-Time,2019-12-24,x.watson86@nexora.com,employee
+87,Fatou Mitchell,Operations,Operations Manager,28,Band3,Berlin,Full-Time,2018-12-22,f.mitchell87@nexora.com,employee
+88,Paul Harris,Sales,Sales Analyst,22,Band1,Paris,Full-Time,2022-12-02,p.harris88@nexora.com,employee
+89,Umar Watson,HR,Senior HR Business Partner,20,Band3,Madrid,Full-Time,2024-06-07,u.watson89@nexora.com,hr_staff
+90,Uma Jackson,HR,HR Manager,19,Band3,Tunis,Full-Time,2022-05-31,u.jackson90@nexora.com,hr_staff
+91,Diana Jackson,Security,IT Support Specialist,29,Band3,London,Contractor,2019-09-01,d.jackson91@nexora.com,employee
+92,William Allen,Legal,General Counsel,8,Band3,Berlin,Contractor,2020-08-25,w.allen92@nexora.com,hr_leadership
+93,Freya Johnson,HR,Senior HR Business Partner,20,Band3,Tunis,Full-Time,2024-04-09,f.johnson93@nexora.com,hr_staff
+94,James Johnson,Operations,Operations Manager,28,Band2,Paris,Contractor,2018-12-01,j.johnson94@nexora.com,employee
+95,Laura Brown,Legal,Senior Legal Counsel,8,Band3,Dubai,Full-Time,2023-10-02,l.brown95@nexora.com,employee
+96,Xavier Brooks,Operations,Senior Operations Manager,27,Band3,Tunis,Full-Time,2023-04-18,x.brooks96@nexora.com,employee
+97,Wendy Phillips,Product,Product Analyst,14,Band1,Dubai,Full-Time,2023-08-11,w.phillips97@nexora.com,employee
+98,Patricia Thomas,Product,Product Manager,14,Band2,Berlin,Contractor,2024-09-15,p.thomas98@nexora.com,employee
+99,Nina Carter,Operations,Operations Analyst,28,Band1,Dubai,Full-Time,2024-03-29,n.carter99@nexora.com,employee
+100,Yasmin Richardson,Data,Data Engineer,30,Band2,Amsterdam,Full-Time,2024-11-29,y.richardson100@nexora.com,employee
+101,Liam Rogers,Data,Data Analyst,30,Band3,Tunis,Contractor,2023-11-25,l.rogers101@nexora.com,employee
+102,Danielle Stewart,Product,UX Designer,16,Band2,Amsterdam,Full-Time,2018-06-14,d.stewart102@nexora.com,employee
+103,William Phillips,Data,Data Analyst,30,Band1,Dubai,Full-Time,2025-05-08,w.phillips103@nexora.com,employee
+104,Erik Adams,Security,Security Engineer,29,Band2,Tunis,Contractor,2022-01-23,e.adams104@nexora.com,employee
+105,Laura Morgan,Operations,Operations Manager,27,Band3,Amsterdam,Full-Time,2019-03-21,l.morgan105@nexora.com,employee
+106,Beatrice Richardson,Security,IT Support Specialist,29,Band1,Amsterdam,Part-Time,2022-07-05,b.richardson106@nexora.com,employee
+107,Gabriel Nelson,HR,HR Coordinator,20,Band1,Casablanca,Full-Time,2019-09-25,g.nelson107@nexora.com,hr_staff
+108,Bob Perez,Data,Senior Data Scientist,30,Band2,Casablanca,Contractor,2023-09-30,b.perez108@nexora.com,employee
+109,Rachel Brooks,Marketing,Senior Marketing Manager,24,Band3,Amsterdam,Full-Time,2019-11-22,r.brooks109@nexora.com,employee
+110,Fatima Harris,Engineering,DevOps Engineer,12,Band2,Casablanca,Part-Time,2019-11-24,f.harris110@nexora.com,employee
+111,Quinn Cook,HR,L&D Specialist,20,Band1,London,Full-Time,2025-01-29,q.cook111@nexora.com,hr_staff
+112,Tariq Harris,Sales,Account Executive,22,Band2,Dubai,Full-Time,2020-10-25,t.harris112@nexora.com,employee
+113,Beatrice Bell,Security,Security Manager,29,Band3,Dubai,Full-Time,2018-03-30,b.bell113@nexora.com,employee
+114,Quentin White,Operations,Senior Operations Manager,27,Band3,Berlin,Full-Time,2022-08-02,q.white114@nexora.com,employee
+115,Laura Thomas,Product,UX Designer,16,Band2,Casablanca,Full-Time,2023-01-09,l.thomas115@nexora.com,employee
+116,George Cox,Data,Data Engineer,30,Band2,Berlin,Full-Time,2022-01-28,g.cox116@nexora.com,employee
+117,Uma Phillips,Finance,Finance Manager,17,Band3,London,Full-Time,2025-07-06,u.phillips117@nexora.com,employee
+118,Paul Ward,Security,Security Engineer,29,Band2,London,Contractor,2019-09-08,p.ward118@nexora.com,employee
+119,Cedric Wright,Sales,Sales Manager,22,Band3,London,Full-Time,2023-04-17,c.wright119@nexora.com,employee
+120,Zara Perez,Operations,Operations Analyst,26,Band1,London,Full-Time,2024-06-03,z.perez120@nexora.com,employee
+121,Hannah Campbell,Finance,Controller,18,Band2,Tunis,Contractor,2021-01-26,h.campbell121@nexora.com,employee
+122,Beatrice Allen,Operations,Senior Operations Manager,28,Band3,London,Full-Time,2019-04-15,b.allen122@nexora.com,employee
+123,Nina Martin,Product,Senior Product Manager,16,Band3,Madrid,Full-Time,2023-06-08,n.martin123@nexora.com,employee
+124,Kevin Smith,Finance,Controller,17,Band3,Casablanca,Full-Time,2022-11-10,k.smith124@nexora.com,employee
+125,Uma Young,Engineering,Senior Software Engineer,13,Band2,Casablanca,Part-Time,2025-04-29,u.young125@nexora.com,employee
+126,Beatrice Davis,HR,Senior HR Business Partner,19,Band3,Madrid,Full-Time,2023-02-22,b.davis126@nexora.com,hr_staff
+127,Kevin Rivera,Finance,Financial Analyst,17,Band1,Amsterdam,Full-Time,2021-03-14,k.rivera127@nexora.com,employee
+128,Tina Reed,Product,Product Analyst,16,Band1,Amsterdam,Full-Time,2020-07-06,t.reed128@nexora.com,employee
+129,Fatima Edwards,Security,IT Support Specialist,29,Band1,Tunis,Full-Time,2022-07-05,f.edwards129@nexora.com,employee
+130,Fatima White,Data,Data Scientist,30,Band1,London,Intern,2018-08-02,f.white130@nexora.com,employee
+131,Xavier Murphy,Sales,Sales Analyst,21,Band1,Casablanca,Full-Time,2023-01-02,x.murphy131@nexora.com,employee
+132,Paul Richardson,Finance,Controller,18,Band3,Paris,Full-Time,2020-11-07,p.richardson132@nexora.com,employee
+133,George Howard,Marketing,Content Specialist,24,Band1,Tunis,Full-Time,2018-05-06,g.howard133@nexora.com,employee
+134,Zara Richardson,Operations,Senior Operations Manager,28,Band2,Casablanca,Contractor,2025-02-19,z.richardson134@nexora.com,employee
+135,Hannah Bailey,Marketing,Senior Marketing Manager,24,Band3,London,Full-Time,2018-10-01,h.bailey135@nexora.com,employee
+136,Diana Thomas,Security,IT Support Specialist,29,Band1,Casablanca,Full-Time,2019-02-10,d.thomas136@nexora.com,employee
+137,Rachel Campbell,Operations,Operations Analyst,26,Band1,Amsterdam,Full-Time,2021-03-18,r.campbell137@nexora.com,employee
+138,Paul Edwards,Operations,Operations Analyst,26,Band2,Amsterdam,Contractor,2019-12-12,p.edwards138@nexora.com,employee
+139,Danielle Kelly,Engineering,DevOps Engineer,13,Band2,Paris,Full-Time,2018-11-10,d.kelly139@nexora.com,employee
+140,Hassan Cook,Finance,Accountant,18,Band2,Casablanca,Full-Time,2020-10-29,h.cook140@nexora.com,employee
+141,Yusuf Thomas,HR,HR Manager,19,Band2,Paris,Contractor,2023-01-10,y.thomas141@nexora.com,hr_staff
+142,Connor Smith,Legal,Associate General Counsel,8,Band2,Amsterdam,Full-Time,2019-07-17,c.smith142@nexora.com,employee
+143,Cedric Phillips,Data,Senior Data Scientist,30,Band3,Dubai,Full-Time,2019-12-08,c.phillips143@nexora.com,employee
+144,Jana King,Security,IT Support Specialist,29,Band2,Tunis,Contractor,2023-07-04,j.king144@nexora.com,employee
+145,Wendy Mitchell,Legal,Legal Counsel,8,Band5,Tunis,Part-Time,2021-10-17,w.mitchell145@nexora.com,employee
+146,Ivan Roberts,Finance,Accountant,17,Band1,Dubai,Intern,2024-12-30,i.roberts146@nexora.com,employee
+147,Ibrahim Carter,Operations,Operations Analyst,28,Band1,Madrid,Full-Time,2021-07-11,i.carter147@nexora.com,employee
+148,Ahmed Martin,Finance,Financial Analyst,18,Band1,Tunis,Full-Time,2018-11-02,a.martin148@nexora.com,employee
+149,Erik Phillips,Product,Principal Product Manager,16,Band3,Dubai,Full-Time,2019-02-04,e.phillips149@nexora.com,employee
+150,Olivia Jones,Operations,Business Analyst,26,Band1,Amsterdam,Full-Time,2023-07-29,o.jones150@nexora.com,employee
+151,Xavier Stewart,Product,Product Analyst,14,Band1,Paris,Part-Time,2021-02-23,x.stewart151@nexora.com,employee
+152,Carlos King,Finance,Finance Manager,17,Band3,Dubai,Contractor,2021-12-02,c.king152@nexora.com,employee
+153,Ingrid Adams,Legal,Senior Legal Counsel,8,Band3,Madrid,Full-Time,2024-03-20,i.adams153@nexora.com,employee
+154,Olivia Rogers,Finance,Financial Analyst,18,Band1,Madrid,Full-Time,2023-07-09,o.rogers154@nexora.com,employee
+155,Quentin Morris,Operations,Senior Operations Manager,27,Band3,Casablanca,Full-Time,2022-11-24,q.morris155@nexora.com,employee
+156,Cedric Scott,Security,Senior Security Analyst,29,Band1,Amsterdam,Intern,2018-12-16,c.scott156@nexora.com,employee
+157,Dina Howard,Legal,Compliance Officer,8,Band5,Tunis,Full-Time,2020-09-14,d.howard157@nexora.com,employee
+158,Liam Scott,Product,Senior Product Manager,15,Band3,Amsterdam,Full-Time,2025-11-17,l.scott158@nexora.com,employee
+159,Liam Ward,Legal,Associate General Counsel,8,Band2,London,Full-Time,2019-04-29,l.ward159@nexora.com,employee
+160,Nathan Cooper,Operations,Senior Operations Manager,26,Band3,Berlin,Full-Time,2019-02-28,n.cooper160@nexora.com,employee
+161,Helen Stewart,Sales,Account Executive,21,Band2,Amsterdam,Full-Time,2021-03-07,h.stewart161@nexora.com,employee
+162,Victor Lopez,Engineering,DevOps Engineer,13,Band2,Amsterdam,Full-Time,2022-06-17,v.lopez162@nexora.com,employee
+163,Ivan Rivera,Legal,Senior Legal Counsel,8,Band3,Dubai,Full-Time,2020-03-03,i.rivera163@nexora.com,employee
+164,Quentin Kelly,Security,Security Engineer,29,Band3,Amsterdam,Contractor,2022-04-29,q.kelly164@nexora.com,employee
+165,Julia Murphy,Product,Product Analyst,14,Band1,Tunis,Intern,2019-11-16,j.murphy165@nexora.com,employee
+166,Alice Martin,Marketing,Marketing Coordinator,24,Band1,Casablanca,Full-Time,2021-12-28,a.martin166@nexora.com,employee
+167,Connor Stewart,Sales,Sales Analyst,22,Band2,Berlin,Contractor,2020-11-01,c.stewart167@nexora.com,employee
+168,Ibrahim Collins,Engineering,DevOps Engineer,13,Band2,Paris,Full-Time,2018-12-31,i.collins168@nexora.com,employee
+169,Amir Davis,Operations,Senior Operations Manager,28,Band3,London,Full-Time,2022-09-17,a.davis169@nexora.com,employee
+170,Patricia Brooks,Operations,Operations Analyst,26,Band1,Tunis,Full-Time,2021-01-13,p.brooks170@nexora.com,employee
+171,Maria Bell,Marketing,SEO Analyst,24,Band1,Tunis,Part-Time,2018-10-12,m.bell171@nexora.com,employee
+172,Amir Thompson,Product,Product Analyst,16,Band1,Dubai,Full-Time,2023-09-09,a.thompson172@nexora.com,employee
+173,Erik Torres,Operations,Project Manager,26,Band3,Dubai,Full-Time,2020-01-07,e.torres173@nexora.com,employee
+174,Rachel Thomas,Marketing,Marketing Coordinator,24,Band1,Casablanca,Intern,2025-02-04,r.thomas174@nexora.com,employee
+175,Diana Rivera,HR,L&D Specialist,19,Band1,Madrid,Full-Time,2019-10-17,d.rivera175@nexora.com,hr_staff
+176,Maria Jackson,HR,HR Coordinator,19,Band2,Dubai,Contractor,2024-06-20,m.jackson176@nexora.com,hr_staff
+177,Erik Wilson,Data,Data Analyst,30,Band1,Amsterdam,Intern,2024-03-02,e.wilson177@nexora.com,employee
+178,Alice Scott,Product,Product Manager,14,Band2,Dubai,Contractor,2025-12-12,a.scott178@nexora.com,employee
+179,Ivan Bell,Finance,Finance Manager,17,Band3,Paris,Full-Time,2025-05-30,i.bell179@nexora.com,employee
+180,Hassan Evans,Operations,Project Manager,27,Band3,Berlin,Full-Time,2019-03-24,h.evans180@nexora.com,employee
+181,Dina Sanchez,Engineering,QA Engineer,13,Band1,London,Intern,2020-10-02,d.sanchez181@nexora.com,employee
+182,Freya Cook,Legal,General Counsel,8,Band2,Paris,Contractor,2022-07-06,f.cook182@nexora.com,hr_leadership
+183,Ivan Thompson,Data,Senior Data Analyst,30,Band1,Dubai,Full-Time,2021-11-07,i.thompson183@nexora.com,employee
+184,Dina Roberts,Data,Data Engineer,30,Band2,Paris,Full-Time,2018-04-03,d.roberts184@nexora.com,employee
+185,Fatou Jackson,Product,UX Designer,16,Band2,Berlin,Full-Time,2021-06-26,f.jackson185@nexora.com,employee
+186,Amir Morgan,Marketing,Content Specialist,24,Band1,Tunis,Full-Time,2022-08-14,a.morgan186@nexora.com,employee
+187,Stefan Sanders,Sales,Senior Account Executive,21,Band3,Paris,Full-Time,2025-03-02,s.sanders187@nexora.com,employee
+188,Wendy Bell,Product,Product Analyst,14,Band1,Madrid,Full-Time,2019-11-20,w.bell188@nexora.com,employee
+189,Rania Davis,Engineering,DevOps Engineer,13,Band2,Tunis,Full-Time,2025-07-19,r.davis189@nexora.com,employee
+190,William Martinez,Sales,Sales Analyst,22,Band1,Berlin,Full-Time,2024-05-22,w.martinez190@nexora.com,employee
+191,William Howard,Operations,Operations Manager,26,Band3,Paris,Full-Time,2022-12-31,w.howard191@nexora.com,employee
+192,Erik Campbell,Data,Senior Data Analyst,30,Band1,London,Intern,2019-04-18,e.campbell192@nexora.com,employee
+193,Xavier Allen,Sales,Sales Development Rep,21,Band3,London,Contractor,2024-02-02,x.allen193@nexora.com,employee
+194,Ethan Wilson,Finance,Controller,18,Band3,London,Part-Time,2025-02-04,e.wilson194@nexora.com,employee
+195,Amir Carter,Security,Senior Security Analyst,29,Band1,Dubai,Full-Time,2022-08-18,a.carter195@nexora.com,employee
+196,Fatima Brooks,Marketing,SEO Analyst,25,Band1,Madrid,Full-Time,2019-03-13,f.brooks196@nexora.com,employee
+197,Rachel Nelson,Engineering,QA Engineer,12,Band2,Casablanca,Full-Time,2019-04-26,r.nelson197@nexora.com,employee
+198,Nina Murphy,Operations,Project Manager,27,Band3,Dubai,Full-Time,2021-04-21,n.murphy198@nexora.com,employee
+199,Stefan Evans,Product,Principal Product Manager,16,Band3,Amsterdam,Full-Time,2025-08-12,s.evans199@nexora.com,employee
+200,Alice Jackson,HR,HR Manager,19,Band3,Berlin,Full-Time,2024-08-01,a.jackson200@nexora.com,hr_staff
+201,Hannah Smith,Sales,Senior Account Executive,22,Band3,Tunis,Full-Time,2024-02-26,h.smith201@nexora.com,employee
+202,Hassan Campbell,Finance,Accountant,17,Band3,Paris,Contractor,2021-09-02,h.campbell202@nexora.com,employee
+203,Dina Kelly,Engineering,Engineering Manager,12,Band2,Dubai,Full-Time,2019-09-01,d.kelly203@nexora.com,employee
+204,Amir Young,Legal,Paralegal,8,Band1,London,Full-Time,2022-06-25,a.young204@nexora.com,employee
+205,Danielle Reed,Finance,Controller,18,Band2,Tunis,Contractor,2024-12-08,d.reed205@nexora.com,employee
+206,Ingrid Garcia,HR,HR Manager,20,Band3,Amsterdam,Full-Time,2022-04-26,i.garcia206@nexora.com,hr_staff
+207,Ethan Roberts,HR,Senior HR Business Partner,19,Band3,Berlin,Full-Time,2022-03-16,e.roberts207@nexora.com,hr_staff
+208,George Wilson,Marketing,Marketing Manager,23,Band3,Madrid,Full-Time,2019-05-15,g.wilson208@nexora.com,employee
+209,Yasmin Stewart,Finance,Financial Analyst,17,Band1,Casablanca,Full-Time,2018-06-27,y.stewart209@nexora.com,employee
+210,Umar Wilson,Data,Data Engineer,30,Band2,Casablanca,Full-Time,2021-03-01,u.wilson210@nexora.com,employee
+211,William Roberts,Sales,Senior Account Executive,21,Band3,Casablanca,Full-Time,2021-01-20,w.roberts211@nexora.com,employee
+212,Danielle Young,Engineering,Software Engineer,13,Band2,Paris,Full-Time,2019-03-24,d.young212@nexora.com,employee
+213,Dina Evans,Data,Data Engineer,30,Band2,London,Full-Time,2021-01-29,d.evans213@nexora.com,employee
+214,Nathan Mitchell,Data,Senior Data Analyst,30,Band1,London,Full-Time,2021-01-26,n.mitchell214@nexora.com,employee
+215,Fatima Roberts,Product,Principal Product Manager,16,Band3,London,Full-Time,2023-05-07,f.roberts215@nexora.com,employee
+216,Ingrid Collins,Operations,Project Manager,28,Band3,Dubai,Full-Time,2022-12-14,i.collins216@nexora.com,employee
+217,Stefan Edwards,Legal,General Counsel,8,Band5,Dubai,Full-Time,2025-05-21,s.edwards217@nexora.com,hr_leadership
+218,Stefan Nguyen,Marketing,Marketing Coordinator,25,Band1,Madrid,Full-Time,2022-05-21,s.nguyen218@nexora.com,employee
+219,Julia Kelly,Product,UX Designer,16,Band2,Tunis,Full-Time,2024-09-04,j.kelly219@nexora.com,employee
+220,Khadija Nguyen,Data,Data Analyst,30,Band1,Dubai,Full-Time,2024-09-09,k.nguyen220@nexora.com,employee
+221,Hassan Torres,Security,Security Analyst,29,Band1,Amsterdam,Full-Time,2024-02-07,h.torres221@nexora.com,employee
+222,Mohamed White,HR,Senior HR Business Partner,20,Band1,Madrid,Intern,2025-04-04,m.white222@nexora.com,hr_staff
+223,Rania Wright,Sales,Sales Development Rep,21,Band2,Tunis,Contractor,2024-05-24,r.wright223@nexora.com,employee
+224,Victor Nelson,Finance,Senior Financial Analyst,17,Band1,Dubai,Full-Time,2018-07-16,v.nelson224@nexora.com,employee
+225,Xavier Bell,HR,HR Manager,20,Band2,Berlin,Contractor,2022-08-27,x.bell225@nexora.com,hr_staff
+226,Stefan Parker,Operations,Operations Manager,27,Band1,Casablanca,Intern,2022-12-18,s.parker226@nexora.com,employee
+227,Kevin Richardson,Legal,Paralegal,8,Band1,Madrid,Full-Time,2023-04-27,k.richardson227@nexora.com,employee
+228,Fatou Torres,Engineering,QA Engineer,13,Band2,Paris,Full-Time,2020-05-03,f.torres228@nexora.com,employee
+229,Xavier Anderson,Product,Principal Product Manager,14,Band3,Madrid,Full-Time,2021-03-21,x.anderson229@nexora.com,employee
+230,Gabriel Scott,Product,Senior Product Manager,15,Band3,London,Contractor,2021-09-05,g.scott230@nexora.com,employee
+231,Yusuf Garcia,Security,Security Engineer,29,Band2,London,Full-Time,2022-07-20,y.garcia231@nexora.com,employee
+232,Ivan Williams,Product,Principal Product Manager,14,Band3,Casablanca,Full-Time,2018-04-26,i.williams232@nexora.com,employee
+233,Olivia Smith,Finance,Accountant,18,Band2,Amsterdam,Contractor,2023-09-15,o.smith233@nexora.com,employee
+234,Samuel Harris,Finance,Controller,18,Band3,London,Full-Time,2023-06-14,s.harris234@nexora.com,employee
+235,Ethan Davis,Legal,Compliance Officer,8,Band3,London,Contractor,2019-01-14,e.davis235@nexora.com,employee
+236,Uma Wilson,Security,Security Manager,29,Band3,London,Full-Time,2019-03-25,u.wilson236@nexora.com,employee
+237,Amir Taylor,Marketing,Marketing Manager,25,Band3,Paris,Full-Time,2020-04-02,a.taylor237@nexora.com,employee
+238,James Roberts,Marketing,Marketing Coordinator,25,Band2,Tunis,Contractor,2020-11-07,j.roberts238@nexora.com,employee
+239,Xena Martin,Engineering,QA Engineer,13,Band2,Dubai,Part-Time,2025-05-14,x.martin239@nexora.com,employee
+240,George Bailey,Marketing,Marketing Manager,25,Band3,Dubai,Full-Time,2024-08-17,g.bailey240@nexora.com,employee
+241,Connor Sanchez,Engineering,Staff Engineer,13,Band2,Casablanca,Full-Time,2018-04-29,c.sanchez241@nexora.com,employee
+242,Ethan Cook,Operations,Operations Manager,26,Band3,London,Contractor,2022-11-01,e.cook242@nexora.com,employee
+243,Gabriel Williams,HR,HR Coordinator,19,Band1,Amsterdam,Full-Time,2020-05-05,g.williams243@nexora.com,hr_staff
+244,Quentin Williams,Legal,Paralegal,8,Band2,Amsterdam,Contractor,2022-02-13,q.williams244@nexora.com,employee
+245,Rachel Davis,Engineering,QA Engineer,13,Band3,Tunis,Contractor,2021-03-11,r.davis245@nexora.com,employee
+246,Freya Reed,Legal,Associate General Counsel,8,Band2,Amsterdam,Full-Time,2025-03-13,f.reed246@nexora.com,employee
+247,Nathan Richardson,Legal,Legal Counsel,8,Band5,Amsterdam,Full-Time,2022-07-10,n.richardson247@nexora.com,employee
+248,Rania Young,Product,Product Manager,15,Band3,Tunis,Full-Time,2024-04-03,r.young248@nexora.com,employee
+249,Carlos Morgan,Operations,Senior Operations Manager,27,Band3,Tunis,Contractor,2023-01-17,c.morgan249@nexora.com,employee
+250,Xena Roberts,Engineering,Software Engineer,13,Band2,London,Contractor,2024-07-10,x.roberts250@nexora.com,employee
+251,Ivan Jones,Data,Senior Data Scientist,30,Band3,Dubai,Full-Time,2022-01-23,i.jones251@nexora.com,employee
+252,Nathan Wilson,Legal,Paralegal,8,Band1,Dubai,Full-Time,2021-12-14,n.wilson252@nexora.com,employee
+253,Ivan Turner,Operations,Operations Analyst,28,Band1,Dubai,Full-Time,2018-11-03,i.turner253@nexora.com,employee
+254,Bob Bell,Sales,Account Executive,21,Band2,Tunis,Full-Time,2019-10-29,b.bell254@nexora.com,employee
+255,Uma Nelson,Product,Principal Product Manager,15,Band3,Amsterdam,Full-Time,2018-05-05,u.nelson255@nexora.com,employee
+256,Ivan Howard,Operations,Operations Manager,26,Band3,Madrid,Full-Time,2021-02-17,i.howard256@nexora.com,employee
+257,William Cook,Product,Principal Product Manager,16,Band3,Amsterdam,Full-Time,2022-10-05,w.cook257@nexora.com,employee
+258,Hassan White,Finance,Senior Financial Analyst,18,Band1,Berlin,Full-Time,2024-07-26,h.white258@nexora.com,employee
+259,Xena Campbell,HR,HR Manager,19,Band3,Casablanca,Full-Time,2019-12-09,x.campbell259@nexora.com,hr_staff
+260,Ethan Allen,Finance,Controller,17,Band3,Casablanca,Full-Time,2020-03-24,e.allen260@nexora.com,employee
+261,Ivan King,Legal,General Counsel,8,Band5,Casablanca,Full-Time,2020-11-24,i.king261@nexora.com,hr_leadership
+262,Gabriel Cox,Security,Security Engineer,29,Band2,Madrid,Contractor,2021-04-09,g.cox262@nexora.com,employee
+263,Ingrid Wilson,Security,Security Analyst,29,Band1,Madrid,Full-Time,2022-07-04,i.wilson263@nexora.com,employee
+264,Erik Garcia,HR,Senior HR Business Partner,20,Band3,Amsterdam,Full-Time,2024-09-20,e.garcia264@nexora.com,hr_staff
+265,Hassan Sanchez,Sales,Sales Analyst,21,Band1,Madrid,Full-Time,2024-03-15,h.sanchez265@nexora.com,employee
+266,Danielle Sanders,Data,Data Engineer,30,Band2,London,Full-Time,2025-03-19,d.sanders266@nexora.com,employee
+267,Quinn Jackson,Engineering,QA Engineer,13,Band3,London,Contractor,2020-07-16,q.jackson267@nexora.com,employee
+268,Emmanuel Harris,Security,Security Engineer,29,Band3,Amsterdam,Contractor,2021-01-14,e.harris268@nexora.com,employee
+269,Cedric Adams,Product,Product Manager,14,Band3,Berlin,Full-Time,2022-04-23,c.adams269@nexora.com,employee
+270,Fatou Cook,Data,Senior Data Analyst,30,Band1,Dubai,Full-Time,2021-08-26,f.cook270@nexora.com,employee
+271,Umar Harris,Finance,Finance Manager,17,Band3,Amsterdam,Full-Time,2021-01-30,u.harris271@nexora.com,employee
+272,Diana Young,HR,HR Business Partner,19,Band3,Berlin,Contractor,2024-05-01,d.young272@nexora.com,hr_staff
+273,Umar Thomas,Marketing,SEO Analyst,25,Band3,Casablanca,Contractor,2020-07-13,u.thomas273@nexora.com,employee
+274,Fatima Hill,Sales,Sales Manager,21,Band3,Berlin,Full-Time,2023-09-17,f.hill274@nexora.com,employee
+275,Freya Edwards,Data,Data Scientist,30,Band3,Amsterdam,Contractor,2020-02-08,f.edwards275@nexora.com,employee
+276,Ivan Brooks,Engineering,Software Engineer,13,Band2,Dubai,Full-Time,2021-08-08,i.brooks276@nexora.com,employee
+277,Diana Parker,Marketing,Marketing Coordinator,24,Band1,Dubai,Full-Time,2019-12-02,d.parker277@nexora.com,employee
+278,Hassan Nelson,Sales,Sales Development Rep,22,Band3,Paris,Contractor,2024-09-05,h.nelson278@nexora.com,employee
+279,Ahmed Wright,Product,Product Analyst,15,Band1,Dubai,Full-Time,2024-07-04,a.wright279@nexora.com,employee
+280,Hassan Williams,HR,Recruiter,20,Band2,Madrid,Full-Time,2022-05-22,h.williams280@nexora.com,hr_staff
+281,Julia Edwards,Operations,Business Analyst,27,Band2,Dubai,Contractor,2019-04-01,j.edwards281@nexora.com,employee
+282,Olivia Bell,Marketing,Marketing Manager,24,Band3,Casablanca,Contractor,2019-10-24,o.bell282@nexora.com,employee
+283,Xena Wright,Sales,Sales Manager,21,Band3,Tunis,Full-Time,2019-07-31,x.wright283@nexora.com,employee
+284,Quentin Sanchez,Sales,Sales Development Rep,22,Band2,London,Contractor,2019-07-31,q.sanchez284@nexora.com,employee
+285,Paul Morgan,Operations,Operations Manager,28,Band3,Tunis,Full-Time,2024-06-19,p.morgan285@nexora.com,employee
+286,Mohamed Johnson,HR,HR Coordinator,19,Band1,Tunis,Full-Time,2024-06-04,m.johnson286@nexora.com,hr_staff
+287,Amir Roberts,Legal,Compliance Officer,8,Band3,London,Contractor,2018-03-18,a.roberts287@nexora.com,employee
+288,Khadija King,Finance,Controller,17,Band1,Casablanca,Intern,2020-03-25,k.king288@nexora.com,employee
+289,James Wright,Legal,Associate General Counsel,8,Band2,Amsterdam,Full-Time,2019-04-14,j.wright289@nexora.com,employee
+290,Tina White,Operations,Operations Manager,26,Band3,Amsterdam,Contractor,2018-03-21,t.white290@nexora.com,employee
+291,Umar Mitchell,HR,L&D Specialist,20,Band1,Amsterdam,Full-Time,2022-11-24,u.mitchell291@nexora.com,hr_staff
+292,James Nguyen,Product,UX Designer,16,Band3,Dubai,Contractor,2024-06-25,j.nguyen292@nexora.com,employee
+293,Uma Garcia,Sales,Sales Development Rep,22,Band1,Casablanca,Full-Time,2018-10-08,u.garcia293@nexora.com,employee
+294,Mohamed Richardson,Sales,Sales Manager,21,Band3,Amsterdam,Full-Time,2024-08-01,m.richardson294@nexora.com,employee
+295,Maria Harris,Product,UX Designer,16,Band2,Berlin,Full-Time,2018-12-20,m.harris295@nexora.com,employee
+296,Amir Wright,HR,HR Coordinator,19,Band1,Paris,Part-Time,2018-06-26,a.wright296@nexora.com,hr_staff
+297,Amir Sanchez,Finance,Financial Analyst,17,Band3,Casablanca,Contractor,2018-10-30,a.sanchez297@nexora.com,employee
+298,Samuel Sanchez,HR,Senior HR Business Partner,20,Band3,Paris,Full-Time,2018-10-23,s.sanchez298@nexora.com,hr_staff
+299,Ibrahim Kelly,Data,Senior Data Analyst,30,Band1,Madrid,Full-Time,2025-09-19,i.kelly299@nexora.com,employee
+300,Jana Bell,Legal,General Counsel,8,Band1,Amsterdam,Intern,2025-09-14,j.bell300@nexora.com,hr_leadership
+301,Jana Wright,Engineering,Staff Engineer,12,Band2,Casablanca,Full-Time,2024-08-14,j.wright301@nexora.com,employee
+302,Mohamed Cooper,Security,IT Support Specialist,29,Band1,Madrid,Full-Time,2020-12-23,m.cooper302@nexora.com,employee
+303,Wendy Wright,Sales,Account Executive,21,Band2,Madrid,Contractor,2019-04-10,w.wright303@nexora.com,employee
+304,Rania Martinez,Legal,General Counsel,8,Band5,Madrid,Full-Time,2020-10-08,r.martinez304@nexora.com,hr_leadership
+305,Quentin Nguyen,Marketing,Marketing Manager,23,Band3,Amsterdam,Full-Time,2022-06-05,q.nguyen305@nexora.com,employee
+306,Xena Reed,Sales,Sales Analyst,21,Band1,Paris,Full-Time,2020-11-26,x.reed306@nexora.com,employee
+307,Stefan Roberts,Sales,Account Executive,22,Band3,Paris,Contractor,2018-12-17,s.roberts307@nexora.com,employee
+308,Omar Lopez,Sales,Senior Account Executive,21,Band3,Casablanca,Full-Time,2019-05-01,o.lopez308@nexora.com,employee
+309,Khadija Kelly,Marketing,Content Specialist,25,Band1,Berlin,Full-Time,2023-05-08,k.kelly309@nexora.com,employee
+310,Ingrid Cook,Data,Data Analyst,30,Band1,Paris,Full-Time,2025-06-07,i.cook310@nexora.com,employee
+311,Liam Phillips,Security,Security Manager,29,Band3,Dubai,Full-Time,2020-04-15,l.phillips311@nexora.com,employee
+312,Nina Cook,Operations,Operations Analyst,28,Band1,Paris,Full-Time,2020-05-26,n.cook312@nexora.com,employee
+313,Liam Brown,Operations,Operations Analyst,27,Band1,Amsterdam,Full-Time,2025-11-17,l.brown313@nexora.com,employee
+314,Wendy Jackson,Legal,Associate General Counsel,8,Band2,London,Full-Time,2021-05-16,w.jackson314@nexora.com,employee
+315,Diana Sanders,Marketing,Marketing Coordinator,25,Band3,London,Contractor,2022-11-27,d.sanders315@nexora.com,employee
+316,Yasmin Sanchez,Legal,Senior Legal Counsel,8,Band1,Tunis,Intern,2021-12-04,y.sanchez316@nexora.com,employee
+317,Stefan Morris,Legal,General Counsel,8,Band2,Dubai,Contractor,2024-10-17,s.morris317@nexora.com,hr_leadership
+318,Ingrid Lopez,Finance,Controller,18,Band3,Berlin,Part-Time,2026-01-31,i.lopez318@nexora.com,employee
+319,James Baker,Engineering,Staff Engineer,13,Band2,Berlin,Full-Time,2023-05-08,j.baker319@nexora.com,employee
+320,Jana Brooks,Operations,Senior Operations Manager,26,Band3,Paris,Part-Time,2025-10-06,j.brooks320@nexora.com,employee
+321,Patricia Jackson,Legal,Paralegal,8,Band1,London,Full-Time,2021-02-12,p.jackson321@nexora.com,employee
+322,Wendy Williams,Data,Data Analyst,30,Band1,Berlin,Full-Time,2020-01-27,w.williams322@nexora.com,employee
+323,Hassan Young,HR,HR Coordinator,19,Band1,Dubai,Full-Time,2019-08-25,h.young323@nexora.com,hr_staff
+324,Tina Brooks,Data,Data Scientist,30,Band2,Berlin,Full-Time,2021-06-27,t.brooks324@nexora.com,employee
+325,Khadija Evans,Sales,Senior Account Executive,21,Band2,Tunis,Contractor,2019-11-22,k.evans325@nexora.com,employee
+326,Quinn Morris,Operations,Operations Analyst,27,Band1,Dubai,Full-Time,2018-04-25,q.morris326@nexora.com,employee
+327,Tina Nguyen,Legal,General Counsel,8,Band5,Casablanca,Full-Time,2023-06-03,t.nguyen327@nexora.com,hr_leadership
+328,Bianca Carter,HR,Senior HR Business Partner,19,Band3,Tunis,Contractor,2019-11-16,b.carter328@nexora.com,hr_staff
+329,Patricia Martin,Security,Senior Security Analyst,29,Band1,Paris,Full-Time,2021-01-29,p.martin329@nexora.com,employee
+330,Victor Cox,Marketing,Marketing Coordinator,25,Band1,Amsterdam,Full-Time,2021-11-23,v.cox330@nexora.com,employee
+331,Fatou Jones,Data,Data Engineer,30,Band2,Berlin,Full-Time,2020-09-30,f.jones331@nexora.com,employee
+332,Ibrahim Smith,HR,Senior HR Business Partner,20,Band3,Berlin,Full-Time,2024-10-22,i.smith332@nexora.com,hr_staff
+333,Nathan Cook,Operations,Operations Manager,28,Band3,Berlin,Full-Time,2019-12-07,n.cook333@nexora.com,employee
+334,Dina Phillips,Marketing,Senior Marketing Manager,24,Band3,Amsterdam,Full-Time,2023-03-11,d.phillips334@nexora.com,employee
+335,Dina Martinez,Marketing,SEO Analyst,24,Band3,Dubai,Contractor,2023-11-05,d.martinez335@nexora.com,employee
+336,Carlos Parker,Marketing,Senior Marketing Manager,24,Band2,London,Contractor,2023-03-14,c.parker336@nexora.com,employee
+337,Samuel Wilson,Security,Security Manager,29,Band3,Berlin,Full-Time,2021-11-12,s.wilson337@nexora.com,employee
+338,Khadija Sanchez,Data,Senior Data Analyst,30,Band3,Amsterdam,Contractor,2020-08-23,k.sanchez338@nexora.com,employee
+339,Victor Rivera,Operations,Project Manager,26,Band3,Madrid,Full-Time,2019-12-30,v.rivera339@nexora.com,employee
+340,Quinn Brown,Operations,Operations Manager,28,Band3,Paris,Full-Time,2018-08-18,q.brown340@nexora.com,employee
+341,Ivan Cox,Engineering,Software Engineer,13,Band2,Paris,Full-Time,2024-06-06,i.cox341@nexora.com,employee
+342,Xena Brown,Engineering,Senior Software Engineer,13,Band2,Casablanca,Full-Time,2018-09-24,x.brown342@nexora.com,employee
+343,James Campbell,Operations,Operations Analyst,26,Band1,London,Full-Time,2020-03-09,j.campbell343@nexora.com,employee
+344,Bob Roberts,Sales,Sales Analyst,22,Band3,Madrid,Contractor,2024-12-03,b.roberts344@nexora.com,employee
+345,Olivia Turner,Product,UX Designer,14,Band2,Dubai,Full-Time,2023-02-16,o.turner345@nexora.com,employee
+346,Zara Carter,Legal,Legal Counsel,8,Band5,Berlin,Full-Time,2022-10-05,z.carter346@nexora.com,employee
+347,Zara Nguyen,Product,Product Manager,14,Band3,Casablanca,Full-Time,2025-06-30,z.nguyen347@nexora.com,employee
+348,Fatima Perez,Engineering,QA Engineer,12,Band3,Paris,Contractor,2020-03-14,f.perez348@nexora.com,employee
+349,Helen Ward,Engineering,Senior Software Engineer,12,Band2,Casablanca,Full-Time,2023-01-31,h.ward349@nexora.com,employee
+350,Helen Phillips,Engineering,Software Engineer,13,Band2,London,Full-Time,2024-02-11,h.phillips350@nexora.com,employee
+351,Maria Wilson,Marketing,Marketing Coordinator,23,Band3,Paris,Contractor,2022-10-08,m.wilson351@nexora.com,employee
+352,Liam Cox,Finance,Controller,17,Band3,Tunis,Contractor,2024-07-21,l.cox352@nexora.com,employee
+353,William Brown,Product,UX Designer,16,Band2,Berlin,Full-Time,2025-04-09,w.brown353@nexora.com,employee
+354,Nathan Hill,Marketing,SEO Analyst,25,Band1,Dubai,Intern,2025-10-16,n.hill354@nexora.com,employee
+355,Omar Scott,Sales,Sales Manager,22,Band3,Tunis,Full-Time,2021-04-13,o.scott355@nexora.com,employee
+356,Fatima Bailey,Finance,Controller,18,Band3,Berlin,Full-Time,2025-04-19,f.bailey356@nexora.com,employee
+357,Yusuf Cook,Product,Principal Product Manager,14,Band2,Tunis,Contractor,2022-07-28,y.cook357@nexora.com,employee
+358,Alice Allen,Marketing,Marketing Coordinator,23,Band1,Amsterdam,Full-Time,2024-12-23,a.allen358@nexora.com,employee
+359,Beatrice Nelson,Finance,Financial Analyst,17,Band1,Tunis,Full-Time,2024-12-18,b.nelson359@nexora.com,employee
+360,Khadija Garcia,Engineering,Software Engineer,13,Band2,Dubai,Full-Time,2021-10-21,k.garcia360@nexora.com,employee
+361,Yusuf Bailey,Engineering,Staff Engineer,13,Band2,Berlin,Full-Time,2019-09-17,y.bailey361@nexora.com,employee
+362,Kevin Lopez,Security,Senior Security Analyst,29,Band1,Amsterdam,Full-Time,2020-08-05,k.lopez362@nexora.com,employee
+363,Beatrice Thompson,Finance,Financial Analyst,17,Band1,Casablanca,Full-Time,2025-04-05,b.thompson363@nexora.com,employee
+364,Victor Stewart,Marketing,Senior Marketing Manager,23,Band3,Berlin,Full-Time,2020-12-27,v.stewart364@nexora.com,employee
+365,Alice Hill,Product,Senior Product Manager,15,Band3,Tunis,Full-Time,2022-06-06,a.hill365@nexora.com,employee
+366,Connor Richardson,Operations,Senior Operations Manager,27,Band2,Amsterdam,Contractor,2022-07-12,c.richardson366@nexora.com,employee
+367,Umar Taylor,Data,Senior Data Analyst,30,Band1,Dubai,Intern,2022-11-09,u.taylor367@nexora.com,employee
+368,Umar Nguyen,Operations,Business Analyst,26,Band1,Tunis,Full-Time,2022-01-11,u.nguyen368@nexora.com,employee
+369,Maria Phillips,Product,UX Designer,14,Band2,London,Full-Time,2020-12-12,m.phillips369@nexora.com,employee
+370,Ethan Richardson,HR,HR Manager,20,Band3,Casablanca,Contractor,2024-07-24,e.richardson370@nexora.com,hr_staff
+371,Rania Wilson,Sales,Account Executive,22,Band2,Tunis,Part-Time,2025-04-18,r.wilson371@nexora.com,employee
+372,Maria Hill,Operations,Business Analyst,27,Band1,Tunis,Full-Time,2020-01-11,m.hill372@nexora.com,employee
+373,Rania Scott,Engineering,Staff Engineer,12,Band2,London,Full-Time,2019-10-23,r.scott373@nexora.com,employee
+374,George Smith,Legal,Associate General Counsel,8,Band2,Berlin,Full-Time,2020-05-25,g.smith374@nexora.com,employee
+375,Cedric Torres,Security,Security Manager,29,Band3,Madrid,Full-Time,2022-04-04,c.torres375@nexora.com,employee
+376,Samuel Adams,Engineering,Engineering Manager,12,Band2,Paris,Contractor,2024-07-14,s.adams376@nexora.com,employee
+377,Dina Rivera,Marketing,Senior Marketing Manager,24,Band3,Casablanca,Full-Time,2022-03-21,d.rivera377@nexora.com,employee
+378,Victor Reed,Operations,Operations Analyst,27,Band1,Paris,Full-Time,2022-10-04,v.reed378@nexora.com,employee
+379,Bob Howard,Engineering,QA Engineer,12,Band2,Paris,Full-Time,2018-07-13,b.howard379@nexora.com,employee
+380,Valeria Campbell,Finance,Senior Financial Analyst,17,Band1,Casablanca,Full-Time,2023-07-11,v.campbell380@nexora.com,employee
+381,Laura Stewart,Legal,Compliance Officer,8,Band5,Tunis,Full-Time,2025-10-18,l.stewart381@nexora.com,employee
+382,Yusuf Smith,Data,Senior Data Analyst,30,Band1,Berlin,Part-Time,2023-01-01,y.smith382@nexora.com,employee
+383,Bianca Ward,Product,UX Designer,14,Band2,Dubai,Full-Time,2022-06-20,b.ward383@nexora.com,employee
+384,Fatou Perez,HR,HR Manager,19,Band3,Dubai,Full-Time,2019-06-06,f.perez384@nexora.com,hr_staff
+385,Maria Davis,Legal,Paralegal,8,Band1,Casablanca,Full-Time,2019-03-15,m.davis385@nexora.com,employee
+386,Stefan Lopez,Finance,Finance Manager,17,Band3,Berlin,Full-Time,2022-09-13,s.lopez386@nexora.com,employee
+387,Tariq Wilson,Product,Senior Product Manager,15,Band3,Tunis,Full-Time,2019-06-09,t.wilson387@nexora.com,employee
+388,Beatrice Taylor,Finance,Controller,18,Band3,Madrid,Full-Time,2019-11-26,b.taylor388@nexora.com,employee
+389,Ivan Taylor,Finance,Accountant,18,Band2,Casablanca,Full-Time,2019-03-06,i.taylor389@nexora.com,employee
+390,Freya Lopez,Engineering,Staff Engineer,12,Band2,Tunis,Full-Time,2019-10-29,f.lopez390@nexora.com,employee
+391,Stefan Perez,Security,IT Support Specialist,29,Band1,Casablanca,Full-Time,2020-08-23,s.perez391@nexora.com,employee
+392,Ahmed Murphy,Finance,Financial Analyst,17,Band1,London,Full-Time,2023-01-16,a.murphy392@nexora.com,employee
+393,Kevin Bailey,HR,Recruiter,20,Band2,Casablanca,Full-Time,2019-12-17,k.bailey393@nexora.com,hr_staff
+394,Rachel Bailey,Security,Security Analyst,29,Band1,Dubai,Full-Time,2020-01-17,r.bailey394@nexora.com,employee
+395,James Jackson,Engineering,QA Engineer,13,Band1,Paris,Intern,2018-10-17,j.jackson395@nexora.com,employee
+396,Cedric Martin,HR,Senior HR Business Partner,19,Band3,Paris,Full-Time,2021-03-14,c.martin396@nexora.com,hr_staff
+397,Bianca Bell,Product,Senior Product Manager,14,Band3,Dubai,Full-Time,2019-04-13,b.bell397@nexora.com,employee
+398,Ahmed Jackson,Legal,Senior Legal Counsel,8,Band2,Dubai,Contractor,2020-02-26,a.jackson398@nexora.com,employee
+399,Umar Cook,Sales,Sales Analyst,21,Band1,Amsterdam,Full-Time,2020-05-09,u.cook399@nexora.com,employee
+400,Ibrahim Brown,Product,Senior Product Manager,15,Band1,Madrid,Intern,2018-04-04,i.brown400@nexora.com,employee
+401,Uma King,Finance,Senior Financial Analyst,17,Band3,Casablanca,Contractor,2024-07-12,u.king401@nexora.com,employee
+402,Yusuf Nelson,Data,Data Scientist,30,Band2,Paris,Full-Time,2021-08-09,y.nelson402@nexora.com,employee
+403,Dina Perez,Security,Security Engineer,29,Band2,London,Full-Time,2025-01-29,d.perez403@nexora.com,employee
+404,Ahmed Phillips,Operations,Senior Operations Manager,26,Band3,Tunis,Full-Time,2023-10-01,a.phillips404@nexora.com,employee
+405,Liam Lopez,Operations,Senior Operations Manager,27,Band3,Casablanca,Full-Time,2022-04-09,l.lopez405@nexora.com,employee
+406,Paul Rivera,Engineering,Software Engineer,12,Band2,Paris,Contractor,2024-05-08,p.rivera406@nexora.com,employee
+407,Beatrice Thomas,Operations,Project Manager,26,Band1,Madrid,Intern,2018-11-01,b.thomas407@nexora.com,employee
+408,Fatima Sanchez,Sales,Account Executive,22,Band2,Paris,Full-Time,2021-12-14,f.sanchez408@nexora.com,employee
+409,Paul Allen,Finance,Financial Analyst,18,Band1,Berlin,Part-Time,2021-04-23,p.allen409@nexora.com,employee
+410,Nina Mitchell,Product,Product Manager,14,Band3,Berlin,Full-Time,2020-04-19,n.mitchell410@nexora.com,employee
+411,Tariq Wright,Operations,Operations Analyst,26,Band3,Madrid,Contractor,2020-10-07,t.wright411@nexora.com,employee
+412,Bianca Martinez,Product,Senior Product Manager,15,Band3,Dubai,Full-Time,2022-10-08,b.martinez412@nexora.com,employee
+413,Quinn Rogers,Finance,Accountant,17,Band2,London,Full-Time,2019-04-13,q.rogers413@nexora.com,employee
+414,Victor Jackson,Finance,Accountant,18,Band2,Madrid,Full-Time,2021-07-04,v.jackson414@nexora.com,employee
+415,Fatima Watson,Data,Senior Data Scientist,30,Band3,Paris,Full-Time,2019-07-07,f.watson415@nexora.com,employee
+416,Umar Rivera,Legal,Associate General Counsel,8,Band2,Amsterdam,Full-Time,2018-11-23,u.rivera416@nexora.com,employee
+417,Nathan Edwards,Product,Senior Product Manager,16,Band3,Amsterdam,Part-Time,2018-05-19,n.edwards417@nexora.com,employee
+418,Nina Turner,Engineering,QA Engineer,13,Band2,Berlin,Full-Time,2021-09-24,n.turner418@nexora.com,employee
+419,Freya Nguyen,Sales,Sales Development Rep,21,Band1,Casablanca,Full-Time,2018-12-20,f.nguyen419@nexora.com,employee
+420,Xena Sanders,Data,Data Analyst,30,Band1,Tunis,Full-Time,2019-10-01,x.sanders420@nexora.com,employee

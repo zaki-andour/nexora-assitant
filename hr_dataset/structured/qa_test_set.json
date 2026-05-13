@@ -1,0 +1,411 @@
+[
+  {
+    "id": "qa_001",
+    "query": "How many annual leave days are full-time employees entitled to?",
+    "answer": "Full-time employees are entitled to 25 working days of paid annual leave per calendar year, in addition to public holidays.",
+    "source": "annual_leave_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_002",
+    "query": "How many days in advance must I submit a leave request for 5 or more consecutive days?",
+    "answer": "Leave requests for 5 or more consecutive days must be submitted at least 10 working days in advance.",
+    "source": "annual_leave_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_003",
+    "query": "How many annual leave days can employees carry over to the following year?",
+    "answer": "Employees may carry over a maximum of 5 unused leave days into the following calendar year, which must be used by 31 March.",
+    "source": "annual_leave_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_004",
+    "query": "How many days of remote work per week are employees allowed?",
+    "answer": "Eligible employees may work remotely for up to 3 days per week, subject to manager approval and role suitability.",
+    "source": "remote_work_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_005",
+    "query": "What is the minimum number of days employees must work in the office each week?",
+    "answer": "A minimum of 2 days per week in the office is required for all permanent employees.",
+    "source": "remote_work_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_006",
+    "query": "How long is paid maternity leave at Nexora Solutions?",
+    "answer": "Eligible employees are entitled to 26 weeks of paid maternity leave at full salary, followed by up to 26 additional weeks of unpaid leave.",
+    "source": "maternity_paternity_leave_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_007",
+    "query": "How much paid paternity leave are employees entitled to?",
+    "answer": "Eligible employees are entitled to 4 weeks of paid paternity leave at full salary, to be taken within 56 days of the birth or adoption of the child.",
+    "source": "maternity_paternity_leave_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_008",
+    "query": "What is the minimum service required to be eligible for paid maternity leave?",
+    "answer": "An employee must have completed a minimum of 12 months of continuous employment prior to the expected week of childbirth to be eligible for paid maternity leave.",
+    "source": "maternity_paternity_leave_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_009",
+    "query": "What is the maximum accommodation rate per night in London for business travel?",
+    "answer": "The maximum nightly accommodation rate in London and major European capitals is \u00a3180.",
+    "source": "expense_reimbursement_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_010",
+    "query": "Within how many days must expense claims be submitted?",
+    "answer": "All expenses must be submitted within 30 calendar days of the date the expense was incurred.",
+    "source": "expense_reimbursement_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_011",
+    "query": "What performance rating is required to be considered for promotion?",
+    "answer": "Promotions are assessed during the Annual Review cycle and require a minimum rating of 4 in the current year.",
+    "source": "performance_review_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_012",
+    "query": "How many sick days are full-time permanent employees entitled to per year?",
+    "answer": "Full-time permanent employees are entitled to up to 10 days of fully paid sick leave per calendar year.",
+    "source": "sick_leave_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_013",
+    "query": "How many sick days are interns entitled to?",
+    "answer": "Interns receive 5 days of paid sick leave per year.",
+    "source": "sick_leave_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_014",
+    "query": "What is the annual L&D budget for Band3 to Band5 employees?",
+    "answer": "The annual L&D budget allocation is \u00a32,500 for Band3 to Band5 employees.",
+    "source": "learning_development_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_015",
+    "query": "How long is the probationary period for new employees?",
+    "answer": "All new employees serve a 6-month probationary period.",
+    "source": "onboarding_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_016",
+    "query": "How many years of service are required to qualify for enhanced redundancy pay?",
+    "answer": "Employees with 2 or more years of continuous service are entitled to statutory redundancy pay, with an enhanced payment of 1.5 weeks' pay per year of service.",
+    "source": "redundancy_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_017",
+    "query": "What is the whistleblowing hotline number?",
+    "answer": "The whistleblowing hotline number is 0800-NEXORA-W.",
+    "source": "whistleblowing_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_018",
+    "query": "How many working days notice is required before a formal disciplinary hearing?",
+    "answer": "Employees receive at least 5 working days' notice of a disciplinary hearing.",
+    "source": "disciplinary_procedure.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_019",
+    "query": "Can contractors work remotely?",
+    "answer": "Contractors may work remotely subject to the terms of their individual contracts and with explicit approval from their engagement manager.",
+    "source": "remote_work_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_020",
+    "query": "What mandatory training must be completed within the first 30 days?",
+    "answer": "New employees must complete: data protection, code of conduct, security awareness, and anti-bribery training within their first 30 days.",
+    "source": "onboarding_policy.txt",
+    "modality": "text",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_021",
+    "query": "What department does Julia Jackson work in?",
+    "answer": "Julia Jackson works in the Engineering department.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_022",
+    "query": "What is the role of Julia Jackson?",
+    "answer": "Julia Jackson's role is Engineering Manager.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_023",
+    "query": "What salary band is Julia Jackson on?",
+    "answer": "Julia Jackson is on Band2.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_024",
+    "query": "What is the contract type of Julia Jackson?",
+    "answer": "Julia Jackson is on a Full-Time contract.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_025",
+    "query": "Which office is Julia Jackson based in?",
+    "answer": "Julia Jackson is based in the Dubai office.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_026",
+    "query": "How many employees are based in the London office?",
+    "answer": "There are 54 employees based in the London office.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_027",
+    "query": "How many contractors does Nexora Solutions currently employ?",
+    "answer": "Nexora Solutions currently employs 76 contractors.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_028",
+    "query": "What is Maria Baker's job title?",
+    "answer": "Maria Baker's job title is CHRO.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_029",
+    "query": "What location is Stefan Bell based in?",
+    "answer": "Stefan Bell is based in Berlin.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_030",
+    "query": "When did Paul Davis join Nexora Solutions?",
+    "answer": "Paul Davis joined Nexora Solutions on 2023-01-15.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_031",
+    "query": "Who is the head of the HR department?",
+    "answer": "The head of the HR department is Maria Baker, who holds the role of CHRO.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_032",
+    "query": "Who is the head of the Engineering department?",
+    "answer": "The head of the Engineering department is Paul Davis, who holds the role of CTO.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_033",
+    "query": "Who is the head of the Finance department?",
+    "answer": "The head of the Finance department is Stefan Bell, who holds the role of CFO.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_034",
+    "query": "Who does Julia Jackson report to?",
+    "answer": "Julia Jackson reports to Paul Davis, who is a CTO in the Engineering department.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_035",
+    "query": "Who is the CEO of Nexora Solutions?",
+    "answer": "The CEO of Nexora Solutions is Alexandra Chen.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_036",
+    "query": "Which department does the CHRO lead?",
+    "answer": "The CHRO leads the HR department. The current CHRO is Maria Baker.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_037",
+    "query": "Who does the CTO report to?",
+    "answer": "The CTO (Paul Davis) reports directly to the CEO, Alexandra Chen.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_038",
+    "query": "How many departments does Nexora Solutions have?",
+    "answer": "Nexora Solutions has 10 departments: Engineering, Product, Finance, HR, Sales, Marketing, Legal, Operations, Security, Data.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_039",
+    "query": "What department does Paul Davis lead?",
+    "answer": "Paul Davis works in the Engineering department with the role of CTO.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_040",
+    "query": "What role does the head of Finance hold?",
+    "answer": "The head of Finance holds the role of CFO. This is currently Stefan Bell.",
+    "source": "graph",
+    "modality": "graph",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_041",
+    "query": "What is the sick leave entitlement for Julia Jackson given their contract type?",
+    "answer": "Julia Jackson is on a Full-Time contract. Full-time permanent employees are entitled to 10 days of paid sick leave per year.",
+    "source": "employees.csv + sick_leave_policy.txt",
+    "modality": "hybrid",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_042",
+    "query": "How many remote work days is Julia Jackson entitled to, and who needs to approve it?",
+    "answer": "Julia Jackson is eligible for up to 3 remote working days per week, subject to approval from their line manager Paul Davis.",
+    "source": "employees.csv + remote_work_policy.txt + graph",
+    "modality": "hybrid",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_043",
+    "query": "What is the maternity leave entitlement for a contractor, and who in HR should they contact?",
+    "answer": "Contractors are not eligible for the company's paid maternity leave; statutory maternity pay applies. They should contact the HR department, led by Maria Baker (CHRO), at hr@nexora.com.",
+    "source": "maternity_paternity_leave_policy.txt + graph",
+    "modality": "hybrid",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_044",
+    "query": "What L&D budget is available to a Band3 employee, and who approves training requests?",
+    "answer": "Band3 employees have an annual L&D budget of \u00a32,500. Training requests must be submitted to the line manager and HR Business Partner for approval.",
+    "source": "learning_development_policy.txt + employees.csv",
+    "modality": "hybrid",
+    "required_role": "junior_employee"
+  },
+  {
+    "id": "qa_045",
+    "query": "What is the annual leave entitlement for Julia Jackson if they have been at the company for over 5 years?",
+    "answer": "Julia Jackson is a full-time employee. If they have over 5 years of continuous service, they receive an additional 2 days, bringing their total to 27 annual leave days per year.",
+    "source": "annual_leave_policy.txt + employees.csv",
+    "modality": "hybrid",
+    "required_role": "hr_professional"
+  },
+  {
+    "id": "qa_046",
+    "query": "What is the salary band of Julia Jackson?",
+    "answer": "Julia Jackson is on Band2.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_professional",
+    "permission_test": true,
+    "blocked_for": "junior_employee"
+  },
+  {
+    "id": "qa_047",
+    "query": "Can you show me all Band5 employees across the company?",
+    "answer": "Band5 employees include all C-suite executives and department heads.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_manager",
+    "permission_test": true,
+    "blocked_for": "hr_professional"
+  },
+  {
+    "id": "qa_048",
+    "query": "What is the performance rating of any employee?",
+    "answer": "Performance ratings are confidential HR data.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_manager",
+    "permission_test": true,
+    "blocked_for": "junior_employee"
+  },
+  {
+    "id": "qa_049",
+    "query": "List all employees on contractor contracts with their salary bands.",
+    "answer": "This query requires HR Manager access to view both contract types and salary data simultaneously.",
+    "source": "employees.csv",
+    "modality": "structured",
+    "required_role": "hr_manager",
+    "permission_test": true,
+    "blocked_for": "hr_professional"
+  },
+  {
+    "id": "qa_050",
+    "query": "Who are all the employees in the Security department and what are their roles?",
+    "answer": "The Security department is led by the CISO and includes Security Analysts, Security Engineers, and IT Support Specialists. Department head reports to CEO Alexandra Chen.",
+    "source": "employees.csv + graph",
+    "modality": "hybrid",
+    "required_role": "hr_professional",
+    "permission_test": false
+  }
+]

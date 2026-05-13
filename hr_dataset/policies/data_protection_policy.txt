@@ -1,0 +1,24 @@
+Nexora Solutions — Data Protection Policy
+Document reference: HR-POL-011 | Effective: 1 January 2024 | Owner: Data Protection Officer
+
+1. PURPOSE
+This policy sets out how Nexora Solutions collects, processes, stores, and protects personal data in compliance with applicable data protection legislation, including GDPR where applicable.
+
+2. DATA PRINCIPLES
+Nexora Solutions commits to processing personal data lawfully, fairly, and transparently; collecting data only for specified, explicit, and legitimate purposes; keeping data accurate and up to date; retaining data no longer than necessary; and protecting data against unauthorised access, loss or destruction.
+
+3. EMPLOYEE DATA
+3.1 Nexora Solutions processes employee personal data for the purposes of employment administration, payroll, performance management, and legal compliance.
+3.2 Employees have the right to access their personal data held by Nexora Solutions by submitting a Subject Access Request to the Data Protection Officer.
+3.3 Salary and compensation data is classified as sensitive personal data and is accessible only to HR, Finance, and senior management with a legitimate business need.
+
+4. DATA SECURITY
+4.1 All personal data must be stored on company-approved systems. Local storage of personal data on unencrypted devices is prohibited.
+4.2 Employees who access personal data as part of their role must complete annual data protection training.
+4.3 Any data breach, actual or suspected, must be reported to the Data Protection Officer within 4 hours of discovery.
+
+5. RETENTION
+Employee personal data is retained for 7 years following the end of employment. Recruitment data for unsuccessful candidates is retained for 12 months.
+
+6. CONTACT
+dpo@nexora.com

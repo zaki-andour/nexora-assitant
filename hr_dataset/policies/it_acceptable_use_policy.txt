@@ -1,0 +1,25 @@
+Nexora Solutions — IT Acceptable Use Policy
+Document reference: HR-POL-016 | Effective: 1 January 2024 | Owner: IT Security Manager
+
+1. PURPOSE
+This policy defines acceptable use of Nexora Solutions's IT systems, devices, and network infrastructure.
+
+2. SCOPE
+All employees, contractors, and third parties accessing Nexora Solutions systems must comply with this policy.
+
+3. ACCEPTABLE USE
+3.1 Company IT systems are provided for business use. Incidental personal use is permitted provided it does not consume excessive bandwidth, create legal risk, or interfere with work.
+3.2 Employees must use strong passwords (minimum 12 characters, including upper/lowercase, numbers, and symbols) and must not share credentials with any other person.
+3.3 Multi-factor authentication is mandatory for all systems where it is available.
+
+4. PROHIBITED ACTIVITIES
+The following are strictly prohibited: accessing, downloading or distributing illegal content; attempting to access systems or data without authorisation; installing unauthorised software; disabling security tools or firewalls; using company systems for cryptocurrency mining or personal commercial activities.
+
+5. MONITORING
+Nexora Solutions reserves the right to monitor use of its IT systems for security and compliance purposes. Employees have no expectation of privacy when using company systems.
+
+6. INCIDENT REPORTING
+Any security incident, suspected breach, or unusual system behaviour must be reported to the IT Security team immediately at security@nexora.com.
+
+7. CONTACT
+security@nexora.com

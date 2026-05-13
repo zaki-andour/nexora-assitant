@@ -1,0 +1,105 @@
+{
+  "junior_employee": {
+    "role": "Junior Employee",
+    "description": "General staff member \u2014 can view all published HR policies and their own personal records only",
+    "permissions": {
+      "policies": [
+        "all"
+      ],
+      "employee_records": [
+        "own_record_only"
+      ],
+      "graph": [
+        "org_chart_read_only",
+        "own_manager",
+        "department_structure"
+      ],
+      "mcp_tools": [
+        "own_leave_balance",
+        "own_calendar"
+      ],
+      "blocked": [
+        "salary_bands_others",
+        "performance_ratings_others",
+        "full_employee_database"
+      ]
+    },
+    "example_allowed_queries": [
+      "What is the remote work policy?",
+      "How many sick days am I entitled to?",
+      "Who is the manager of the Engineering department?",
+      "What is the maternity leave policy for contractors?"
+    ],
+    "example_blocked_queries": [
+      "What is the salary band of John Doe?",
+      "Show me all employees in the Finance department",
+      "What was Maria Lopez's performance rating?"
+    ]
+  },
+  "hr_professional": {
+    "role": "HR Professional",
+    "description": "HR team member \u2014 full access to employee records, all policies, and org chart within their assigned scope",
+    "permissions": {
+      "policies": [
+        "all"
+      ],
+      "employee_records": [
+        "full_database_read"
+      ],
+      "graph": [
+        "full_org_chart",
+        "all_relationships",
+        "all_locations"
+      ],
+      "mcp_tools": [
+        "all_employee_leave_balances",
+        "hr_ticketing_system",
+        "full_calendar"
+      ],
+      "blocked": [
+        "payroll_raw_data",
+        "board_level_compensation"
+      ]
+    },
+    "example_allowed_queries": [
+      "What is the salary band of employee ID 42?",
+      "How many employees are based in the Madrid office?",
+      "Who reports directly to the Head of Engineering?",
+      "What is John Doe's contract type and start date?"
+    ],
+    "example_blocked_queries": [
+      "What is the CEO's total compensation package?",
+      "Show me the board-level salary data"
+    ]
+  },
+  "hr_manager": {
+    "role": "HR Manager",
+    "description": "Senior HR leadership \u2014 full unrestricted access to all HR data including compensation and performance",
+    "permissions": {
+      "policies": [
+        "all"
+      ],
+      "employee_records": [
+        "full_database_read",
+        "salary_data",
+        "performance_data"
+      ],
+      "graph": [
+        "full_org_chart",
+        "all_relationships",
+        "all_locations"
+      ],
+      "mcp_tools": [
+        "all_tools_unrestricted"
+      ],
+      "blocked": []
+    },
+    "example_allowed_queries": [
+      "What is the average salary band distribution across departments?",
+      "Which employees are on Band5 in the Engineering department?",
+      "Show me all employees on contractor contracts in London",
+      "What is the full org chart for the Data department?"
+    ],
+    "example_blocked_queries": []
+  }
+}

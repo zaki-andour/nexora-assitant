@@ -1,0 +1,39 @@
+{
+  "hardware": "NVIDIA Tesla T4",
+  "driver": "565.57.01",
+  "cuda": "12.7",
+  "model": "qwen2.5:7b q3_k_m",
+  "gpu": {
+    "gpu_name": "Tesla T4",
+    "vram_total_mb": "15360",
+    "vram_free_mb": "11393",
+    "vram_used_mb": "3523",
+    "temperature_c": "48",
+    "power_draw_w": "28.16",
+    "power_limit_w": "70.00",
+    "gpu_utilization": "0%",
+    "mem_utilization": "0%",
+    "driver": "565.57.01",
+    "gpu_count": "1"
+  },
+  "latency": {
+    "embedding_ms": 233,
+    "milvus_ms": 4,
+    "bm25_ms": 5,
+    "llm_sec": 4.2,
+    "total_sec": 4.5,
+    "gpu_during_llm": {
+      "power_draw_w": "65.90",
+      "gpu_utilization": "91%",
+      "vram_used_mb": "9949",
+      "temperature_c": "51"
+    }
+  },
+  "retrieval": {
+    "total_questions": 20,
+    "hit_rate_at_3": 100.0,
+    "hit_rate_at_5": 100.0,
+    "mrr": 0.925
+  },
+  "timestamp": "2026-05-08 17:02:15"
+}

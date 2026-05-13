@@ -1,0 +1,35 @@
+Nexora Solutions — Remote Work Policy
+Document reference: HR-POL-002 | Effective: 1 March 2024 | Owner: HR Director
+
+1. PURPOSE
+Nexora Solutions supports flexible working arrangements that enable employees to balance professional effectiveness with personal wellbeing. This policy defines the conditions under which remote work is permitted.
+
+2. SCOPE
+This policy applies to all permanent employees. Contractors may work remotely subject to the terms of their individual contracts and with explicit approval from their engagement manager.
+
+3. REMOTE WORK ENTITLEMENT
+3.1 Eligible employees may work remotely for up to 3 days per week, subject to manager approval and role suitability.
+3.2 A minimum of 2 days per week in the office is required for all permanent employees unless a full-remote exception has been granted in writing by the employee's Head of Department.
+3.3 Roles designated as on-site (e.g. IT infrastructure, office operations) are not eligible for remote work without explicit approval.
+3.4 Interns and employees within their first 3 months of employment are expected to work on-site full-time unless otherwise agreed.
+
+4. APPROVAL PROCESS
+4.1 Employees must discuss remote working arrangements with their direct line manager before commencing.
+4.2 Remote work requests exceeding 3 days per week require written approval from both the line manager and the Head of Department.
+4.3 Approved remote arrangements are reviewed annually or when a change in role occurs.
+
+5. EQUIPMENT AND CONNECTIVITY
+5.1 Nexora Solutions provides a laptop and necessary software for remote work. Employees are responsible for maintaining a secure and productive home working environment.
+5.2 Employees must use the company VPN at all times when accessing internal systems remotely.
+5.3 Requests for additional equipment (external monitor, keyboard, etc.) may be submitted to IT for approval. Approved items are subject to a budget of £300 per employee per year.
+
+6. SECURITY REQUIREMENTS
+6.1 Employees must ensure that confidential information is not visible to third parties during remote work sessions.
+6.2 All work must be conducted on company-issued devices. Use of personal devices for work purposes is not permitted without explicit IT security approval.
+6.3 Any security incident occurring during remote work must be reported immediately to the IT Security team.
+
+7. PERFORMANCE AND AVAILABILITY
+Remote employees are expected to maintain the same level of availability and responsiveness as they would in the office during core hours (09:00–17:00 local time).
+
+8. CONTACT
+Remote work queries should be directed to your line manager or HR Business Partner.

@@ -1,0 +1,29 @@
+Nexora Solutions — Onboarding Policy
+Document reference: HR-POL-007 | Effective: 1 January 2024 | Owner: HR Director
+
+1. PURPOSE
+This policy defines the onboarding process for all new employees and contractors joining Nexora Solutions, ensuring a consistent and effective introduction to the company, its culture, and their role.
+
+2. PRE-ARRIVAL
+2.1 HR will send the new employee a welcome pack at least 5 working days before their start date, including: offer letter, contract, IT setup instructions, first-day schedule, and key contact information.
+2.2 The line manager is responsible for preparing the new employee's workstation, system access, and a 30-60-90 day plan before the start date.
+
+3. FIRST DAY
+3.1 New employees are greeted by their HR Business Partner for a company induction session covering: company values, organisational structure, HR policies, benefits, IT security, and facilities.
+3.2 IT provides a device setup session including VPN configuration, email setup, and security training.
+3.3 The line manager conducts a role introduction meeting covering team structure, current priorities, tools, and initial objectives.
+
+4. FIRST 30 DAYS
+4.1 The new employee completes all mandatory online training modules within the first 30 days: data protection, code of conduct, security awareness, and anti-bribery.
+4.2 One-to-one meetings with key stakeholders across the team and department are scheduled during the first two weeks.
+4.3 A formal check-in meeting with the line manager occurs at the end of week 2 and week 4 to review progress and address any concerns.
+
+5. FIRST 90 DAYS
+5.1 A 90-day review meeting is held between the employee, their manager, and HR to assess progress, confirm successful completion of onboarding, and establish objectives for the remainder of the year.
+5.2 Any concerns regarding performance or fit identified during the 90-day period are documented and addressed through a structured support plan before the probationary period ends.
+
+6. PROBATIONARY PERIOD
+All new employees serve a 6-month probationary period. Confirmation of employment at the end of probation requires a satisfactory 90-day review and ongoing performance in line with role expectations.
+
+7. CONTACT
+Onboarding queries should be directed to hr@nexora.com or your assigned HR Business Partner.

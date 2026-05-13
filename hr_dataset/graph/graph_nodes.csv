@@ -1,0 +1,510 @@
+node_id,label,name,employee_id,salary_band,contract_type,start_date,email
+emp_1,Employee,Alexandra Chen,1,Band5,Full-Time,2018-03-01,a.chen@nexora.com
+emp_2,Employee,Paul Davis,2,Band5,Full-Time,2023-01-15,p.davis@nexora.com
+emp_3,Employee,Patricia White,3,Band5,Full-Time,2024-12-22,p.white@nexora.com
+emp_4,Employee,Stefan Bell,4,Band5,Full-Time,2025-02-23,s.bell@nexora.com
+emp_5,Employee,Maria Baker,5,Band5,Full-Time,2025-10-15,m.baker@nexora.com
+emp_6,Employee,Fatima Jackson,6,Band5,Full-Time,2020-06-16,f.jackson@nexora.com
+emp_7,Employee,Nathan Johnson,7,Band5,Full-Time,2023-11-23,n.johnson@nexora.com
+emp_8,Employee,Uma Sanchez,8,Band5,Full-Time,2020-01-05,u.sanchez@nexora.com
+emp_9,Employee,Amir White,9,Band5,Full-Time,2019-07-08,a.white@nexora.com
+emp_10,Employee,Rachel Cooper,10,Band5,Full-Time,2024-05-02,r.cooper@nexora.com
+emp_11,Employee,Tariq Baker,11,Band5,Full-Time,2023-01-03,t.baker@nexora.com
+emp_12,Employee,Julia Jackson,12,Band2,Full-Time,2024-12-23,j.jackson@nexora.com
+emp_13,Employee,Fatima Nguyen,13,Band2,Full-Time,2022-02-05,f.nguyen@nexora.com
+emp_14,Employee,Erik Scott,14,Band3,Full-Time,2025-08-21,e.scott@nexora.com
+emp_15,Employee,Victor Carter,15,Band3,Full-Time,2021-11-17,v.carter@nexora.com
+emp_16,Employee,Fatima Campbell,16,Band3,Full-Time,2019-01-28,f.campbell@nexora.com
+emp_17,Employee,Olivia Brooks,17,Band3,Full-Time,2019-08-26,o.brooks@nexora.com
+emp_18,Employee,Mohamed Cook,18,Band4,Full-Time,2025-08-11,m.cook@nexora.com
+emp_19,Employee,Rania White,19,Band3,Full-Time,2025-03-25,r.white@nexora.com
+emp_20,Employee,Erik White,20,Band4,Full-Time,2021-11-11,e.white@nexora.com
+emp_21,Employee,Rachel Carter,21,Band3,Full-Time,2024-04-19,r.carter@nexora.com
+emp_22,Employee,Xena Scott,22,Band5,Full-Time,2018-08-10,x.scott@nexora.com
+emp_23,Employee,Rachel Reed,23,Band3,Full-Time,2019-04-17,r.reed@nexora.com
+emp_24,Employee,Paul Anderson,24,Band3,Full-Time,2024-04-16,p.anderson@nexora.com
+emp_25,Employee,Dina Nguyen,25,Band5,Full-Time,2018-12-12,d.nguyen@nexora.com
+emp_26,Employee,Tariq Campbell,26,Band3,Full-Time,2018-06-12,t.campbell@nexora.com
+emp_27,Employee,Umar Cox,27,Band3,Full-Time,2023-07-22,u.cox@nexora.com
+emp_28,Employee,Connor Williams,28,Band5,Full-Time,2021-08-16,c.williams@nexora.com
+emp_29,Employee,Rachel Jones,29,Band3,Full-Time,2019-10-06,r.jones@nexora.com
+emp_30,Employee,Gabriel Cook,30,Band4,Full-Time,2023-09-28,g.cook@nexora.com
+emp_31,Employee,Dina Wilson,31,Band3,Full-Time,2019-10-30,d.wilson31@nexora.com
+emp_32,Employee,Helen Evans,32,Band2,Full-Time,2024-07-28,h.evans32@nexora.com
+emp_33,Employee,Xavier Brown,33,Band2,Contractor,2018-06-29,x.brown33@nexora.com
+emp_34,Employee,Yusuf Nguyen,34,Band1,Full-Time,2020-03-10,y.nguyen34@nexora.com
+emp_35,Employee,Stefan Morgan,35,Band1,Full-Time,2018-12-08,s.morgan35@nexora.com
+emp_36,Employee,Beatrice Anderson,36,Band1,Full-Time,2020-07-05,b.anderson36@nexora.com
+emp_37,Employee,Fatou Stewart,37,Band3,Full-Time,2024-05-29,f.stewart37@nexora.com
+emp_38,Employee,Yasmin Sanders,38,Band3,Full-Time,2019-05-29,y.sanders38@nexora.com
+emp_39,Employee,Hannah Sanders,39,Band1,Full-Time,2023-06-10,h.sanders39@nexora.com
+emp_40,Employee,Fatima Morgan,40,Band2,Full-Time,2020-02-25,f.morgan40@nexora.com
+emp_41,Employee,Khadija Anderson,41,Band1,Full-Time,2023-10-01,k.anderson41@nexora.com
+emp_42,Employee,Zara Morris,42,Band1,Full-Time,2020-04-27,z.morris42@nexora.com
+emp_43,Employee,Omar Jones,43,Band1,Full-Time,2019-07-11,o.jones43@nexora.com
+emp_44,Employee,Uma Stewart,44,Band1,Full-Time,2025-10-09,u.stewart44@nexora.com
+emp_45,Employee,Patricia Thompson,45,Band1,Full-Time,2020-01-29,p.thompson45@nexora.com
+emp_46,Employee,Patricia Rivera,46,Band3,Full-Time,2023-12-28,p.rivera46@nexora.com
+emp_47,Employee,Beatrice Scott,47,Band3,Full-Time,2025-07-08,b.scott47@nexora.com
+emp_48,Employee,Victor Wright,48,Band2,Contractor,2023-12-23,v.wright48@nexora.com
+emp_49,Employee,Ivan Baker,49,Band2,Full-Time,2023-04-28,i.baker49@nexora.com
+emp_50,Employee,George Brown,50,Band1,Full-Time,2025-01-28,g.brown50@nexora.com
+emp_51,Employee,Freya Mitchell,51,Band2,Full-Time,2025-06-19,f.mitchell51@nexora.com
+emp_52,Employee,Yusuf Martin,52,Band3,Contractor,2021-05-19,y.martin52@nexora.com
+emp_53,Employee,Mohamed Young,53,Band1,Full-Time,2019-08-18,m.young53@nexora.com
+emp_54,Employee,Diana Brown,54,Band1,Full-Time,2025-06-27,d.brown54@nexora.com
+emp_55,Employee,Ethan Edwards,55,Band1,Full-Time,2021-08-06,e.edwards55@nexora.com
+emp_56,Employee,Maria Edwards,56,Band2,Full-Time,2021-06-03,m.edwards56@nexora.com
+emp_57,Employee,Jana Martin,57,Band2,Full-Time,2023-06-13,j.martin57@nexora.com
+emp_58,Employee,Rania Sanchez,58,Band3,Full-Time,2025-04-23,r.sanchez58@nexora.com
+emp_59,Employee,Ethan Phillips,59,Band2,Full-Time,2024-08-21,e.phillips59@nexora.com
+emp_60,Employee,Xena Young,60,Band1,Full-Time,2019-04-07,x.young60@nexora.com
+emp_61,Employee,Jana Morris,61,Band1,Full-Time,2023-02-27,j.morris61@nexora.com
+emp_62,Employee,Khadija Wilson,62,Band3,Full-Time,2022-04-12,k.wilson62@nexora.com
+emp_63,Employee,Hassan Perez,63,Band1,Full-Time,2025-02-01,h.perez63@nexora.com
+emp_64,Employee,Alice Wright,64,Band3,Contractor,2021-03-03,a.wright64@nexora.com
+emp_65,Employee,Hannah Jones,65,Band2,Contractor,2021-12-25,h.jones65@nexora.com
+emp_66,Employee,Beatrice Lopez,66,Band2,Full-Time,2025-09-04,b.lopez66@nexora.com
+emp_67,Employee,Patricia Morris,67,Band3,Full-Time,2019-03-01,p.morris67@nexora.com
+emp_68,Employee,Bianca Cooper,68,Band1,Full-Time,2025-11-05,b.cooper68@nexora.com
+emp_69,Employee,Bianca Morris,69,Band2,Contractor,2024-05-03,b.morris69@nexora.com
+emp_70,Employee,Erik Mitchell,70,Band1,Full-Time,2022-03-15,e.mitchell70@nexora.com
+emp_71,Employee,Bob Morris,71,Band2,Full-Time,2022-12-31,b.morris71@nexora.com
+emp_72,Employee,Quinn Roberts,72,Band3,Full-Time,2025-10-24,q.roberts72@nexora.com
+emp_73,Employee,Maria Martin,73,Band3,Full-Time,2022-04-01,m.martin73@nexora.com
+emp_74,Employee,Hassan Davis,74,Band1,Full-Time,2023-04-08,h.davis74@nexora.com
+emp_75,Employee,Alice Turner,75,Band2,Contractor,2021-04-15,a.turner75@nexora.com
+emp_76,Employee,Umar Morris,76,Band3,Contractor,2018-08-24,u.morris76@nexora.com
+emp_77,Employee,Tariq Young,77,Band2,Full-Time,2021-05-29,t.young77@nexora.com
+emp_78,Employee,Olivia Parker,78,Band5,Full-Time,2022-09-19,o.parker78@nexora.com
+emp_79,Employee,Ahmed Evans,79,Band2,Full-Time,2020-11-28,a.evans79@nexora.com
+emp_80,Employee,Nina Roberts,80,Band3,Full-Time,2018-09-26,n.roberts80@nexora.com
+emp_81,Employee,Rania Stewart,81,Band3,Full-Time,2023-06-28,r.stewart81@nexora.com
+emp_82,Employee,Julia Johnson,82,Band2,Full-Time,2019-04-09,j.johnson82@nexora.com
+emp_83,Employee,Gabriel Stewart,83,Band1,Full-Time,2020-07-31,g.stewart83@nexora.com
+emp_84,Employee,Quinn Reed,84,Band3,Full-Time,2021-05-10,q.reed84@nexora.com
+emp_85,Employee,Diana Campbell,85,Band2,Full-Time,2021-01-02,d.campbell85@nexora.com
+emp_86,Employee,Xavier Watson,86,Band2,Full-Time,2019-12-24,x.watson86@nexora.com
+emp_87,Employee,Fatou Mitchell,87,Band3,Full-Time,2018-12-22,f.mitchell87@nexora.com
+emp_88,Employee,Paul Harris,88,Band1,Full-Time,2022-12-02,p.harris88@nexora.com
+emp_89,Employee,Umar Watson,89,Band3,Full-Time,2024-06-07,u.watson89@nexora.com
+emp_90,Employee,Uma Jackson,90,Band3,Full-Time,2022-05-31,u.jackson90@nexora.com
+emp_91,Employee,Diana Jackson,91,Band3,Contractor,2019-09-01,d.jackson91@nexora.com
+emp_92,Employee,William Allen,92,Band3,Contractor,2020-08-25,w.allen92@nexora.com
+emp_93,Employee,Freya Johnson,93,Band3,Full-Time,2024-04-09,f.johnson93@nexora.com
+emp_94,Employee,James Johnson,94,Band2,Contractor,2018-12-01,j.johnson94@nexora.com
+emp_95,Employee,Laura Brown,95,Band3,Full-Time,2023-10-02,l.brown95@nexora.com
+emp_96,Employee,Xavier Brooks,96,Band3,Full-Time,2023-04-18,x.brooks96@nexora.com
+emp_97,Employee,Wendy Phillips,97,Band1,Full-Time,2023-08-11,w.phillips97@nexora.com
+emp_98,Employee,Patricia Thomas,98,Band2,Contractor,2024-09-15,p.thomas98@nexora.com
+emp_99,Employee,Nina Carter,99,Band1,Full-Time,2024-03-29,n.carter99@nexora.com
+emp_100,Employee,Yasmin Richardson,100,Band2,Full-Time,2024-11-29,y.richardson100@nexora.com
+emp_101,Employee,Liam Rogers,101,Band3,Contractor,2023-11-25,l.rogers101@nexora.com
+emp_102,Employee,Danielle Stewart,102,Band2,Full-Time,2018-06-14,d.stewart102@nexora.com
+emp_103,Employee,William Phillips,103,Band1,Full-Time,2025-05-08,w.phillips103@nexora.com
+emp_104,Employee,Erik Adams,104,Band2,Contractor,2022-01-23,e.adams104@nexora.com
+emp_105,Employee,Laura Morgan,105,Band3,Full-Time,2019-03-21,l.morgan105@nexora.com
+emp_106,Employee,Beatrice Richardson,106,Band1,Part-Time,2022-07-05,b.richardson106@nexora.com
+emp_107,Employee,Gabriel Nelson,107,Band1,Full-Time,2019-09-25,g.nelson107@nexora.com
+emp_108,Employee,Bob Perez,108,Band2,Contractor,2023-09-30,b.perez108@nexora.com
+emp_109,Employee,Rachel Brooks,109,Band3,Full-Time,2019-11-22,r.brooks109@nexora.com
+emp_110,Employee,Fatima Harris,110,Band2,Part-Time,2019-11-24,f.harris110@nexora.com
+emp_111,Employee,Quinn Cook,111,Band1,Full-Time,2025-01-29,q.cook111@nexora.com
+emp_112,Employee,Tariq Harris,112,Band2,Full-Time,2020-10-25,t.harris112@nexora.com
+emp_113,Employee,Beatrice Bell,113,Band3,Full-Time,2018-03-30,b.bell113@nexora.com
+emp_114,Employee,Quentin White,114,Band3,Full-Time,2022-08-02,q.white114@nexora.com
+emp_115,Employee,Laura Thomas,115,Band2,Full-Time,2023-01-09,l.thomas115@nexora.com
+emp_116,Employee,George Cox,116,Band2,Full-Time,2022-01-28,g.cox116@nexora.com
+emp_117,Employee,Uma Phillips,117,Band3,Full-Time,2025-07-06,u.phillips117@nexora.com
+emp_118,Employee,Paul Ward,118,Band2,Contractor,2019-09-08,p.ward118@nexora.com
+emp_119,Employee,Cedric Wright,119,Band3,Full-Time,2023-04-17,c.wright119@nexora.com
+emp_120,Employee,Zara Perez,120,Band1,Full-Time,2024-06-03,z.perez120@nexora.com
+emp_121,Employee,Hannah Campbell,121,Band2,Contractor,2021-01-26,h.campbell121@nexora.com
+emp_122,Employee,Beatrice Allen,122,Band3,Full-Time,2019-04-15,b.allen122@nexora.com
+emp_123,Employee,Nina Martin,123,Band3,Full-Time,2023-06-08,n.martin123@nexora.com
+emp_124,Employee,Kevin Smith,124,Band3,Full-Time,2022-11-10,k.smith124@nexora.com
+emp_125,Employee,Uma Young,125,Band2,Part-Time,2025-04-29,u.young125@nexora.com
+emp_126,Employee,Beatrice Davis,126,Band3,Full-Time,2023-02-22,b.davis126@nexora.com
+emp_127,Employee,Kevin Rivera,127,Band1,Full-Time,2021-03-14,k.rivera127@nexora.com
+emp_128,Employee,Tina Reed,128,Band1,Full-Time,2020-07-06,t.reed128@nexora.com
+emp_129,Employee,Fatima Edwards,129,Band1,Full-Time,2022-07-05,f.edwards129@nexora.com
+emp_130,Employee,Fatima White,130,Band1,Intern,2018-08-02,f.white130@nexora.com
+emp_131,Employee,Xavier Murphy,131,Band1,Full-Time,2023-01-02,x.murphy131@nexora.com
+emp_132,Employee,Paul Richardson,132,Band3,Full-Time,2020-11-07,p.richardson132@nexora.com
+emp_133,Employee,George Howard,133,Band1,Full-Time,2018-05-06,g.howard133@nexora.com
+emp_134,Employee,Zara Richardson,134,Band2,Contractor,2025-02-19,z.richardson134@nexora.com
+emp_135,Employee,Hannah Bailey,135,Band3,Full-Time,2018-10-01,h.bailey135@nexora.com
+emp_136,Employee,Diana Thomas,136,Band1,Full-Time,2019-02-10,d.thomas136@nexora.com
+emp_137,Employee,Rachel Campbell,137,Band1,Full-Time,2021-03-18,r.campbell137@nexora.com
+emp_138,Employee,Paul Edwards,138,Band2,Contractor,2019-12-12,p.edwards138@nexora.com
+emp_139,Employee,Danielle Kelly,139,Band2,Full-Time,2018-11-10,d.kelly139@nexora.com
+emp_140,Employee,Hassan Cook,140,Band2,Full-Time,2020-10-29,h.cook140@nexora.com
+emp_141,Employee,Yusuf Thomas,141,Band2,Contractor,2023-01-10,y.thomas141@nexora.com
+emp_142,Employee,Connor Smith,142,Band2,Full-Time,2019-07-17,c.smith142@nexora.com
+emp_143,Employee,Cedric Phillips,143,Band3,Full-Time,2019-12-08,c.phillips143@nexora.com
+emp_144,Employee,Jana King,144,Band2,Contractor,2023-07-04,j.king144@nexora.com
+emp_145,Employee,Wendy Mitchell,145,Band5,Part-Time,2021-10-17,w.mitchell145@nexora.com
+emp_146,Employee,Ivan Roberts,146,Band1,Intern,2024-12-30,i.roberts146@nexora.com
+emp_147,Employee,Ibrahim Carter,147,Band1,Full-Time,2021-07-11,i.carter147@nexora.com
+emp_148,Employee,Ahmed Martin,148,Band1,Full-Time,2018-11-02,a.martin148@nexora.com
+emp_149,Employee,Erik Phillips,149,Band3,Full-Time,2019-02-04,e.phillips149@nexora.com
+emp_150,Employee,Olivia Jones,150,Band1,Full-Time,2023-07-29,o.jones150@nexora.com
+emp_151,Employee,Xavier Stewart,151,Band1,Part-Time,2021-02-23,x.stewart151@nexora.com
+emp_152,Employee,Carlos King,152,Band3,Contractor,2021-12-02,c.king152@nexora.com
+emp_153,Employee,Ingrid Adams,153,Band3,Full-Time,2024-03-20,i.adams153@nexora.com
+emp_154,Employee,Olivia Rogers,154,Band1,Full-Time,2023-07-09,o.rogers154@nexora.com
+emp_155,Employee,Quentin Morris,155,Band3,Full-Time,2022-11-24,q.morris155@nexora.com
+emp_156,Employee,Cedric Scott,156,Band1,Intern,2018-12-16,c.scott156@nexora.com
+emp_157,Employee,Dina Howard,157,Band5,Full-Time,2020-09-14,d.howard157@nexora.com
+emp_158,Employee,Liam Scott,158,Band3,Full-Time,2025-11-17,l.scott158@nexora.com
+emp_159,Employee,Liam Ward,159,Band2,Full-Time,2019-04-29,l.ward159@nexora.com
+emp_160,Employee,Nathan Cooper,160,Band3,Full-Time,2019-02-28,n.cooper160@nexora.com
+emp_161,Employee,Helen Stewart,161,Band2,Full-Time,2021-03-07,h.stewart161@nexora.com
+emp_162,Employee,Victor Lopez,162,Band2,Full-Time,2022-06-17,v.lopez162@nexora.com
+emp_163,Employee,Ivan Rivera,163,Band3,Full-Time,2020-03-03,i.rivera163@nexora.com
+emp_164,Employee,Quentin Kelly,164,Band3,Contractor,2022-04-29,q.kelly164@nexora.com
+emp_165,Employee,Julia Murphy,165,Band1,Intern,2019-11-16,j.murphy165@nexora.com
+emp_166,Employee,Alice Martin,166,Band1,Full-Time,2021-12-28,a.martin166@nexora.com
+emp_167,Employee,Connor Stewart,167,Band2,Contractor,2020-11-01,c.stewart167@nexora.com
+emp_168,Employee,Ibrahim Collins,168,Band2,Full-Time,2018-12-31,i.collins168@nexora.com
+emp_169,Employee,Amir Davis,169,Band3,Full-Time,2022-09-17,a.davis169@nexora.com
+emp_170,Employee,Patricia Brooks,170,Band1,Full-Time,2021-01-13,p.brooks170@nexora.com
+emp_171,Employee,Maria Bell,171,Band1,Part-Time,2018-10-12,m.bell171@nexora.com
+emp_172,Employee,Amir Thompson,172,Band1,Full-Time,2023-09-09,a.thompson172@nexora.com
+emp_173,Employee,Erik Torres,173,Band3,Full-Time,2020-01-07,e.torres173@nexora.com
+emp_174,Employee,Rachel Thomas,174,Band1,Intern,2025-02-04,r.thomas174@nexora.com
+emp_175,Employee,Diana Rivera,175,Band1,Full-Time,2019-10-17,d.rivera175@nexora.com
+emp_176,Employee,Maria Jackson,176,Band2,Contractor,2024-06-20,m.jackson176@nexora.com
+emp_177,Employee,Erik Wilson,177,Band1,Intern,2024-03-02,e.wilson177@nexora.com
+emp_178,Employee,Alice Scott,178,Band2,Contractor,2025-12-12,a.scott178@nexora.com
+emp_179,Employee,Ivan Bell,179,Band3,Full-Time,2025-05-30,i.bell179@nexora.com
+emp_180,Employee,Hassan Evans,180,Band3,Full-Time,2019-03-24,h.evans180@nexora.com
+emp_181,Employee,Dina Sanchez,181,Band1,Intern,2020-10-02,d.sanchez181@nexora.com
+emp_182,Employee,Freya Cook,182,Band2,Contractor,2022-07-06,f.cook182@nexora.com
+emp_183,Employee,Ivan Thompson,183,Band1,Full-Time,2021-11-07,i.thompson183@nexora.com
+emp_184,Employee,Dina Roberts,184,Band2,Full-Time,2018-04-03,d.roberts184@nexora.com
+emp_185,Employee,Fatou Jackson,185,Band2,Full-Time,2021-06-26,f.jackson185@nexora.com
+emp_186,Employee,Amir Morgan,186,Band1,Full-Time,2022-08-14,a.morgan186@nexora.com
+emp_187,Employee,Stefan Sanders,187,Band3,Full-Time,2025-03-02,s.sanders187@nexora.com
+emp_188,Employee,Wendy Bell,188,Band1,Full-Time,2019-11-20,w.bell188@nexora.com
+emp_189,Employee,Rania Davis,189,Band2,Full-Time,2025-07-19,r.davis189@nexora.com
+emp_190,Employee,William Martinez,190,Band1,Full-Time,2024-05-22,w.martinez190@nexora.com
+emp_191,Employee,William Howard,191,Band3,Full-Time,2022-12-31,w.howard191@nexora.com
+emp_192,Employee,Erik Campbell,192,Band1,Intern,2019-04-18,e.campbell192@nexora.com
+emp_193,Employee,Xavier Allen,193,Band3,Contractor,2024-02-02,x.allen193@nexora.com
+emp_194,Employee,Ethan Wilson,194,Band3,Part-Time,2025-02-04,e.wilson194@nexora.com
+emp_195,Employee,Amir Carter,195,Band1,Full-Time,2022-08-18,a.carter195@nexora.com
+emp_196,Employee,Fatima Brooks,196,Band1,Full-Time,2019-03-13,f.brooks196@nexora.com
+emp_197,Employee,Rachel Nelson,197,Band2,Full-Time,2019-04-26,r.nelson197@nexora.com
+emp_198,Employee,Nina Murphy,198,Band3,Full-Time,2021-04-21,n.murphy198@nexora.com
+emp_199,Employee,Stefan Evans,199,Band3,Full-Time,2025-08-12,s.evans199@nexora.com
+emp_200,Employee,Alice Jackson,200,Band3,Full-Time,2024-08-01,a.jackson200@nexora.com
+emp_201,Employee,Hannah Smith,201,Band3,Full-Time,2024-02-26,h.smith201@nexora.com
+emp_202,Employee,Hassan Campbell,202,Band3,Contractor,2021-09-02,h.campbell202@nexora.com
+emp_203,Employee,Dina Kelly,203,Band2,Full-Time,2019-09-01,d.kelly203@nexora.com
+emp_204,Employee,Amir Young,204,Band1,Full-Time,2022-06-25,a.young204@nexora.com
+emp_205,Employee,Danielle Reed,205,Band2,Contractor,2024-12-08,d.reed205@nexora.com
+emp_206,Employee,Ingrid Garcia,206,Band3,Full-Time,2022-04-26,i.garcia206@nexora.com
+emp_207,Employee,Ethan Roberts,207,Band3,Full-Time,2022-03-16,e.roberts207@nexora.com
+emp_208,Employee,George Wilson,208,Band3,Full-Time,2019-05-15,g.wilson208@nexora.com
+emp_209,Employee,Yasmin Stewart,209,Band1,Full-Time,2018-06-27,y.stewart209@nexora.com
+emp_210,Employee,Umar Wilson,210,Band2,Full-Time,2021-03-01,u.wilson210@nexora.com
+emp_211,Employee,William Roberts,211,Band3,Full-Time,2021-01-20,w.roberts211@nexora.com
+emp_212,Employee,Danielle Young,212,Band2,Full-Time,2019-03-24,d.young212@nexora.com
+emp_213,Employee,Dina Evans,213,Band2,Full-Time,2021-01-29,d.evans213@nexora.com
+emp_214,Employee,Nathan Mitchell,214,Band1,Full-Time,2021-01-26,n.mitchell214@nexora.com
+emp_215,Employee,Fatima Roberts,215,Band3,Full-Time,2023-05-07,f.roberts215@nexora.com
+emp_216,Employee,Ingrid Collins,216,Band3,Full-Time,2022-12-14,i.collins216@nexora.com
+emp_217,Employee,Stefan Edwards,217,Band5,Full-Time,2025-05-21,s.edwards217@nexora.com
+emp_218,Employee,Stefan Nguyen,218,Band1,Full-Time,2022-05-21,s.nguyen218@nexora.com
+emp_219,Employee,Julia Kelly,219,Band2,Full-Time,2024-09-04,j.kelly219@nexora.com
+emp_220,Employee,Khadija Nguyen,220,Band1,Full-Time,2024-09-09,k.nguyen220@nexora.com
+emp_221,Employee,Hassan Torres,221,Band1,Full-Time,2024-02-07,h.torres221@nexora.com
+emp_222,Employee,Mohamed White,222,Band1,Intern,2025-04-04,m.white222@nexora.com
+emp_223,Employee,Rania Wright,223,Band2,Contractor,2024-05-24,r.wright223@nexora.com
+emp_224,Employee,Victor Nelson,224,Band1,Full-Time,2018-07-16,v.nelson224@nexora.com
+emp_225,Employee,Xavier Bell,225,Band2,Contractor,2022-08-27,x.bell225@nexora.com
+emp_226,Employee,Stefan Parker,226,Band1,Intern,2022-12-18,s.parker226@nexora.com
+emp_227,Employee,Kevin Richardson,227,Band1,Full-Time,2023-04-27,k.richardson227@nexora.com
+emp_228,Employee,Fatou Torres,228,Band2,Full-Time,2020-05-03,f.torres228@nexora.com
+emp_229,Employee,Xavier Anderson,229,Band3,Full-Time,2021-03-21,x.anderson229@nexora.com
+emp_230,Employee,Gabriel Scott,230,Band3,Contractor,2021-09-05,g.scott230@nexora.com
+emp_231,Employee,Yusuf Garcia,231,Band2,Full-Time,2022-07-20,y.garcia231@nexora.com
+emp_232,Employee,Ivan Williams,232,Band3,Full-Time,2018-04-26,i.williams232@nexora.com
+emp_233,Employee,Olivia Smith,233,Band2,Contractor,2023-09-15,o.smith233@nexora.com
+emp_234,Employee,Samuel Harris,234,Band3,Full-Time,2023-06-14,s.harris234@nexora.com
+emp_235,Employee,Ethan Davis,235,Band3,Contractor,2019-01-14,e.davis235@nexora.com
+emp_236,Employee,Uma Wilson,236,Band3,Full-Time,2019-03-25,u.wilson236@nexora.com
+emp_237,Employee,Amir Taylor,237,Band3,Full-Time,2020-04-02,a.taylor237@nexora.com
+emp_238,Employee,James Roberts,238,Band2,Contractor,2020-11-07,j.roberts238@nexora.com
+emp_239,Employee,Xena Martin,239,Band2,Part-Time,2025-05-14,x.martin239@nexora.com
+emp_240,Employee,George Bailey,240,Band3,Full-Time,2024-08-17,g.bailey240@nexora.com
+emp_241,Employee,Connor Sanchez,241,Band2,Full-Time,2018-04-29,c.sanchez241@nexora.com
+emp_242,Employee,Ethan Cook,242,Band3,Contractor,2022-11-01,e.cook242@nexora.com
+emp_243,Employee,Gabriel Williams,243,Band1,Full-Time,2020-05-05,g.williams243@nexora.com
+emp_244,Employee,Quentin Williams,244,Band2,Contractor,2022-02-13,q.williams244@nexora.com
+emp_245,Employee,Rachel Davis,245,Band3,Contractor,2021-03-11,r.davis245@nexora.com
+emp_246,Employee,Freya Reed,246,Band2,Full-Time,2025-03-13,f.reed246@nexora.com
+emp_247,Employee,Nathan Richardson,247,Band5,Full-Time,2022-07-10,n.richardson247@nexora.com
+emp_248,Employee,Rania Young,248,Band3,Full-Time,2024-04-03,r.young248@nexora.com
+emp_249,Employee,Carlos Morgan,249,Band3,Contractor,2023-01-17,c.morgan249@nexora.com
+emp_250,Employee,Xena Roberts,250,Band2,Contractor,2024-07-10,x.roberts250@nexora.com
+emp_251,Employee,Ivan Jones,251,Band3,Full-Time,2022-01-23,i.jones251@nexora.com
+emp_252,Employee,Nathan Wilson,252,Band1,Full-Time,2021-12-14,n.wilson252@nexora.com
+emp_253,Employee,Ivan Turner,253,Band1,Full-Time,2018-11-03,i.turner253@nexora.com
+emp_254,Employee,Bob Bell,254,Band2,Full-Time,2019-10-29,b.bell254@nexora.com
+emp_255,Employee,Uma Nelson,255,Band3,Full-Time,2018-05-05,u.nelson255@nexora.com
+emp_256,Employee,Ivan Howard,256,Band3,Full-Time,2021-02-17,i.howard256@nexora.com
+emp_257,Employee,William Cook,257,Band3,Full-Time,2022-10-05,w.cook257@nexora.com
+emp_258,Employee,Hassan White,258,Band1,Full-Time,2024-07-26,h.white258@nexora.com
+emp_259,Employee,Xena Campbell,259,Band3,Full-Time,2019-12-09,x.campbell259@nexora.com
+emp_260,Employee,Ethan Allen,260,Band3,Full-Time,2020-03-24,e.allen260@nexora.com
+emp_261,Employee,Ivan King,261,Band5,Full-Time,2020-11-24,i.king261@nexora.com
+emp_262,Employee,Gabriel Cox,262,Band2,Contractor,2021-04-09,g.cox262@nexora.com
+emp_263,Employee,Ingrid Wilson,263,Band1,Full-Time,2022-07-04,i.wilson263@nexora.com
+emp_264,Employee,Erik Garcia,264,Band3,Full-Time,2024-09-20,e.garcia264@nexora.com
+emp_265,Employee,Hassan Sanchez,265,Band1,Full-Time,2024-03-15,h.sanchez265@nexora.com
+emp_266,Employee,Danielle Sanders,266,Band2,Full-Time,2025-03-19,d.sanders266@nexora.com
+emp_267,Employee,Quinn Jackson,267,Band3,Contractor,2020-07-16,q.jackson267@nexora.com
+emp_268,Employee,Emmanuel Harris,268,Band3,Contractor,2021-01-14,e.harris268@nexora.com
+emp_269,Employee,Cedric Adams,269,Band3,Full-Time,2022-04-23,c.adams269@nexora.com
+emp_270,Employee,Fatou Cook,270,Band1,Full-Time,2021-08-26,f.cook270@nexora.com
+emp_271,Employee,Umar Harris,271,Band3,Full-Time,2021-01-30,u.harris271@nexora.com
+emp_272,Employee,Diana Young,272,Band3,Contractor,2024-05-01,d.young272@nexora.com
+emp_273,Employee,Umar Thomas,273,Band3,Contractor,2020-07-13,u.thomas273@nexora.com
+emp_274,Employee,Fatima Hill,274,Band3,Full-Time,2023-09-17,f.hill274@nexora.com
+emp_275,Employee,Freya Edwards,275,Band3,Contractor,2020-02-08,f.edwards275@nexora.com
+emp_276,Employee,Ivan Brooks,276,Band2,Full-Time,2021-08-08,i.brooks276@nexora.com
+emp_277,Employee,Diana Parker,277,Band1,Full-Time,2019-12-02,d.parker277@nexora.com
+emp_278,Employee,Hassan Nelson,278,Band3,Contractor,2024-09-05,h.nelson278@nexora.com
+emp_279,Employee,Ahmed Wright,279,Band1,Full-Time,2024-07-04,a.wright279@nexora.com
+emp_280,Employee,Hassan Williams,280,Band2,Full-Time,2022-05-22,h.williams280@nexora.com
+emp_281,Employee,Julia Edwards,281,Band2,Contractor,2019-04-01,j.edwards281@nexora.com
+emp_282,Employee,Olivia Bell,282,Band3,Contractor,2019-10-24,o.bell282@nexora.com
+emp_283,Employee,Xena Wright,283,Band3,Full-Time,2019-07-31,x.wright283@nexora.com
+emp_284,Employee,Quentin Sanchez,284,Band2,Contractor,2019-07-31,q.sanchez284@nexora.com
+emp_285,Employee,Paul Morgan,285,Band3,Full-Time,2024-06-19,p.morgan285@nexora.com
+emp_286,Employee,Mohamed Johnson,286,Band1,Full-Time,2024-06-04,m.johnson286@nexora.com
+emp_287,Employee,Amir Roberts,287,Band3,Contractor,2018-03-18,a.roberts287@nexora.com
+emp_288,Employee,Khadija King,288,Band1,Intern,2020-03-25,k.king288@nexora.com
+emp_289,Employee,James Wright,289,Band2,Full-Time,2019-04-14,j.wright289@nexora.com
+emp_290,Employee,Tina White,290,Band3,Contractor,2018-03-21,t.white290@nexora.com
+emp_291,Employee,Umar Mitchell,291,Band1,Full-Time,2022-11-24,u.mitchell291@nexora.com
+emp_292,Employee,James Nguyen,292,Band3,Contractor,2024-06-25,j.nguyen292@nexora.com
+emp_293,Employee,Uma Garcia,293,Band1,Full-Time,2018-10-08,u.garcia293@nexora.com
+emp_294,Employee,Mohamed Richardson,294,Band3,Full-Time,2024-08-01,m.richardson294@nexora.com
+emp_295,Employee,Maria Harris,295,Band2,Full-Time,2018-12-20,m.harris295@nexora.com
+emp_296,Employee,Amir Wright,296,Band1,Part-Time,2018-06-26,a.wright296@nexora.com
+emp_297,Employee,Amir Sanchez,297,Band3,Contractor,2018-10-30,a.sanchez297@nexora.com
+emp_298,Employee,Samuel Sanchez,298,Band3,Full-Time,2018-10-23,s.sanchez298@nexora.com
+emp_299,Employee,Ibrahim Kelly,299,Band1,Full-Time,2025-09-19,i.kelly299@nexora.com
+emp_300,Employee,Jana Bell,300,Band1,Intern,2025-09-14,j.bell300@nexora.com
+emp_301,Employee,Jana Wright,301,Band2,Full-Time,2024-08-14,j.wright301@nexora.com
+emp_302,Employee,Mohamed Cooper,302,Band1,Full-Time,2020-12-23,m.cooper302@nexora.com
+emp_303,Employee,Wendy Wright,303,Band2,Contractor,2019-04-10,w.wright303@nexora.com
+emp_304,Employee,Rania Martinez,304,Band5,Full-Time,2020-10-08,r.martinez304@nexora.com
+emp_305,Employee,Quentin Nguyen,305,Band3,Full-Time,2022-06-05,q.nguyen305@nexora.com
+emp_306,Employee,Xena Reed,306,Band1,Full-Time,2020-11-26,x.reed306@nexora.com
+emp_307,Employee,Stefan Roberts,307,Band3,Contractor,2018-12-17,s.roberts307@nexora.com
+emp_308,Employee,Omar Lopez,308,Band3,Full-Time,2019-05-01,o.lopez308@nexora.com
+emp_309,Employee,Khadija Kelly,309,Band1,Full-Time,2023-05-08,k.kelly309@nexora.com
+emp_310,Employee,Ingrid Cook,310,Band1,Full-Time,2025-06-07,i.cook310@nexora.com
+emp_311,Employee,Liam Phillips,311,Band3,Full-Time,2020-04-15,l.phillips311@nexora.com
+emp_312,Employee,Nina Cook,312,Band1,Full-Time,2020-05-26,n.cook312@nexora.com
+emp_313,Employee,Liam Brown,313,Band1,Full-Time,2025-11-17,l.brown313@nexora.com
+emp_314,Employee,Wendy Jackson,314,Band2,Full-Time,2021-05-16,w.jackson314@nexora.com
+emp_315,Employee,Diana Sanders,315,Band3,Contractor,2022-11-27,d.sanders315@nexora.com
+emp_316,Employee,Yasmin Sanchez,316,Band1,Intern,2021-12-04,y.sanchez316@nexora.com
+emp_317,Employee,Stefan Morris,317,Band2,Contractor,2024-10-17,s.morris317@nexora.com
+emp_318,Employee,Ingrid Lopez,318,Band3,Part-Time,2026-01-31,i.lopez318@nexora.com
+emp_319,Employee,James Baker,319,Band2,Full-Time,2023-05-08,j.baker319@nexora.com
+emp_320,Employee,Jana Brooks,320,Band3,Part-Time,2025-10-06,j.brooks320@nexora.com
+emp_321,Employee,Patricia Jackson,321,Band1,Full-Time,2021-02-12,p.jackson321@nexora.com
+emp_322,Employee,Wendy Williams,322,Band1,Full-Time,2020-01-27,w.williams322@nexora.com
+emp_323,Employee,Hassan Young,323,Band1,Full-Time,2019-08-25,h.young323@nexora.com
+emp_324,Employee,Tina Brooks,324,Band2,Full-Time,2021-06-27,t.brooks324@nexora.com
+emp_325,Employee,Khadija Evans,325,Band2,Contractor,2019-11-22,k.evans325@nexora.com
+emp_326,Employee,Quinn Morris,326,Band1,Full-Time,2018-04-25,q.morris326@nexora.com
+emp_327,Employee,Tina Nguyen,327,Band5,Full-Time,2023-06-03,t.nguyen327@nexora.com
+emp_328,Employee,Bianca Carter,328,Band3,Contractor,2019-11-16,b.carter328@nexora.com
+emp_329,Employee,Patricia Martin,329,Band1,Full-Time,2021-01-29,p.martin329@nexora.com
+emp_330,Employee,Victor Cox,330,Band1,Full-Time,2021-11-23,v.cox330@nexora.com
+emp_331,Employee,Fatou Jones,331,Band2,Full-Time,2020-09-30,f.jones331@nexora.com
+emp_332,Employee,Ibrahim Smith,332,Band3,Full-Time,2024-10-22,i.smith332@nexora.com
+emp_333,Employee,Nathan Cook,333,Band3,Full-Time,2019-12-07,n.cook333@nexora.com
+emp_334,Employee,Dina Phillips,334,Band3,Full-Time,2023-03-11,d.phillips334@nexora.com
+emp_335,Employee,Dina Martinez,335,Band3,Contractor,2023-11-05,d.martinez335@nexora.com
+emp_336,Employee,Carlos Parker,336,Band2,Contractor,2023-03-14,c.parker336@nexora.com
+emp_337,Employee,Samuel Wilson,337,Band3,Full-Time,2021-11-12,s.wilson337@nexora.com
+emp_338,Employee,Khadija Sanchez,338,Band3,Contractor,2020-08-23,k.sanchez338@nexora.com
+emp_339,Employee,Victor Rivera,339,Band3,Full-Time,2019-12-30,v.rivera339@nexora.com
+emp_340,Employee,Quinn Brown,340,Band3,Full-Time,2018-08-18,q.brown340@nexora.com
+emp_341,Employee,Ivan Cox,341,Band2,Full-Time,2024-06-06,i.cox341@nexora.com
+emp_342,Employee,Xena Brown,342,Band2,Full-Time,2018-09-24,x.brown342@nexora.com
+emp_343,Employee,James Campbell,343,Band1,Full-Time,2020-03-09,j.campbell343@nexora.com
+emp_344,Employee,Bob Roberts,344,Band3,Contractor,2024-12-03,b.roberts344@nexora.com
+emp_345,Employee,Olivia Turner,345,Band2,Full-Time,2023-02-16,o.turner345@nexora.com
+emp_346,Employee,Zara Carter,346,Band5,Full-Time,2022-10-05,z.carter346@nexora.com
+emp_347,Employee,Zara Nguyen,347,Band3,Full-Time,2025-06-30,z.nguyen347@nexora.com
+emp_348,Employee,Fatima Perez,348,Band3,Contractor,2020-03-14,f.perez348@nexora.com
+emp_349,Employee,Helen Ward,349,Band2,Full-Time,2023-01-31,h.ward349@nexora.com
+emp_350,Employee,Helen Phillips,350,Band2,Full-Time,2024-02-11,h.phillips350@nexora.com
+emp_351,Employee,Maria Wilson,351,Band3,Contractor,2022-10-08,m.wilson351@nexora.com
+emp_352,Employee,Liam Cox,352,Band3,Contractor,2024-07-21,l.cox352@nexora.com
+emp_353,Employee,William Brown,353,Band2,Full-Time,2025-04-09,w.brown353@nexora.com
+emp_354,Employee,Nathan Hill,354,Band1,Intern,2025-10-16,n.hill354@nexora.com
+emp_355,Employee,Omar Scott,355,Band3,Full-Time,2021-04-13,o.scott355@nexora.com
+emp_356,Employee,Fatima Bailey,356,Band3,Full-Time,2025-04-19,f.bailey356@nexora.com
+emp_357,Employee,Yusuf Cook,357,Band2,Contractor,2022-07-28,y.cook357@nexora.com
+emp_358,Employee,Alice Allen,358,Band1,Full-Time,2024-12-23,a.allen358@nexora.com
+emp_359,Employee,Beatrice Nelson,359,Band1,Full-Time,2024-12-18,b.nelson359@nexora.com
+emp_360,Employee,Khadija Garcia,360,Band2,Full-Time,2021-10-21,k.garcia360@nexora.com
+emp_361,Employee,Yusuf Bailey,361,Band2,Full-Time,2019-09-17,y.bailey361@nexora.com
+emp_362,Employee,Kevin Lopez,362,Band1,Full-Time,2020-08-05,k.lopez362@nexora.com
+emp_363,Employee,Beatrice Thompson,363,Band1,Full-Time,2025-04-05,b.thompson363@nexora.com
+emp_364,Employee,Victor Stewart,364,Band3,Full-Time,2020-12-27,v.stewart364@nexora.com
+emp_365,Employee,Alice Hill,365,Band3,Full-Time,2022-06-06,a.hill365@nexora.com
+emp_366,Employee,Connor Richardson,366,Band2,Contractor,2022-07-12,c.richardson366@nexora.com
+emp_367,Employee,Umar Taylor,367,Band1,Intern,2022-11-09,u.taylor367@nexora.com
+emp_368,Employee,Umar Nguyen,368,Band1,Full-Time,2022-01-11,u.nguyen368@nexora.com
+emp_369,Employee,Maria Phillips,369,Band2,Full-Time,2020-12-12,m.phillips369@nexora.com
+emp_370,Employee,Ethan Richardson,370,Band3,Contractor,2024-07-24,e.richardson370@nexora.com
+emp_371,Employee,Rania Wilson,371,Band2,Part-Time,2025-04-18,r.wilson371@nexora.com
+emp_372,Employee,Maria Hill,372,Band1,Full-Time,2020-01-11,m.hill372@nexora.com
+emp_373,Employee,Rania Scott,373,Band2,Full-Time,2019-10-23,r.scott373@nexora.com
+emp_374,Employee,George Smith,374,Band2,Full-Time,2020-05-25,g.smith374@nexora.com
+emp_375,Employee,Cedric Torres,375,Band3,Full-Time,2022-04-04,c.torres375@nexora.com
+emp_376,Employee,Samuel Adams,376,Band2,Contractor,2024-07-14,s.adams376@nexora.com
+emp_377,Employee,Dina Rivera,377,Band3,Full-Time,2022-03-21,d.rivera377@nexora.com
+emp_378,Employee,Victor Reed,378,Band1,Full-Time,2022-10-04,v.reed378@nexora.com
+emp_379,Employee,Bob Howard,379,Band2,Full-Time,2018-07-13,b.howard379@nexora.com
+emp_380,Employee,Valeria Campbell,380,Band1,Full-Time,2023-07-11,v.campbell380@nexora.com
+emp_381,Employee,Laura Stewart,381,Band5,Full-Time,2025-10-18,l.stewart381@nexora.com
+emp_382,Employee,Yusuf Smith,382,Band1,Part-Time,2023-01-01,y.smith382@nexora.com
+emp_383,Employee,Bianca Ward,383,Band2,Full-Time,2022-06-20,b.ward383@nexora.com
+emp_384,Employee,Fatou Perez,384,Band3,Full-Time,2019-06-06,f.perez384@nexora.com
+emp_385,Employee,Maria Davis,385,Band1,Full-Time,2019-03-15,m.davis385@nexora.com
+emp_386,Employee,Stefan Lopez,386,Band3,Full-Time,2022-09-13,s.lopez386@nexora.com
+emp_387,Employee,Tariq Wilson,387,Band3,Full-Time,2019-06-09,t.wilson387@nexora.com
+emp_388,Employee,Beatrice Taylor,388,Band3,Full-Time,2019-11-26,b.taylor388@nexora.com
+emp_389,Employee,Ivan Taylor,389,Band2,Full-Time,2019-03-06,i.taylor389@nexora.com
+emp_390,Employee,Freya Lopez,390,Band2,Full-Time,2019-10-29,f.lopez390@nexora.com
+emp_391,Employee,Stefan Perez,391,Band1,Full-Time,2020-08-23,s.perez391@nexora.com
+emp_392,Employee,Ahmed Murphy,392,Band1,Full-Time,2023-01-16,a.murphy392@nexora.com
+emp_393,Employee,Kevin Bailey,393,Band2,Full-Time,2019-12-17,k.bailey393@nexora.com
+emp_394,Employee,Rachel Bailey,394,Band1,Full-Time,2020-01-17,r.bailey394@nexora.com
+emp_395,Employee,James Jackson,395,Band1,Intern,2018-10-17,j.jackson395@nexora.com
+emp_396,Employee,Cedric Martin,396,Band3,Full-Time,2021-03-14,c.martin396@nexora.com
+emp_397,Employee,Bianca Bell,397,Band3,Full-Time,2019-04-13,b.bell397@nexora.com
+emp_398,Employee,Ahmed Jackson,398,Band2,Contractor,2020-02-26,a.jackson398@nexora.com
+emp_399,Employee,Umar Cook,399,Band1,Full-Time,2020-05-09,u.cook399@nexora.com
+emp_400,Employee,Ibrahim Brown,400,Band1,Intern,2018-04-04,i.brown400@nexora.com
+emp_401,Employee,Uma King,401,Band3,Contractor,2024-07-12,u.king401@nexora.com
+emp_402,Employee,Yusuf Nelson,402,Band2,Full-Time,2021-08-09,y.nelson402@nexora.com
+emp_403,Employee,Dina Perez,403,Band2,Full-Time,2025-01-29,d.perez403@nexora.com
+emp_404,Employee,Ahmed Phillips,404,Band3,Full-Time,2023-10-01,a.phillips404@nexora.com
+emp_405,Employee,Liam Lopez,405,Band3,Full-Time,2022-04-09,l.lopez405@nexora.com
+emp_406,Employee,Paul Rivera,406,Band2,Contractor,2024-05-08,p.rivera406@nexora.com
+emp_407,Employee,Beatrice Thomas,407,Band1,Intern,2018-11-01,b.thomas407@nexora.com
+emp_408,Employee,Fatima Sanchez,408,Band2,Full-Time,2021-12-14,f.sanchez408@nexora.com
+emp_409,Employee,Paul Allen,409,Band1,Part-Time,2021-04-23,p.allen409@nexora.com
+emp_410,Employee,Nina Mitchell,410,Band3,Full-Time,2020-04-19,n.mitchell410@nexora.com
+emp_411,Employee,Tariq Wright,411,Band3,Contractor,2020-10-07,t.wright411@nexora.com
+emp_412,Employee,Bianca Martinez,412,Band3,Full-Time,2022-10-08,b.martinez412@nexora.com
+emp_413,Employee,Quinn Rogers,413,Band2,Full-Time,2019-04-13,q.rogers413@nexora.com
+emp_414,Employee,Victor Jackson,414,Band2,Full-Time,2021-07-04,v.jackson414@nexora.com
+emp_415,Employee,Fatima Watson,415,Band3,Full-Time,2019-07-07,f.watson415@nexora.com
+emp_416,Employee,Umar Rivera,416,Band2,Full-Time,2018-11-23,u.rivera416@nexora.com
+emp_417,Employee,Nathan Edwards,417,Band3,Part-Time,2018-05-19,n.edwards417@nexora.com
+emp_418,Employee,Nina Turner,418,Band2,Full-Time,2021-09-24,n.turner418@nexora.com
+emp_419,Employee,Freya Nguyen,419,Band1,Full-Time,2018-12-20,f.nguyen419@nexora.com
+emp_420,Employee,Xena Sanders,420,Band1,Full-Time,2019-10-01,x.sanders420@nexora.com
+dept_Engineering,Department,Engineering,,,,,
+dept_Product,Department,Product,,,,,
+dept_Finance,Department,Finance,,,,,
+dept_HR,Department,HR,,,,,
+dept_Sales,Department,Sales,,,,,
+dept_Marketing,Department,Marketing,,,,,
+dept_Legal,Department,Legal,,,,,
+dept_Operations,Department,Operations,,,,,
+dept_Security,Department,Security,,,,,
+dept_Data,Department,Data,,,,,
+dept_Executive,Department,Executive,,,,,
+role_Staff_Engineer,Role,Staff Engineer,,,,,
+role_CMO,Role,CMO,,,,,
+role_HR_Director,Role,HR Director,,,,,
+role_Senior_Data_Scientist,Role,Senior Data Scientist,,,,,
+role_Principal_Product_Manager,Role,Principal Product Manager,,,,,
+role_VP_Sales,Role,VP Sales,,,,,
+role_Senior_HR_Business_Partner,Role,Senior HR Business Partner,,,,,
+role_IT_Support_Specialist,Role,IT Support Specialist,,,,,
+role_CTO,Role,CTO,,,,,
+role_Financial_Analyst,Role,Financial Analyst,,,,,
+role_Project_Manager,Role,Project Manager,,,,,
+role_Business_Analyst,Role,Business Analyst,,,,,
+role_Senior_Marketing_Manager,Role,Senior Marketing Manager,,,,,
+role_Data_Scientist,Role,Data Scientist,,,,,
+role_Head_of_Data,Role,Head of Data,,,,,
+role_Security_Analyst,Role,Security Analyst,,,,,
+role_HR_Business_Partner,Role,HR Business Partner,,,,,
+role_HR_Manager,Role,HR Manager,,,,,
+role_UX_Designer,Role,UX Designer,,,,,
+role_Sales_Development_Rep,Role,Sales Development Rep,,,,,
+role_VP_Engineering,Role,VP Engineering,,,,,
+role_Operations_Analyst,Role,Operations Analyst,,,,,
+role_Chief_Data_Officer,Role,Chief Data Officer,,,,,
+role_Senior_Data_Analyst,Role,Senior Data Analyst,,,,,
+role_Associate_General_Counsel,Role,Associate General Counsel,,,,,
+role_VP_Marketing,Role,VP Marketing,,,,,
+role_Sales_Analyst,Role,Sales Analyst,,,,,
+role_SEO_Analyst,Role,SEO Analyst,,,,,
+role_Paralegal,Role,Paralegal,,,,,
+role_Account_Executive,Role,Account Executive,,,,,
+role_Data_Analyst,Role,Data Analyst,,,,,
+role_General_Counsel,Role,General Counsel,,,,,
+role_Senior_Financial_Analyst,Role,Senior Financial Analyst,,,,,
+role_COO,Role,COO,,,,,
+role_Recruiter,Role,Recruiter,,,,,
+role_Senior_Product_Manager,Role,Senior Product Manager,,,,,
+role_CFO,Role,CFO,,,,,
+role_HR_Coordinator,Role,HR Coordinator,,,,,
+role_QA_Engineer,Role,QA Engineer,,,,,
+role_DevOps_Engineer,Role,DevOps Engineer,,,,,
+role_CEO,Role,CEO,,,,,
+role_Senior_Operations_Manager,Role,Senior Operations Manager,,,,,
+role_Senior_Software_Engineer,Role,Senior Software Engineer,,,,,
+role_Senior_Security_Analyst,Role,Senior Security Analyst,,,,,
+role_CHRO,Role,CHRO,,,,,
+role_Data_Engineer,Role,Data Engineer,,,,,
+role_Software_Engineer,Role,Software Engineer,,,,,
+role_Content_Specialist,Role,Content Specialist,,,,,
+role_Security_Manager,Role,Security Manager,,,,,
+role_Controller,Role,Controller,,,,,
+role_L&D_Specialist,Role,L&D Specialist,,,,,
+role_Security_Engineer,Role,Security Engineer,,,,,
+role_CPO,Role,CPO,,,,,
+role_Senior_Account_Executive,Role,Senior Account Executive,,,,,
+role_Compliance_Officer,Role,Compliance Officer,,,,,
+role_Marketing_Coordinator,Role,Marketing Coordinator,,,,,
+role_CRO,Role,CRO,,,,,
+role_Senior_Legal_Counsel,Role,Senior Legal Counsel,,,,,
+role_Product_Analyst,Role,Product Analyst,,,,,
+role_Finance_Manager,Role,Finance Manager,,,,,
+role_Operations_Manager,Role,Operations Manager,,,,,
+role_Marketing_Manager,Role,Marketing Manager,,,,,
+role_Engineering_Manager,Role,Engineering Manager,,,,,
+role_CISO,Role,CISO,,,,,
+role_Legal_Counsel,Role,Legal Counsel,,,,,
+role_Finance_Director,Role,Finance Director,,,,,
+role_VP_Operations,Role,VP Operations,,,,,
+role_Product_Manager,Role,Product Manager,,,,,
+role_Accountant,Role,Accountant,,,,,
+role_Sales_Manager,Role,Sales Manager,,,,,
+loc_London,Location,London,,,,,
+loc_Paris,Location,Paris,,,,,
+loc_Madrid,Location,Madrid,,,,,
+loc_Berlin,Location,Berlin,,,,,
+loc_Amsterdam,Location,Amsterdam,,,,,
+loc_Dubai,Location,Dubai,,,,,
+loc_Tunis,Location,Tunis,,,,,
+loc_Casablanca,Location,Casablanca,,,,,
