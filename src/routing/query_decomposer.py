@@ -33,6 +33,10 @@ Reply with ONLY this JSON:
 }}"""
 
 def decompose_query(question: str) -> dict:
+    # Don't decompose simple person queries
+    simple_patterns = ["who is ", "qui est ", "wer ist ", "quien es ", "من هو", "谁是"]
+    if any(question.lower().startswith(p) for p in simple_patterns):
+        return {"is_complex": False, "sub_questions": [question]}
     """
     Decompose a complex question into simpler sub-questions.
     Returns dict with is_complex flag and list of sub-questions.

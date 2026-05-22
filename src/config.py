@@ -3,7 +3,7 @@
 # ══════════════════════════════════════════════════════
 
 # ── LLM ───────────────────────────────────────────────
-MODEL       = "qwen2.5:7b"
+MODEL = "qwen2.5-q4:7b"
 OLLAMA_URL  = "http://localhost:11434/api/generate"
 TIMEOUT     = 900
 NUM_PREDICT = 1024

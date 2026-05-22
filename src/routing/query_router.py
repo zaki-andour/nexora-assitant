@@ -90,41 +90,40 @@ def retrieve_text(question, top_k=TOP_K):
     return results
 
 # ── RETRIEVE STRUCTURED ───────────────────────────────
-def retrieve_structured(question):
+def retrieve_structured(question, rbac_clause=""):
     logger.info(f"SQL retrieval: {question[:50]}")
-    sql_prompt = f"""You are a SQL expert. Generate a PostgreSQL query for the employees table.
-The question may be in any language — translate it to English first to understand the intent.
-Common translations: "chef/patron/directeur general" = CEO, "responsable" = manager, "chef de" = head of department.
+    sql_prompt = f"""You are a PostgreSQL expert. Generate a query for the employees table.
+The question may be in any language — understand the intent first.
+Common translations: "chef/patron/directeur general" = CEO, "responsable" = manager.
 
-Table schema:
-  employees(employee_id, name, department, role, manager_id, salary_band,
-            location, contract_type, start_date, email, access_level)
+Table: employees(employee_id, name, department, role, manager_id, salary_band, location, contract_type, start_date, email, access_level)
 
-IMPORTANT — exact values in the database:
+Exact values:
   contract_type: 'Full-Time', 'Contractor', 'Part-Time', 'Intern'
-  department: 'Engineering', 'HR', 'Finance', 'Sales', 'Marketing',
-              'Operations', 'Product', 'Legal', 'Data', 'Security', 'Executive'
-  role examples: 'CEO', 'CTO', 'CFO', 'VP Engineering', 'HR Director'
-
-Question: {question}
+  department: 'Engineering', 'HR', 'Finance', 'Sales', 'Marketing', 'Operations', 'Product', 'Legal', 'Data', 'Security', 'Executive'
+  salary_band: 'Band1', 'Band2', 'Band3', 'Band4', 'Band5'
 
 Rules:
-- Return ONLY the SQL query, no explanation, no markdown
-- Use EXACT values listed above
-- For counts use COUNT(*)
-- Limit results to 20 rows maximum
-- If question asks about CEO or company head, use: WHERE role = 'CEO'
-- NEVER return raw IDs — always JOIN to resolve IDs to names
-- For manager queries: LEFT JOIN employees as manager ON e.manager_id = manager.employee_id
-- Example for "who is the manager of X?": 
-  SELECT m.name, m.role, m.email FROM employees e LEFT JOIN employees m ON e.manager_id = m.employee_id WHERE similarity(LOWER(e.name), LOWER('X')) > 0.35
-- ALWAYS use similarity() for name searches to handle typos:
-  WHERE similarity(LOWER(name), LOWER('search_term')) > 0.35 ORDER BY similarity(LOWER(name), LOWER('search_term')) DESC LIMIT 5
-- NEVER use WHERE name = 'exact_name' for person searches
-- Example for "who is Davies?":
-  SELECT name, role, email, department FROM employees WHERE similarity(LOWER(name), LOWER('davies')) > 0.35 ORDER BY similarity(LOWER(name), LOWER('davies')) DESC LIMIT 5
-- ALWAYS include the employee name (name column) in SELECT results so the correct name is visible
+- Return ONLY the SQL query — no explanation, no markdown, no comments
+- ONLY ONE table exists: employees — NEVER reference or JOIN any other table
+- department is already a column in employees — never join to get it
+- Use similarity() ONLY for person name searches — NEVER for contract_type, department, role, salary_band
+- Interns are identified by contract_type = 'Intern' — NEVER use role = 'Intern'
+- If question contains [Current user: X, employee_id: N], use WHERE employee_id = N for personal queries like 'my contract', 'my role', 'my department'
+- For filtering by category: use exact WHERE contract_type = 'X' or WHERE department = 'X'
+- For person name search: WHERE similarity(LOWER(name), LOWER('X')) > 0.35 ORDER BY similarity(LOWER(name), LOWER('X')) DESC
+- For manager lookup: LEFT JOIN employees m ON e.manager_id = m.employee_id
+- For year counts: SELECT EXTRACT(YEAR FROM start_date) AS year, COUNT(*) AS count FROM employees WHERE EXTRACT(YEAR FROM start_date) IN (X,Y) GROUP BY year ORDER BY year
+- For role queries like CEO/CTO/CFO: SELECT name, role, department, email FROM employees WHERE role = 'CEO' LIMIT 1
+- NEVER add manager_id conditions unless explicitly asked
+- access_level values are text: 'employee', 'hr_staff', 'hr_leadership' — ordered low to high
+- For highest access_level: WHERE access_level = 'hr_leadership'
+- NEVER use MAX() on access_level — it is text not numeric
+- For subqueries with MAX/MIN: SELECT name, col FROM employees WHERE col = (SELECT MAX(col) FROM employees) LIMIT 20
+- Select only relevant columns — max 4 columns, always include name unless COUNT or MAX/MIN query
+- Limit results to 20 rows
 
+Question: {question}
 
 SQL:"""
 
@@ -132,7 +131,7 @@ SQL:"""
         "model":   MODEL,
         "prompt":  sql_prompt,
         "stream":  False,
-        "options": {"temperature": 0.0, "num_predict": 200}
+        "options": {"temperature": 0.0, "num_predict": 400}
     }, timeout=TIMEOUT)
 
     sql = response.json()["response"].strip()
@@ -140,8 +139,18 @@ SQL:"""
     # Force include name column in SELECT if not present
     import re as _re
     select_cols = _re.search(r'SELECT\s+(.*?)\s+FROM', sql, _re.IGNORECASE)
-    if select_cols and 'name' not in select_cols.group(1).lower() and 'COUNT' not in sql.upper():
+    has_aggregate = any(kw in sql.upper() for kw in ['COUNT(', 'MAX(', 'MIN(', 'AVG(', 'SUM('])
+    if select_cols and 'name' not in select_cols.group(1).lower() and not has_aggregate:
         sql = sql.replace('SELECT ', 'SELECT name, ', 1)
+    # Fix subquery LIMIT issue
+    sql = re.sub(r'\)\s*LIMIT\s+\d+\s*\)', ')', sql, flags=re.IGNORECASE)
+
+    # Fix CEO/CTO queries that incorrectly add manager_id IS NULL
+    if 'manager_id IS NULL' in sql and any(r in sql.upper() for r in ["'CEO'", "'CTO'", "'CFO'"]):
+        sql = re.sub(r'AND\s+manager_id\s+IS\s+NULL', '', sql, flags=re.IGNORECASE)
+        sql = re.sub(r'manager_id\s+IS\s+NULL\s+AND', '', sql, flags=re.IGNORECASE)
+        sql = sql.strip()
+
     logger.info(f"Generated SQL: {sql[:100]}")
 
 
@@ -160,7 +169,7 @@ SQL:"""
         return {"sql": sql, "columns": [], "rows": [], "error": str(e)}
 
 # ── RETRIEVE GRAPH ────────────────────────────────────
-def retrieve_graph(question):
+def retrieve_graph(question, rbac_clause=""):
     logger.info(f"Graph SQL retrieval: {question[:50]}")
 
     # Use LLM to extract intent and entities from question in any language
@@ -234,7 +243,7 @@ Question: {question}"""
     return results
 
 # ── BUILD CONTEXT ─────────────────────────────────────
-def build_context(category, question):
+def build_context(category, question, rbac_clause=""):
     """Route to correct source and build context string for LLM."""
     context = ""
     sources = []
@@ -249,7 +258,7 @@ def build_context(category, question):
 
     elif category == "STRUCTURED":
         logger.info("Routing to PostgreSQL (employees table)")
-        result = retrieve_structured(question)
+        result = retrieve_structured(question, rbac_clause=rbac_clause)
         if result["error"]:
             context = f"SQL Error: {result['error']}"
             logger.error(f"SQL failed: {result['error']}")
@@ -265,7 +274,7 @@ def build_context(category, question):
 
     elif category == "GRAPH":
         logger.info("Routing to PostgreSQL (graph tables)")
-        rows = retrieve_graph(question)
+        rows = retrieve_graph(question, rbac_clause=rbac_clause)
         if rows:
             q = question.lower()
             if "who manages" in q or "head of" in q or "qui gère" in q or "qui dirige" in q or "qui manage" in q:
@@ -321,7 +330,7 @@ def build_context(category, question):
         for c in chunks:
             context += f"[Policy: {c['document_title']} — {c['section_title']}]\n{c['text']}\n\n"
             sources.append(f"{c['document_title']}")
-        result = retrieve_structured(question)
+        result = retrieve_structured(question, rbac_clause=rbac_clause)
         if not result["error"] and result["rows"]:
             context += "Employee data:\n"
             cols = result["columns"]

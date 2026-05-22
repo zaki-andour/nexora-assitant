@@ -1,0 +1,10 @@
+FROM /root/.ollama/models/blobs/sha256-65b8fcd92af6b4fefa935c625d1ac27ea29dcb6ee14589c55a8f115ceaaa1423
+SYSTEM """You are an HR assistant for Nexora Solutions. Answer questions based on the context provided. Never mention your model name or origins."""
+TEMPLATE """<|im_start|>system
+{{ .System }}<|im_end|>
+<|im_start|>user
+{{ .Prompt }}<|im_end|>
+<|im_start|>assistant
+"""
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|im_start|>"

@@ -1,0 +1,2284 @@
+[
+  {
+    "category": "TEXT",
+    "question": "What is the remote work policy?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Nexora Solutions supports flexible working arrangements that enable employees to balance professional effectiveness with personal wellbeing. The remote work policy defines the conditions under which remote work is permitted and includes security requirements, remote work entitlements, and guidelines for eligible roles and time spent on-site. Employees must ensure confidential information is not visible to third parties during remote work sessions and use company-issued devices for work purposes without explicit IT security approval. Eligible employees may work remotely for up to 3 days per week with manager approval and role suitability. A minimum of 2 days per week in the office is required for all permanent employees, unless a full-remote exception has been granted in writing by the employee's Head of Department. Roles designated as on-site are not eligible for remote work without explicit approval, and interns and employees within their first 3 months of employment are expected to work on-site full-time unless otherwise agreed.",
+        "latency": 9.6,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out what the remote work policy is based on the context provided. Let me read through each section carefully.\n\nFirst, under \"Flexible Working Policy,\" it mentions that employees can request changes to their hours, days of work, or location. That suggests flexibility in how they work, which aligns with a remote work policy.\n\nLooking at the \"Remote Work Policy — Purpose\" section, it says Nexora Solutions supports flexible arrangements to balance professional effectiveness and personal wellbeing. So the main goal is flexibility for both the employee and the company.\n\nNext, under \"Security Requirements,\" there are specific points about not using third-party devices, needing company-issued devices, and reporting security incidents immediately. This indicates that remote work isn't just about location but also about maintaining security standards, which makes sense because companies want to protect their sensitive information.\n\nThen, in the \"Remote Work Entitlement\" section, it outlines how remote work is structured. Employees can have up to 3 days per week working remotely with manager approval and role suitability. However, all permanent employees need at least 2 days on-site unless they've been granted a full-remote exception by their Head of Department. Roles designated as on-site can't be worked remotely without explicit approval. Interns and new employees are expected to work on-site full-time for the first 3 months unless otherwise agreed.\n\nPutting this all together, the remote work policy allows some flexibility but also sets clear boundaries and requirements to ensure security and effectiveness. It's not a free-for-all; there are specific rules about how much can be done remotely, what needs to be approved, and the minimum on-site presence required for permanent employees.\n</think>\n\nThe Remote Work Policy at Nexora Solutions supports flexible working arrangements, allowing employees to work remotely up to 3 days per week with manager approval. Permanent employees must have a minimum of 2 on-site days weekly unless granted a full-remote exception by their Head of Department. Roles designated as on-site cannot be remote without explicit approval. Interns and new employees are required to work on-site for the first 3 months unless otherwise agreed. Additionally, remote work must adhere to security requirements, such as using company-issued devices and reporting incidents promptly.",
+        "latency": 15.99,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "How many annual leave days do full-time employees get?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Full-time employees are entitled to 25 working days of paid annual leave per calendar year, in addition to public holidays observed in their country of employment.",
+        "latency": 3.13,
+        "sources": [
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, let's figure out how many annual leave days full-time employees at Nexora Solutions get. I'll start by looking through the context provided to find the relevant information.\n\nFirst, I see a section titled \"Annual Leave Policy — Entitlement\" which seems directly related to what the user is asking about. Within this section, there are several points that talk about different types of employees: full-time, part-time, contractors, and interns. Since the question is specifically about full-time employees, I'll focus on point 3.1.\n\nPoint 3.1 states that full-time employees are entitled to 25 working days of paid annual leave per calendar year. Additionally, they also get public holidays in their country as part of their entitlement. So, based on this information, the answer should be clear: full-time employees receive 25 annual leave days.\n\nI don't see any conflicting information or exceptions mentioned for full-time employees regarding their annual leave entitlements. Therefore, I can confidently state that full-time employees are entitled to 25 working days of paid annual leave each year.\n</think>\n\nFull-time employees at Nexora Solutions are entitled to **25 working days** of paid annual leave per calendar year.",
+        "latency": 8.67,
+        "sources": [
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "What are the sick leave entitlements for contractors?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Contractors are not entitled to company sick pay. Statutory provisions may apply depending on jurisdiction.",
+        "latency": 2.74,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out what the sick leave entitlements are for contractors at Nexora Solutions based on the provided context. Let me go through each part of the context step by step.\n\nFirst, looking at the Sick Leave and Absence Management Policy. It says that full-time permanent employees get up to 10 days of fully paid sick leave per calendar year. After that, they rely on statutory sick pay from local laws. Part-time employees receive their entitlements proportionally, which makes sense because part-time work is usually a fraction of full-time.\n\nThen it mentions contractors separately: \"Contractors are not entitled to company sick pay. Statutory provisions may apply depending on jurisdiction.\" So this directly addresses contractors by stating they don't get company-provided sick leave but might have to follow local statutory laws instead.\n\nLooking further, the Maternity and Paternity Leave Policy doesn't mention contractors at all, so I can ignore that for this question. The Annual Leave Policy talks about full-time, part-time employees, and interns, as well as how many days they get off each year. But again, nothing here is specific to contractors.\n\nThe Remote Work Policy mentions that it applies to all permanent employees, but contractors are subject to their individual contracts and require approval from their engagement manager. So no mention of sick leave there either.\n\nPutting this together, the key point about contractors comes straight from the Sick Leave section: they don't get company-provided sick pay, only statutory provisions based on where they're located.\n</think>\n\nThe sick leave entitlements for contractors at Nexora Solutions are as follows:\n\nContractors are not entitled to company-provided sick pay. Their entitlements depend on local statutory provisions in their respective jurisdictions.\n\nAnswer: Contractors receive no company-provided sick pay and must rely on statutory provisions based on their location.",
+        "latency": 12.08,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "What is the maternity leave policy?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Nexora Solutions offers a maternity leave policy that provides eligible employees with 26 weeks of paid maternity leave at full salary, followed by up to 26 additional weeks of unpaid leave if desired. To be eligible for paid maternity leave, an employee must have completed at least 12 months of continuous employment with Nexora Solutions prior to the expected week of childbirth. Employees with less than 12 months of service are entitled to statutory maternity pay according to local employment law. Maternity leave can begin up to 11 weeks before the expected due date, and employees must notify HR and their line manager at least 15 weeks before the expected due date. Additionally, employees adopting a child are eligible for adoption leave under the same provisions as maternity leave, with only one partner in a couple able to claim it. All leave requests must be submitted to HR with supporting documentation at least 8 weeks prior to the intended start of leave.",
+        "latency": 8.05,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out what the maternity leave policy is for Nexora Solutions based on the provided context. Let me go through each section step by step.\n\nFirst, under \"Maternity and Paternity Leave Policy — Purpose,\" it mentions that Nexora Solutions supports employees through significant life events like maternity and paternity leave. So, this policy outlines the entitlements and procedures for these leaves.\n\nLooking at \"Maternity and Paternity Leave Policy — Maternity Leave\" section:\n\n- Point 2.1 states that eligible employees get 26 weeks of paid maternity leave at full salary, plus up to 26 additional weeks of unpaid leave if desired.\n- Point 2.2 says that to qualify for paid leave, an employee must have worked at least 12 months with Nexora Solutions before the expected week of childbirth.\n- Point 2.3 mentions that employees with fewer than 12 months of service get statutory maternity pay as per local law.\n- Point 2.4 indicates that maternity leave can start up to 11 weeks before the due date, requiring a 15-week notice from HR and line manager.\n\nAdditionally, under \"Maternity and Paternity Leave Policy — Adoption Leave,\" point 4.1 states that adopting a child entitles an employee to the same maternity leave provisions. Point 4.2 clarifies that only one partner in a couple can claim adoption leave equivalent to maternity leave; the other is entitled to paternity leave.\n\nThe notification section (point 5) requires requests for leave to be submitted at least 8 weeks prior, with supporting documentation like forms or certificates.\n\nSo putting it all together, the maternity leave policy includes details on duration, eligibility criteria based on service months, types of leave (paid and unpaid), notice periods, and how adoption affects the leave entitlements. It also specifies the process for requesting leave.\n</think>\n\nThe maternity leave policy at Nexora Solutions allows eligible employees to receive 26 weeks of paid maternity leave at full salary. Employees must have completed a minimum of 12 months of continuous employment prior to the expected week of childbirth to qualify for paid leave. Those with fewer than 12 months of service are entitled to statutory maternity pay as per local employment law. Maternity leave can begin up to 11 weeks before the expected due date, requiring a 15-week notice from HR and line manager. Employees adopting a child receive the same maternity leave provisions, but only one partner in a couple can claim adoption leave equivalent to",
+        "latency": 16.82,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "What is the notice period for resignation?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The provided context does not specify the notice period for resignation. Therefore, I do not have this information.",
+        "latency": 3.1,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Redundancy Policy (redundancy_policy.txt)",
+          "Learning and Development Policy (learning_development_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out the answer to \"What is the notice period for resignation?\" based on the provided context.\n\nFirst, looking through the context, I see several sections related to policies: Redundancy Policy, Annual Leave Policy, Flexible Working Policy, Learning and Development Policy. However, none of these directly mention a notice period for resignation.\n\nThe only place where notice periods are mentioned is in the Annual Leave Policy (5.1-5.3). It talks about leave requests needing advance notice but doesn't address resignations specifically.\n\nSince there's no information provided about resignation notice periods, I can't provide an answer based on the given context.\n</think>\n\nThe context does not provide specific details about the notice period for resignation. Therefore, we cannot determine this from the given information.",
+        "latency": 7.21,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Redundancy Policy (redundancy_policy.txt)",
+          "Learning and Development Policy (learning_development_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Can I work from home every day?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Based on the remote work policy provided, you cannot work remotely every day as it allows for remote work only up to 3 days per week with manager approval and role suitability. Therefore, working from home every day would not be permitted under this policy.",
+        "latency": 3.68,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, let me figure out if an employee can work from home every day based on the provided context. \n\nFirst, looking at the Remote Work Policy section. It says that eligible employees may work remotely up to 3 days per week, but this needs manager approval and role suitability. So, it's not a blanket permission for all days; it's limited to 3 days a week.\n\nNext, there's a requirement that all permanent employees must have at least 2 days in the office each week unless they've been granted a full-remote exception by their Head of Department. This means even if an employee is eligible, they can't work entirely from home every day because part of their schedule has to be in the office.\n\nAdditionally, roles designated as on-site aren't eligible for remote work without explicit approval. So, certain positions can't switch entirely to remote work either.\n\nFor interns and those within their first 3 months, they're expected to work full-time on-site unless otherwise agreed upon. This again restricts remote work eligibility during this period.\n\nLooking at the Flexible Working Policy, it allows requests for changes in hours, days, or location, but these must be discussed with managers based on the Remote Work Policy and individual circumstances.\n\nConsidering all these points, an employee can't work from home every day because of the 2-day office requirement. Even if they're eligible otherwise, part-time remote work is limited to 3 days a week, not full-time.\n</think>\n\nBased on the provided context, you cannot work from home every day. According to the Remote Work Policy, employees are allowed up to 3 days per week of remote work, but all permanent employees must have at least 2 days in the office each week unless they've been granted a full-remote exception by their Head of Department. Roles designated as on-site cannot be worked remotely without explicit approval, and interns within their first 3 months are expected to work on-site full-time unless otherwise agreed upon. Therefore, working from home every day is not permitted under these policies.",
+        "latency": 14.49,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "How does the grievance procedure work?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The grievance procedure at Nexora Solutions requires all parties involved to maintain strict confidentiality. Breach of this confidentiality may result in disciplinary action. The details of how the procedure works are not provided in the context given.",
+        "latency": 3.41,
+        "sources": [
+          "Data Protection Policy (data_protection_policy.txt)",
+          "Grievance Procedure (grievance_procedure.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Equal Opportunities Policy (equal_opportunities_policy.txt)",
+          "Disciplinary Procedure (disciplinary_procedure.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out how the grievance procedure works at Nexora Solutions based on the provided context. Let me go through each relevant section step by step.\n\nFirst, looking at the Grievance Procedure — Confidentiality, it mentions that all parties involved must maintain strict confidentiality. Breach of this can lead to disciplinary action. So, confidentiality is a key aspect here.\n\nNext, under the Equal Opportunities Policy, Nexora Solutions ensures non-discrimination based on various protected characteristics. While this doesn't directly explain the grievance procedure, it shows the company's commitment to fair treatment, which might influence how grievances are handled.\n\nThe Disciplinary Procedure deals with addressing conduct or performance below expectations but doesn't provide details on grievances.\n\nLooking at the Data Protection Policy, it focuses on collecting and protecting personal data. Again, not directly related to handling grievances.\n\nSo, putting this together, the context provided mentions that in a grievance procedure, confidentiality is maintained, and disciplinary action may be taken if breached. However, there's no explicit step-by-step explanation of how the grievance procedure itself operates beyond these points.\n\nTherefore, based on the given information, I can only outline what's known about confidentiality but not the detailed workflow of handling grievances.\n</think>\n\nThe context provided outlines that in a grievance procedure, all parties must maintain strict confidentiality. Breach of this confidentiality may result in disciplinary action. However, there is no explicit step-by-step explanation of how the grievance procedure itself operates beyond these points.",
+        "latency": 11.29,
+        "sources": [
+          "Data Protection Policy (data_protection_policy.txt)",
+          "Grievance Procedure (grievance_procedure.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Equal Opportunities Policy (equal_opportunities_policy.txt)",
+          "Disciplinary Procedure (disciplinary_procedure.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "What are the travel reimbursement rules?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The travel reimbursement rules under the Expense Reimbursement Policy at Nexora Solutions include the following categories of expenses:\n- Flights\n- Trains\n- Taxis\n- Car hire\n- Accommodation for overnight business trips\nThese expenses must be incurred in the course of employees' duties and are subject to the limits set out in the policy.",
+        "latency": 4.99,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Expense Reimbursement Policy (expense_reimbursement_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out what the user is asking for. They asked about \"the travel reimbursement rules.\" Looking at the context provided, there's a section called \"Expense Reimbursement Policy — Eligible Expenses\" which lists various categories of expenses that are eligible for reimbursement.\n\nThe first point mentioned is business travel, including flights, trains, taxis, and car hire. Then it goes on to include accommodation for overnight business trips, client entertainment and business meals, conference and training fees, home office equipment (with IT approval), mobile phone and internet where needed.\n\nSo the user wants a clear list of what's covered under travel reimbursement. I should present this information in an organized way without adding any extra details that aren't in the context.\n</think>\n\nThe travel reimbursement rules allow employees to claim reimbursement for eligible expenses related to business travel, including flights, trains, taxis, car hire, accommodation for overnight trips, client entertainment and meals, conference and training fees, home office equipment (with IT approval), mobile phone and internet use where required by their role.",
+        "latency": 9.36,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Expense Reimbursement Policy (expense_reimbursement_policy.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "What is the disciplinary procedure?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The disciplinary procedure at Nexora Solutions involves several steps:\n\nStep 1 - Investigation: HR appoints an investigating manager to gather facts. The employee is notified of the investigation in writing.\n\nStep 2 - Disciplinary Hearing: The employee receives at least 5 working days' notice of the hearing and may be accompanied by a colleague or trade union representative.\n\nStep 3 - Outcome: Possible outcomes include a written warning (valid for 12 months), a final written warning (valid for 18 months), demotion, or dismissal.\n\nStep 4 - Appeal: The employee may appeal within 10 working days of receiving the outcome.",
+        "latency": 7.02,
+        "sources": [
+          "Onboarding Policy (onboarding_policy.txt)",
+          "Disciplinary Procedure (disciplinary_procedure.txt)",
+          "Redundancy Policy (redundancy_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out what the disciplinary procedure at Nexora Solutions entails. Let me go through the context provided step by step.\n\nFirst, there's a section titled \"Disciplinary Procedure — Purpose,\" which mentions that this procedure outlines how Nexora handles employee conduct or performance below expectations. So, it's about addressing issues where employees don't meet the required standards.\n\nNext, looking at \"Disciplinary Procedure — Formal Procedure,\" I see four steps outlined:\n\n1. **Investigation:** HR appoints an investigating manager to gather facts. The employee is notified in writing.\n2. **Disciplinary Hearing:** The employee gets at least 5 working days' notice and can be accompanied by a colleague or trade union representative.\n3. **Outcome:** Possible outcomes include a written warning (12 months), final written warning (18 months), demotion, or dismissal.\n4. **Appeal:** The employee can appeal within 10 working days of receiving the outcome.\n\nI should make sure I capture all these steps accurately without adding any extra information not present in the context. Also, since the user asked for an answer based solely on the provided context and to respond in English, I need to ensure that my response is clear and concise, only including the details mentioned.\n\nSo, putting it all together, the disciplinary procedure involves an investigation by HR, a hearing with specific notice requirements and possible attendees, determining one of four outcomes, and providing an appeal period. There's no mention of other policies like the code of conduct or onboarding affecting this procedure directly, so I won't include those unless they're part of the steps outlined.\n\nI think that covers everything needed for the answer based on the given context.\n</think>\n\nThe disciplinary procedure at Nexora Solutions involves four main steps:\n\n1. **Investigation:** HR appoints an investigating manager to gather facts about any conduct or performance issues, and the employee is notified in writing.\n\n2. **Disciplinary Hearing:** The employee receives at least 5 working days' notice of the hearing and may be accompanied by a colleague or trade union representative.\n\n3. **Outcome:** Possible outcomes include receiving a written warning (valid for 12 months), a final written warning (valid for 18 months), facing demotion, or being dismissed.\n\n4. **Appeal:** The employee has up to 10 working days from receiving the outcome to appeal the decision.\n\nThis procedure ensures a structured approach to addressing conduct issues and provides clear pathways for resolution and appeals.",
+        "latency": 19.56,
+        "sources": [
+          "Onboarding Policy (onboarding_policy.txt)",
+          "Disciplinary Procedure (disciplinary_procedure.txt)",
+          "Redundancy Policy (redundancy_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "What is the dress code policy?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The provided context does not include information about a specific dress code policy for Nexora Solutions. Therefore, I do not have this information.",
+        "latency": 3.37,
+        "sources": [
+          "Onboarding Policy (onboarding_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out what the dress code policy is for Nexora Solutions based on the context provided. Let me go through each part of the context carefully.\n\nFirst, looking at the Onboarding Policy — Purpose, it talks about the onboarding process but doesn't mention anything about dress codes. So that's probably not relevant here.\n\nNext, the Code of Conduct — Reporting Concerns mentions how employees should report concerns, including their HR Business Partner, but again, nothing about dress code there.\n\nMoving on to the Business Travel Policy — Booking section. It details how business travel is managed, including booking platforms and class preferences for flights. However, it doesn't touch on attire or dress codes either.\n\nThe Code of Conduct — Data And Confidentiality discusses handling sensitive information but remains silent on dress policies.\n\nLastly, the Code of Conduct — Our Values outlines Nexora's core values but doesn't specify any dress requirements.\n\nSince none of these sections mention a dress code policy explicitly, I can conclude that Nexora Solutions does not have an established dress code as per the provided context. Therefore, there isn't enough information to answer this question.\n</think>\n\nBased on the provided context, there is no explicit information about a dress code policy at Nexora Solutions. The available policies focus on onboarding, reporting concerns, business travel, data confidentiality, and company values but do not address attire or dress codes.",
+        "latency": 12.28,
+        "sources": [
+          "Onboarding Policy (onboarding_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Quelle est la politique de teletravail ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Nexora Solutions soutient des arrangements de travail flexibles qui permettent aux employés d'équilibrer l'efficacité professionnelle avec le bien-être personnel. Cette politique définit les conditions sous lesquelles le travail à distance est autorisé.\n\nLes employés peuvent travailler à distance pour jusqu'à 3 jours par semaine, sous réserve de l'accord du responsable direct et de la pertinence du poste. Un minimum de 2 jours par semaine au bureau est requis pour tous les employés permanents, sauf si une exception entièrement en télétravail a été accordée par écrit par le chef de département de l'employé.\n\nLes arrangements de travail à distance sont discutés avec le responsable direct avant de commencer. Les demandes de télétravail excédant 3 jours par semaine nécessitent un accord écrit du responsable direct et du chef de département. Les dispositions des arrangements de travail à distance sont revues annuellement ou lorsque survient une modification de poste.",
+        "latency": 10.87,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question \"Quelle est la politique de teletravail ?\" en français. D'après le context fourni, la politique du travail à distance chez Nexora Solutions inclut plusieurs aspects.\n\nTout d'abord, il y a la possibilité de modifier les horaires de travail, comme les heures de début et de fin, ou les heures compressées. Ensuite, les fonctionnalités de travail partiellement à domicile sont permises en fonction des besoins personnelles.\n\nIl est important de respecter les conditions de sécurité. Les informations confidentielles doivent rester protégées, ce qui signifie ne pas avoir accès à elles sur des dispositifs tiers. Tous les travaux doivent être effectués sur des appareils fournis par la company, et utiliser des devices personnels est interdit sans autorisation explicite de sécurité.\n\nLes employés peuvent faire un maximum de 3 jours de travail à domicile par semaine, avec l'autorisation du manager et en fonction du rôle. Les personnes qui travaillent au point fixe doivent avoir au moins deux jours sur site chaque semaine, sauf pour ceux qui ont déjà obtenu un accord explicite d'exclusion.\n\nEnfin, certains roles comme les infrastructures IT ou les opérations sont contruits pour être effectués sur site et ne peuvent être déplacés à domicile sans autorisation explicite. Les stagiaires et lesemployés dans leurs premiers 3 mois d' employment sont obligés de travailler sur site plein temps, sauf cas particulier.\n\nDonc, en résumé, la politique du travail à distance chez Nexora inclut la flexibilité des horaires, la possibilité de travailler partiellement à domicile avec des conditions de sécurité strictes et des contraintes pour les fonctions qui nécessitent un point fixe.\n</think>\n\nLa politique du travail à distance chez Nexora Solutions inclut plusieurs aspects clés. D'abord, les employés peuvent modifier leurs horaires de travail, y compris les heures de début et de fin, ou les heures compressées. Ensuite, ils ont la possibilité d'exécuter une fonctionnalité partiellement à domicile, en fonction des besoins personnelles.\n\nIl est important de respecter les conditions de sécurité. Les informations confidentielles doivent rester protégées, ce qui signifie ne pas avoir accès à elles sur des dispositifs tiers",
+        "latency": 19.67,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Combien de jours de conge annuel pour un employe a temps plein ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Un employé à temps plein est éligible à 25 jours de congé annuel par année civile, en plus des fêtes forfaitaires observées dans le pays d'emploi.",
+        "latency": 4.21,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question : \"Combien de jours de congé annuel pour un employé à temps plein ?\"\n\nD'après le context fourni, je regarde les informations sur le \"Annual Leave Policy — Entitlement\". \n\nIl y a plusieurs sections, mais la section 3.1 semble pertinent. Elle dit que les employs à temps plein sont entités à 25 jours de congé annuel payé, en plus des vacances Publiques observées dans leur ville d' employment.\n\nJe vérifie s'il n'y a pas d'autre information qui pourrait affecter cela, comme les services de maternité ou paternité, mais ce ne sont pas applicable à l' employé à temps plein. \n\nIl n'y a donc pas d'instruction suplémentaire pour cet employé particulièrement.\n\nAinsi, je peux conclure que l'employé à temps plein a 25 jours de congé annuel.\n</think>\n\nUn employé à temps plein est entité à 25 jours de congé annuel payé, en plus des vacances Publiques observées dans leur ville d' employment.",
+        "latency": 10.64,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Quelle est la politique de maladie ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "La politique de maladie de Nexora Solutions stipule que les employés à temps plein permanents sont éligibles à 10 jours d'absence maladie payée par an. Après ces 10 jours, le paiement est basé sur la législation locale. Les employés à temps partiel bénéficient de congés maladie en proportion de leur temps de travail. Les contractuels ne sont pas éligibles au congé maladie de l'entreprise ; cependant, les dispositions légales applicables peuvent s'appliquer selon le juridiction. Enfin, les stagiaires reçoivent 5 jours de congés maladie payés par an.",
+        "latency": 7.68,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question \"Quelle est la politique de maladie ?\" en français, en se basant uniquement sur le contexte fourni. \n\nD'après le contexte, il y a une section intitulée [Sick Leave and Absence Management Policy — Entitlement], qui décrit les droits aux pseudances pour les employés. Elle mentionne que les employs permanents à temps plein sont entités à 10 jours de pseudances completement payées par l'année. Les employs en temps partiel bénéficient des droits proportionnels. Les contractions ne sont pas entités à des prestations de pseudances de l'entreprise, et seules les provisions légales s'appliquent selon le juridiction.\n\nIl n'y a pas d'informations sur les dates de début de la période ou sur les exceptions pour les maladies graves ou les congés paternité/maternelle. Donc, je dois ne pas mentionner ces informations manquantes.\n\nJe vais donc structurer la réponse en suivant le format demandé : commencer par \"La politique de maladie de Nexora Solutions est décrite dans le document intitulé [Sick Leave and Absence Management Policy — Entitlement]\". Ensuite, détailler les droits à 10 jours completement payés pour les employs permanents, les droits proportionnels pour les partielles, et le fait que les contractions ne sont pas entités à des prestations de pseudances de l'entreprise. \n\nJe dois m'assurer qu'il n'y a pas d'invention de informations et que la réponse ne contient que ce qui est dans le contexte fourni.\n</think>\n\nLa politique de maladie de Nexora Solutions est décrite dans le document intitulé [Sick Leave and Absence Management Policy — Entitlement]. Les employés permament à temps plein sont entités à 10 jours de pseudances completement payées par an. Les employs en temps partiel bénéficient des droits aux pseudances proportionnels. Les contractions ne sont pas entités à des prestations de pseudances de l'entreprise, et seules les provisions légales s'appliquent selon le juridiction.",
+        "latency": 17.67,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Comment fonctionne la procedure de reclamation ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "La procédure de reclamations n'est pas décrite dans le contexte fourni. Le contexte mentionne des politiques sur les licenciements, les évaluations de performance, les horaires flexibles et les procédures disciplinaires, mais ne donne aucune information sur la procédure de reclamations.",
+        "latency": 4.62,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Redundancy Policy (redundancy_policy.txt)",
+          "Performance Review Policy (performance_review_policy.txt)",
+          "Equal Opportunities Policy (equal_opportunities_policy.txt)",
+          "Disciplinary Procedure (disciplinary_procedure.txt)"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question \"Comment fonctionne la procédure de réclamation ?\" en français. D'après le contexte fourni, il semble que l'équipe soit chargée de déterminer comment une réclamation est traitée. Cependant, le contexte ne mentionne pas explicitement les étapes ou les procédés spécifiques de cette procédure. Il y a des informations sur d'autres politiques comme la redondance, le suivi des performances, la demande de travail flexible et la procédure disciplinaire, mais aucun détails sur la réclamation. Donc, je dois indiquer que je n'ai pas l'information nécessaire pour répondre à cette question.\n</think>\n\nJe n'ai pas l'information nécessaire pour répondre à votre question.",
+        "latency": 7.44,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Redundancy Policy (redundancy_policy.txt)",
+          "Performance Review Policy (performance_review_policy.txt)",
+          "Equal Opportunities Policy (equal_opportunities_policy.txt)",
+          "Disciplinary Procedure (disciplinary_procedure.txt)"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Quelle est la politique de voyage d affaires ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "La politique de voyage d'affaires de Nexora Solutions vise à assurer que tous les voyages professionnels effectués par les employés sont réalisés de manière sûre, efficace et coûteuse. Tous les voyages doivent être réservés via la plateforme de gestion des voyages approuvée par l'entreprise. Les billets d'avion devraient être achetés au moins 14 jours avant le voyage si possible pour minimiser les coûts, et la classe économique est la norme pour tous les vols. La classe affaires est autorisée pour les vols supérieurs à 5 heures avec l'approbation du directeur financier.\n\nPour les voyages internationaux, une approbation préalable de la part du chef de département de l'employé est requise au moins 5 jours ouvrables avant le voyage. Les employés se rendant dans des régions considérées comme à haut risque par le ministère des Affaires étrangères ou son équivalent doivent obtenir une approbation expresse du PDG et doivent s'enregistrer auprès de l'HR.\n\nTous les voyages professionnels sont assurés automatiquement. Les employés doivent porter leurs détails d'assurance voyage lors de leur voyage.\n\nEnfin, les employés doivent suivre toutes les directives en matière de santé et de sécurité pertinentes pour leur destination de voyage. Tout maladie ou blessure pendant un voyage professionnel doit être signalée à l'HR et au gestionnaire de l'employé dans les 24 heures.",
+        "latency": 14.6,
+        "sources": [
+          "Business Travel Policy (travel_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question : \"Quelle est la politique de voyage d'affaires ?\" en français, en se basant uniquement sur le contexte fourni. \n\nD'abord, je regarde le contexte. Il y a une politique de voyage d'affaires qui gère tous les business travels de Nexora Solutions. Elle vise à ce que le voyage soit effectué de manière sécurisée, efficace et économique.\n\nEnsuite, je regarde les détails spécifiques. Tous les business travels doivent être booked via la plateforme de gestion du voyage approbée. Les vols sont bookingés au moins 14 jours en avance pour minimiser les coûts. Par ailleurs, l'class economy est la classe standard, mais la class business est permise pour des vols d'au moins 5 heures, avec l'autorisation du Directeur de Finance.\n\nIl y a aussi une partie sur le voyage international : il faut avoir l'autorisation préalable de l'Head of Department au moins cinq jours en avance. Les régions contrôlées comme des high-risk doivent être approvées par le CEO et documentées dans le travel insurance.\n\nEnfin, les normes de santé et sécurité sont à suivre pendant le voyage, et les maladies ou blessures doivent être signalées immédiatement à HR et au manager de l'employé.\n\nJe dois donc structurer mon réponse en mentionnant ces points principaux sans inventer d'informations manquantes. Je vais éviter de mélanger des langues et ne pas utiliser de markups, comme le markdown ou les astérisques.\n</think>\n\nLa politique de voyage d'affaires de Nexora Solutions régule toutes les expences de voyage effectuées en behalf du company. Elle inclut les normes suivantes :  \n\n1. **Gestion des booked** : Tous les business travels doivent être booked à l'aide de la plateforme de gestion du voyage approbée.  \n2. **Dates de booking** : Les vols sont bookingés au moins 14 jours en avance pour minimiser les coûts, sauf si leur durée excède 5 heures, dans ce cas, l'autorisation du Directeur de Finance est demandée.  \n3. **Classe du voyage** : La classe economy est la classe standard, tandis que la class",
+        "latency": 18.91,
+        "sources": [
+          "Business Travel Policy (travel_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "ما هي سياسة الإجازات؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "سياسة الإجازات في نكسورا سولюشنز تحدد الحق في الإجازات السنوية لجميع موظفي الشركة وprocedures لطلبها، الموافقة عليها، وتسجيلها. كما تشمل السياسة متطلبات الإشعار المسبق للإجازات وحق الشركة في رفض طلبات الإجازات عند الحاجة إلى ذلك出于你要求不使用markdown和不翻译部分内容，我将直接用阿拉伯语回答：\n\nسياسة الإجازات في نكسورا سولюشنز تحدد الحق في الإجازات السنوية لجميع موظفي الشركة وprocedures لطلبها، الموافقة عليها، وتسجيلها. كما تشمل السياسة متطلبات الإشعار المسبق للإجازات وحق الشركة في رفض طلبات الإجازات عند الحاجة إلى ذلك، خاصة خلال مراحل التسليم القصوى.",
+        "latency": 9.04,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "الإجابه على سؤال \"ما هي سياسة الإجازات؟\" هي أن there are different leave policies depending on the type of leave. There is an annual leave policy and a maternity/paternity leave policy. The annual leave policy requires submitting leave requests through the HR system at least 10 working days in advance for periods of 5 or more consecutive days, and 3 working days' notice for shorter periods. Leave must be approved by the direct line manager, and if the manager is absent, it's escalated to the department head. The company reserves the right to decline leave requests during peak periods.\n\nAdditionally, there is a maternity and paternity leave policy which provides support for employees during significant life events like births. Adoption leave is equivalent to maternity leave for one partner in a couple, while the other partner can take paternity leave as per their provisions.\n</think>\n\nإذا كنت تطلب إجراء سؤال عن سياسة الإجازات، فهناك سياسات مختلفة حسب نوع الإجازة. هناك سياسة إجازة عامية وسياسة إجازة الولادة والوفاة. سياسة الإجازة العامية تتطلب طلب الإجازة من خلال نظام HR على الأقل 10 أيام في التوقيت قبل المهل targeted leave. بينما تطلب الإجازات القصيرة من قبل 3 أيام في التوقيت. يجب تأكيد الإجازة على مدي Navigation manager، وعند غرابة المدير، يتم توجيه طلب الإجازة إلى العميد للقسم. كما أن الشركة تعطيل إمكانية طلب الإجازة في بعض الأوقات لتعزيز التوقيت الصناعي، خاصة خلال الفترات الحدودية.\n\nأما سياسة الولادة والوفاة，则 تقدم دعم لل الموطنين خلال الأحداث المهمة مثل الولادات والوفادات. يسمح ب 4 أيام إجازة من قبل مدي Navigation mother، و 2 أيام إجازة من قبل مدي Navigation father. كما أن الإجازة الإ生ية يمكن أن تكون مكافئة ل 4 أيام من إجازة الولادة، بينما الإجازة الوفائية يمكن أن تكون مكافئة ل 2 أيام من إ Yazd.\n\nإذا كنت تطلب مزيد من التفاصيل أو تحتاج إلى مساعدة في أي سؤال آخر، فلا",
+        "latency": 18.76,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "ما هي سياسة العمل عن بعد؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "سياسة العمل عن بعد في Nexora Solutions تدعم التوازن بين الكفاءة المهنية والصحة الشخصية للعاملين. هذه السياسة تحدد شروط عمل عن بعد مسموح بها وفقًا لشروط معينة:\n\n1. يمكن للموظفين العمل عن بعد لمدة أقصاها 3 أيام في الأسبوع، مع موافقة مديرهم وتناسب الوظيفة.\n2. يتطلب من جميع الموظفين الحضور إلى المكتب على الأقل يومين في الأسبوع، ما لم يتم منح استثناء كامل للعمل عن بعد كتابةً من رئيس قسمهم.\n3. لا يحق لمناصب محددة بأن تكون على الموقع العمل إلا بموافقة صريحة.\n\nتتضمن السياسة أيضًا متطلبات أمان وقواعد استخدام الموارد企业提供的上下文信息主要涉及Nexora Solutions公司的灵活工作政策和远程工作政策。根据这些信息，我将回答原始问题“什么是远程工作政策？”：\n\nالسياسة عن بعد في Nexora Solutions تهدف إلى دعم التوازن بين الكفاءة المهنية والصحة الشخصية للعاملين. هذه السياسة تحدد شروط العمل عن بعد المسموح بها وفقًا لشروط معينة، بما في ذلك متطلبات الأمن وأستخدام الموارد الشركةية.\n\n1. يمكن للموظفين العمل عن بعد لمدة أقصاها 3 أيام في الأسبوع، مع موافقة مديرهم وتناسب الوظيفة.\n2. يتطلب من جميع الموظفين الحضور إلى المكتب على الأقل يومين في الأسبوع، ما لم يتم منح استثناء كامل للعمل عن بعد كتابةً من رئيس قسمهم.\n3. لا يحق لمناصب محددة بأن تكون على الموقع العمل إلا بموافقة صريحة.\n\nتتضمن السياسة أيضًا متطلبات أمان وقواعد استخدام الموارد الشركةية.",
+        "latency": 16.71,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "الإجابة على سؤال \"ما هي سياسة العمل عن بعد؟\" هي أن Nexora Solutions تدعم أسرار العمل المرونة، والتي تعكس تنافسًا بين التأثير المهني والصحة الشخصية. تشمل سياسة العمل عن بعد شروط محددة مثل احترام مواعيد العمل، و好吧، واجهات العمل، وتحتية الموظفين للعمل عن بعد مع قرارات ل如何 تجنب استخدام الأجهزة الشخصية وHow to Handle Security Issues.\n</think>\n\nالإجابة على سؤال \"ما هي سياسة العمل عن بعد؟\" هي أن Nexora Solutions تدعم أسرار العمل المرونة، والتي تعكس تنافسًا بين التأثير المهني والصحة الشخصية. تشمل سياسة العمل عن بعد شروط محددة مثل احترام مواعيد العمل، و好吧، واجهات العمل، وتحتية الموظفين للعمل عن بعد مع قرارات لHow to Handle Security Issues.",
+        "latency": 9.62,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "ما هي سياسة الإجازة المرضية؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "سياسة الإجازة المرضية لشركة نكسورا سوليوشنز تتيح للعاملين الموظفين الدائمين الكاملين 10 أيام من الإجازة المرضية مدفوعة الأجر سنوياً. بعد 10 أيام، يتم تطبيق التعويضات القانونية حسب التشريع المحلي.而对于部分时间员工，病假权利按比例计算。合同工不符合公司提供的病假支付政策，但根据管辖区域的法律规定可能适用。实习生每年享有5天有薪病假。",
+        "latency": 6.51,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "الإجابه على سؤال \"ما هي سياسة الإجازة المرضية؟\" هي مشاركة المعلومات حول سياسات الإجازة المرضية التي تشمل entitlements و procedures للإجازات المرضية للم员ئين. يرجى مراجعة السياق الذي تم تقديمه وتحديد ما إذا كانت المعلومات المتاحة أو لا. إذا كانت المعلومات غير المتاحة، يرجى إخباري بـ \"لاavinghich information\" without using sources or inventing information.\n</think>\n\nالإجابه على سؤال \"ما هي سياسة الإجازة المرضية؟\" هي مشاركة المعلومات حول سياسات الإجازة المرضية التي تشمل entitlements و procedures للإجازات المرضية للم员ئين. يرجى مراجعة السياق الذي تم تقديمه وتحديد ما إذا كانت المعلومات المتاحة أو لا. إذا كانت المعلومات غير المتاحة، يرجى إخباري بـ \"لاavinghich information\" without using sources or inventing information.",
+        "latency": 9.47,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Cual es la politica de vacaciones?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "No tengo información sobre la política de vacaciones en el contexto proporcionado.",
+        "latency": 2.46,
+        "sources": [
+          "Code of Conduct (code_of_conduct.txt)",
+          "Learning and Development Policy (learning_development_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Onboarding Policy (onboarding_policy.txt)",
+          "IT Acceptable Use Policy (it_acceptable_use_policy.txt)"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bueno, el usuario está preguntando \"Cual es la politica de vacaciones?\" en español. Primero, reviso el contexto proporcionado para encontrar información relevante.\n\nEn el contexto, no hay directamente mencionada una política de vacaciones. Sin embargo, hay políticas relacionadas con el viaje negativo y el desarrollo profesional que podría ser confusa con la vacación.\n\nLa Política de Viaje del documento habla sobre cómo se bookean los viajes, la clase del vuelo, etc., pero no menciona nothing sobre ferias o vacaciones personales. Por lo tanto, no tengo suficiente información para responder concretamente sobre la política de vacaciones.\n\nAdemás, el usuario pide que solo use la información proporcionada y no invente nada. Como no hay datos específicos sobre las vacaciones en el contexto, la mejor respuesta es informarle que no tengo esta información disponible.\n</think>\n\nLo siento, pero no tengo información específica sobre la política de vacaciones en Nexora Solutions. Si necesitas más detalles, revisa los documentos disponibles o contacta al HR directamente.",
+        "latency": 9.62,
+        "sources": [
+          "Code of Conduct (code_of_conduct.txt)",
+          "Learning and Development Policy (learning_development_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Onboarding Policy (onboarding_policy.txt)",
+          "IT Acceptable Use Policy (it_acceptable_use_policy.txt)"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Cuantos dias de baja por enfermedad tienen los empleados?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Los empleados tienen derecho a hasta 10 días de baja médica pagada por año calendario.",
+        "latency": 3.31,
+        "sources": [
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bueno, el usuario está preguntando cuántos días de baja por enfermedad tienen los empleados en Nexora Solutions. Primero, reviso el contexto proporcionado.\n\nEn el pol closure de vacaciones de enfermedad, hay varias reglas:\n\n1.1 Los empleados permanentes full-time tienen hasta 10 días de pago total de enfermedad al año.\n\n1.2 Si pasan los 10 días, el pagan se hace de manera estatastral.\n\n1.3 Los contratarios y internos tienen una entalpía diferente: internos tienen 5 días, y los contractuales no tienen entalpía de enfermedad, solo lo statuto.\n\nAdemás, los empleados pueden acarrear hasta 5 días sin utlizar, que deben ser usados en el siguiente año, sino se pierden.\n\nAsí que, para responder, debo mencionar que los empleados full-time tienen 10 días, internos 5 y los contractuales no tienen entalpía.\n\nNo he information sobre si son full-time o no, así que debo abarcar todos los casos.\n\nFinalmente, resuelvo la duda del usuario de manera clara.\n</think>\n\nLos empleados full-time permanentes tienen hasta 10 días de baja por enfermedad con pago total al año. Los internos tienen 5 días de baja por enfermedad con pago total al año. Los contractuales no tienen entalpía de enfermedad, y solo pueden pagan estatales según la ley local.",
+        "latency": 13.21,
+        "sources": [
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Como funciona el procedimiento disciplinario?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "El procedimiento disciplinario de Nexora Solutions establece un proceso para abordar el comportamiento o desempeño de los empleados que no cumple con los estándares esperados. El proceso consta de cuatro pasos:\n\n1. Investigación: HR designa un gerente investigador para recopilar información. El empleado es notificado por escrito sobre la investigación.\n2. Reunión disciplinaria: El empleado recibe al menos 5 días hábiles de aviso antes del encuentro y puede ser acompañado por un colega o representante sindical.\n3. Resultados: Las posibles consecuencias incluyen advertencia escrita (válida 12 meses), advertencia final escrita (válida 18 meses), descenso en el cargo, o despido.\n4. Recurso: El empleado puede recurrir dentro de los 10 días hábiles después de recibir la decisión.\n\nEs importante mencionar que este procedimiento se basa en comportamientos o desempeño que no cumplen con los estándares esperados por la empresa.",
+        "latency": 10.87,
+        "sources": [
+          "Grievance Procedure (grievance_procedure.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)",
+          "Disciplinary Procedure (disciplinary_procedure.txt)"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bueno, el procedimiento disciplinario de Nexora Solutions se centra en manejar la conducta o el rendimiento de los empleados que caiga por debajo de los estándares esperados. Aquí están los pasos principales:\n\n1. **Incidencia**: Cuando un empleado actúa de manera inapropiada o incumpliendo con los requisitos, HR identifica la necesidad de investigar.\n\n2. **Investigación**: Un manager de human resources appointa a alguien para investigar. Este se encarga de recopilar hechos y notifica alpleado en escritos de la existence de la investigación.\n\n3. **Horno Disciplinar**: Después de la investigación, se organiza un horario formal. El empleado debe recibir al menos 5 días laborales de aviso y puede tener acompanyado a una compañera o representante de un sindicato.\n\n4. **Resultado**: Los posibles resultados son: aviso escrito válido por 12 meses, aviso final escrito válido por 18 meses, demisión u oldValueo.\n\n5. **Avaluación**: Si el resultado no es satisfactorio, el empleado puede presentar un aviso dentro de 10 días laborales.\n\nAdemás, hay políticas sobre el uso de recursos de la empresa y la confidentialidad, que son importantes para mantener la integridad del proceso.\n</think>\n\nEl procedimiento disciplinario de Nexora Solutions se centra en manejar la conducta o el rendimiento de los empleados que caiga por debajo de los estándares esperados. Aquí están los pasos principales:\n\n1. **Incidencia**: Cuando un empleado actúa de manera inapropiada o incumpliendo con los requisitos, HR identifica la necesidad de investigar.\n\n2. **Investigación**: Un manager de human resources appointa a alguien para investigar. Este se encarga de recopilar hechos y notifica alpleado en escritos de la existence de la investigación.\n\n3. **Horno Disciplinar**: Después de la investigación, se organiza un horario formal. El empleado debe recibir al menos 5 días laborales de aviso y puede tener acompanyado a una compañera o representante de un sindicato.\n\n4. **Resultado**: Los posibles resultados son: aviso escrito válido por 12 meses, aviso final esc",
+        "latency": 18.72,
+        "sources": [
+          "Grievance Procedure (grievance_procedure.txt)",
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Code of Conduct (code_of_conduct.txt)",
+          "Disciplinary Procedure (disciplinary_procedure.txt)"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Was ist die Fernarbeitsrichtlinie?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Die Fernarbeitsrichtlinie von Nexora Solutions definiert die Bedingungen unter denen Fernarbeit erlaubt ist und unterstützt flexible Arbeitsabläufe, die den persönlichen Wohlbefinden der Mitarbeiter mit beruflicher Effektivität ausbalancieren. Fernarbeiten sind nur mit schriftlicher Genehmigung des direkten Vorgesetzten sowie des Abteilungsleiters erlaubt, wenn die Anforderungen mehr als drei Tage pro Woche betreffen. Jährliche Überprüfungen der genehmigten Fernarbeit und reviews bei Veränderungen im Berufsbereich sind notwendig. Fernarbeiter müssen sicherstellen, dass vertrauliche Informationen während der Arbeit nicht an Dritte sichtbar sind, und dürfen nur mit expliziter IT-Sicherheitsgenehmigung personale Geräte für die Arbeit verwenden. Jede Sicherheitsincident muss unverzüglich dem IT-Sicherheitsteam gemeldet werden. Die Richtlinie gilt für alle permanenten Mitarbeiter; Kontrahenten können nur unter Einhaltung der Bedingungen ihrer Individuellen Verträge und mit expliziter Genehmigung des Engagementmanagers fernarbeiten.",
+        "latency": 11.32,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "German",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, ich muss die Frage \"Was ist die Fernarbeitsrichtlinie?\" beantworten. Dafür habe ich das gegebene Context über die Remote Work Policy von Nexora Solutions.\n\nZuerst schaue ich mir an, was die Remote Work Policy umfasst. Es gibt verschiedene Abschnitte, wie der Zweck, die Anforderungen an die Anmeldung, die Sicherheitsanforderungen und die Anwendungsbereiche.\n\nIch verstehe, dass die Fernarbeitsrichtlinie die Regeln für die remaneure Arbeiten definiert. Sie erlaubt flexibles Arbeiten, um den Berufseinstieg von Mitarbeitern zu verbessern und gleichzeitig ihre Privatsphäre zu schützen.\n\nEs gibt eine Anmeldungsvorgabe: Mitarbeiter müssen zuerst mit ihrem Manager über die remaneure Arbeitsanforderungen sprechen. Wenn es sich um Arbeitszeiten oder Dauerproben handelt, benötigen sie schriftliche Zustimmung von Manager und Head of Department. Die remaneure Arbeiten werden jährlich geprüft, falls sich die Rolle ändert.\n\nZusammenfassend formuliere ich, dass die Fernarbeitsrichtlinie die Vorgehensweise definiert, wie und wann Mitarbeiter remaneure Arbeiten tätigen können, wobei sie Sicherheitsanforderungen erfüllen müssen und Anmeldedetails im Head of Department vorhanden sein müssen.\n</think>\n\nDie Fernarbeitsrichtlinie definiert die Vorgehensweise für die Einrichtung von remaneuren Arbeiten an Nexora Solutions. Sie erlaubt, dass Mitarbeiter flexibel arbeiten können, um den Berufseinstieg zu verbessern und gleichzeitig ihre Privatsphäre zu schützen. Die Anmeldung muss vor der Durchführung von remaneuren Arbeiten erfolgen, often mit dem betreuerenden Manager, und für Arbeitszeiten oder Dauerproben benötigt man schriftliche Zustimmung von Manager und Head of Department. Die remaneure Arbeiten werden jährlich geprüft, falls sich die Rolle ändert.",
+        "latency": 17.08,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "German",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "Wie viele Urlaubstage haben Vollzeitbeschaftigte?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Vollzeitbeschäftigte sind berechtigt für 25 arbeitstags_paid annual leave pro kalenderjahr, zusätzlich zu den public holidays, die im Land der Beschäftigung feiern werden.",
+        "latency": 3.91,
+        "sources": [
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "German",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, ich muss die Frage \"Wie viele Urlaubstage haben Vollzeitbeschaftigte?\" beantworten. Dazu brauche ich die passende Regelung aus dem gegebenen Context.\n\nZuerst schaue ich mir den Abschnitt über den Annual Leave Policy an. Dort steht, dass Vollzeitbeschäftigte 25 Tage Urlaub pro Jahr entitleert sind, plus öffentliche Feiertage in ihrem Heimatland. Also, die Antwort ist 25 Tage.\n</think>\n\nVollzeitbeschäftigte erhalten 25 Tage Urlaub pro Jahr.",
+        "latency": 6.15,
+        "sources": [
+          "Sick Leave and Absence Management Policy (sick_leave_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "German",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "休假政策是什么？",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Nexora Solutions的休假政策规定了所有员工的年假权益以及请假、批准和记录的程序。所有请假请求必须至少提前10个工作日通过HR系统提交，如果请假天数为5天或以上，则需在直接上级经理的缺席时将请求递交给部门负责人审批。公司保留根据业务需求拒绝请假的权利，特别是在高峰期。",
+        "latency": 4.84,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "Chinese",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "好的，用户问的是“休假政策是什么？”。首先，我需要根据提供的上下文来回答这个问题。上下文中提到了几个相关的政策：年度休假政策、 maternity and paternity leave policy，以及 business travel policy。\n\n首先，关于年度休假政策，5.1规定了提交休假申请的时间限制，5.2说明了不同天数的休假需要的提前通知天数，5.3提到休假申请必须由直接上级批准，如果不在的话则向上级主管申请。此外，5.4还说明了在业务需求高峰期可能会拒绝休假请求。\n\n接下来是 maternity and paternity leave policy，4.1指出员工生育子女可以享受与 maternity相同的休假权利，而4.2规定只有配偶中的一个成员可以享受 maternity leave，另一位只能享受paternity leave。\n\n最后，关于商务旅行的政策，2.1要求所有商务旅行必须通过公司的审批平台进行 booking，2.2提到至少提前14天预订以节省费用，2.3规定经济舱是标准，如果选择商务舱且飞行时间超过5小时，则需得到财务总监的批准。\n\n综合以上信息，休假政策涵盖了年度休假、 maternity and paternity leave，以及商务旅行的相关规定。因此，我需要将这些内容整合成一个清晰的回答，确保涵盖所有关键点，并且按照用户的要求只使用中文，不添加额外信息或来源。\n</think>\n\n休假政策是公司为员工提供的一种福利，具体包括年度休假政策和 maternity及paternity leave政策。根据年度休假政策，员工需在需要休假前至少提前10个工作日提交申请，最长连续休假5天以上需提前10个工作日，1到4天的则需提前3个工作日。休假申请需由直接上级批准，若不在任，则向上级主管申请。此外，公司有权在业务高峰期拒绝休假请求。\n\n关于 maternity和paternity leave政策，员工生育子女可享受与 maternity相同的休假权利，配偶中的一方可享受 maternity leave，另一方则享受paternity leave。商务旅行方面，需通过公司审批平台预订，并至少提前14天安排商务旅行，经济舱为标准，商务舱需符合飞行时间要求并获得财务总监批准。",
+        "latency": 17.24,
+        "sources": [
+          "Maternity and Paternity Leave Policy (maternity_paternity_leave_policy.txt)",
+          "Business Travel Policy (travel_policy.txt)",
+          "Annual Leave Policy (annual_leave_policy.txt)"
+        ],
+        "language": "Chinese",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "TEXT",
+    "question": "远程办公政策是什么？",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Nexora Solutions支持灵活的工作安排，旨在帮助员工平衡专业效率和个人福祉。此政策定义了远程工作被允许的条件。员工在开始远程工作之前必须与直接上级经理讨论。每周远程工作的时长超过3天需要获得部门主管和总经理的书面批准。已获批准的远程工作安排每年会进行审查或当职位发生变化时也会进行审查。此外，员工必须确保在远程工作中不会让第三方看到机密信息，并且所有工作都必须使用公司提供的设备完成。如果在远程工作中发生任何安全事件，必须立即向IT安全团队报告。此政策适用于所有永久雇员，合同工可以在其个人合同条款允许的情况下并在获得项目管理者的明确批准后进行远程工作。",
+        "latency": 7.63,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "Chinese",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "好的，我需要回答用户关于“远程办公政策”的问题。首先，查看提供的上下文信息。\n\n在“远程工作政策”部分，第一条说明了支持灵活的工作安排，帮助员工平衡职业效果和个人福祉。接下来，详细列出了批准流程、安全要求和适用范围等。\n\n因此，可以总结出远程办公政策包括支持灵活工作、明确的申请流程、安全措施以及适用范围。\n</think>\n\n远端办公政策是Nexora Solutions支持灵活的工作安排，以平衡职业效果与个人福祉。员工需与直接上级讨论工作安排，并根据需要获得批准。远端工作每周不超过3天需双方面同意，年度审查或在职位变化时重新申请。此外，确保信息安全和使用公司设备进行工作是政策的一部分，禁止使用个人设备且发生安全问题需立即报告。该政策适用于所有永久员工， contractors则需符合合同条款并获得明确批准。",
+        "latency": 8.31,
+        "sources": [
+          "Flexible Working Policy (flexible_working_policy.txt)",
+          "Remote Work Policy (remote_work_policy.txt)"
+        ],
+        "language": "Chinese",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "How many contractors work in Finance?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I don't have this information.",
+        "latency": 4.15,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out how many contractors work in Finance at Nexora Solutions. The context provided mentions that there are 10 employees in total, but it doesn't specify the breakdown by department or role type like contractors versus full-time employees.\n\nSince the question is about contractors specifically in Finance, and the only data available is a total count of 10 without further details on their roles or departments, I can't determine how many are contractors in Finance alone. The information given doesn't provide enough detail to split these 10 employees into those who are contractors versus full-time.\n\nTherefore, based on the provided context, I don't have sufficient information to answer how many contractors work in Finance.\n</think>\n\nBased on the provided context, there is no specific information about the number of contractors working in Finance. The total count of 10 employees does not differentiate between contractors and full-time staff. Therefore, we cannot determine the exact number of contractors in the Finance department.\n\nAnswer: I don't have this information.",
+        "latency": 10.72,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Who is the CEO of Nexora?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I don't have this information. The context provided does not contain details about the CEO of Nexora Solutions.",
+        "latency": 6.3,
+        "sources": [],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out who the CEO of Nexora Solutions is based on the context provided. The context mentions an SQL error where a column e.company_name doesn't exist and there's a query looking for employees with a role similarity score above 0.35 compared to 'CEO'. \n\nHmm, first, the SQL error suggests that the database might not have the column 'company_name' or perhaps it's misspelled. But since the question is about the CEO of Nexora, I should focus on whether there's any information about the CEO in the context.\n\nLooking at the query line: ...similarity(LOWER(e.role), LOWER('CEO')) > 0.35 AND e.company_...\n\nThis seems to be a SQL query that's trying to find employees whose role is similar to 'CEO' with a score above 0.35. But I don't see any information about the CEO of Nexora Solutions here.\n\nWait, maybe the context isn't complete? The user provided an error and a query line but no additional details about Nexora or its leadership. Without more data on Nexora's structure or any named employees with roles similar to CEO, it's hard to determine who the CEO is.\n\nSo, based solely on this context, I don't have enough information to identify the CEO of Nexora Solutions.\n</think>\n\nBased on the provided context, there is no information available about the CEO of Nexora Solutions. The SQL error indicates that the database does not contain a column named 'company_name', and the query attempts to find employees with roles similar to 'CEO' but without further details, it's impossible to determine who the CEO is.\n\nAnswer: I don't have this information.",
+        "latency": 17.13,
+        "sources": [],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "What department does Julia Jackson work in?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Julia Jackson works in the Engineering department.",
+        "latency": 4.47,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, let's tackle this. The user is asking about the department where Julia Jackson works. I need to refer only to the context provided.\n\nLooking at the context data, there are five entries:\n\n1. Julia Jackson - Engineering\n2. Maria Jackson - HR\n3. James Jackson - Engineering\n4. Uma Jackson - HR\n5. Julia Johnson - Sales\n\nSo, focusing on Julia Jackson first, she's listed under the Engineering department. The other Julia Johnson is in Sales, but that's a different person.\n\nI should make sure to use the exact names from the database as instructed. There's no need to add any extra information or invent details not present.\n\nTherefore, the answer is straightforward: Julia Jackson works in the Engineering department.\n</think>\n\nThe department where Julia Jackson works is Engineering.",
+        "latency": 9.47,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "How many full-time employees are based in London?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I don't have this information. The provided context only mentions a count of 37 but doesn't specify the location or employment status.",
+        "latency": 5.18,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, let's tackle this query. The user is asking how many full-time employees are based in London at Nexora Solutions. I need to refer strictly to the context provided.\n\nLooking at the context given, there's a query result with one row and a count of 37. However, it doesn't specify where these employees are located or their status as full-time. The note emphasizes using exact names from the database, so I can't assume any additional information beyond what's stated.\n\nSince the data only mentions a total count without location details, I don't have enough information to determine how many of those 37 are in London. Therefore, based on the provided context, I can't provide a specific answer.\n</think>\n\nBased on the provided context, there is no information available about the number of full-time employees located in London at Nexora Solutions.",
+        "latency": 9.84,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "How many employees work in HR?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I do not have information about the number of employees working in HR at Nexora Solutions. The provided context is about an SQL error and does not contain any data related to the HR department or its staffing.",
+        "latency": 5.86,
+        "sources": [],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out how many employees work in the HR department at Nexora Solutions. The user provided a SQL error message that says \"column 'company_name' does not exist\" on line 4, which is part of an SQL query trying to retrieve employee information including their company name.\n\nFirst, I should understand what this error means. If the column 'company_name' doesn't exist in the database, it suggests that either the column was never created or perhaps there's a typo in the column name. But since the user mentioned that I can only answer based on the provided context, and the context is an SQL error message from line 4 of a query.\n\nNow, looking at the original question: \"How many employees work in HR?\" This is asking for the number of people in the HR department, not necessarily their company names. So even though there's an error related to 'company_name', it doesn't directly affect answering how many people are in HR unless that information was being retrieved from a database with this column.\n\nSince I don't have access to any databases or additional context about Nexora Solutions' employee data beyond the SQL error, I can't determine the number of employees in HR based solely on this error. The error indicates there's an issue with retrieving company names, but without knowing if that's necessary for answering the question, I should proceed carefully.\n\nI also need to remember not to invent any information or use sources outside the context provided. So unless there's another part of the context that mentions employee numbers in HR, which there isn't, I can't provide a specific answer. Therefore, based on the given information, I don't have enough data to determine how many employees work in HR at Nexora Solutions.\n\nI should also consider if the SQL error is relevant. If the query was trying to join employee data with company_name and failed because that column doesn't exist, maybe it's a separate issue from the number of HR employees. Without more context on how the database structure relates to department sizes, I can't link this error directly to the question.\n\nIn conclusion, given only the SQL error about 'company_name' not existing, there's no way to infer or calculate the number of HR employees. Therefore, I must state that I don't have enough information to answer the original question based on the provided context.\n</think>\n\nBased on the provided context, which includes an SQL error indicating that the column \"company_name\" does not exist, it is not possible to determine how many employees work in",
+        "latency": 21.38,
+        "sources": [],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Who is Paul Davis?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Paul Davis is the CTO at Nexora Solutions and his email is p.davis@nexora.com. He belongs to the Engineering department.",
+        "latency": 6.7,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out who Paul Davis is based on the context provided. The context mentions that there's a query result with one row containing information about Paul Davis. His role is listed as CTO, his email is p.davis@nexora.com, and he's in the Engineering department.\n\nSo, from this data, I can directly state that Paul Davis is the CTO of Nexora Solutions. There's no additional information needed since the context provides all necessary details without any ambiguity.\n</think>\n\nPaul Davis is the CTO at Nexora Solutions.",
+        "latency": 9.31,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "How many interns does Nexora have?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I do not have information on the number of interns at Nexora Solutions.",
+        "latency": 5.2,
+        "sources": [],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, so I need to figure out how many interns Nexora has based on the information provided. Let me start by looking at what's given.\n\nThe context mentions an SQL error: \"column 'company_name' does not exist\" and a line in the query that references this column with 'Nexora Solutions'. Hmm, that might be relevant if we're trying to retrieve employee data, but it doesn't directly tell us about interns specifically.\n\nI don't see any direct information about the number of interns in the context. There's no mention of Nexora hiring internships or providing details on how many they have. The SQL error could mean a few things: maybe the database schema is missing the 'company_name' column, which might store employee names, including interns. Or perhaps it's an issue with the query itself.\n\nSince there's no data about Nexora's intern numbers in the provided context, I can't provide a specific answer. Without additional information like a press release, job posting, or internal documents mentioning the number of interns, I don't have enough details to determine how many Nexora has.\n</think>\n\nBased on the provided context, there is no information available about the number of interns at Nexora Solutions. The SQL error indicates that the 'company_name' column does not exist in the database, which may suggest issues with data retrieval or database structure but doesn't provide specific details about Nexora's intern count.\n\nAnswer: I don't have this information.",
+        "latency": 14.55,
+        "sources": [],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "How many part-time employees are there?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I don't have this information. The provided context does not specify the number of part-time employees.",
+        "latency": 4.04,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out how many part-time employees Nexora Solutions has. The user provided some context where they mentioned that the query results showed a \"part_time_employees_count\" of 15. Hmm, let me break this down.\n\nFirst, I should understand what each part means. The term \"part_time_employees_count\" likely refers to a specific field in Nexora's database that tracks the number of employees working on a part-time basis. Since the query results gave me exactly 15 for this count, it seems straightforward.\n\nI also need to make sure I'm using the exact names from the database as instructed. The user mentioned not to invent any information and only use what's provided. So, there's no ambiguity here; the number is clearly stated in the context.\n\nTherefore, putting it all together, Nexora Solutions has 15 part-time employees based on the data provided.\n</think>\n\nNexora Solutions has 15 part-time employees, as indicated by the query results.",
+        "latency": 10.69,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "List all employees in Engineering department",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Here are all the employees in the Engineering department:\n\n- Fatima Nguyen (VP Engineering), email: f.nguyen@nexora.com\n- Julia Jackson (Engineering Manager), email: j.jackson@nexora.com\n- Ethan Phillips (Engineering Manager), email: e.phillips59@nexora.com\n- Fatima Morgan (Senior Software Engineer), email: f.morgan40@nexora.com\n- Dina Sanchez (QA Engineer), email: d.sanchez181@nexora.com\n- Rachel Nelson (QA Engineer), email: r.nelson197@nexora.com\n- Rachel Davis (QA Engineer), email: r.davis245@nexora.com",
+        "latency": 11.76,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to help the user by listing all employees in the Engineering department at Nexora Solutions. The user provided a context with 20 rows of data, each containing an employee's name, role, email, and department.\n\nFirst, I'll go through each row one by one. For each entry, I'll check if the department is Engineering. If it is, I'll note down the full name as listed in the database. It's important to use the exact names provided without making any changes or additions since the user emphasized not to invent information.\n\nStarting with Paul Davis, his department is Engineering, so he should be included. Next, Julia Jackson also belongs to Engineering. Fatima Nguyen and Ethan Phillips are roles within Engineering as well. Moving on, Fatima Morgan is a Senior Software Engineer but her role might still fall under Engineering depending on the structure, but since she's listed in Engineering, I'll include her.\n\nAlice Turner, Fatima Harris, Victor Lopez, Ibrahim Collins, Dina Sanchez, Rania Davis, Rachel Nelson, and Connor Sanchez are all explicitly stated as being in the Engineering department. Each of their full names needs to be listed accurately.\n\nI should make sure not to miss any entries. Let me count them: that's 12 employees in total from the provided data who are part of the Engineering team. I'll list each one, ensuring there are no duplicates and all information is correct as per the context given.\n\nFinally, I'll present the list clearly, making it easy for the user to see all the employees in the Engineering department without any additional information or formatting.\n</think>\n\nHere is a list of all employees in the Engineering department:\n\n1. Paul Davis\n2. Julia Jackson\n3. Fatima Nguyen\n4. Ethan Phillips\n5. Fatima Morgan\n6. Alice Turner\n7. Fatima Harris\n8. Victor Lopez\n9. Ibrahim Collins\n10. Dina Sanchez\n11. Rania Davis\n12. Rachel Nelson\n13. Connor Sanchez",
+        "latency": 19.99,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "How many employees work in Berlin?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The information provided does not include details about the number of employees working in Berlin. The error message indicates an issue with the SQL query related to the column \"e.location\" but does not provide the required data to answer the original question.",
+        "latency": 6.41,
+        "sources": [],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, let's try to figure out how many employees work in Berlin based on the information provided. \n\nFirst, I see that there's an SQL error mentioned: \"column 'e.location' must appear in the GROUP BY clause or be used in an aggregate function.\" This suggests that when someone tried to use the location column in their query, it wasn't properly handled.\n\nLooking at line 4 of the code, there's an ORDER BY statement using similarity(LOWER(e.location), LOWER('Berlin')). The error is pointing to this part. It seems like they're trying to order employees by how similar their location is to Berlin.\n\nBut wait, if 'e.location' has a column error in GROUP BY or aggregate functions, maybe the query was attempting to group by that location but didn't do it correctly. Without proper grouping, it's hard to get an accurate count for each location, including Berlin.\n\nSo, even though the code is trying to order by similarity to Berlin, without the correct handling of 'e.location', we can't accurately determine how many employees are in Berlin specifically. The error indicates that the query might be flawed, preventing us from retrieving the exact number of employees in Berlin.\n\nTherefore, based on this context alone, I don't have enough information to provide an accurate count of employees working in Berlin.\n</think>\n\nBased on the provided context, there is no direct way to determine how many employees work in Berlin. The SQL error indicates that the column 'e.location' may not be properly handled in the query, making it difficult to retrieve the exact number of employees in Berlin.\n\nAnswer: I don't have this information.",
+        "latency": 15.62,
+        "sources": [],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Combien d employes travaillent a Londres ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Je n'ai pas cette information dans le contexte fourni. Le message d'erreur indique un problème avec la clause \"location\" mais ne fournit pas de données sur le nombre d'employés à Londres.",
+        "latency": 6.36,
+        "sources": [],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, let me try to figure this out. The user is asking how many employees work in London at Nexora Solutions. I remember that SQL errors can sometimes give clues about missing information or incorrect queries.\n\nLooking at the context provided, there's an error message: \"column 'e.location' must appear in the GROUP BY clause or be used in an aggregate function.\" This suggests that the query is trying to use a column called 'e.location' but it's not properly referenced. Maybe the location data isn't available for all employees.\n\nThe line mentioned is using `similarity(LOWER(e.location), LOWER('London'))` which implies they're looking up locations similar to London, probably to filter or group by location. But since there's an error with 'e.location', it means that column might not exist in their database or isn't properly set up.\n\nIf the data doesn't include a 'location' field for employees, then we can't accurately determine how many are working in London. Without access to the employee data, I don't have this information.\n</think>\n\nJe ne peux pas répondre à votre question parce que je n'ai pas accès aux données de l'entreprise Nexora Solutions. Pour obtenir la réponse, veuillez fournir les informations nécessaires.",
+        "latency": 13.39,
+        "sources": [],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Qui est le PDG de Nexora ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Je ne dispose pas de cette information dans le contexte fourni. Le message d'erreur indique un problème avec la colonne company_name et non l'identité du PDG de Nexora Solutions.",
+        "latency": 7.37,
+        "sources": [],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question : \"Qui est le PDG de Nexora ?\" en français.\n\nD'après le context fourni, il y a une erreur SQL concernant une colonne qui n'existe pas : \"column e.company_name does not exist\". Cela suggère que lors de l'exécution d'une requête SQL, la colonne \"company_name\" n'est pas trouvée dans la base de données.\n\nEnsuite, la ligne 4 de la requête contient une comparaison avec \"LOWER(e.role)\" et \"LOWER('CEO')\", ce qui indique que le rôle en question est probablement un CEO. Cependant, cela ne répond pas directement à la question posée concernant le PDG.\n\nComme je n'ai pas d'informations sur le PDG de Nexora dans le context fourni, je dois conclure qu'il n'y a pas d'information disponible pour répondre à cette question.\n</think>\n\nJe n'ai pas d'informations suffisantes pour identifier le PDG de Nexora dans le contexte fourni. Il est donc impossible de fournir une réponse précise.",
+        "latency": 13.8,
+        "sources": [],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Combien de contractuels dans le departement Finance ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Je n'ai pas cette information. Le contexte ne fournit aucune donnée sur le nombre de contractuels dans le département Finance.",
+        "latency": 6.19,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question : \"Combien de contractuels dans le département Finance ?\" en français. D'après le context fourni, il y a 0 résultats de requête. Donc, je ne peux pas obtenir cette information. Je dois donc indiquer que je n'ai pas l'information nécessaire.\n</think>\n\nJe n'ai pas l'information nécessaire pour répondre à votre question.",
+        "latency": 7.95,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Dans quel departement travaille Julia Jackson ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Julia Jackson travaille dans le département de l'ingénierie.",
+        "latency": 4.82,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question de l'utilisateur en français. L'utilisateur est demandant dans quel département travaille Julia Jackson. D'après le contexte fourni, Julia Jackson se trouve dans le département d'Engineering.\n\nJe vais donc formater ma réponse en français, en utilisant les noms exacts comme dans le contexte. Je dois m'assurer qu'il n'y a pas d'invention de données et que je ne mélange pas avec d'autres informations non fournies.\n\nAinsi, la réponse sera : \"Julia Jackson travaille dans le département d'Engineering.\"\n</think>\n\nJulia Jackson travaille dans le département d'Engineering.",
+        "latency": 8.72,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "كم عدد المتعاقدين في قسم المالية؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "ليس لدي هذه المعلومات، لا يوجد اسم لقسم مالي أو عدد للمتعاقدين في السياق المقدم.",
+        "latency": 5.27,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "السؤال الذي طرحته هو \"كم عدد المتعاقدين في قسم الفinancial؟\" وفقًا للبيانات التي تم تقديمها، هناك 10 م telescope في قسم الفinancial. لذا، الإجابة هي 10 م telescope.\n</think>\n\nالإجابة هي \\boxed{10}.",
+        "latency": 6.67,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "من هو الرئيس التنفيذي لشركة نيكسورا؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "ليس لدي معلومات حول اسم الرئيس التنفيذي لشركة نيكسورا في السياق المقدم.",
+        "latency": 6.4,
+        "sources": [],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "الإجابة هي: \"هناك معلومات في السياق التي تشير إلى أن الشركة نيو سورا لا تزال معروفة، ولكن ليس هناك معلومات حول назначенthead الم Dir أو أي أسماء ل武功exo. إذا كنت تبحث عن معلومات أكثر تحديدًا，则请联系 our team for more information.\"\nBut I need to make sure that the answer is in Arabic and only based on the context provided.\n\nWait, but looking at the context again, it's an SQL error about a missing column 'company_name'. That doesn't relate to the name of the CEO or the company. So, perhaps there's no info available here about who the CEO is.\n\nSo maybe I should say that we don't have this information based on the provided context.\n</think>\n\nهناك معلومات في السياق التي تشير إلى أن الشركة نيو سورا لا تزال معروفة، ولكن ليس هناك معلومات حول назначенthead الم Dir أو أي أسماء ل武功exo. إذا كنت تبحث عن معلومات أكثر تحديدًا，则请联系 our team for more information.\n\nBut since the context doesn't provide specific information about the CEO's name, I should respond accordingly:\n\nهناك معلومات في السياق التي تشير إلى أن الشركة نيو سورا لا تزال معروفة، ولكن ليس هناك معلومات حول назначенthead الم Dir أو أي أسماء ل武功exo. إذا كنت تبحث عن معلومات أكثر تحديدًا，则请联系 our team for more information.\n\nBut since the context doesn't provide specific information about the CEO's name, I should respond accordingly:\n\nهناك معلومات في السياق التي تشير إلى أن الشركة نيو سورا لا تزال معروفة، ولكن ليس هناك معلومات حول назначенthead الم Dir أو أي أسماء ل武功exo. إذا كنت تبحث عن معلومات أكثر تحديدًا，则请联系 our team for more information.\n\nBut since the context doesn't provide specific information about the CEO's name, I should respond accordingly:\n\nهناك معلومات في السياق التي تشير إلى أن الشركة نيو سورا لا تزال معروفة، ولكن ليس هناك معلومات حول назначенthead الم Dir أو أي أسماء ل武功exo. إذا كنت تبحث عن معلومات أكثر تحديدًا，则请联系 our team for more information.\n\nBut since the context doesn't provide specific information about the CEO's name, I should respond accordingly:\n\nهناك معلومات في السياق",
+        "latency": 22.73,
+        "sources": [],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "كم عدد الموظفين في قسم الهندسة؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "لا أملك هذه المعلومات من السياق المقدم.",
+        "latency": 5.33,
+        "sources": [],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "السؤال问我关于Nexora Solutions的HR政策或员工信息。我需要根据提供的上下文回答问题。\n\n在上下文中，我看到一条SQL错误消息指出“e.department”必须出现在GROUP BY子句中或用于聚合函数。这可能意味着数据库表结构的问题，但与员工数量无关。\n\n此外，用户询问的是“كم عدد الموظفين في قسم الهندسة？”即有多少名员工在工程部门工作？根据上下文信息，我无法直接找到关于工程部门员工数量的具体数据。\n\n因此，由于缺乏足够的上下文信息来确定工程部门的员工数量，我无法提供准确的答案。\n</think>\n\nالسؤال问我关于Nexora Solutions的HR政策或员工信息。我需要根据提供的上下文回答问题。\n\n在上下文中，我看到一条SQL错误消息指出“e.department”必须出现在GROUP BY子句中或用于聚合函数。这可能意味着数据库表结构的问题，但与员工数量无关。\n\n此外，用户询问的是“كم عدد الموظفين في قسم الهندسة？”即有多少名员工在工程部门工作？根据上下文信息，我无法直接找到关于工程部门员工数量的具体数据。\n\n因此，由于缺乏足够的上下文信息来确定工程部门的员工数量，我无法提供准确的答案。",
+        "latency": 13.46,
+        "sources": [],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Cuantos contratistas trabajan en Finanzas?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "No tengo esta información.",
+        "latency": 5.08,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bueno, el usuario está preguntando por cuántos contratistas trabajan en la sección de Finanzas en Nexora Solutions. Sin embargo, el contexto proporcionado no contiene información específica sobre el número de empleados o contratistas en cada área del negocio.\n\nEl sistema no tiene accesso a datos individuales o al人事信息, por lo que no puedo proporcionar una respuesta precisa basada en los datos proporcionados.\n\nPor lo tanto, la mejor opción es informarle que, según el contexto disponible, no tengo suficiente información para responder a su pregunta.\n</think>\n\nLo siento, pero no tengo suficiente información para responder a tu pregunta. El sistema no tiene acceso a datos individuales o a la información人事.",
+        "latency": 9.87,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Quien es el CEO de Nexora?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "No tengo esta información.",
+        "latency": 5.56,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bueno, el usuario está preguntando quién es el CEO de Nexora. Primero, necesito revisar el contexto proporcionado para encontrar esta información. El contexto dice que hay 0 resultados, lo que sugiere que no hay datos disponibles sobre el CEO de Nexora en este momento.\n\nComo HR assistant, no tengo acceso a información privada o confidencial como el cargo de una persona específica. Siempre debo responder basándome exclusivamente en los datos proporcionados y no inventar información. En este caso, ya que no hay suficiente información en el contexto, la mejor respuesta es informar al usuario de que no tengo esta información disponible.\n\nAdemás, debo recordar instrucciones importantes: responder solo en español, sin usarsignos de puntuación adicionales como asterisks o guiones, y no mencionar DeepSeek ni mi origen. También debo evitar mencionar fuentes y no inventar datos.\n\nPor lo tanto, la respuesta correcta es informar al usuario que no tengo la información necesaria sobre el CEO de Nexora.\n</think>\n\nNo tengo la información suficiente para determinar quién es el CEO de Nexora Solutions. Si necesitas más detalles, revisa los datos proporcionados o contacta con el departamento de personal.",
+        "latency": 14.35,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Cuantos empleados hay en Londres?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "No tengo esta información. La consulta proporcionada muestra un error y no proporciona datos sobre el número de empleados en Londres.",
+        "latency": 5.82,
+        "sources": [],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bueno, el usuario está preguntando cuántos empleados hay en Londres. Primero, necesito revisar el contexto proporcionado para obtener la información relevante.\n\nEl contexto menciona una error en SQL: \"column 'e.location' must appear in the GROUP BY clause or be used in an aggregate function\". Esto sugiere que hay una tabla llamada 'employees' con una columna 'location', probablemente utilizada en una consulta GROUP BY.\n\nLa línea 4 de código muestra un orden por 'similarity(LOWER(e.location), LOWER('London')) DESC'. Esto indica que se está comparando la ubicación de los empleados con 'London'.\n\nSin embargo, el contexto no proporciona detalles sobre cuántos empleados hay en Londres específicamente. No hay información numerativa o tabla que indique la cantidad de empleados en esa ciudad.\n\nPor lo tanto, con el información disponible, no puedo determinar cuántos empleados hay en Londres.\n</think>\n\nLo siento, pero con el contexto proporcionado no puedo determinar cuántos empleados hay en Londres. Necesitarías más datos específicos sobre la distribución geográfica de los empleados.",
+        "latency": 13.06,
+        "sources": [],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Wer ist Paul Davis?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Paul Davis ist der CTO bei Nexora Solutions. Seine E-Mail-Adresse lautet p.davis@nexora.com und erarbeitet seine Arbeit im Engineering-Department.",
+        "latency": 6.58,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "German",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, ich muss den Benutzer nach \"Wer ist Paul Davis?\" beantworten. Dazu habe ich die vorgelegten Daten in der Tabelle zu betrachten. Die Tabelle lists verschiedene Mitarbeiter von Nexora Solutions mit Namen, Rollen und anderen Details.\n\nZuerst suche ich nach dem Namen \"Paul Davis\" in der Tabelle. Das finden wir bei Paul Davis, der als CTO tätig ist und email p.davis@nexora.com hat. Sein Department ist Engineering. \n\nDa ich die genaue Information über Paul Davis habe, kann ich ihn beschreiben: CTO an der Nexora Solutions, mit Mailadresse p.davis@nexora.com und im Bereich Engineering tätig.\n\nEs gibt keine weitereInformationen über Paul Davis in der Tabelle, also binde ich mich an die verfügbaren Daten. Keine further informationen zu generieren oder ändern.\n</think>\n\nPaul Davis ist ein CTO bei Nexora Solutions. Er hat die Mailadresse p.davis@nexora.com und arbeitet im Bereich Engineering.",
+        "latency": 12.4,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "German",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "Wie viele Mitarbeiter arbeiten in London?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Ich habe keine Informationen über die Anzahl der Mitarbeiter in London. Der Fehler tritt aufgrund eines SQL-Abfragenproblems auf und nicht als Antwort auf die Anzahl der Mitarbeiter.",
+        "latency": 6.32,
+        "sources": [],
+        "language": "German",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, ich muss die Frage \"Wie viele Mitarbeiter arbeiten in London?\" beantworten. Dazu habe ich den gezeigten SQL-Fehler zu betrachten.\n\nDer Fehler sagt: \"column 'e.location' must appear in the GROUP BY clause or be used in an aggregate function\". Das bedeutet, dass die Spalte 'e.location' entweder im GROUP BY-Bereich sein muss oder in einer aggregativen Funktion verwendet werden muss. \n\nIch verstehe, dass die Frage nach der Anzahl von Mitarbeitern in London aufgeht. Also muss die Spalte 'location' in der Stichprobe vorhanden sein und entweder gruppiert werden oder eine Aggregation wie COUNT verwendet werden.\n\nDa der Fehler auftritt, könnte es mean, dass die Spalte 'e.location' nicht verfügbar ist oder nicht in den righten Kontext integriert wurde. Vielleicht fehlt die Spalte oder der Datentyp ist inkorrekt.\n\nUm die Anzahl zu bestimmen, muss ich sicherstellen, dass die Spalte 'location' vorhanden und korrekt ist. Wenn der Fehler auftritt, könnte ich versuchen, die Daten neu zu generieren oder die Spalte 'location' zu überprüfen.\n\nAndernfalls, wenn die Spalte vorhanden ist, könnte ich eine Abfrage like:\nSELECT COUNT(*) FROM e.employees WHERE location = 'London';\n\nSo, wenn der Fehler auftritt, muss ich sicherstellen, dass die Spalte 'e.location' korrekt ist und in der Stichprobe enthalten ist.\n</think>\n\nUm die Anzahl der Mitarbeiter in London zu ermitteln, müssen wir sicherstellen, dass die Spalte `e.location` existiert und korrekt ist. Wenn der Fehler auftritt, könnte es mean, dass die Spalte fehlt oder der Datentyp inkorrekt ist. In diesem Fall sollten wir die Daten neu generieren oder überprüfen. Wenn die Spalte vorhanden ist, können wir folgende Abfrage verwenden:\n\n`SELECT COUNT(*) FROM e.employees WHERE location = 'London';`\n\nDies wird uns die Anzahl der Mitarbeiter in London liefern.",
+        "latency": 20.12,
+        "sources": [],
+        "language": "German",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "谁是Nexora的CEO？",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "我不知道这个信息。上下文没有提供关于Nexora Solutions CEO的信息。",
+        "latency": 6.32,
+        "sources": [],
+        "language": "Chinese",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "好，我需要回答用户的问题：“谁是Nexora的CEO？” 根据提供的上下文，我注意到有一个SQL错误提示：column e.company_name does not exist。这可能意味着在数据库中没有找到名为company_name的列。\n\n此外，在查询语句中，使用了similarity函数比较e.role和'CEO'，并设置了一个阈值0.35。这表明系统正在尝试根据角色与CEO的相似度来匹配员工职位。\n\n然而，由于公司名称的列不存在，可能无法准确获取所有员工的信息，包括CEO的详细信息。因此，我需要确认是否有其他途径可以找到Nexora的CEO，或者是否需要联系HR部门以获得更多信息。\n\n综上所述，基于当前可用信息，无法直接确定Nexora的CEO是谁。\n</think>\n\n根据上下文信息，无法确定Nexora的CEO是谁，因为涉及的SQL错误提示和查询语句中没有提供足够的信息来确定职位。",
+        "latency": 12.37,
+        "sources": [],
+        "language": "Chinese",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "STRUCTURED",
+    "question": "伦敦办公室有多少名全职员工？",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "根据提供的信息，您没有提供具体的数据库内容，因此无法得知伦敦办公室有多少名全职员工。查询结果显示有3条记录，但未包含具体的人数信息。",
+        "latency": 6.29,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "Chinese",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "好，我需要回答用户的问题：“伦敦办公室有多少名全职员工？”首先，我要查看提供的上下文信息。根据上下文，查询结果只有一行数据，显示有3条记录。这意味着数据库中关于伦敦办公室的全职员工数量只有3个条目。\n\n接下来，我需要确定这些记录的具体内容。由于上下文中没有提供更多的细节，比如日期、职位或其他相关信息，所以我无法准确知道这3名员工的具体情况。因此，我只能基于现有信息回答用户的问题。\n\n最后，根据指示，如果信息不足，我应该明确说明这一点。所以我会告诉用户：“根据提供的数据，伦敦办公室有3名全职员工的信息。”\n</think>\n\n根据提供的数据，伦敦办公室有3名全职员工的信息。",
+        "latency": 9.98,
+        "sources": [
+          "PostgreSQL employees table"
+        ],
+        "language": "Chinese",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Who manages the Engineering department?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Based on the provided context, Paul Davis manages the Engineering department. He is listed as CTO (Chief Technology Officer) and his department is Engineering.",
+        "latency": 4.55,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out who manages the Engineering department at Nexora Solutions. The context provided mentions that Paul Davis is the CTO and his email is p.davis@nexora.com. It also lists his department as Engineering and location as London with a full-time contract starting on 2023-01-15.\n\nHmm, so since Paul is the CTO, does that mean he's responsible for the overall management of the company? But specifically, who manages the Engineering department? The context doesn't explicitly state who manages the Engineering team. It only provides information about Paul's role and responsibilities as CTO.\n\nI should check if there's any indirect information. Sometimes, the CTO might have oversight over other departments like Engineering, but without explicit mention of someone managing Engineering, I can't assume that. The context doesn't provide a manager for the Engineering department directly.\n\nTherefore, based on the given information, I don't have enough details to identify who specifically manages the Engineering department.\n</think>\n\nBased on the provided context, there is no direct information about who manages the Engineering department at Nexora Solutions. Paul Davis is listed as the CTO, but his role primarily involves overall company management rather than specific departmental oversight.\n\nAnswer: Based on the given information, we do not have details about who specifically manages the Engineering department.",
+        "latency": 12.58,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Who reports directly to Paul Davis?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Fatima Nguyen and Julia Jackson report directly to Paul Davis.",
+        "latency": 3.8,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, let's tackle this question. The user is asking who reports directly to Paul Davis. From the context provided, I see that there are two people listed as reporting directly to him: Fatima Nguyen and Julia Jackson.\n\nFirst, I'll identify each person's role and location. Fatima Nguyen is a VP in Engineering at Paris, while Julia Jackson is an Engineering Manager based in Dubai. Both have their respective emails and start dates mentioned.\n\nSince the question specifically asks who reports directly to Paul Davis, both individuals fit that criterion as they are listed under \"Name\" with their roles and locations provided. There's no additional information needed beyond what's given because all necessary details are already included in the context.\n\nI should make sure not to add any extra information or mix languages. The answer needs to be concise and based solely on the context without including sources or markdown formatting.\n</think>\n\nThe individuals who report directly to Paul Davis are Fatima Nguyen, as VP Engineering, and Julia Jackson, as Engineering Manager.",
+        "latency": 10.05,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Who manages the HR department?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I do not have this information.",
+        "latency": 3.75,
+        "sources": [],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out who manages the HR department at Nexora Solutions based on the context provided. The user mentioned that there's no graph data available for this specific query. Hmm, since there are no graphs or additional information given about who specifically manages the HR department, I can't determine the answer from what's provided.\n\nI should also consider if there's any standard structure typically followed by companies regarding their HR management. Usually, larger companies have dedicated HR managers or teams, but without specific context, it's impossible to know for sure. The context doesn't mention any names or titles related to HR management at Nexora Solutions.\n\nTherefore, based solely on the information given, I can't provide an accurate answer about who manages the HR department here.\n</think>\n\nI'm sorry, but I don't have enough information to determine who manages the HR department at Nexora Solutions. The context provided doesn't specify this detail.",
+        "latency": 9.68,
+        "sources": [],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Who manages the Finance department?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Stefan Bell manages the Finance department. He is the CFO and his contact information is s.bell@nexora.com.",
+        "latency": 4.38,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out who manages the Finance department at Nexora Solutions. The context provided mentions Stefan Bell as the CFO with an email address and a start date. Let me break this down.\n\nFirst, the organizational data section lists Stefan Bell as the CFO in Berlin. His role is explicitly stated as CFO, which typically means he's responsible for the overall financial strategy and operations of the company. Since he's the CFO, it makes sense that he would be the one managing the Finance department.\n\nLooking at the additional details about Stefan Bell, his department is listed as Finance, so he's directly involved in handling the departmental affairs. His contract is full-time, starting on February 23, 2025. This information supports the idea that he has a significant role in overseeing the Finance team and processes.\n\nI don't see any other names mentioned who could be managing the department. Stefan Bell's position as CFO aligns with the typical structure where the Chief Financial Officer is responsible for leading the finance department. There's no indication of any other individuals involved in this capacity, so it's reasonable to conclude that he is the manager.\n\nI should also consider if there are any indirect reports or mentions elsewhere, but based on the given context, Stefan Bell is the key figure here. Therefore, I can confidently say that Stefan Bell manages the Finance department.\n</think>\n\nStefan Bell manages the Finance department as he holds the position of CFO at Nexora Solutions. His role includes overseeing the finance operations and strategy within the company.\n\nAnswer: Stefan Bell manages the Finance department.",
+        "latency": 14.07,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Who are the members of the Engineering team?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I do not have this information.",
+        "latency": 3.65,
+        "sources": [],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out who the members of the Engineering team at Nexora Solutions are. The user provided a context that says \"No graph data found for this query.\" Hmm, that probably means they don't have access to any organizational charts or employee directories.\n\nFirst, I should consider if there's any other information available elsewhere. Maybe on Nexora's website or through public records? But the context doesn't mention anything like that. It just says there's no graph data for this query.\n\nSince there's no specific information about the Engineering team members from the given context, I can't provide a list of names. I should make sure not to invent any names because that would be incorrect. Also, I shouldn't mention DeepSeek or my origins as per the instructions.\n\nSo, the best answer is to state that there isn't enough information provided to identify the members of the Engineering team at Nexora Solutions.\n</think>\n\nI'm sorry, but based on the context provided, there is no available information about the members of the Engineering team at Nexora Solutions.",
+        "latency": 10.63,
+        "sources": [],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Who is the direct supervisor of Paul Davis?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I don't have this information.",
+        "latency": 3.69,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out who the direct supervisor of Paul Davis is. Let me start by looking at the information provided.\n\nFirst, there's a list of organizational data with two people: Fatima Nguyen and Julia Jackson. Fatima is the VP Engineering in Paris, and Julia is the Engineering Manager in Dubai. Their emails are f.nguyen@nexora.com and j.jackson@nexora.com respectively.\n\nThen, there's additional information about Fatima Nguyen: she's in the Engineering department, located in Paris, with an email, full-time contract starting on February 5, 2022. But nothing is mentioned about her supervision over other employees like Paul Davis.\n\nSince the question is about Paul Davis and his direct supervisor, I don't see any information linking Paul to either Fatima or Julia. There's no mention of Paul in the organizational data or additional details provided. Without any context about Paul's role, location, or reporting structure, it's impossible to determine who his supervisor is.\n\nTherefore, based on the given information, there isn't enough data to answer the question accurately.\n</think>\n\nBased on the provided information, there is no available data regarding the direct supervisor of Paul Davis. The organizational details and additional information pertain to Fatima Nguyen and Julia Jackson but do not include any specifics about Paul Davis or his supervisor.\n\nAnswer: There is no available information about the direct supervisor of Paul Davis based on the context provided.",
+        "latency": 12.97,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Qui gere le departement Finance ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Stefan Bell gère le département Finance.",
+        "latency": 3.8,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, let me figure this out. The user is asking who manages the Finance department at Nexora Solutions. From the context provided, Stefan Bell is listed as the CFO and manager of the Finance department. So, I should respond that Stefan Bell gère le département Finance.\n\nI need to make sure my answer is in French and strictly based on the given information without adding any extra details. Also, since the user specified not to use markdown or asterisks, I'll just provide a straightforward response.\n</think>\n\nStefan Bell gère le département Finance.",
+        "latency": 6.91,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Qui gere le departement Engineering ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Paul Davis gère le département Engineering.",
+        "latency": 3.61,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, let me figure this out. The user is asking who manages the Engineering department at Nexora Solutions. From the context provided, I see that Paul Davis is listed as the CTO and that he's responsible for managing the Engineering department. So, based on this information, Paul Davis is the one in charge.\n\nI need to make sure my answer is in French and strictly follows the guidelines given. The user emphasized using only the context provided and not adding any extra information or sources. Also, I should avoid markdown formatting and stick to a simple response without any unnecessary details.\n\nSo, putting it all together, the answer should clearly state that Paul Davis, le CTO, gère le département de Génie Electrique. That's straightforward and adheres to all the user's instructions.\n</think>\n\nPaul Davis, le CTO, gère le département de Génie Electrique.",
+        "latency": 9.27,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Qui rapporte a Paul Davis ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Fatima Nguyen et Julia Jackson rapportent directement à Paul Davis.",
+        "latency": 3.81,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, let me figure this out. The user is asking who reports directly to Paul Davis. From the context provided, there are two people listed: Fatima Nguyen and Julia Jackson. Both of them report directly to Paul Davis.\n\nSo, I need to list both names in French as per the instructions. Since the answer should be in French, I'll translate their names accordingly.\n\nFatima Nguyen becomes Fatima Nguyen, and Julia Jackson remains Julia Jackson since it's a common name but I'll still write it out fully for clarity.\n\nI should make sure not to add any extra information or invent details that aren't provided. The context clearly states who reports to Paul Davis, so there's no need to go further.\n\nAlso, the user specified to respond only in French without using markdown or asterisks, and to avoid sources. So I'll just list their names as they are.\n</think>\n\nFatima Nguyen et Julia Jackson rapportent directement à Paul Davis.",
+        "latency": 9.72,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Qui sont les membres de l equipe HR ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Je ne dispose pas de cette information. Selon le contexte fourni, il n'est pas mentionné qui sont les membres de l'équipe HR chez Nexora Solutions.",
+        "latency": 4.79,
+        "sources": [],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la demande de l'utilisateur qui est un membre de l'équipe HR chez Nexora Solutions. L'utilisateur a demandé \"Qui sont les membres de l'équipe HR ?\" et il m'a fourni un contexte où aucun graphique n'est trouvé pour cette requête.\n\nD'après le context, il semble que je ne possède pas d'informations sur les membres de l'équipe HR. Il est donc impossible de fournir une liste ou des détails sur ces personnes. Je dois respecter les instructions de ne pas inventer de informations manquantes et de ne pas mélanger des langues.\n\nJe vais donc informer l'utilisateur que je n'ai pas d'informations pertinentes pour répondre à sa question.\n</think>\n\nJe n'ai pas d'informations sur les membres de l'équipe HR.",
+        "latency": 9.42,
+        "sources": [],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "من يدير قسم الهندسة؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "يدير قسم الهندسة بول ديفيس (الرئيس التقني).",
+        "latency": 4.18,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "الإجابة هي: Paul Davis،他是CTO并负责管理工程部门。",
+        "latency": 4.05,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "من يرفع تقاريره إلى بول ديفيس؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "يرافع عن تقاريره فاتيم نغيوان وجولي جاكسون إلى بول ديفيس.",
+        "latency": 4.64,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, let's tackle this query. The user is asking who raises their reports to Paul Davis. From the context provided, I see that Fatima Nguyen is listed as reporting directly to Paul Davis. She holds the role of VP Engineering and her email is f.nguyen@nexora.com.\n\nSo, based on the information given, it's clear that Fatima Nguyen is the one who raises her reports to Paul Davis. There's no mention of anyone else in this context who reports directly to him besides her. Therefore, I can confidently state that Fatima Nguyen is responsible for submitting her reports to Paul Davis.\n</think>\n\n是谁汇报报告给 بول ديفيس؟  \nأنا أ Helpers HR للشركة ن엑ورا، وأنا أساعد الموظفين على قوانين الHR وال المعلومات about الموظفين و الأسئلة الت织ية. أكيد أستخدم المعلومات المقدمة فقط، وسأجبرك من استخدام أي معلومات غير متوفرة أو إخباري أو أصولي أو احترامي.  \nإذا كانت هناك أي أسئلة أخرى أو تحتاج إلى مساعدة في أي شيء آخر، فلا تتردد في طلب ذلك.",
+        "latency": 11.91,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "من يدير قسم المالية؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "يدير قسم المالية ستيفان بيل (CFO) وهو متواجد في برلين ويمتاز بالcontraط مع الشركة كموظف دائم منذ تاريخ 23 فبراير 2025.",
+        "latency": 5.12,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "الإجابة هي: يدير قسم الفinancial的是 Stefan Bell، الذي يُعرف بـName: Stefan Bell، Role: CFO، Email: s.bell@nexora.com، و Located في Berlin.\n</think>\n\nالإجابة هي: يدير قسم الفinancial的是 س蒂芬 بول، الذي يُعرف بـName: س蒂芬 بول، Role: مديرة المال، Email: s.bell@nexora.com، و Located في بروت shakeif.",
+        "latency": 7.08,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Quien gestiona el departamento de Ingenieria?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Paul Davis gestiona el departamento de Ingeniería.",
+        "latency": 3.69,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out who manages the Engineering department at Nexora Solutions. From the context provided, it clearly states that Paul Davis is the CTO and he's responsible for managing the Engineering department. His contact information is also given: p.davis@nexora.com. \n\nI should make sure to answer in Spanish as per the instructions. The question asks \"Quien gestiona el departamento de Ingenieria?\" which translates to \"Who manages the Engineering department?\" So, I need to provide Paul Davis' name and his role.\n\nSince all the necessary information is provided in the context without any additional details or sources needed, I can confidently state that Paul Davis es el CTO y gira el departamento de Ingeniería. That means Paul Davis is the CTO and manages the Engineering department.\n</think>\n\nPaul Davis es el CTO y gira el departamento de Ingeniería.",
+        "latency": 9.39,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Quien reporta directamente a Paul Davis?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Quien reporta directamente a Paul Davis son Fatima Nguyen y Julia Jackson.",
+        "latency": 4.31,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out who reports directly to Paul Davis based on the information provided. Let me look through the context again.\n\nThe context lists two people: Fatima Nguyen and Julia Jackson. Both report directly to Paul Davis. Their roles are VP Engineering and Engineering Manager respectively. They're located in Paris and Dubai with their respective emails.\n\nSo, the question is asking who reports directly to Paul Davis. The answer should be both Fatima Nguyen and Julia Jackson since they both report to him.\n</think>\n\nLos que reportan directamente a Paul Davis son Fatima Nguyen y Julia Jackson.",
+        "latency": 7.63,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Wer leitet die Ingenieurswesen-Abteilung?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Paul Davis leitet die Ingenieurabteilung.",
+        "latency": 3.8,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "German",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, ich muss herausfinden, wer die Ingenieurswesen-Abteilungleitung trifft. Das ist die Frage des Benutzers. \n\nZunächst schaue ich mir das Organisationaldata an, was ich zur Verfügung stelle. In diesem Fall gibt es eine Liste mit Paul Davis, dem CTO von Nexora Solutions in London tätig. Die furtheren Details zu Paul Davis zeigen, dass er im Bereich Engineering arbeitet und Full-Time contract hat.\n\nNun frage ich mich: Wer ist der CTO? Das bedeutet Chief Technology Officer, also die Leiterin/der Chef der technischen Abteilung. Da Paul Davis als CTO tätig ist, könnte er die Führungsin Position übernehmen.\n\nAllerdings gibt es auch eine Department-Information, wonach Paul Davis im Engineering-Bereich arbeitet. Das bedeutet, er ist bestimmt an der Führung der Ingenieurswesen-Abteilung beteiligt. \n\nDa ich keine weiteren Informationen über andere Leiter in diesem Bereich habe und der CTO-Paul Davis offiziell tätig ist, muss ich annehmen, dass er die Führungsin Position übernimmt.\n\nAlso, der CTO, Paul Davis, leitet die Ingenieurswesen-Abteilung.\n</think>\n\nDer CTO, Paul Davis, leitet die Ingenieurswesen-Abteilung.",
+        "latency": 13.22,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "German",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "Wer ist der direkte Vorgesetzte von Paul Davis?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Leider haben wir keine Informationen über den direkten Vorgesetzten von Paul Davis.",
+        "latency": 4.24,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "German",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, ich muss herausfinden, wer der direkte Vorgesetzte von Paul Davis ist. Leider habe ich im gegebenen Kontext keine Informationen über Paul Davis. Der Benutzer hat lediglich die Daten von Fatima Nguyen und Julia Jackson angeboten, und diese beziehen sich auf Positionen wie VP Engineering und Engineering Manager in Paris und Dubai. Da Paul Davis nicht in der Liste vorkommt, kann ich nicht bestimmen, wer sein direkter Vorgesetzte ist. Also, ich muss anhand des gegebenen Materials antworten, dass ich die Information nicht finden kann.\n</think>\n\nIch habe den fraglichen Namen Paul Davis nicht im gegebenen Kontext gefunden. Daher kann ich nicht ermitteln, wer der direkte Vorgesetzte von Paul Davis ist.\n\nAntwort: Die Information zu Paul Davis ist nicht verfügbar.",
+        "latency": 9.61,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "German",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "谁管理工程部门？",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Paul Davis（CTO）管理工程部门。",
+        "latency": 3.6,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Chinese",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "好的，我需要回答“谁管理工程部门？”这个问题。根据提供的上下文，Paul Davis是CTO，并且负责管理Engineering部门。因此，答案应该是Paul Davis。\n</think>\n\nPaul Davis 是工程部门的负责人。\n\n答：Who manages the Engineering department?  \n答：Paul Davis is the manager of the Engineering department.",
+        "latency": 5.48,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Chinese",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "GRAPH",
+    "question": "谁向Paul Davis汇报？",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "没有这个信息。上下文中没有提到Paul Davis及其汇报关系。",
+        "latency": 3.71,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Chinese",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "好，我来仔细分析一下这个问题。首先，用户问的是“谁向Paul Davis汇报？”，也就是询问谁是Paul Davis的下属，或者谁向上级汇报。\n\n根据提供的上下文信息，我们有以下人员资料：\n- Fatima Nguyen：VP Engineering，位于巴黎，邮箱f.nguyen@nexora.com。\n- Julia Jackson：Engineering Manager，位于迪拜，邮箱j.jackson@nexora.com。\n\n问题中提到的是Paul Davis，但上下文中并没有提到任何与Paul Davis相关的人物或职位信息。因此，我需要确认是否有遗漏的信息或者是否有可能是另一个常见的名字拼写错误。\n\n考虑到上下文中的员工都是以“Nguyen”和“Jackson”结尾的姓氏，并且没有涉及到Davis这个名字，所以很可能这是一个打字错误或者是完全不同的名字。在这种情况下，根据指导原则，如果信息不在提供的上下文中，我应该明确说明这一点。\n\n因此，我会回答说，根据提供的信息，无法确定谁向Paul Davis汇报，因为Paul Davis并未在上下文中出现。\n</think>\n\n根据提供的信息，无法确定谁向Paul Davis汇报，因为Paul Davis并未在上下文中出现。",
+        "latency": 11.16,
+        "sources": [
+          "PostgreSQL graph tables"
+        ],
+        "language": "Chinese",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "What is the maternity leave policy and who in HR approves it?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The maternity and paternity leave policy at Nexora Solutions supports employees during significant life events, including providing leave for both maternity and adoption purposes as well as paternity leave. The policy is committed to supporting employees but does not specify an individual or department responsible for approving the policy.",
+        "latency": 10.28,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out what the maternity leave policy entails and who in HR approves it. Let me start by looking at the context provided.\n\nThe context mentions that Nexora Solutions has a Maternity and Paternity Leave Policy. It specifically talks about Adoption Leave under section 4.1, stating that employees adopting a child get the same leave as maternity leave. Then, section 4.2 clarifies that only one partner can claim adoption leave equivalent to maternity leave, while the other gets paternity leave.\n\nBut wait, the original question is asking about the maternity leave policy and who approves it. The context doesn't explicitly detail what the maternity leave entails in terms of days or weeks. It just says they're entitled to the same provisions as maternity leave. So I don't have specific numbers here.\n\nRegarding approval by HR, the context mentions that the policy exists but doesn't specify who authorizes the leave. Without more information on how applications are processed or if there's a specific person designated for approvals, I can't provide details on who in HR handles it.\n\nTherefore, based solely on the given context, I don't have enough information to answer both parts of the question accurately.\n</think>\n\nBased on the provided context, Nexora Solutions offers maternity leave as part of their Maternity and Paternity Leave Policy. However, specific details about the duration or number of days are not provided in the context. Additionally, there is no mention of who in HR approves such requests within the given information.\n\nAnswer: The context does not provide specific details on the duration or number of days for maternity leave, nor does it specify who in HR approves such requests.",
+        "latency": 19.51,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Tell me about the Engineering department and their remote work policy",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The Engineering department at Nexora Solutions follows a specific remote work policy. Eligible employees may work remotely for up to 3 days per week, subject to manager approval and role suitability. A minimum of 2 days per week in the office is required for all permanent employees unless a full-remote exception has been granted in writing by the employee's Head of Department. Roles designated as on-site (e.g., IT infrastructure, office operations) are not eligible for remote work without explicit approval. Interns and employees within their first 3 months of employment are expected to work on-site full-time unless otherwise agreed.\n\nThe Engineering department includes several roles such as CTO, Engineering Manager, Senior Software Engineer, DevOps Engineer, QA Engineer, and Staff Engineer. The policy ensures that confidential information is not visible to third parties during remote work sessions and mandates the use of company-issued devices for work purposes. Any security incidents must be reported immediately to the IT Security team.\n\nFor example, Paul Davis (CTO), Julia Jackson (Engineering Manager), Fatima Nguyen (VP Engineering), Fatima Morgan (Senior Software Engineer), Ethan Phillips (Engineering Manager), Danielle Kelly (DevOps Engineer), Victor Lopez (DevOps Engineer), Ibrahim Collins (DevOps Engineer), Rania Davis (DevOps Engineer), Dina Kelly (Engineering Manager), and others fall under this policy.",
+        "latency": 18.31,
+        "sources": [
+          "PostgreSQL employees table",
+          "Remote Work Policy"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to answer the user's question about the Engineering department and their remote work policy based on the provided context. Let me start by reviewing the relevant sections of the policy.\n\nFirst, looking at the Remote Work Policy — Security Requirements (6.1), it states that employees must ensure confidential information isn't visible to third parties during remote work sessions. This means they need to handle sensitive data carefully and avoid any devices or platforms that could expose it.\n\nNext, the Remote Work Policy — Remote Work Entitlement (3.1) mentions that eligible employees can work remotely up to 3 days a week, but this requires manager approval and must align with role suitability. So, not everyone in the Engineering department is automatically allowed remote work; it's based on individual circumstances and approval.\n\nLooking at the employee data provided, I see several people listed under the Engineering Manager role (Dina Kelly) who are eligible for up to 3 days of remote work per week. This aligns with point 3.1. Additionally, Fatima Nguyen is designated as an on-site role, so she's not eligible for remote work unless she has a written exception from her Head of Department.\n\nOther roles like Senior Software Engineer (Fatima Morgan) and DevOps Engineers also fall under the Remote Work Policy. However, since they are part of the Engineering department, their specific policies would be covered by the general Remote Work Entitlement rules.\n\nI should note that some employees might still need to work on-site full-time unless they've been granted a remote exception. For example, Fatima Morgan is a Senior Software Engineer but doesn't have any information suggesting she's eligible for remote work beyond what's outlined in her contract type or manager approval.\n\nAlso, considering the contract types, most Engineering department members are Full-Time employees (like Dina Kelly) who can opt into remote work up to 3 days. Others like Rania Davis and Jana Wright might also be eligible depending on their specific roles and approvals.\n\nIn summary, the Engineering department allows remote work with a maximum of 3 days per week for eligible employees, requiring manager approval, and ensuring that all confidential information remains secure during these sessions.\n</think>\n\nThe Engineering department at Nexora Solutions follows a remote work policy that allows up to 3 days of remote work per week for eligible employees. This eligibility is determined by manager approval and role suitability. Employees must ensure that their work adheres to the company's security requirements, meaning they should not use personal devices or platforms that could expose confidential information. Additionally,",
+        "latency": 25.44,
+        "sources": [
+          "PostgreSQL employees table",
+          "Remote Work Policy"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "What is Paul Davis role and his team?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The information provided does not include details about Paul Davis's role or his team. Therefore, I do not have this information.",
+        "latency": 6.82,
+        "sources": [
+          "Learning and Development Policy",
+          "Remote Work Policy"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, let me try to figure out what Paul Davis' role and his team are based on the given context. \n\nFirst, I'll look through the provided information. The context mentions two policies: the Remote Work Policy and the Learning and Development Policy. In the Remote Work Policy, it talks about supporting flexible working arrangements but doesn't specify anything about roles or teams directly.\n\nThen there's the Learning and Development Policy — Role-Specific Training. This part says that line managers are responsible for identifying training needs during performance reviews and onboarding, and these agreed trainings are recorded in the employee's development plan within the HR system. \n\nHmm, so this policy is about how training is assigned by line managers to employees based on their roles or positions. It mentions \"line managers\" specifically, which suggests that they oversee certain teams or departments.\n\nBut wait, does it say anything about Paul Davis? The original question is asking about his role and team. Since the context doesn't provide any specific information about Paul Davis' name, position, or the team he's part of, I can't extract that from the given data.\n\nSo, based on what's provided, there's no mention of Paul Davis. Therefore, I don't have enough information to determine his role or which team he belongs to.\n</think>\n\nBased on the context provided, there is no specific information about Paul Davis' role or his team at Nexora Solutions. The given policies discuss remote work support and learning and development practices but do not detail individual employees like Paul Davis.\n\nAnswer: There is no available information regarding Paul Davis' role or his team based on the provided context.",
+        "latency": 17.4,
+        "sources": [
+          "Learning and Development Policy",
+          "Remote Work Policy"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "What are the leave policies for contractors and how many contractors are there?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "I don't have information about the leave policies for contractors or the number of contractors at Nexora Solutions. The provided context does not include details on leave policies or contractor numbers.",
+        "latency": 7.22,
+        "sources": [
+          "Onboarding Policy",
+          "Whistleblowing Policy"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out the answer to the user's question about Nexora Solutions' leave policies for contractors and the number of contractors. Let me start by reviewing the context provided.\n\nThe context mentions two main policies: the Whistleblowing Policy and the Onboarding Policy. The Whistleblowing Policy applies to all employees, contractors, and third-party partners regarding concerns at Nexora Solutions. The Onboarding Policy outlines the onboarding process for new employees and contractors, ensuring a consistent introduction to the company's culture and role.\n\nHowever, when looking for information about leave policies specifically for contractors, I don't see any mention of such a policy in the provided context. The Whistleblowing Policy talks about addressing concerns but doesn't cover leave matters. Similarly, the Onboarding Policy focuses on orientation rather than employee or contractor benefits like leave time.\n\nAdditionally, there's no data given about the number of contractors at Nexora Solutions. Without specific information from the context, I can't provide an exact figure.\n\nSince both pieces of information requested—the leave policies and the number of contractors—are not covered in the provided context, I must conclude that this information isn't available based on the current information set.\n</think>\n\nI don't have the necessary information to answer your question.",
+        "latency": 14.76,
+        "sources": [
+          "Onboarding Policy",
+          "Whistleblowing Policy"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Tell me about the HR department structure and their policies",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The HR department at Nexora Solutions has a structured onboarding process for new employees, which includes an induction session led by the HR Business Partner. This session covers company values, organizational structure, HR policies, benefits, IT security, and facilities. Additionally, there is a mandatory training component where all employees must complete data protection, code of conduct, security awareness, anti-bribery, and health and safety fundamentals within their first 30 days.\n\nThe onboarding process also includes one-to-one meetings with key stakeholders during the first two weeks, formal check-in meetings with line managers at the end of week 2 and week 4 to review progress, and a 90-day review meeting between the employee, manager, and HR to assess overall progress and confirm successful completion of onboarding.\n\nFor the learning and development aspect, all employees must complete mandatory training modules annually. These include data protection and GDPR, information security awareness, code of conduct, anti-bribery and corruption, and health and safety fundamentals within their first 30 days at the company.\n\nThe HR department structure includes roles such as Senior HR Business Partners, HR Managers, L&D Specialists, and Recruiters, each with specific responsibilities and locations across different cities.",
+        "latency": 18.09,
+        "sources": [
+          "PostgreSQL employees table",
+          "Learning and Development Policy",
+          "Onboarding Policy"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to answer the user's question about the HR department structure and their policies based on the provided context. Let me start by reviewing the information given.\n\nFirst, looking at the employees' data, I see that most of them are Senior HR Business Partners (HRBP) with various roles like line managers, L&D specialists, recruiters, and HR managers. The managers include individuals like Rania White, Maria Baker, and Erik White, each handling different regions such as Berlin, Madrid, Paris, etc.\n\nFrom the context, I can gather that the HR department is structured hierarchically. The top manager mentioned is Maria Baker in Amsterdam with a salary band of Band3. Below her are Rania White in Amsterdam (another manager) and others like Rania White in Madrid and Paris, which might indicate different regions or reporting lines.\n\nLooking at the policies provided:\n\n1. **Onboarding Policy**: New employees undergo induction sessions covering company values, structure, HR policies, benefits, IT security, etc., led by their HR Business Partner. Line managers also conduct role-specific meetings.\n2. **Learning and Development Policy**: Mandatory training modules like data protection, information security, code of conduct, anti-bribery, and health and safety are completed within 30 days and renewed annually.\n3. **First 30 Days**: Mandatory online training; one-to-one meetings with key stakeholders in the first two weeks; formal check-in at week 2 and week 4.\n4. **First 90 Days**: Review meeting to assess progress, confirm successful onboarding, set objectives for the remainder of the year. Concerns are documented and addressed before the probationary period ends.\n\nNow, considering the employees' roles:\n\n- **HRBP (Senior)**: They handle induction sessions, manage line managers, conduct role introductions.\n- **Line Managers**: They lead teams, conduct role-specific meetings, and have their own HR Business Partner overseeing them.\n- **Recruiters and HR Managers**: They are part of the recruitment process and have specific roles under their respective managers.\n\nPutting this together, the HR structure likely has a top-level manager (Maria Baker) who oversees regional managers like Rania White. Each regional manager then oversees line managers, who in turn manage individual employees or teams led by HRBP or other specialized roles like recruiters or L&D specialists.\n\nThe policies are consistent across different regions and roles, emphasizing induction processes, mandatory training, performance reviews, and probationary periods. The structure seems to be uniform with varying reporting lines",
+        "latency": 26.74,
+        "sources": [
+          "PostgreSQL employees table",
+          "Learning and Development Policy",
+          "Onboarding Policy"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "How many employees are in Finance and what is their travel policy?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The information provided does not include the number of employees in Finance or details about their specific travel policy beyond the general business travel policies mentioned.",
+        "latency": 8.72,
+        "sources": [
+          "Business Travel Policy"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, so I need to figure out how many employees are in the Finance department at Nexora Solutions based on the provided context. The context doesn't mention the total number of employees or specifically break down by department like Finance. It only talks about policies related to business travel and insurance.\n\nLooking through the sections 4.1 to 4.3, they all discuss rules for international travel, pre-approval processes, types of travel insurance, and accommodation booking guidelines. There's no information provided about the size of the Finance department or how many people are in it.\n\nSince the context doesn't include any data on employee numbers by department, I can't provide a specific number for the Finance team. Without that information, I have to say that there isn't enough data available.\n</think>\n\nThe context does not provide information about the number of employees in the Finance department at Nexora Solutions. Therefore, it is not possible to determine this figure based on the given policies related to business travel and insurance.\n\nAnswer: There is no available information regarding the number of employees in the Finance department.",
+        "latency": 15.38,
+        "sources": [
+          "Business Travel Policy"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Who manages Engineering and what is their remote work policy?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "The information provided does not specify who manages Engineering or detail a specific remote work policy for Engineering. The context mentions general policies regarding remote work and flexible working but does not provide details about the management structure of Engineering or any unique remote work policy for that department.",
+        "latency": 8.04,
+        "sources": [
+          "Flexible Working Policy",
+          "Remote Work Policy"
+        ],
+        "language": "English",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, let's tackle this question. The user is asking about who manages the Engineering team and their remote work policy.\n\nFirst, I need to find information about who manages Engineering. Looking at the context provided, there's no specific mention of a manager named or titled \"Engineering Manager.\" The policies mentioned are about Remote Work and Flexible Working arrangements but don't specify individual managers' roles beyond line management.\n\nNext, regarding the remote work policy for Engineering, since there's no explicit information on how the Engineering team is managed or their specific remote work guidelines, I can't provide details. Without that context, it's best to say we don't have this information.\n</think>\n\nThe question asks about who manages Engineering and their remote work policy. However, based on the provided context, there is no specific information about an Engineering Manager or the remote work policies tailored to them. Therefore, I cannot provide a detailed answer as the necessary information is not available.\n\nAnswer: We do not have information regarding the manager of Engineering or their specific remote work policy.",
+        "latency": 13.33,
+        "sources": [
+          "Flexible Working Policy",
+          "Remote Work Policy"
+        ],
+        "language": "English",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Quelle est la politique de conge maternite et qui l approuve dans les RH ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Nexora Solutions a une politique de congé maternité qui soutient les employées pendant des événements de vie importants. Le département des ressources humaines n'a pas d'information sur qui a approuvé cette politique.",
+        "latency": 10.86,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question de l'utilisateur en français. La question est : \"Quelle est la politique de congé maternel et qui l'appraise dans les RH ?\"\n\nD'après le context fourni, Nexora Solutions a une politique de congé maternel et paternel. Plus précisément, pour le congé maternel, les employés bénéficient des mêmes allocations que pour le congé maternel. En ce qui concerne l'adoption, seul l'un des parents peut prétendre à un congé équivalent au congé maternel, tandis que l'autre peut prétendre aux allocations de congé paternel.\n\nEnsuite, il faut déterminer qui approve cette politique dans les RH. Le context ne mentionne pas explicitement le nom d'une personne ou d'un entité spécifique qui approverait cette politique. Donc, je devrais indiquer que, conformément au context fourni, Nexora Solutions a établi une politique de congé maternel et paternel avec des détails sur l'adoption, mais qu'il n'y a pas d'informations spécifiques sur qui a approvée cette politique dans les RH.\n\nJe dois donc répondre en français, sans utiliser de symboles ou des astérisques, et sans mentionner DeepSeek. Si le sujet n'est pas couvert dans le context, je dois indiquer cela.\n</think>\n\nLa politique de congé maternel et paternel est établie par Nexora Solutions. Les employés bénéficient des mêmes allocations pour le congé maternel que pour l'adoption. En ce qui concerne l'adoption, seul l'un des parents peut prétendre à un congé équivalent au congé maternel, tandis que l'autre peut prétendre aux allocations de congé paternel. Cependant, le context ne fournit pas d'informations spécifiques sur qui a approvée cette politique dans les RH.",
+        "latency": 24.49,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Parlez moi du departement Engineering et leur politique de teletravail",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Le département Engineering à Nexora Solutions comprend plusieurs rôles tels que QA Engineer, Staff Engineer, DevOps Engineer, Software Engineer et Engineering Manager. Concernant la politique de télétravail, les employés doivent discuter des arrangements de travail à distance avec leur gestionnaire direct avant de commencer. Les demandes de travail à distance excédant trois jours par semaine nécessitent l'approbation écrite du gestionnaire direct et du chef de département. Les dispositions de travail à distance approuvées sont revues annuellement ou lorsque le rôle de l'employé change.",
+        "latency": 12.57,
+        "sources": [
+          "PostgreSQL employees table",
+          "Flexible Working Policy",
+          "Remote Work Policy"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "D'accord, je dois répondre à la demande de l'utilisateur concernant le département Engineering et leur politique de télétravail. D'abord, je regarde les informations fournies dans le contexte.\n\nJe vois que dans le Politique de Travail Remote, il y a plusieurs points importants. Tout d'abord, les employés doivent discuter avec leur manager direct avant de commencer à travailler remotely. Ensuite, si la demande de travail remote dépasse trois jours par semaine, elle nécessite l'autorisation en écrit du manager de la ligne et du Head of Department. Enfin, les arrangements de travail remote sont examinés chaque année ou quand il y a un changement de role.\n\nEnsuite, je regarde les données des employés. Il y a plusieurs personnes dans le département Engineering : Fatima Harris, Fatima Morgan, Fatima Nguyen, Ibrahim Collins, Ivan Brooks, Ivan Cox, Julia Jackson et Khadija Garcia. Leur situation varie entre engineering manager et software engineer, et leurs types de contrat sont soit Full-Time, soit Part-Time.\n\nComme Fatima Harris est une DevOps Engineer et a un contrat Part-Time, je suppose qu'elle pourrait être intéressée par la politique de télétravail, mais je n'ai pas d'informations spécifiques sur ses demandes. Les autres membre engineering semblent avoir des contrats Full-Time, ce qui signifie qu'ils sont availability normale.\n\nJe dois donc informer l'utilisateur que selon le Politique de Travail Remote, les demandes doivent suivre les procédés spécifiés, et que les arrangements sont examinés chaque année. De plus, il est important de respecter les contraintes de temps de travail et les demandes en termes de heures ou lieux de travail.\n\nEn résumé, je vais informer l'utilisateur sur la politique de télétravail dans le département Engineering en mentionnant les procédés d'approval et les dates de revue annuelles des arrangements.\n</think>\n\nLe département Engineering de Nexora Solutions est connecté à la politique de télétravail établie par la company. Selon le Politique de Travail Remote, les employés doivent suivre les procédés spécifiques pour demander un arrangement de travail remotely. Les demandes de travail remote excedant trois jours par semaine nécessitent l'autorisation en écrit du manager de ligne et du Head of Department. De plus,",
+        "latency": 26.15,
+        "sources": [
+          "PostgreSQL employees table",
+          "Flexible Working Policy",
+          "Remote Work Policy"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Quel est le role de Paul Davis et son equipe ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Le rôle de Paul Davis est celui du CTO. Son équipe comporte une seule personne, ce qui signifie qu'il gère un petit équipe de taille 1.",
+        "latency": 8.57,
+        "sources": [
+          "PostgreSQL employees table",
+          "Onboarding Policy",
+          "Flexible Working Policy"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to figure out the role of Paul Davis and his team based on the provided context. Let me start by looking through the employee data given.\n\nFirst, I see that Paul Davis is listed with the role of CTO (Chief Technology Officer). His manager is Alexandra Chen, and the team size is 1. Since the team size is 1, it implies that Paul is likely a leader within his own department or unit at Nexora Solutions.\n\nLooking through the other employees, I notice that all the roles listed are for single individuals with team sizes of 1. This suggests that each employee might be leading their respective teams or departments. \n\nGiven that Paul Davis is the CTO, it's reasonable to assume he leads the Technology department. The other roles like Senior Operations Manager, Sales Analyst, DevOps Engineer, Paralegal, and Compliance Officer all seem to fit into different areas of the organization, each likely managed by a single manager.\n\nSince there are no additional details about the structure or reporting lines beyond what's provided, I can infer that Paul Davis' role is as the CTO leading his team. However, with a team size of 1, it might mean he's responsible for a specific technology initiative or handles all technology-related matters within the company.\n\nI should also consider the onboarding policy mentioned in the context to see if there's any relevant information about how teams are structured during onboarding. The onboarding process includes introductions to company values, structure, HR policies, benefits, IT security, and facilities. This further supports that each employee is part of a team led by their manager.\n\nIn summary, based on the provided data and context, Paul Davis is the CTO responsible for leading the Technology department or initiative at Nexora Solutions.\n</think>\n\nLe rôle de Paul Davis est celui de Chief Technology Officer (CTO). Il dirige son équipe, qui se concentre probablement sur les aspects technologiques de la company. Les autres employés, comme Amir Davis et Rania Davis, sont également responsables de leurs unités spécifiques, tels que l'opérations, le développement des logiciels, l'ingénierie de données et la conformité.",
+        "latency": 23.43,
+        "sources": [
+          "PostgreSQL employees table",
+          "Onboarding Policy",
+          "Flexible Working Policy"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Quelles sont les politiques de conge pour les contractuels et combien sont ils ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Je n'ai pas cette information dans le contexte fourni. Le document ne mentionne que la politique des congés pour tous les employés, mais ne donne aucun détail spécifique concernant les contractuels.",
+        "latency": 9.11,
+        "sources": [
+          "Annual Leave Policy",
+          "Remote Work Policy"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bon, je dois répondre à la question des contractuels concernant les politiques de congé et la quantité qu'ils entendent. D'après le context fourni, il semble que Nexora Solutions ait établi une politique d'annuel de congé pour tous ses employés.\n\nJe regarde le texte fourni : \"Policy: Annual Leave Policy — Purpose\". Ce document explique les droits aux semaines de congé pour tous les contractuels. Il mentionne que chaque salarié est entondu à 28 semaines annuelles de congé, qu'il peut utiliser soit pour des raison personnelles, des vacances, ou d'autres situations juridiques.\n\nJe n'ai pas trouvé d'informations sur la quantité exacte, mais il semble que chaque salarié ait droit à 28 semaines. Donc, je vais formuler cela dans ma réponse en français.\n</think>\n\nLes contractuels de Nexora Solutions sont entondu à 28 semaines de congé annuel. Ce montant peut être utilisé pour des raison personnelles, des vacances ou d'autres situations juridiques.",
+        "latency": 15.84,
+        "sources": [
+          "Annual Leave Policy",
+          "Remote Work Policy"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Qui dirige le departement HR et quelles sont leurs politiques ?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Le directeur du département HR est Maria Baker, qui occupe la position de Chief Human Resources Officer (CHRO). Les politiques incluent l'égalité des chances et l'accompagnement lors de l'intégration des nouveaux employés.",
+        "latency": 10.08,
+        "sources": [
+          "PostgreSQL employees table",
+          "Onboarding Policy",
+          "Equal Opportunities Policy"
+        ],
+        "language": "French",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "D'accord, je dois répondre à la question : \"Qui dirige le département HR et quelles sont leurs politiques ?\" en fonction du context fourni. \n\nTout d'abord, je regarde les noms et les rôles des personnes listées. Je vois Maria Baker avec le rôle de CHRO (Chief Human Resources Officer), Rania White comme HR Manager, Erik White comme HR Director, Cedric Martin comme Senior HR Business Partner, et plusieurs autres avec des rôles similaires ou adjacents. \n\nIl semble que Rania White soit une personne importante dans ce contexte, car plusieurs de ses collègues mentionnent elle comme leur manager avec le rôle de HR Manager. Cela suggère qu'elle dirige une équipe ou est directement en charge du département HR.\n\nEnsuite, je regarde les politiques fournies : l'Equal Opportunities Policy et le Onboarding Policy. Ces politiques couvrent des aspects importants comme la déclaration de signalataires, l'induction d'entrée, la gestion du greeting par le manager, etc. \n\nDonc, je pense que Rania White dirige le département HR, et ses politiques incluent les équipes de suivi, les trainings, la gestion des problèmes au cours de la probation, et la gestion des équipes d'entrée.\n\nJe dois m'assurer que ma réponse ne contient pas d'information non fournie. Je n'ai pas besoin de mentionner DeepSeek ou d'autres détails extérieurs. \n\nEn résumé, je vais structurer la réponse en indiquant qui dirige le département et les principales politiques mentionnées dans le contexte.\n</think>\n\nLe directeur du département HR est Rania White. Les politiques principales incluent l'équité des opportunités et la gestion des problèmes de discrimination, ainsi que des procédés d'induction et de suivi des new-employés, tels que les trainings sur la sécurité et le code de conducte, et les réunions avec les managers de l'équipe.",
+        "latency": 24.19,
+        "sources": [
+          "PostgreSQL employees table",
+          "Onboarding Policy",
+          "Equal Opportunities Policy"
+        ],
+        "language": "French",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "ما هي سياسة إجازة الأمومة ومن يوافق عليها في الموارد البشرية؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "سياسة إجازة الأمومة في Nexora Solutions تشمل الإذن للنساء خلال فترة الحمل والولادة. الموافقة على هذه الإجازة تكون من قبل إدارة الموارد البشرية. كما أن-policy تشمل إجازة الابوة لشريك الحياة الآخر إذا كان الزوجين يرغبان في ذلك، حيث يمكن لواحد فقط من شركاء الحياة طلب إجازة مماثلة لإجازة الأمومة، بينما يكون الشريك الآخر مؤهلاً للإجازة الأبويّة.",
+        "latency": 13.3,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to answer the user's question about Nexora Solutions' maternity and paternity leave policy. The user is asking for the details regarding leave entitlements.\n\nFirst, I'll look at the context provided. It mentions that the policy supports employees through significant life events like maternity and paternity. Specifically, section 4.1 states that adopting a child entitles an employee to the same leave as maternity leave. Section 4.2 clarifies that only one partner can claim adoption leave equivalent to maternity leave, while the other is entitled to paternity leave provisions.\n\nI should structure my answer clearly, mentioning both sections and what each entails. I need to make sure not to add any extra information beyond what's provided in the context. Also, since the user specified responding in Arabic, I'll ensure the response is entirely in Arabic without using markdown or asterisks.\n</think>\n\nإذا كانت هناك سؤال أو طلب معين، يرجى تقديمه وسأكون سعيدًا بمساعدتك في الإجابة.",
+        "latency": 16.25,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "أخبرني عن قسم الهندسة وسياسة العمل عن بعد",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "في قسم الهندسة في نكسورا سولوشنز، يمكن للموظفين طلب العمل عن بعد. توجد سياسة عمل عن بعد تتضمن إجراءات محددة لطلب العمل عن بعد. يجب على الموظف مناقشة الترتيبات المطلوبة للعمل عن بعد مع مديره المباشر قبل بدء العمل. إذا كان الطلب يتجاوز ثلاثة أيام في الأسبوع، فسيتطلب موافقة كتابية من كلاً من مديره المباشر ورئيس قسمه.\n\nبالإضافة إلى ذلك، هناك سياسة عمل مرن تشمل أنواع مختلفة من العمل المرن مثل ساعات العمل (بدء/نهاية)، أيام العمل (جزئي، فقط وقت الدراسة)، أو موقع العمل (عن بعد/هجين).",
+        "latency": 14.54,
+        "sources": [
+          "PostgreSQL employees table",
+          "Flexible Working Policy",
+          "Remote Work Policy"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Alright, I need to answer the user's query about Nexora Solutions' Engineering Department and remote work policies. Let me start by looking at the context provided.\n\nFirst, the Remote Work Policy section mentions that employees must discuss remote arrangements with their direct manager before starting. For requests exceeding 3 days a week, both the line manager and Head of Department need written approval. Also, these arrangements are reviewed annually or when there's a role change.\n\nNext, the Flexible Working Policy allows changes in hours (start/end times, compressed), days (part-time, term-time only), and location (remote/hybrid). The specific policies for remote work are covered under the Remote Work Policy section.\n\nLooking at the employee data, I see several people listed under Engineering roles. For example, Fatima Nguyen is a VP of Engineering with a manager named Paul Davis. There's also Julia Jackson as an Engineering Manager overseeing multiple locations like Dubai and Casablanca. Other engineering roles include Helen Ward in Paris and others in different cities.\n\nSo, the Engineering Department includes various roles such as CTO, VP Engineering, Engineering Managers, and several Senior Software Engineers and DevOps Engineers spread across different locations including London, Paris, Dubai, Tunis, Berlin, and Casablanca.\n\nPutting it all together, I can structure the answer by first mentioning the Engineering Department's presence in multiple cities with various roles under Fatima Nguyen. Then, outline the remote work policies as per the context provided.\n</think>\n\nيحتوي قسم الهندسة على العديد من الأسماء المهمة، بما في ذلك رئيس التكنولوجيا (Paul Davis) و phó التكنولوجيا (Fatima Nguyen) وقادة فريق تكنولوجيا الإدارة (Julia Jackson). يextends إلى مدن مختلفة مثل لندن، باريس، دوب، تونس، بروتinx، وشام. يشمل القسم أيضًا أسماء مثل Helen Ward، Fatima Harris، Yasmine Scott، وغيرها من الأسماء المهمة.",
+        "latency": 22.97,
+        "sources": [
+          "PostgreSQL employees table",
+          "Flexible Working Policy",
+          "Remote Work Policy"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "كم عدد المتعاقدين وما هي حقوقهم في الإجازات؟",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "ليس لدي معلومات حول عدد المتعاقدين أو حقوقهم في الإجازات وفقًا للنص المعطى.",
+        "latency": 7.98,
+        "sources": [
+          "Annual Leave Policy",
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "Arabic",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "السؤال يتعلق بمواعيد الإجازة و حقوق المواعيد، ولكن من السياق الذي تم تقديمه، لا توجد معلومات عن قوانين الإجازات مثل قوانين الإجازة المترتبة على المتعاقد أو حقوقهم في الإجازات. لذا، لا يمكنني تقديم إجابات محددة对此.\n</think>\n\nالسؤال يتعلق بمواعيد الإجازة و حقوق المواعيد، ولكن من السياق الذي تم تقديمه، لا توجد معلومات عن قوانين الإجازة مثل قوانين الإجازة المترتبة على المتعاقد أو حقوقهم في الإجازات. لذا، لا يمكنني تقديم إجابات محددة对此.",
+        "latency": 12.59,
+        "sources": [
+          "Annual Leave Policy",
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "Arabic",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Cual es la politica de maternidad y cuantos empleados hay en HR?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "No tengo información sobre el número de empleados en HR ni sobre los detalles específicos de la política de maternidad de Nexora Solutions.",
+        "latency": 7.47,
+        "sources": [
+          "Data Protection Policy",
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bueno, el usuario está preguntando sobre la política de maternidad y el número de empleados en HR. Primero, veo que la información necesaria no está available en el contexto proporcionado.\n\nEl contexto menciona la Políticas de Maternidad y Paternidad, pero no da detalles específicos como cuántos empleados hay en HR. Además, el usuario también menciona \"cuantos empleados hay\", lo cual no está relacionado con la política de maternidad directamente.\n\nComo HR Assistant, no tengo acceso a datos específicos sobre el número de empleados ni más allá de lo que se pueda inferir del contexto general. Por lo tanto, debo informar al usuario que no tengo esta información disponible.\n</think>\n\nLo siento, pero no tengo la información específica sobre cuántos empleados hay en HR ni sobre la política de maternidad y paternidad detallada.",
+        "latency": 13.34,
+        "sources": [
+          "Data Protection Policy",
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Cuentame sobre el departamento de Ingenieria y su politica de trabajo remoto",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "No tengo información específica sobre el departamento de Ingeniería y su política de trabajo remoto. La información proporcionada se refiere a la política general de trabajo remoto y horarios flexibles, pero no menciona detalles específicos del departamento de Ingeniería.",
+        "latency": 13.45,
+        "sources": [
+          "Flexible Working Policy",
+          "Remote Work Policy"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bueno, el departamento de Ingeniería de Nexora Solutions tiene una política de trabajo remoto que está regida por las políticas generales de la empresa. Según el polígono proporcionado, los empleados deben discutir anteriormente con su directivo de maderas las disposiciones de trabajo remoto. Además, si solicitan un trabajo remoto excedente de 3 días a la semana, se necesita la.approbación escrita tanto del director de maderas como del jefe de departamento. Finalmente, los arreglo de trabajo remoto que ya estén previamente aprobados se revisan anualmente o cuando发生变化 su rol.\n</think>\n\nEl departamento de Ingeniería de Nexora Solutions sigue las normas generales de la empresa regarding la política de trabajo remoto. Los empleados deben discutir anteriormente con su directivo de maderas cualquier disposición de trabajo remoto. Además, si solicitan un trabajo remoto excedente de 3 días a la semana, se necesita la.approbación escrita tanto del director de maderas como del jefe de departamento. Finalmente, los arreglo de trabajo remoto que ya estén previamente aprobados se revisan anualmente o cuando发生变化 su rol.",
+        "latency": 20.97,
+        "sources": [
+          "Flexible Working Policy",
+          "Remote Work Policy"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Quien gestiona Finanzas y cuantos empleados tiene?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "No tengo información sobre quién gestiona Finanzas ni cuántos empleados tiene Nexora Solutions en este contexto.",
+        "latency": 7.19,
+        "sources": [
+          "Data Protection Policy",
+          "Whistleblowing Policy"
+        ],
+        "language": "Spanish",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Bueno, el usuario está preguntando quién gestiona las finanzas y cuántos empleados tiene Nexora Solutions. Primero, necesito revisar el contexto proporcionado.\n\nEn el contexto, se menciona que la data de salario y compensation es sensible y solo puede ser accedida por HR, Finance y gerenciar senior con una necesidad legítima de negocio. Esto me dice que Finance es una de las unidades que gestionan esa información.\n\nSin embargo, no hay información específica sobre cuántos empleados tiene Nexora Solutions. El contexto se centra más en la gestión de datos personales y el policy de contratación, pero no menciona el tamaño del empleado o el número de empleados.\n\nPor lo tanto, puedo concluir que Finance gestiona las finanzas, pero no tengo suficiente información para determinar cuántos empleados tiene Nexora Solutions.\n</think>\n\nLa gestión de finanzas está realizada por la división de Finanzas. Sin embargo, el contexto no proporciona detalles sobre el número total de empleados en Nexora Solutions.",
+        "latency": 14.45,
+        "sources": [
+          "Data Protection Policy",
+          "Whistleblowing Policy"
+        ],
+        "language": "Spanish",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Was ist die Mutterschaftsurlaubsregelung und wer genehmigt sie in der HR?",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Die Mutterschaftsurlaubsregelung besagt, dass Mitarbeiterinnen während des Mutterschaftsurlafs entweder 16 Wochen oder je nach Land 14 bis 20 Wochen Urlaub haben können. Der Urlaub kann in zwei Teilen verteilt werden, wobei die erste Phase mindestens vier Wochen dauern muss.\n\nIn der HR wird diese Regelung von der Abteilungsleiterin für Personalentwicklung und -politik genehmigt.",
+        "latency": 12.96,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "German",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, ich muss die Frage des Benutzers beantworten. Die Frage ist auf Deutsch: \"Was ist die Mutterschaftsurlaubsregelung und wer genehmigt sie in der HR?\" Also, es handelt sich um die Mutterschaftsurlaubsergelung, die Mutterschutzverordnung (MUV) genannt wird, und wie sie von der HR abgearbeitet wird.\n\nZuerst Definition: Die MUV ist ein belastbarer Arbeitsvertrag, der die Rechte des Arbeitenden zu Heimunterhalts Tätigkeit umfasst. Ersetzt den Heimlebensvertrag im Fall der Nonen und Nonin.\n\nNun, wer genehmigt diese Regelung in der HR? Die Genehmigung passiert meist bei Anstellungsgesprächen oder beim Auftritt in die Stelle. Die HR部门 wird dann die rechtlichen Voraussetzungen prüfen, wie z.B., ob der Arbeitsvertrag erfüllt ist und ob die Arbeitsplatzregeln zulassen.\n\nDarüber hinaus gibt es Einzelheiten im Arbeitsvertrag, wie die Auszahlung, die Zeitspanne und die Anmeldungshinweise. Die HR部门 wird diese documents überprüfen, um sicherzustellen, dass der Mitarbeiter wirklich die rechtlichen Rechte abdeckt.\n\nZusammenfassend: Die MUV ist ein zentraler Bestandteil der Arbeitsverträge in einigen Ländern, und die Genehmigung von ihr in der HR erfolgt bei Anstellungsgesprächen nach Ablauf der Voraussetzungen.\n</think>\n\nDie Mutterschaftsurlaubsregelung, auch als Mutterschutzverordnung (MUV) bezeichnet, ist ein belastbarer Arbeitsvertrag, der die Rechte des Arbeitenden zu Heimunterhalts Tätigkeit umfasst. Ersetzt den Heimlebensvertrag im Fall der Nonen und Nonin. Die Genehmigung dieser Regelung in der HR erfolgt bei Anstellungsgesprächen oder beim Auftritt in die Stelle, wobei die rechtlichen Voraussetzungen überprüft werden, wie z.B., ob der Arbeitsvertrag erfüllt ist und ob die Arbeitsplatzregeln zulassen. Darüber hinaus werden Ein",
+        "latency": 27.32,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "German",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "Erzahlen Sie mir uber die Ingenieurwesen-Abteilung und ihre Richtlinien",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Die Ingenieurwesen-Abteilung von Nexora Solutions umfasst verschiedene Positionen wie QA Engineer, DevOps Engineer, Staff Engineer und Senior Software Engineer. Die Abteilung hat zwei wichtige Richtlinien: die Lern-und-Entwicklungspolitik und die Onboarding-Politik.\n\nDie Lern-und-Entwicklungspolitik zielt darauf ab, die kontinuierliche Entwicklung der Mitarbeiter zu fördern. Sie definiert das Learning and Development-Support, das zur Verfügung steht, sowie den Prozess für dessen Zugang.\n\nDie Onboarding-Politik legt fest, wie neue Mitarbeiter und Kontrahenten von Nexora Solutions effektiv eingearbeitet werden. Diese Politik sichert eine konsistente und erfolgreiche Einführung in die Firma, ihre Kultur und die jeweilige Rolle.\n\nDie Abteilung hat verschiedene Ingenieure, darunter Full-Time- und Part-Time-Mitarbeiter sowie Kontrahenten. Die Manager der Abteilung sind Fatima Nguyen, Julia Jackson und andere.",
+        "latency": 16.97,
+        "sources": [
+          "PostgreSQL employees table",
+          "Learning and Development Policy",
+          "Onboarding Policy"
+        ],
+        "language": "German",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "Okay, ich muss über die Ingenieurwesen-Abteilung und ihre Richtlinien erzählen. Zunächst brauche ich zu wissen, wie die Abteilung organisiert ist. Ich sehe, dass es eine Vielzahl von Angestellten gibt, die in verschiedenen Rollen tätig sind, wie z.B. QA Engineer, Software Engineer, DevOps Engineer und Engineering Manager.\n\nIch sollte wahrscheinlich die Struktur der Abteilung ermitteln, ob sie z.B. in Teams oder Teams mit unterschiedlichen Fokusen aufgeteilt ist. Es gibt Namen wie Fatima Nguyen, die als VP Engineering tätig ist, was darauf deutet, dass es hohe Positionen gibt.\n\nNun zu den Richtlinien: Die Onboarding Policy und das Learning and Development Policy sind erwähnt. Also gibt es eine einheitliche Einführung für neue Mitarbeiter und eine Unterstützung in der Weiterbildung. Die Regeln für das Ansteigen an Fhramen, wie z.B. die Bandzugehörigkeit, spielen auch eine Rolle.\n\nIch sollte auch berücksichtigen, dass es sowohl Full-Time als auch Contractor und Intern contract_type gibt, was darauf hindeutet, dass die Abteilung verschiedene Arten von Mitarbeiter einnimmt.\n\nZusammenfassend könnte ich sagen, dass die Ingenieurwesen-Abteilung eine strukturierte und koordinierte Gruppe ist, die sich um die stetige Entwicklung der Mitarbeiter kümmert und eine klare Strukturierung hat, um den Onboarding und die Fortbildung zu gestalten.\n</think>\n\nDie Ingenieurwesen-Abteilung von Nexora Solutions ist eine strukturierte Gruppe, in der verschiedene ролenbezogene Teams tätig sind. Die Abteilung umfasstrollen wie z.B. QA Engineer, Software Engineer, DevOps Engineer und Engineering Manager. Es gibt sowohl Full-Time als auch Contractor und Intern contract_type, was eine breite Arbeitsform darstellt.\n\nDie Richtlinien der Ingenieurwesen-Abteilung umfassen die Onboarding- und Learning & Development-Policy. Die Onboarding Policy definiert einheitliche Prozesse für den Einstieg neuer Mitarbeiter, während die Learning & Development Policy die Unterstützung im Bereich der Fortbildung bietet. Die Abteilung ist angesichts verschiedener Fhramen (wie z.B. Bandzugehörigkeit",
+        "latency": 26.49,
+        "sources": [
+          "PostgreSQL employees table",
+          "Learning and Development Policy",
+          "Onboarding Policy"
+        ],
+        "language": "German",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "产假政策是什么，谁批准？",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "Nexora Solutions的产假政策规定了员工在生育时可以享受的假期权利。产假和育儿假的具体条款可以在公司的相关政策中找到。该政策由公司管理层批准。",
+        "latency": 7.68,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "Chinese",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "好，我来回答这个问题。首先，根据提供的上下文，产假政策是关于 maternity leave 的规定。Nexora Solutions 公司提供了 maternity leave 的 entitlements 和 procedures。\n\n接下来，问题问的是“产假政策是什么，谁批准？”。第一部分“产假政策是什么”已经明确，是 maternity leave 的规定，包括 entitled 和 procedure。\n\n第二部分“谁批准？”需要查看是否有相关信息。在上下文中，并没有提到审批机构的具体名称或流程。因此，根据提供的信息，无法确定审批机构是谁。\n\n综上所述，可以回答产假政策是什么，但无法确定谁批准。\n</think>\n\n产假政策是关于 maternity leave 的规定，包括 entitled 和 procedure。根据上下文，没有提到审批机构的信息，因此无法确定谁批准。",
+        "latency": 11.95,
+        "sources": [
+          "Maternity and Paternity Leave Policy"
+        ],
+        "language": "Chinese",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "工程部门的结构和远程办公政策是什么？",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "工程部门的结构信息未在提供的上下文中提及。根据远程办公政策，远程工作请求超过每周3天需要获得直接上级经理和部门主管的书面批准。每年或职位发生变化时会审查已批准的远程工作安排。",
+        "latency": 8.78,
+        "sources": [
+          "Onboarding Policy",
+          "Remote Work Policy"
+        ],
+        "language": "Chinese",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "好的，我需要回答“工程部门的结构和远程办公政策是什么？”根据提供的上下文，首先看远程办公政策部分。文本中提到4.1规定了员工在开始远程工作前必须与直接上级讨论。接着是4.2，如果请求每周超过3天远程工作，需要得到线长和人力资源部的书面批准。还有4.3，批准后的远程安排每年或当职位变化时审查一次。\n\n至于工程部门的结构，文本中没有明确提到具体的部门结构，只提到了一些关于新员工入职的信息，如公司介绍、IT设备设置、安全意识培训等。因此，无法确定工程部门的具体结构。\n\n所以，我只能回答远程办公政策的部分，而工程部门的结构信息不足。\n</think>\n\n根据提供的上下文，工程部门的结构和远程办公政策如下：\n\n远程办公政策：\n1. 员工在开始远程工作前必须与直接上级讨论（4.1）。\n2. 每周远程工作超过3天的请求需要线长和人力资源部的书面批准（4.2）。\n3. 批准后的远程安排每年或当职位变化时审查一次（4.3）。\n\n工程部门的结构信息在提供的上下文中未明确提及，因此无法确定其结构。",
+        "latency": 16.4,
+        "sources": [
+          "Onboarding Policy",
+          "Remote Work Policy"
+        ],
+        "language": "Chinese",
+        "error": null
+      }
+    }
+  },
+  {
+    "category": "HYBRID",
+    "question": "谁管理财务部门，有多少名员工？",
+    "models": {
+      "qwen2.5:7b": {
+        "answer": "根据提供的信息，我没有关于财务部门的管理者或员工数量的信息。",
+        "latency": 6.94,
+        "sources": [
+          "Code of Conduct",
+          "Equal Opportunities Policy"
+        ],
+        "language": "Chinese",
+        "error": null
+      },
+      "deepseek-r1:7b": {
+        "answer": "好的，我需要回答用户的问题：“谁管理财务部门，有多少名员工？”首先，查看提供的上下文信息。上下文中没有提到财务部门的负责人或员工数量的相关内容。因此，根据指示，如果信息不在上下文中，就无法提供准确的回答。\n\n所以，我会回复说没有相关信息。\n</think>\n\n没有相关信息。",
+        "latency": 8.74,
+        "sources": [
+          "Code of Conduct",
+          "Equal Opportunities Policy"
+        ],
+        "language": "Chinese",
+        "error": null
+      }
+    }
+  }
+]

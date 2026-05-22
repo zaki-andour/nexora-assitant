@@ -28,6 +28,9 @@ STRUCTURED — question about a specific person or employee statistics:
 - Titles include: CEO, CTO, CFO, boss, chef, patron, director, manager, head, 
   رئيس, مدير, chef, Geschäftsführer, jefe, 老板 — ALL mean a person with a role
 - Employee counts, locations, departments, contracts
+- Department summary queries: 'Give me a summary of Engineering' → STRUCTURED
+- Salary band queries: "What is the highest salary band in Engineering?" → STRUCTURED
+- Any question about salary_band data from the database → STRUCTURED
 - Key signal: the answer requires looking up a person in the employee database
 
 GRAPH examples (org hierarchy, who manages who, team members):
