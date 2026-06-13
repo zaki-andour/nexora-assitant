@@ -109,18 +109,22 @@ Rules:
 - department is already a column in employees — never join to get it
 - Use similarity() ONLY for person name searches — NEVER for contract_type, department, role, salary_band
 - Interns are identified by contract_type = 'Intern' — NEVER use role = 'Intern'
+- For intern queries: ALWAYS include contract_type in SELECT so the answer shows they are interns
 - If question contains [Current user: X, employee_id: N], use WHERE employee_id = N for personal queries like 'my contract', 'my role', 'my department'
 - For filtering by category: use exact WHERE contract_type = 'X' or WHERE department = 'X'
 - For person name search: WHERE similarity(LOWER(name), LOWER('X')) > 0.35 ORDER BY similarity(LOWER(name), LOWER('X')) DESC
 - For manager lookup: LEFT JOIN employees m ON e.manager_id = m.employee_id
-- For year counts: SELECT EXTRACT(YEAR FROM start_date) AS year, COUNT(*) AS count FROM employees WHERE EXTRACT(YEAR FROM start_date) IN (X,Y) GROUP BY year ORDER BY year
-- For role queries like CEO/CTO/CFO: SELECT name, role, department, email FROM employees WHERE role = 'CEO' LIMIT 1
+- For year counts: SELECT EXTRACT(YEAR FROM start_date) AS year, COUNT(*) AS count FROM employees WHERE EXTRACT(YEAR FROM start_date) IN (X,Y) GROUP BY EXTRACT(YEAR FROM start_date) ORDER BY year
+- For role queries like CEO/CTO/CFO: SELECT name, role, department, email, location, start_date, salary_band FROM employees WHERE role = 'CEO' LIMIT 1
 - NEVER add manager_id conditions unless explicitly asked
 - access_level values are text: 'employee', 'hr_staff', 'hr_leadership' — ordered low to high
 - For highest access_level: WHERE access_level = 'hr_leadership'
 - NEVER use MAX() on access_level — it is text not numeric
 - For subqueries with MAX/MIN: SELECT name, col FROM employees WHERE col = (SELECT MAX(col) FROM employees) LIMIT 20
-- Select only relevant columns — max 4 columns, always include name unless COUNT or MAX/MIN query
+- Select only relevant columns — max 5 columns, always include name unless COUNT or MAX/MIN query
+- For salary_band queries: ALWAYS include salary_band in SELECT
+- For intern queries: ALWAYS include contract_type in SELECT
+- For full employment details: SELECT name, role, department, contract_type, start_date, location, salary_band, email FROM employees WHERE employee_id = N LIMIT 1
 - Limit results to 20 rows
 
 Question: {question}
@@ -144,6 +148,23 @@ SQL:"""
         sql = sql.replace('SELECT ', 'SELECT name, ', 1)
     # Fix subquery LIMIT issue
     sql = re.sub(r'\)\s*LIMIT\s+\d+\s*\)', ')', sql, flags=re.IGNORECASE)
+
+    # ── APPLY RBAC CLAUSE ─────────────────────────────
+    if rbac_clause and "WHERE" in sql.upper():
+        import re as _re2
+        rbac_dept = rbac_clause.replace("AND department = ", "").replace("'", "").strip()
+        if _re2.search(r"department\s*=\s*'[^']+'", sql, _re2.IGNORECASE):
+            sql = _re2.sub(r"department\s*=\s*'[^']+'", f"department = '{rbac_dept}'", sql, flags=_re2.IGNORECASE)
+        else:
+            if "ORDER BY" in sql.upper():
+                sql = _re2.sub(r'(ORDER\s+BY)', f"AND department = '{rbac_dept}' \1", sql, flags=_re2.IGNORECASE)
+            elif "LIMIT" in sql.upper():
+                sql = _re2.sub(r'(LIMIT)', f"AND department = '{rbac_dept}' \1", sql, flags=_re2.IGNORECASE)
+            elif sql.rstrip().endswith(";"):
+                sql = sql.rstrip()[:-1] + f" AND department = '{rbac_dept}';"
+            else:
+                sql = sql + f" AND department = '{rbac_dept}'"
+        logger.info(f"RBAC clause applied: {rbac_clause}")
 
     # Fix CEO/CTO queries that incorrectly add manager_id IS NULL
     if 'manager_id IS NULL' in sql and any(r in sql.upper() for r in ["'CEO'", "'CTO'", "'CFO'"]):

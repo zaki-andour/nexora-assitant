@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexora HR Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="login-page" class="login-page">
+    <div class="login-card">
+        <div class="login-logo">
+            <div class="logo-icon">N</div>
+            <h1>Nexora HR Assistant</h1>
+            <p>Sign in to continue</p>
+        </div>
+        <div class="login-form">
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="username" placeholder="e.g. paul.davis" />
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Enter your password" />
+            </div>
+            <div id="login-error" class="error-msg"></div>
+            <button id="login-btn" class="btn-primary">Sign In</button>
+        </div>
+    </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" class="app hidden">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-small">N</div>
+            <span>Nexora HR</span>
+        </div>
+
+        <button class="new-chat-btn" onclick="newChat()">
+            <span>+</span> New Chat
+        </button>
+
+        <div class="sidebar-section">
+            <div class="section-title">Recent</div>
+            <div id="chat-history"></div>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="user-info">
+                <div class="user-avatar" id="user-avatar">A</div>
+                <div class="user-details">
+                    <div id="user-name">Admin</div>
+                    <div id="user-role" class="user-role">ADMIN</div>
+                </div>
+            </div>
+            <button class="logout-btn" onclick="logout()">Sign out</button>
+        </div>
+    </aside>
+
+    <!-- MAIN CHAT -->
+    <main class="chat-main">
+
+        <!-- TOP BAR -->
+        <div class="topbar">
+            <div class="topbar-left">
+                <select id="model-select" class="model-select" onchange="switchModel()">
+                </select>
+            </div>
+            <div class="topbar-right" id="topbar-dept"></div>
+        </div>
+
+        <!-- CHAT AREA -->
+        <div id="chat-area" class="chat-area">
+            <div class="welcome-screen" id="welcome-screen">
+                <div class="welcome-logo">N</div>
+                <h2>How can I help you today?</h2>
+                <p>Ask me anything about HR policies or employee information</p>
+                <div class="suggestions">
+                    <div class="suggestion" onclick="useSuggestion(this)">What is the remote work policy?</div>
+                    <div class="suggestion" onclick="useSuggestion(this)">Who is the CEO?</div>
+                    <div class="suggestion" onclick="useSuggestion(this)">How many employees are in Engineering?</div>
+                    <div class="suggestion" onclick="useSuggestion(this)">What is the maternity leave policy?</div>
+                </div>
+            </div>
+            <div id="messages"></div>
+        </div>
+
+        <!-- INPUT AREA -->
+        <div class="input-area">
+            <div id="feedback-bar" class="feedback-bar hidden">
+                <span>Was this helpful?</span>
+                <button class="fb-btn" onclick="sendFeedback(1)">👍</button>
+                <button class="fb-btn" onclick="sendFeedback(-1)">👎</button>
+                <input type="text" id="fb-comment" placeholder="Optional comment..." />
+                <button class="fb-send" onclick="submitFeedback()">Send</button>
+            </div>
+            <div class="input-box">
+                <textarea id="question-input" placeholder="Ask me anything about HR..." rows="1"
+                    onkeydown="handleKey(event)" oninput="autoResize(this)"></textarea>
+                <button id="send-btn" onclick="sendQuestion()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="input-footer">
+                <span id="sources-display"></span>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

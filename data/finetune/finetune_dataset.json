@@ -1,0 +1,362 @@
+[
+  {
+    "id": 193,
+    "question": "Give me a summary of Engineering department",
+    "bad_answer": "The Engineering department at Nexora Solutions includes several key roles and employees:\n\n1. Fatima Nguyen - VP Engineering, started on February 5, 2022.\n2. Julia Jackson - Engineering Manager, will start on December 23, 2024.\n3. Ethan Phillips - Engineering Manager, will start on August 21, 2024.\n4. Dina Sanchez - QA Engineer, started on October 2, 2020.\n5. Rachel Nelson - QA Engineer, started on April 26, 2019.\n6. Rania Davis - DevOps Engineer, will start on July 19, 2025.\n7. Danielle Kelly - ",
+    "correct_answer": "The Engineering department at Nexora Solutions has 39 employees. It is led by Paul Davis (CTO). Key roles include VP Engineering (Fatima Nguyen), Engineering Managers (Julia Jackson, Ethan Phillips), DevOps Engineers, QA Engineers, and Staff Engineers.",
+    "category": "STRUCTURED",
+    "comment": "you didn't answer the question the way I excpected",
+    "needs_review": false
+  },
+  {
+    "id": 190,
+    "question": "List all part-time employees",
+    "bad_answer": "Based on the provided information, there are no part-time employees listed. All roles mentioned have a salary band associated with them, which typically indicates full-time positions. If you need further assistance or have additional data to verify, please provide it.",
+    "correct_answer": "There are 15 part-time employees at Nexora Solutions. Here is the list: [list from DB]",
+    "category": "STRUCTURED",
+    "comment": "wrong answer",
+    "needs_review": false
+  },
+  {
+    "id": 189,
+    "question": "من هو الموظف الأقدم في الشركة؟",
+    "bad_answer": "الموظف الأقدم في الشركة هو Alexandra Chen،哪位同事是基于提供的信息中最资深的员工？请注意，名称必须与数据库中的一致。请指定您指的是哪一位。",
+    "correct_answer": "الموظف الأقدم في الشركة هو Alexandra Chen، بدأت العمل في 1 مارس 2018.",
+    "category": "STRUCTURED",
+    "comment": "Answer mixed language",
+    "needs_review": false
+  },
+  {
+    "id": 186,
+    "question": "List all employees in Finance",
+    "bad_answer": "Here is a list of all employees in the Finance department:\n\n1. Stefan Bell - CFO, s.bell@nexora.com\n2. Olivia Brooks - Finance Manager, o.brooks@nexora.com\n3. Mohamed Cook - Finance Director, m.cook@nexora.com\n4. Fatou Stewart - Controller, f.stewart37@nexora.com\n5. Khadija Anderson - Senior Financial Analyst, k.anderson41@nexora.com\n6. Patricia Rivera - Controller, p.rivera46@nexora.com\n7. Yusuf Martin - Accountant, y.martin52@nexora.com\n8. Bianca Cooper - Senior Financial Analyst, b.cooper68@n",
+    "correct_answer": "Access denied. You do not have permission to view employees in other departments.",
+    "category": "STRUCTURED",
+    "comment": "Should be blocked",
+    "needs_review": false
+  },
+  {
+    "id": 185,
+    "question": "Who joined my team after 2023?",
+    "bad_answer": "Julia Jackson joined your team as an Engineering Manager on December 23, 2024.",
+    "correct_answer": "The following employees joined the Engineering department after 2023: Julia Jackson (Engineering Manager, December 23, 2024) and Rania Davis (DevOps Engineer, July 19, 2025).",
+    "category": "STRUCTURED",
+    "comment": "Missing some employees",
+    "needs_review": false
+  },
+  {
+    "id": 181,
+    "question": "What is my contract type?",
+    "bad_answer": "Your contract type at Nexora Solutions is Full-Time.",
+    "correct_answer": "Based on your employee profile, your contract type is Part-Time.",
+    "category": "STRUCTURED",
+    "comment": "Showed wrong contract",
+    "needs_review": false
+  },
+  {
+    "id": 180,
+    "question": "Who are the senior engineers?",
+    "bad_answer": "Based on the information provided, I do not have specific details about the senior engineers at Nexora Solutions. The context only mentions you as a manager in the Engineering department with employee ID 2. Could you please provide more details or specify which senior engineers you are referring to?",
+    "correct_answer": "Based on your access level, I can only show employees in the Engineering department. The senior engineers in Engineering are: Connor Sanchez (Staff Engineer).",
+    "category": "GRAPH",
+    "comment": "Wrong department shown",
+    "needs_review": false
+  },
+  {
+    "id": 173,
+    "question": "Who are all Band5 employees?",
+    "bad_answer": "The following employees are in Band 5:\n- Alexandra Chen (CEO)\n- Paul Davis (CTO)\n- Patricia White (CPO)\n- Stefan Bell (CFO)\n- Maria Baker (CHRO)\n- Fatima Jackson (CRO)\n- Nathan Johnson (CMO)\n- Uma Sanchez (General Counsel)\n- Amir White (COO)\n- Rachel Cooper (CISO)\n- Tariq Baker (Chief Data Officer)\n- Xena Scott (VP Sales)\n- Dina Nguyen (VP Marketing)\n- Connor Williams (VP Operations)\n- Olivia Parker (Compliance Officer)\n- Wendy Mitchell (Legal Counsel)\n- Dina Howard (Compliance Officer)\n- Stefan",
+    "correct_answer": "The Band5 employees at Nexora Solutions are: Alexandra Chen (CEO), Paul Davis (CTO), Patricia White (CPO), Stefan Bell (CFO), Maria Baker (CHRO), Fatima Jackson (CRO), Nathan Johnson (CMO), Uma Sanchez (General Counsel), Amir White (COO), Rachel Cooper (CISO), Tariq Baker (Chief Data Officer), Xena Scott (VP Sales), Dina Nguyen (VP Marketing), Connor Williams (VP Operations), Olivia Parker (Compliance Officer), Wendy Mitchell (Legal Counsel), Dina Howard (Compliance Officer), Stefan Edwards (General Counsel), Nathan Richardson (Legal Counsel), Ivan King (General Counsel).",
+    "category": "STRUCTURED",
+    "comment": "Answer seems incomplete",
+    "needs_review": false
+  },
+  {
+    "id": 165,
+    "question": "من لديه أعلى مستوى وصول؟",
+    "bad_answer": "لا يوجد في النتائج المقدمة أي موظف له مستوى الوصول الأعلى. جميع الموظفين المشار إليهم لديهم نفس المستوى من الوصول وهو \"hr_staff\". يرجى تحديد المعلومات الإضافية إذا كنت تبحث عن معلومات أخرى.",
+    "correct_answer": "الموظفة التي لديها أعلى مستوى وصول هي Alexandra Chen بمستوى hr_leadership.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 161,
+    "question": "كم عدد الموظفين في كل قسم؟",
+    "bad_answer": "عدد الموظفين في كل قسم هو:\n1. المنتجات: 55 موظفًا\n2. العمليات: 53 موظفًا\n3. الماليين: 47 موظفًا\n4. القانونية: 39 موظفًا\n5. التسويق: 39 موظفًا\n6. المبيعات: 39 موظفًا\n7. الهندسة: 39 موظفًا\n8.人力资源部门: 38名员工\n9. الأمن: 36名员工\n10. البيانات: 34名员工\n11. الإدارة التنفيذية: 1名员工",
+    "correct_answer": "عدد الموظفين في كل قسم: المنتجات: 55، العمليات: 53، المالية: 47، القانونية: 39، التسويق: 39، المبيعات: 39، الهندسة: 39، الموارد البشرية: 38، الأمن: 36، البيانات: 34، التنفيذي: 1.",
+    "category": "STRUCTURED",
+    "comment": "the answer is correct but not in arabic ",
+    "needs_review": false
+  },
+  {
+    "id": 155,
+    "question": "ما هي سياسة الإجازة السنوية؟",
+    "bad_answer": "الإجازة السنوية في Nexora Solutions تشمل следующ النقاط:\n\n1. يتم احتساب الإجازة السنوية لموظفي العمل الكامل من اليوم الأول للعمل بواقع 2.083 يوم لكل شهر.\n2. لا يمكن استغلال الإجازة أكثر من القيمة المحتسبة خلال الأشهر الثلاثة الأولى من العمل.\n3. الموظفون الكاملون يستمرون في الحصول على 25 يوم عمل مدفوعة الإجازة سنويًا، بالإضافة إلى العطلات الرسمية في بلد العمل.\n4. الموظفون الجزئيون يحصلون على إجازة سنوية بنسبتهم حسب القيمة المحتسبة ضد الحقائق القياسية البالغة 25 يوم عمل سنوياً.\n5. المستشارون يستمر",
+    "correct_answer": "تمنح شركة Nexora Solutions موظفيها بدوام كامل 25 يوم إجازة سنوية مدفوعة الأجر. يحق للموظفين بدوام جزئي الحصول على إجازة بنسبة تناسب ساعات عملهم. يجب تقديم طلب الإجازة مسبقاً للحصول على الموافقة.",
+    "category": "TEXT",
+    "comment": "whta is this : следующ",
+    "needs_review": false
+  },
+  {
+    "id": 144,
+    "question": "What is the highest salary band in my department?",
+    "bad_answer": "The highest salary band for positions in your department is Band5.",
+    "correct_answer": "The highest salary band in the Engineering department is Band5, held by Paul Davis (CTO).",
+    "category": "STRUCTURED",
+    "comment": "add the person with salery band5 in this departement",
+    "needs_review": false
+  },
+  {
+    "id": 139,
+    "question": "Who is the CEO?",
+    "bad_answer": "Based on the provided context, there is no information available about the CEO of Nexora Solutions. The query returned zero rows, indicating that the necessary details are not present. Could you please provide more information or check if this data is available elsewhere?",
+    "correct_answer": "The CEO of Nexora Solutions is Alexandra Chen. She works in the Executive department and can be reached at a.chen@nexora.com.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 138,
+    "question": "Who has the highest access level?",
+    "bad_answer": "Based on the information provided, I do not have specific details about individual access levels at Nexora Solutions. The SQL error mentioned indicates an issue with accessing or querying the database for this information. \n\nTo determine who has the highest access level, we would need a successful query to retrieve that data. Could you please provide additional details or clarify if there is any other way to obtain this information?",
+    "correct_answer": "The employees with the highest access level (hr_leadership) at Nexora Solutions include Alexandra Chen (CEO) and other senior HR leadership members.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 125,
+    "question": "What is the highest salary band in Engineering?",
+    "bad_answer": "Based on the provided context, there is no specific information about the salary bands for engineers at Nexora Solutions. Therefore, I do not have this information.",
+    "correct_answer": "The highest salary band in the Engineering department is Band5, held by Paul Davis (CTO).",
+    "category": "TEXT",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 121,
+    "question": "List all interns and their departments",
+    "bad_answer": "Based on the provided context, there is no information available about any interns or their respective departments. The query returned 0 rows, indicating that no data exists for interns at this time. If you have additional details to add, please provide them.",
+    "correct_answer": "There are 18 interns at Nexora Solutions across various departments including Engineering, Finance, Marketing, Sales, HR, Operations, Legal, Security, Data, and Product.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 119,
+    "question": "What is the salary of Paul Davis?",
+    "bad_answer": "Based on the provided context, there is no information available about Paul Davis's salary.",
+    "correct_answer": "Paul Davis is in salary Band5 as CTO of Nexora Solutions.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 112,
+    "question": "How many employees joined in 2022 vs 2023?",
+    "bad_answer": "Based on the provided context, there is no information about the number of employees who joined in 2022 versus 2023. The SQL query seems to be incomplete and contains an error, which prevents us from retrieving the necessary data. Please provide a corrected version of the query or any other relevant data to answer your question.",
+    "correct_answer": "In 2022, 55 employees joined Nexora Solutions. In 2023, 47 employees joined.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 109,
+    "question": "Which department has the most interns?",
+    "bad_answer": "I do not have the specific information about which department at Nexora Solutions has the highest number of interns. The query to retrieve this information resulted in an error, indicating that the necessary table or data was missing. Please provide additional details or a corrected query so I can assist you further.",
+    "correct_answer": "The department with the most interns at Nexora Solutions is the Product department.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 102,
+    "question": "Who are all Band5 employees and what departments are they in?",
+    "bad_answer": "I do not have the list of all Band5 employees and their respective departments. The information is not available due to a database error indicating that the \"departments\" relation does not exist. Please check with your IT department or data management team for further assistance.",
+    "correct_answer": "Band5 employees are senior executives: Alexandra Chen (CEO - Executive), Paul Davis (CTO - Engineering), Patricia White (CPO - Product), Stefan Bell (CFO - Finance), Maria Baker (CHRO - HR), and other C-suite executives.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 96,
+    "question": "Who has the highest access level?I need more details",
+    "bad_answer": "Based on the provided context, all individuals listed have an \"hr_staff\" access level. There are no higher levels of access privileges mentioned for any specific individual at Nexora Solutions. Therefore, I do not have information about someone with a higher access level than \"hr_staff.\"",
+    "correct_answer": "The employees with the highest access level (hr_leadership) are senior HR and executive staff including Alexandra Chen (CEO). There are 20 employees with hr_leadership access level.",
+    "category": "STRUCTURED",
+    "comment": "not much informations provided",
+    "needs_review": false
+  },
+  {
+    "id": 93,
+    "question": "What is the average salary band in Engineering?",
+    "bad_answer": "I do not have information on the average salary range for employees in the Engineering department. None of the provided data specifies roles or salaries related to engineering. Please provide more details or check the database again.",
+    "correct_answer": "The salary bands in the Engineering department range from Band2 to Band5. The most common band is Band3.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 92,
+    "question": "Who joined the company in 2023?",
+    "bad_answer": "The following individuals joined Nexora Solutions in 2023:\n\n1. Patricia Rivera | role: Controller | start_date: 2023-12-28\n2. Victor Wright | role: Product Manager | start_date: 2023-12-23\n3. Liam Rogers | role: Data Analyst | start_date: 2023-11-25\n4. Nathan Johnson | role: CMO | start_date: 2023-11-23\n5. Dina Martinez | role: SEO Analyst | start_date: 2023-11-05\n6. Laura Brown | role: Senior Legal Counsel | start_date: 2023-10-02\n7. Ahmed Phillips | role: Senior Operations Manager | start_date",
+    "correct_answer": "47 employees joined Nexora Solutions in 2023.",
+    "category": "STRUCTURED",
+    "comment": "the answer is correct , but this sentence must not be added :\nIf you need more specific information about Patricia Rivera, please let me know.",
+    "needs_review": false
+  },
+  {
+    "id": 79,
+    "question": "Who earns Band5?",
+    "bad_answer": "I do not have the specific criteria for who is eligible for Band 5 in Nexora Solutions based on the provided context. Could you please provide more details or specify which aspect of Band 5 eligibility you are interested in?",
+    "correct_answer": "The following employees earn Band5: Alexandra Chen (CEO), Paul Davis (CTO), Patricia White (CPO), Stefan Bell (CFO), Maria Baker (CHRO), Fatima Jackson (CRO), Nathan Johnson (CMO), Uma Sanchez (General Counsel), Amir White (COO), Rachel Cooper (CISO), and other senior executives.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 73,
+    "question": "How many employees are in HR?",
+    "bad_answer": "There are 0 employees in HR.",
+    "correct_answer": "There are 38 employees in the HR department at Nexora Solutions.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 72,
+    "question": "What is Julia Jackson's email?",
+    "bad_answer": "Julia Jackson's email address is j.jackson@nexora.com.",
+    "correct_answer": "Access denied. You do not have permission to view other employees' personal information.",
+    "category": "STRUCTURED",
+    "comment": "❌ Blocked/restricted",
+    "needs_review": false
+  },
+  {
+    "id": 70,
+    "question": "List all managers in the company",
+    "bad_answer": "The managers in the company are:\n- Alexandra Chen (CEO)\n- Paul Davis (CTO)\n- Julia Jackson (Engineering Manager)\n- Fatima Nguyen (VP Engineering)",
+    "correct_answer": "Access denied. As an employee, you can only view information about your own department.",
+    "category": "STRUCTURED",
+    "comment": "Blocked/restricted to Engineering",
+    "needs_review": false
+  },
+  {
+    "id": 67,
+    "question": "List all contractors across all departments",
+    "bad_answer": "I do not have this information. Our database does not contain details on contractors working in any department at Nexora Solutions. Please provide more specific information or check with the relevant department for up-to-date contractor lists.",
+    "correct_answer": "There are contractors across multiple departments at Nexora Solutions. The total number of contractors is available to HR and admin users only.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 65,
+    "question": "How many people work in Sales?",
+    "bad_answer": "The information provided does not specify the exact number of people currently working in the Sales department. The error message suggests that there is an issue with the SQL query, specifically related to the column \"e.department\" needing to be included in the GROUP BY clause or used in an aggregate function. Without a corrected and executed query, I cannot determine the number of people in the Sales department.",
+    "correct_answer": "There are 39 employees in the Sales department at Nexora Solutions.",
+    "category": "STRUCTURED",
+    "comment": "the answer contain lots of technical specifications",
+    "needs_review": false
+  },
+  {
+    "id": 47,
+    "question": "What is the salary of my team?",
+    "bad_answer": "I don't have the specific salary information for your team. The query provided has an ambiguity issue and needs clarification on which column reference to use. Could you please provide more details or specify the correct column references?",
+    "correct_answer": "The Engineering department has employees across salary bands Band2 to Band5. As a manager, you can view your team's salary bands upon request through HR.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 36,
+    "question": "Who is Paul Davis?",
+    "bad_answer": "I do not have information about Paul Davis's role or department at Nexora Solutions. The SQL errors suggest there might be issues with the database query, but they do not provide any details about Paul Davis. Could you please provide more context or clarify your question?",
+    "correct_answer": "Paul Davis is the CTO (Chief Technology Officer) of Nexora Solutions. He works in the Engineering department and can be reached at p.davis@nexora.com.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 28,
+    "question": "What department does julia jaksen work in?",
+    "bad_answer": "Julia Jaksen works in the Engineering department.",
+    "correct_answer": "Julia Jackson (note: correct spelling) works in the Engineering department as an Engineering Manager.",
+    "category": "STRUCTURED",
+    "comment": "why you don't check the correct name",
+    "needs_review": false
+  },
+  {
+    "id": 21,
+    "question": "Wer ist der direkte Vorgesetzte von Paul Davis?",
+    "bad_answer": "Der direkte Vorgesetzte von Paul Davis ist der Mitarbeiter mit dem ID-Nummer 1.",
+    "correct_answer": "Der direkte Vorgesetzte von Paul Davis ist Alexandra Chen, die CEO von Nexora Solutions.",
+    "category": "STRUCTURED",
+    "comment": "The LLM displays the ID instead of the name \"Alexandra Chen\"",
+    "needs_review": false
+  },
+  {
+    "id": 15,
+    "question": "لمن تعود السلطة الاعلى داخل الشركة",
+    "bad_answer": "السلطة الأعلى داخل الشركة تعود لمديري具有良好中文能力的助手：\n\nAssistant: 根据提供的上下文，公司最高权力归属于经理ID为1的管理者。",
+    "correct_answer": "السلطة الأعلى في شركة Nexora Solutions تعود إلى Alexandra Chen بصفتها الرئيسة التنفيذية (CEO).",
+    "category": "STRUCTURED",
+    "comment": "the answer should be at the same  language as the question",
+    "needs_review": false
+  },
+  {
+    "id": 13,
+    "question": "c'est qui le chef de Nexora ?",
+    "bad_answer": "Je n'ai pas cette information dans ma base de connaissances.",
+    "correct_answer": "Le PDG (CEO) de Nexora Solutions est Alexandra Chen. Elle dirige l'entreprise depuis le département Exécutif.",
+    "category": "GRAPH",
+    "comment": "le  chef ca veut dire CEO",
+    "needs_review": false
+  },
+  {
+    "id": 12,
+    "question": "qui est le chef de Nexora?",
+    "bad_answer": "D'après les informations disponibles, il n'y a pas de données sur qui est le chef de Nexora. Les recherches structurelles ont retourné 0 résultats, indiquant qu'il n'existe aucune information publique claire et concrète à ce sujet.\n\nCependant, pour obtenir des informations précises et à jour, je vous recommande de consulter le site web officiel de Nexora ou d'autres sources fiables qui pourraient fournir cette information. Si vous avez accès aux rapports financiers récents de la société, cela po",
+    "correct_answer": "Le chef de Nexora Solutions est Alexandra Chen, qui occupe le poste de PDG (CEO). Elle travaille dans le département Exécutif.",
+    "category": "STRUCTURED",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 10,
+    "question": "who is paul davis?",
+    "bad_answer": "Based on the provided context, there is no information about a person named Paul Davis. The policies mentioned do not include any reference to an individual by that name. Therefore, without additional context or information, it cannot be determined who Paul Davis is in relation to these policies.\n\nFor further clarification, you may want to check if Paul Davis is mentioned in another document or part of the company's internal records.",
+    "correct_answer": "Paul Davis is the CTO (Chief Technology Officer) of Nexora Solutions. He manages the Engineering department and can be reached at p.davis@nexora.com.",
+    "category": "TEXT",
+    "comment": "",
+    "needs_review": false
+  },
+  {
+    "id": 9,
+    "question": "Qui gère le département Engineering ?",
+    "bad_answer": "Le département Engineering est géré par Paul Davis, qui occupe la position de CTO (Chief Technical Officer) et travaille à plein temps. Vous pouvez le joindre par email à p.davis@nexora.com. Il a commencé son poste le 15 janvier 2023 à Londres.\n\nSources:\n- [GRAPH — Qui gère le département Engineering?]\n- Additional details about Paul Davis",
+    "correct_answer": "Le département Engineering est géré par Paul Davis, qui occupe le poste de CTO. Son email est p.davis@nexora.com.",
+    "category": "GRAPH",
+    "comment": "en anglais j'ai plus de details",
+    "needs_review": false
+  },
+  {
+    "id": 7,
+    "question": "Qui est le chef du \ndépartement Engineering ?",
+    "bad_answer": "Le chef du département Engineering n'est pas explicitement mentionné dans l'organigramme fourni. Seul le CTO, Paul Davis, est identifié dans les données organisationnelles fournies.\n\nSources:\n[GRAPH — Qui est le chef du \ndépartement Engineering ?]\nOrganizational data:\n  Paul Davis | CTO | p.davis@nexora.com | London",
+    "correct_answer": "Le chef du département Engineering est Paul Davis, qui occupe le poste de CTO (Directeur Technique). Son email est p.davis@nexora.com. Il supervise 39 employés dans ce département.",
+    "category": "GRAPH",
+    "comment": "it's the CTO so it's Paul davis and want more information about a person whem I ask",
+    "needs_review": false
+  },
+  {
+    "id": 5,
+    "question": "qui est le chef  du  département Engineering ?",
+    "bad_answer": "Based on the provided context, no graph data was found to determine who is the head of the Engineering department. Therefore, I cannot provide a specific name at this time. For accurate and up-to-date information, please refer to the official company directory or contact the HR department directly.\n\nSources:\n- Company Official Directory (not accessed due to lack of graphical data)\n- HR Department for current updates",
+    "correct_answer": "Le chef du département Engineering est Paul Davis, CTO de Nexora Solutions. Il peut être contacté à p.davis@nexora.com.",
+    "category": "GRAPH",
+    "comment": "",
+    "needs_review": false
+  }
+]

@@ -16,7 +16,8 @@ from src.evaluation.feedback_store import save_feedback, get_feedback_stats
 from src.auth.auth import authenticate, get_access_filter
 from src.auth.rbac import apply_rbac_filter, get_rbac_sql_clause
 from src.auth.audit import log_action, get_audit_stats
-from src.config import MODEL
+from src.config import MODEL, AVAILABLE_MODELS
+import src.config as config
 from src.utils.logger import get_logger
 
 logger = get_logger("app")
@@ -64,6 +65,13 @@ def logout():
     current_result = {}
     return "", gr.update(visible=True), gr.update(visible=False), "", "", "", "", ""
 
+# ── MODEL SWITCHER ───────────────────────────────────
+def switch_model(model_choice):
+    model_name = model_choice.split(" — ")[0]
+    config.MODEL = model_name
+    logger.info(f"Model switched to: {model_name}")
+    return f"✅ Model switched to **{model_choice}**"
+
 # ── PIPELINE ──────────────────────────────────────────
 def ask_question(question):
     global current_result, current_user
@@ -104,44 +112,57 @@ def ask_question(question):
 
     sources_text = " | ".join(result["sources"]) if result["sources"] else "N/A"
 
-    metrics_text = f"""###  Pipeline Metrics
+    hallucination_rate = round(stats.get("hallucinations", 0) / max(stats.get("total", 1), 1) * 100, 1)
+    positive_rate      = round(stats.get("positive", 0) / max(stats.get("total", 1), 1) * 100, 1)
 
-| Metric | Value |
-|--------|-------|
-| Category | `{current_result['category']}` |
-| Complex | {result['is_complex']} |
-| Latency | {elapsed} sec |
-| Sources | {len(result['sources'])} |
-| Model | `{MODEL}` |
-| User | `{current_user.get('username')}` |
-| Role | `{current_user.get('role', '').upper()}` |
+    metrics_text = f"""<div style="font-family:Arial,sans-serif;font-size:13px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
 
-### GPU Metrics
+<div style="background:#f0f4ff;border-radius:8px;padding:10px;border:1px solid #c5d5f5">
+<div style="font-weight:700;color:#1e3a5f;margin-bottom:8px"> Pipeline</div>
+<table style="width:100%;border-collapse:collapse">
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Category</td><td style="text-align:right;font-weight:500;padding-right:8px;padding-left:8px"><code>{current_result["category"]}</code></td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Latency</td><td style="text-align:right;padding-right:8px">{elapsed}s</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Sources</td><td style="text-align:right;padding-right:8px">{len(result["sources"])}</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Complex</td><td style="text-align:right;padding-right:8px">{result["is_complex"]}</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Model</td><td style="text-align:right;padding-right:8px"><code>{MODEL}</code></td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">User</td><td style="text-align:right;padding-right:8px">{current_user.get("username")}</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Role</td><td style="text-align:right;padding-right:8px"><b>{current_user.get("role","").upper()}</b></td></tr>
+</table>
+</div>
 
-| Metric | Value |
-|--------|-------|
-| Temperature | {gpu['temp']} °C |
-| Power Draw | {gpu['power']} W |
-| VRAM Used | {gpu['vram']} MB |
-| GPU Util | {gpu['gpu_util']} % |
+<div style="background:#f0fff4;border-radius:8px;padding:10px;border:1px solid #b7e4c7">
+<div style="font-weight:700;color:#1e3a5f;margin-bottom:8px"> GPU</div>
+<table style="width:100%;border-collapse:collapse">
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Temperature</td><td style="text-align:right;padding-right:8px">{gpu["temp"]} °C</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Power Draw</td><td style="text-align:right;padding-right:8px">{gpu["power"]} W</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">VRAM Used</td><td style="text-align:right;padding-right:8px">{gpu["vram"]} MB</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">GPU Util</td><td style="text-align:right;padding-right:8px">{gpu["gpu_util"]} %</td></tr>
+</table>
+</div>
 
-###  Feedback Stats
+<div style="background:#fff8f0;border-radius:8px;padding:10px;border:1px solid #f5c5a3">
+<div style="font-weight:700;color:#1e3a5f;margin-bottom:8px"> Feedback</div>
+<table style="width:100%;border-collapse:collapse">
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Total</td><td style="text-align:right;padding-right:8px">{stats.get("total",0)}</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">👍 Positive</td><td style="text-align:right;padding-right:8px">{stats.get("positive",0)} ({positive_rate}%)</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">👎 Negative</td><td style="text-align:right;padding-right:8px">{stats.get("negative",0)}</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">🚨 Hallucinations</td><td style="text-align:right;padding-right:8px">{stats.get("hallucinations",0)} ({hallucination_rate}%)</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Avg Latency</td><td style="text-align:right;padding-right:8px">{stats.get("avg_latency",0)}s</td></tr>
+</table>
+</div>
 
-| Metric | Value |
-|--------|-------|
-| Total | {stats.get('total', 0)} |
-| 👍 Positive | {stats.get('positive', 0)} |
-| 👎 Negative | {stats.get('negative', 0)} |
-| Avg Latency | {stats.get('avg_latency', 0)} sec |
+<div style="background:#fdf0ff;border-radius:8px;padding:10px;border:1px solid #d5a5f5">
+<div style="font-weight:700;color:#1e3a5f;margin-bottom:8px"> Audit</div>
+<table style="width:100%;border-collapse:collapse">
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Total Actions</td><td style="text-align:right;padding-right:8px">{astats.get("total",0)}</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Allowed</td><td style="text-align:right;padding-right:8px">{astats.get("allowed",0)}</td></tr>
+<tr><td style="color:#666;padding:3px 0;padding-left:8px;min-width:90px">Denied</td><td style="text-align:right;padding-right:8px">{astats.get("denied",0)}</td></tr>
+</table>
+</div>
 
-###  Audit Stats
-
-| Metric | Value |
-|--------|-------|
-| Total Actions | {astats.get('total', 0)} |
-| Allowed | {astats.get('allowed', 0)} |
-| Denied | {astats.get('denied', 0)} |
-"""
+</div>
+</div>"""
 
     return result["answer"], sources_text, metrics_text, ""
 
@@ -244,7 +265,14 @@ with gr.Blocks(
 
         with gr.Row():
             user_info  = gr.Markdown("")
+            model_selector = gr.Dropdown(
+                choices=[f"{k} — {v}" for k, v in AVAILABLE_MODELS.items()],
+                value="qwen2.5-q4:7b — Qwen2.5 Q4 (Recommended)",
+                label="Model",
+                scale=1
+            )
             logout_btn = gr.Button(" Logout", variant="stop", scale=0)
+        model_status = gr.Markdown("")
 
         with gr.Row():
             # ── LEFT — Chat ───────────────────────────
@@ -284,8 +312,8 @@ with gr.Blocks(
 
             # ── RIGHT — Metrics ───────────────────────
             with gr.Column(scale=2):
-                metrics_output = gr.Markdown(
-                    value="*Metrics will appear after your first question.*"
+                metrics_output = gr.HTML(
+                    value="<p style='color:gray;font-size:13px'>Metrics will appear after your first question.</p>"
                 )
 
     # ── EVENTS ────────────────────────────────────────
@@ -293,6 +321,12 @@ with gr.Blocks(
         msg, lp, mp = login(username, password)
         user_md = f"👤 **{username}** | Role: **{current_user.get('role','').upper()}** | Dept: **{current_user.get('department','')}**" if current_user else ""
         return msg, lp, mp, user_md
+
+    model_selector.change(
+        fn=switch_model,
+        inputs=[model_selector],
+        outputs=[model_status]
+    )
 
     login_btn.click(
         fn=login_and_update,

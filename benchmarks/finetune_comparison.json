@@ -1,0 +1,106 @@
+{
+  "before_score": 0,
+  "after_score": 0,
+  "improvement": 0,
+  "total": 8,
+  "before": [
+    {
+      "question": "Who is Paul Davis?",
+      "answer": "Paul Davis is a key member of the Nexora Solutions team, contributing to our projects and initiatives in his role as a Senior Software Engineer.",
+      "correct": false,
+      "expected": "CTO"
+    },
+    {
+      "question": "Give me a summary of Engineering department",
+      "answer": "The Engineering department at Nexora Solutions focuses on designing, developing, and implementing innovative solutions across various sectors. It incl",
+      "correct": false,
+      "expected": "39 employees"
+    },
+    {
+      "question": "How many employees are in HR?",
+      "answer": "I don't have specific data on the number of HR employees at Nexora Solutions. Could you provide more context or specify if you're referring to a parti",
+      "correct": false,
+      "expected": "38"
+    },
+    {
+      "question": "Who is the CEO?",
+      "answer": "The CEO of Nexora Solutions is Dr. Elena Márquez.",
+      "correct": false,
+      "expected": "Alexandra Chen"
+    },
+    {
+      "question": "What is the highest salary band in Engineering?",
+      "answer": "The highest salary band in the Engineering department at Nexora Solutions is Band E, which ranges from $150,000 to $200,000 annually.",
+      "correct": false,
+      "expected": "Band5"
+    },
+    {
+      "question": "List all part-time employees",
+      "answer": "I don't have access to current employee data. Can you provide more details on how I can assist with this query?",
+      "correct": false,
+      "expected": "15"
+    },
+    {
+      "question": "Qui est le chef de Nexora?",
+      "answer": "Le chef de Nexora Solutions est Mme. Lisa Chen.",
+      "correct": false,
+      "expected": "Alexandra Chen"
+    },
+    {
+      "question": "Who are all Band5 employees?",
+      "answer": "I don't have specific information about all Band5 employees at Nexora Solutions as that data is not publicly available and would be confidential. If y",
+      "correct": false,
+      "expected": "Alexandra Chen"
+    }
+  ],
+  "after": [
+    {
+      "question": "Who is Paul Davis?",
+      "answer": "Paul Davis is a Senior Software Engineer at Nexora Solutions, specializing in backend development and architecture. He has been with the company since",
+      "correct": false,
+      "expected": "CTO"
+    },
+    {
+      "question": "Give me a summary of Engineering department",
+      "answer": "Certainly! The Engineering Department at Nexora Solutions is a core functional area that plays a pivotal role in driving innovation and delivering hig",
+      "correct": false,
+      "expected": "39 employees"
+    },
+    {
+      "question": "How many employees are in HR?",
+      "answer": "I don't have specific data on the number of employees in HR at Nexora Solutions. The exact number can vary and is not publicly disclosed. For the most",
+      "correct": false,
+      "expected": "38"
+    },
+    {
+      "question": "Who is the CEO?",
+      "answer": "The CEO of Nexora Solutions is Mr. John Doe. Please note that this information may be subject to change, and it's always a good idea to check the late",
+      "correct": false,
+      "expected": "Alexandra Chen"
+    },
+    {
+      "question": "What is the highest salary band in Engineering?",
+      "answer": "To provide an accurate answer, I would need to refer to the latest salary data or policy of Nexora Solutions. However, as of the last available inform",
+      "correct": false,
+      "expected": "Band5"
+    },
+    {
+      "question": "List all part-time employees",
+      "answer": "I'm sorry, but I don't have access to the specific employee data of Nexora Solutions. To provide you with the list of part-time employees, I would nee",
+      "correct": false,
+      "expected": "15"
+    },
+    {
+      "question": "Qui est le chef de Nexora?",
+      "answer": "Je suis désolé, mais je n'ai pas d'informations spécifiques sur qui est le chef ou le dirigeant de Nexora Solutions dans les données disponibles pour ",
+      "correct": false,
+      "expected": "Alexandra Chen"
+    },
+    {
+      "question": "Who are all Band5 employees?",
+      "answer": "I don't have real-time access to Nexora Solutions' employee data. However, typically, Band5 employees refer to those who have a certain level of exper",
+      "correct": false,
+      "expected": "Alexandra Chen"
+    }
+  ]
+}

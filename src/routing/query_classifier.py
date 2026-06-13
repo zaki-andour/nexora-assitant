@@ -31,6 +31,14 @@ STRUCTURED — question about a specific person or employee statistics:
 - Department summary queries: 'Give me a summary of Engineering' → STRUCTURED
 - Salary band queries: "What is the highest salary band in Engineering?" → STRUCTURED
 - Any question about salary_band data from the database → STRUCTURED
+- 'who are the X managers', 'who manages X department', 'list managers in X' → STRUCTURED not GRAPH
+- Personal data queries ALWAYS → STRUCTURED:
+  'what is my role', 'quel est mon role', 'what is my contract type', 'quel est mon contrat'
+  'what is my department', 'what is my salary band', 'what is my start date'
+  'what is my job title', 'what is my position' → STRUCTURED
+- These personal queries need DB lookup, NOT policy documents
+- Band level queries: 'Who are all Band5 employees?', 'Who earns Band3?' → STRUCTURED
+- NEVER classify salary/band employee queries as TEXT
 - Key signal: the answer requires looking up a person in the employee database
 
 GRAPH examples (org hierarchy, who manages who, team members):

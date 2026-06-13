@@ -1,0 +1,121 @@
+{
+  "global": {
+    "total_feedbacks": 193,
+    "positive": 127,
+    "negative": 66,
+    "hallucinations": 8,
+    "hallucination_rate": 4.1
+  },
+  "by_category": [
+    {
+      "category": "STRUCTURED",
+      "total": 149,
+      "hallucinations": 7,
+      "rate": 4.7
+    },
+    {
+      "category": "GRAPH",
+      "total": 13,
+      "hallucinations": 1,
+      "rate": 7.7
+    },
+    {
+      "category": "HYBRID",
+      "total": 1,
+      "hallucinations": 0,
+      "rate": 0.0
+    },
+    {
+      "category": "TEXT",
+      "total": 29,
+      "hallucinations": 0,
+      "rate": 0.0
+    },
+    {
+      "category": "BLOCKED",
+      "total": 1,
+      "hallucinations": 0,
+      "rate": 0.0
+    }
+  ],
+  "by_model": [
+    {
+      "model": "qwen2.5-q4:7b",
+      "total": 84,
+      "hallucinations": 8,
+      "rate": 9.5
+    },
+    {
+      "model": "qwen2.5:7b",
+      "total": 109,
+      "hallucinations": 0,
+      "rate": 0.0
+    }
+  ],
+  "flagged_questions": [
+    {
+      "question": "Give me a summary of Engineering department",
+      "answer": "The Engineering department at Nexora Solutions includes several key roles and employees:\n\n1. Fatima Nguyen - VP Engineering, started on February 5, 2022.\n2. Julia Jackson - Engineering Manager, will s",
+      "category": "STRUCTURED",
+      "model": "qwen2.5-q4:7b",
+      "reason": "you didn't answer the question the way I excpected",
+      "created_at": "2026-05-23 00:02:41.274400"
+    },
+    {
+      "question": "List all part-time employees",
+      "answer": "Based on the provided information, there are no part-time employees listed. All roles mentioned have a salary band associated with them, which typically indicates full-time positions. If you need furt",
+      "category": "STRUCTURED",
+      "model": "qwen2.5-q4:7b",
+      "reason": "wrong answer",
+      "created_at": "2026-05-23 00:00:32.527405"
+    },
+    {
+      "question": "من هو الموظف الأقدم في الشركة؟",
+      "answer": "الموظف الأقدم في الشركة هو Alexandra Chen،哪位同事是基于提供的信息中最资深的员工？请注意，名称必须与数据库中的一致。请指定您指的是哪一位。",
+      "category": "STRUCTURED",
+      "model": "qwen2.5-q4:7b",
+      "reason": "Answer mixed language",
+      "created_at": "2026-05-22 23:59:54.268609"
+    },
+    {
+      "question": "List all employees in Finance",
+      "answer": "Here is a list of all employees in the Finance department:\n\n1. Stefan Bell - CFO, s.bell@nexora.com\n2. Olivia Brooks - Finance Manager, o.brooks@nexora.com\n3. Mohamed Cook - Finance Director, m.cook@n",
+      "category": "STRUCTURED",
+      "model": "qwen2.5-q4:7b",
+      "reason": "Should be blocked",
+      "created_at": "2026-05-22 23:57:00.748814"
+    },
+    {
+      "question": "Who joined my team after 2023?",
+      "answer": "Julia Jackson joined your team as an Engineering Manager on December 23, 2024.",
+      "category": "STRUCTURED",
+      "model": "qwen2.5-q4:7b",
+      "reason": "Missing some employees",
+      "created_at": "2026-05-22 23:56:05.722916"
+    },
+    {
+      "question": "What is my contract type?",
+      "answer": "Your contract type at Nexora Solutions is Full-Time.",
+      "category": "STRUCTURED",
+      "model": "qwen2.5-q4:7b",
+      "reason": "Showed wrong contract",
+      "created_at": "2026-05-22 23:52:35.323317"
+    },
+    {
+      "question": "Who are the senior engineers?",
+      "answer": "Based on the information provided, I do not have specific details about the senior engineers at Nexora Solutions. The context only mentions you as a manager in the Engineering department with employee",
+      "category": "GRAPH",
+      "model": "qwen2.5-q4:7b",
+      "reason": "Wrong department shown",
+      "created_at": "2026-05-22 23:51:57.377942"
+    },
+    {
+      "question": "Who are all Band5 employees?",
+      "answer": "The following employees are in Band 5:\n- Alexandra Chen (CEO)\n- Paul Davis (CTO)\n- Patricia White (CPO)\n- Stefan Bell (CFO)\n- Maria Baker (CHRO)\n- Fatima Jackson (CRO)\n- Nathan Johnson (CMO)\n- Uma San",
+      "category": "STRUCTURED",
+      "model": "qwen2.5-q4:7b",
+      "reason": "Answer seems incomplete",
+      "created_at": "2026-05-22 23:18:23.581093"
+    }
+  ]
+}

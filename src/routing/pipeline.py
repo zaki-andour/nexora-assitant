@@ -5,7 +5,7 @@ import os
 from difflib import SequenceMatcher
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
-from src.config import MODEL, OLLAMA_URL, TIMEOUT, NUM_PREDICT, TEMPERATURE
+import src.config as _config
 from src.routing.query_classifier   import classify_query
 from src.routing.query_decomposer   import decompose_query
 from src.routing.query_router       import build_context
@@ -13,26 +13,49 @@ from src.routing.query_preprocessor import preprocess_query
 from src.auth.rbac import apply_rbac_filter, get_rbac_sql_clause
 from src.utils.logger import get_logger
 
+try:
+    from langdetect import detect as langdetect_detect
+    LANGDETECT_AVAILABLE = True
+except:
+    LANGDETECT_AVAILABLE = False
+
 logger = get_logger("pipeline")
+
+LANG_MAP = {
+    "fr": "French", "ar": "Arabic", "es": "Spanish",
+    "de": "German", "zh-cn": "Chinese", "zh-tw": "Chinese",
+    "en": "English", "it": "Italian", "pt": "Portuguese"
+}
+
+def detect_language(text):
+    if LANGDETECT_AVAILABLE:
+        try:
+            return LANG_MAP.get(langdetect_detect(text), "English")
+        except:
+            return "English"
+    return "English"
 
 def run_pipeline(question: str, user: dict = None) -> dict:
     logger.info("=" * 50)
     logger.info(f"New question: {question}")
 
-    # ── STEP 0 : PREPROCESS ───────────────────────────
-    logger.info("STEP 0 — Preprocessing question")
+    # ── STEP 0 : DETECT LANGUAGE ──────────────────────
+    detected_language = detect_language(question)
+    logger.info(f"Language detected: {detected_language}")
+
+    # ── STEP 0.1 : DECOMPOSE ORIGINAL ─────────────────
+    pre_decomposition = decompose_query(question)
+
+    # ── STEP 0.2 : PREPROCESS ─────────────────────────
     preprocessed       = preprocess_query(question)
     query_for_pipeline = preprocessed["reformulated"]
-    detected_language  = preprocessed["language"]
     logger.info(f"Reformulated: {query_for_pipeline}")
-    logger.info(f"Language detected: {detected_language}")
 
     # ── STEP 0.5 : RBAC CHECK ─────────────────────────
     rbac_filter = {"filter": "none"}
     if user:
         rbac_result = apply_rbac_filter(user, query_for_pipeline)
         if not rbac_result["allowed"]:
-            logger.warning(f"RBAC blocked: {rbac_result.get('reason')}")
             return {
                 "question":      question,
                 "is_complex":    False,
@@ -45,8 +68,15 @@ def run_pipeline(question: str, user: dict = None) -> dict:
         rbac_filter = rbac_result
 
     # ── STEP 1 : DECOMPOSE ────────────────────────────
-    logger.info("STEP 1 — Decomposing question")
-    decomposition = decompose_query(query_for_pipeline)
+    if pre_decomposition["is_complex"]:
+        processed_subs = []
+        for sq in pre_decomposition["sub_questions"]:
+            p = preprocess_query(sq)
+            processed_subs.append(p["reformulated"])
+        decomposition = {"is_complex": True, "sub_questions": processed_subs}
+    else:
+        decomposition = decompose_query(query_for_pipeline)
+
     sub_questions = decomposition["sub_questions"]
     is_complex    = decomposition["is_complex"]
     logger.info(f"Complex: {is_complex} | Sub-questions: {len(sub_questions)}")
@@ -64,12 +94,20 @@ def run_pipeline(question: str, user: dict = None) -> dict:
         logger.info(f"Sub-Q [{category}]: {sq[:50]}")
 
         rbac_clause = get_rbac_sql_clause(rbac_filter)
-        # For personal queries, enrich question with user identity
         enriched_sq = sq
-        if user and any(kw in sq.lower() for kw in ["my ", "i am", "i have", "mon ", "je "]):
+        if user:
             emp_id = user.get("employee_id", "")
             uname  = user.get("username", "")
-            enriched_sq = sq + f" [Current user: {uname}, employee_id: {emp_id}]"
+            dept   = user.get("department", "")
+            # Always enrich personal queries with user identity
+            personal_kw = ["my ", "i am", "i have", "mon ", "je ", "my role", "my contract",
+                          "my department", "my start", "my job", "my title", "your current",
+                          "about me", "employment", "tell me about my", "everything about"]
+            if any(kw in sq.lower() for kw in personal_kw):
+                enriched_sq = sq + f" [Current user: {uname}, employee_id: {emp_id}, department: {dept}]"
+            # Also enrich if question has "my" but was reformulated to "your"
+            elif "your " in sq.lower() and emp_id:
+                enriched_sq = sq + f" [Current user: {uname}, employee_id: {emp_id}, department: {dept}]"
         context, sources = build_context(category, enriched_sq, rbac_clause=rbac_clause)
         all_contexts.append(f"[{category} — {sq}]\n{context}")
         all_sources.extend(sources)
@@ -83,7 +121,6 @@ def run_pipeline(question: str, user: dict = None) -> dict:
     # ── STEP 5 : LLM GENERATION ───────────────────────
     logger.info("STEP 5 — Generating answer")
 
-    # Build user context
     if user:
         emp_id   = user.get("employee_id", "unknown")
         username = user.get("username", "unknown")
@@ -93,48 +130,47 @@ def run_pipeline(question: str, user: dict = None) -> dict:
     else:
         user_context = ""
 
-    prompt = f""""You are an HR assistant for Nexora Solutions.
+    prompt = f"""You are an HR assistant for Nexora Solutions.
+{user_context}
 Answer the question based ONLY on the context provided below.
-IMPORTANT: The user asked in {detected_language}. Always respond in {detected_language}.
-CRITICAL: Respond ONLY and ENTIRELY in {detected_language}. NEVER use any other language. NEVER mix languages. NEVER add self-correction text. Respond ONLY in {detected_language}.
+IMPORTANT: Always respond in {detected_language}.
+CRITICAL: Respond ONLY and ENTIRELY in {detected_language}. NEVER use any other language. NEVER mix languages.
 Every single word in your response must be in {detected_language}.
-Do NOT use markdown formatting, asterisks, bullet symbols or bold text.
-Do NOT include sources or references in your answer.
-Write in plain text with numbered lists if needed.
+Do NOT use Chinese characters under any circumstances.
+Do NOT use Cyrillic/Russian characters under any circumstances.
+Person names (like Alexandra Chen, Paul Davis) must NEVER be translated — keep them exactly as written.
+When presenting data, translate English department/role names to {detected_language} naturally.
+For example in French: HR → Ressources Humaines, Engineering → Ingénierie.
+In Arabic: HR → الموارد البشرية, Engineering → الهندسة.
+In Spanish: HR → Recursos Humanos, Engineering → Ingeniería.
+
+Do NOT use markdown formatting or asterisks.
+Do NOT include sources in your answer.
 Be direct, specific and detailed.
-If the context contains MULTIPLE results for a person search, list ALL of them and ask the user to specify which one they mean.
+The SQL query already filtered the correct data — ALWAYS trust and list ALL rows from the context.
+NEVER say you don't have information if the context contains rows.
+If the context shows employees with their salary_band filtered, those ARE the Band5 employees — list them all.
 If the information is not in the context, say clearly in {detected_language} that you don't have this information.
-Do NOT invent sources, websites, or information not in the context.
 
 Context:
 {fused_context}
 
-Original question: {question}
-{user_context}
+Question: {question}
+
 Answer in {detected_language}:"""
 
-    response = requests.post(OLLAMA_URL, json={
-        "model":   MODEL,
+    # Dynamic temperature — lower for structured (data accuracy), higher for text (natural style)
+    primary_category = all_categories[0] if all_categories else "TEXT"
+    dynamic_temp = 0.1 if primary_category in ["STRUCTURED", "GRAPH"] else 0.4
+
+    response = requests.post(_config.OLLAMA_URL, json={
+        "model":   _config.MODEL,
         "prompt":  prompt,
         "stream":  False,
-        "options": {"temperature": TEMPERATURE, "num_predict": NUM_PREDICT}
-    }, timeout=TIMEOUT)
+        "options": {"temperature": dynamic_temp, "num_predict": _config.NUM_PREDICT}
+    }, timeout=_config.TIMEOUT)
 
-    answer = response.json()["response"]
-
-    # Fix wrong names from DB context
-    for match in re.finditer(r"correct name is '([^']+)'", fused_context):
-        correct_name = match.group(1)
-        for correct_part in correct_name.split():
-            words = re.findall(r'[A-Za-z]+', answer)
-            for word in set(words):
-                if word.lower() != correct_part.lower() and len(word) > 2:
-                    ratio = SequenceMatcher(None, word.lower(), correct_part.lower()).ratio()
-                    if ratio > 0.75:
-                        answer = answer.replace(word, correct_part)
-
-    logger.info("Answer generated successfully")
-    logger.info(f"Answer: {answer[:200]}")
+    answer = response.json().get("response", "").strip()
 
     return {
         "question":      question,

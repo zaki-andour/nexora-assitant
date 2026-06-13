@@ -98,8 +98,18 @@ def apply_rbac_filter(user: dict, question: str) -> dict:
     asks_all    = any(kw in q for kw in other_dept_keywords)
 
     if asks_all and not has_permission(user, "can_see_all_employees"):
-        if role in ["manager", "employee"]:
-            logger.info(f"RBAC: {role} restricted to department {department}")
+        if role == "employee":
+            # Check if asking about another department
+            dept_names = ["engineering", "hr", "finance", "sales", "marketing",
+                         "operations", "product", "legal", "data", "security", "executive"]
+            asking_other_dept = any(d in q for d in dept_names if d != department.lower())
+            if asking_other_dept:
+                logger.warning(f"RBAC: employee denied access to other department")
+                return {"allowed": False, "reason": "Access denied. You can only view information about your own department."}
+            logger.info(f"RBAC: employee restricted to own department")
+            return {"allowed": True, "filter": "department", "department": department}
+        if role == "manager":
+            logger.info(f"RBAC: manager restricted to department {department}")
             return {"allowed": True, "filter": "department", "department": department}
 
     # Manager asking COUNT about other department — restrict

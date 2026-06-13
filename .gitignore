@@ -1,3 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+logs/
+*.log
+
+# Milvus / Docker volumes
 volumes/
-volumes/
-volumes/
+
+# Certificates & secrets — NE JAMAIS PUSHER
+cert.pem
+key.pem
+*.pem
+
+# Environment
+.env
+rag-env/
+
+# Checkpoints d'entraînement (optimizer state — inutile pour l'inférence)
+models/qwen2.5-q4-finetuned/checkpoint-*/
+# Base HF model si jamais copié dans le projet
+models/qwen2.5-7b-hf/

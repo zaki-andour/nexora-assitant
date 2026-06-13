@@ -1,0 +1,900 @@
+[
+  {
+    "timestamp": "2026-06-05T18:16:16.696970",
+    "total": 30,
+    "passed": 30,
+    "failed": 0,
+    "blocked": 3,
+    "score": "30/30",
+    "results": [
+      {
+        "user": "admin",
+        "question": "Show me everyone who works in the Data department",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Beatrice Lopez, Bob Perez, Cedric Phillips, Danielle Sanders, Dina Evans, Dina Roberts, Erik Campbell, Erik Wilson, Fatima Watson, Fatima White, Fatou Cook, Fatou Jones, Freya Edwards, Gabriel Cook, George Cox, Ibrahim Kelly, Ingrid Cook, Ivan Jones, Ivan Thompson, Jana Martin",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "What percentage of employees are contractors?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The percentage of employees at Nexora Solutions who are contractors is 18.09523809523809523800%.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Who reports to Alexandra Chen?",
+        "category": "GRAPH",
+        "language": "English",
+        "answer": "The following people report directly to Alexandra Chen:\nAmir White, COO, Paris, a.white@nexora.com\nFatima Jackson, CRO, London, f.jackson@nexora.com\nMaria Baker, CHRO, London, m.baker@nexora.com\nNathan Johnson, CMO, Berlin, n.johnson@nexora.com\nPatricia White, CPO, London, p.white@nexora.com\nPaul Davis, CTO, London, p.davis@nexora.com\nRachel Cooper, CISO, London, r.cooper@nexora.com\nStefan Bell, CFO, Berlin, s.bell@nexora.com\nTariq Baker, Chief Data Officer, Paris, t.baker@nexora.com\nUma Sanchez, General Counsel, Berlin, u.sanchez@nexora.com",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Tell me about the Legal team",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The Legal team at Nexora Solutions consists of several roles including General Counsel, Senior Legal Counsel, Compliance Officer, and Legal Counsel. Here is a breakdown:\n\n- **General Counsel**: This role includes individuals such as Uma Sanchez, Tina Nguyen, Rania Martinez, Ivan King, Wendy Mitchell, William Allen, and Umar Rivera.\n- **Senior Legal Counsel**: The team comprises Ahmed Jackson, Laura Brown, Ingrid Adams, Ivan Rivera, and Quinn Reed.\n- **Legal Counsel**: Members include Zara Carter, Nathan Richardson, and Alice Wright.\n- **Compliance Officer**: This role is filled by Dina Howard, Olivia Parker, Laura Stewart, Ethan Davis, and Amir Roberts.\n\nThe team also includes a mix of Paralegals such as Amir Young, Kevin Richardson, Quentin Williams, Yusuf Nguyen, Patricia Jackson, and Nathan Wilson.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Which department has the most employees?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The department with the most employees at Nexora Solutions is Product, with a count of 55 employees.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "hey, can you tell me how many people we have in marketing?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "There are currently 39 people employed in the Marketing department.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "i need to know who the cto is",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The CTO of Nexora Solutions is Paul Davis.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "hr",
+        "question": "can you pull up all employees who joined this year?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The employee who joined this year is Ingrid Lopez. She joined on January 31, 2026, and her role is Controller in the Finance department.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "hr",
+        "question": "give me a breakdown of salary bands across the company",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The breakdown of salary bands across the company is as follows:\n- Band1: 121 employees\n- Band2: 117 employees\n- Band3: 155 employees\n- Band4: 3 employees\n- Band5: 24 employees",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Combien d'employés ont rejoint en 2022 vs 2023 ?",
+        "category": "STRUCTURED",
+        "language": "French",
+        "answer": "En 2022, 55 employés ont rejoint l'entreprise. En 2023, 47 employés ont rejoint l'entreprise.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Donne moi la liste des employés du département Data",
+        "category": "STRUCTURED",
+        "language": "French",
+        "answer": "Voici la liste des employés du département Data :\n\n- Tariq Baker, Chief Data Officer, Band5, Full-Time\n- Gabriel Cook, Head of Data, Band4, Full-Time\n- Cedric Phillips, Senior Data Scientist, Band3, Full-Time\n- Fatima Watson, Senior Data Scientist, Band3, Full-Time\n- Ivan Jones, Senior Data Scientist, Band3, Full-Time\n- Yusuf Nelson, Data Scientist, Band2, Full-Time\n- Umar Wilson, Data Engineer, Band2, Full-Time\n- Dina Evans, Senior Data Scientist, Band2, Contractor\n- Dina Roberts, Data Engineer, Band2, Full-Time\n- George Cox, Data Engineer, Band2, Full-Time\n- Jana Martin, Data Engineer, Band2, Full-Time\n- Beatrice Lopez, Data Engineer, Band2, Full-Time\n- Tina Brooks, Data Scientist, Band2, Full-Time\n- Fatou Jones, Data Engineer, Band2, Full-Time\n- Yasmin Richardson, Data Engineer, Band2, Full-Time\n- Danielle Sanders, Data Engineer, Band2, Full-Time",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "paul",
+        "question": "Qui sont les employés à temps partiel dans mon département ?",
+        "category": "STRUCTURED",
+        "language": "French",
+        "answer": "Les employés à temps partiel dans votre département sont Fatima Harris, Uma Young et Xena Martin.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "Quelle est la politique de congé maladie ?",
+        "category": "TEXT",
+        "language": "French",
+        "answer": "La politique de congé maladie de Nexora Solutions est la suivante :\n\n1. Les employés à temps plein permanents bénéficient d'une allocation de 10 jours de congé maladie payés pleinement par an.\n2. Après 10 jours, le salaire de maladie légal s'applique conformément aux législations locales.\n3. Les employés à temps partiel reçoivent une allocation de congé maladie en fonction de leur temps de travail.\n4. Les contractuels ne bénéficient pas du congé maladie de l'entreprise. Des dispositions légales peuvent s'appliquer selon la juridiction.\n5. Les stagiaires reçoivent 5 jours de congé maladie payés par an.\n\nPour plus d'informations, veuillez consulter le document complet de la politique de congé et d'absence.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "nathan",
+        "question": "Quelle est ma date d'embauche ?",
+        "category": "STRUCTURED",
+        "language": "French",
+        "answer": "Ma date d'embauche est le 10 juillet 2022.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "من هو المدير التنفيذي للعمليات؟",
+        "category": "STRUCTURED",
+        "language": "Arabic",
+        "answer": "لا يوجد معلومات في السياق حول اسم المدير التنفيذي للعمليات في نكسور سولوشنز.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "ما هي أطول مدة خدمة موظف في الشركة؟",
+        "category": "STRUCTURED",
+        "language": "Arabic",
+        "answer": "أطول مدة خدمة موظف في الشركة هي لـ Paul Davis哪部分不符合要求？请根据指示修正如下：\n\nAssistant：أطول مدة خدمة موظف في الشركة هي لـ Paul Davis، حيث بدأ العمل في 1 يناير 2010.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "xavier",
+        "question": "ما هو قسمي؟",
+        "category": "STRUCTURED",
+        "language": "Arabic",
+        "answer": "قسمك هو الموارد البشرية.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "¿Quién es el director de operaciones?",
+        "category": "STRUCTURED",
+        "language": "Spanish",
+        "answer": "No tengo esta información en las filas proporcionadas.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "¿Cuál es mi fecha de inicio?",
+        "category": "STRUCTURED",
+        "language": "Spanish",
+        "answer": "Mi fecha de inicio es el 24 de marzo de 2019.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "nathan",
+        "question": "¿Cuál es la política de trabajo remoto?",
+        "category": "TEXT",
+        "language": "Spanish",
+        "answer": "La política de trabajo remoto en Nexora Solutions permite a los empleados realizar trabajos desde casa bajo ciertas condiciones y con el consentimiento de su jefe inmediato. Los empleados pueden solicitar cambios en las horas de trabajo, los días de trabajo o la ubicación del trabajo (trabajo remoto/híbrido). El trabajo remoto está permitido hasta tres días por semana, siempre que se apruebe por parte del gerente y sea compatible con el rol del empleado. Los empleados deben trabajar al menos dos días a la semana en la oficina salvo que se les haya otorgado una exención completa de trabajo remoto por escrito de su Jefe de Departamento. Los roles designados como presenciales (por ejemplo, infraestructura informática, operaciones de oficina) no son elegibles para trabajar desde casa sin aprobación expresa. Los internos y los empleados en sus primeros tres meses de servicio están obligados a trabajar en la oficina full-time a menos que se acuerde lo contrario.\n\nLos empleados deben asegurarse de que la información confidencial no esté visible para terceros durante las sesiones de trabajo remoto. Todos los trabajos deben realizarse en dispositivos proporcionados por la empresa; el uso de dispositivos personales para fines laborales está prohibido sin aprobación expresa de seguridad informática. Cualquier incidente de seguridad que ocurra durante el trabajo remoto debe ser informado inmediatamente al equipo de Seguridad Informática.\n\nLos empleados deben discutir las disposiciones del trabajo remoto con su jefe inmediato antes de comenzar y solicitar aprobación escrita para trabajar más de tres días por semana. Las disposiciones aprobadas se revisan anualmente o cuando ocurre un cambio en el rol del empleado.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Who is the CEO and how many employees are in the Executive department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The CEO of Nexora Solutions is Alexandra Chen. There is 1 employee in the Executive department at Nexora Solutions.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "How many full-time vs part-time vs contractors vs interns are there?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "At Nexora Solutions, there are 311 full-time employees, 15 part-time employees, 94 contractors, and 76 intern positions.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "hr",
+        "question": "List all departments and their headcount, sorted by size",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Product - 55\nOperations - 53\nFinance - 47\nLegal - 39\nMarketing - 39\nSales - 39\nEngineering - 39\nHR - 38\nSecurity - 36\nData - 34\nExecutive - 1",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "What is my employee ID?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Your employee ID is 212.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "xavier",
+        "question": "What is my manager's name?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Your manager's name is Mohamed Cook.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "paul",
+        "question": "What is my role and department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Your role is CTO and your department is Engineering.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "nathan",
+        "question": "What is my location?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Your location is Amsterdam.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "What is the salary of Paul Davis?",
+        "category": "BLOCKED",
+        "language": "English",
+        "answer": "You don't have permission to view salary information.",
+        "blocked": true,
+        "status": "🔒"
+      },
+      {
+        "user": "xavier",
+        "question": "List all employees in Engineering",
+        "category": "BLOCKED",
+        "language": "English",
+        "answer": "Access denied. You can only view information about your own department.",
+        "blocked": true,
+        "status": "🔒"
+      },
+      {
+        "user": "nathan",
+        "question": "Give me a list of all Finance employees",
+        "category": "BLOCKED",
+        "language": "English",
+        "answer": "Access denied. You can only view information about your own department.",
+        "blocked": true,
+        "status": "🔒"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-05T18:36:16.780072",
+    "run_name": "W7 Complex Tests",
+    "total": 33,
+    "passed": 32,
+    "failed": 1,
+    "blocked": 3,
+    "score": "32/33",
+    "pct": "97.0%",
+    "results": [
+      {
+        "user": "admin",
+        "question": "Who is the CEO, CTO and CFO of Nexora and what are their emails?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The CEO of Nexora Solutions is Alexandra Chen with an email of a.chen@nexora.com. The Chief Technology Officer (CTO) of Nexora Solutions is Paul Davis with an email of p.davis@nexora.com. The CFO of Nexora Solutions is Stefan Bell with an email of s.bell@nexora.com.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Which department has the most contractors and how many are there?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The Finance department has the most contractors with a count of 10. However, it's worth noting that there are 76 contractors in total within this department.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "How many employees joined each year since 2018?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "In 2018, 45 new employees joined the company.\nIn 2019, 67 new employees joined the company.\nIn 2020, 50 new employees joined the company.\nIn 2021, 55 new employees joined the company.\nIn 2022, 55 new employees joined the company.\nIn 2023, 47 new employees joined the company.\nIn 2024, 54 new employees joined the company.\nIn 2025, 46 new employees joined the company.\nIn 2026, 1 new employee joined the company.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Give me a comparison of Band1 vs Band5 employee counts per department",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Based on the provided data:\n\n- **Data Department:**\n  - Band1: 14 employees\n  - Band5: 1 employee\n\n- **Engineering Department:**\n  - Band1: 2 employees\n  - Band5: 1 employee\n\n- **Executive Department:**\n  - Band1: 0 employees (only 1 employee in total for this department, and it is in Band5)\n  - Band5: 1 employee\n\n- **Finance Department:**\n  - Band1: 15 employees\n  - Band5: 1 employee\n\n- **HR Department:**\n  - Band1: 11 employees\n  - Band5: 1 employee\n\n- **Legal Department:**\n  - Band1: 8 employees\n  - Band5: 11 employees\n\n- **Marketing Department:**\n  - Band1: 17 employees\n  - Band5: 2 employees\n\n- **Operations Department:**\n  - Band1: 17 employees\n  - Band5: 2 employees\n\n- **Product Department:**\n  - Band1: 11 employees\n  - Band5: 1 employee\n\n- **Sales Department:**\n  - Band1: 9 employees\n  - Band5: 2 employees\n\n- **Security Department:**\n  - Band1: 0 employees (only 1 employee in total for this department, and it is in Band5)\n  - Band5: 1 employee",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Who are the most senior employees in Engineering, Finance and Legal?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "The most senior employees in each department based on start date are as follows:\n\n**Engineering Department:**\n- Dina Kelly (Start Date: 2018-11-10)\n- Yusuf Bailey (Start Date: 2019-09-17)\n- Rania Scott (Start Date: 2019-10-23)\n- Freya Lopez (Start Date: 2019-10-29)\n\n**Finance Department:**\n- Beatrice Taylor (Start Date: 2019-11-26)\n- Ethan Allen (Start Date: 2020-03-24)\n- Paul Richardson (Start Date: 2020-11-07)\n- Umar Harris (Start Date: 2021-01-26)\n\n**Legal Department:**\n- Uma Sanchez (Start Date: 2020-01-05)\n- Rania Martinez (Start Date: 2020-10-08)\n- Ivan King (Start Date: 2020-11-24)",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "How many full-time employees are there in each department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Engineering: 28\nProduct: 9\nHR: 15\nSecurity: 7\nOperations: 17\nLegal: 14\nExecutive: 1\nFinance: 6\nSales: 9\nMarketing: 14\nData: 12",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "List all employees who are managers or directors",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "There are no employees listed as Managers or Directors based on the provided query results.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "What is the ratio of interns to full-time employees in each department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The ratios of interns to full-time employees in each department are as follows:\n\n- Data: 4/25\n- Engineering: 2/27\n- Executive: 0/1 (no interns)\n- Finance: 2/32\n- HR: 1/30\n- Legal: 2/28\n- Marketing: 2/29\n- Operations: 2/41\n- Product: 2/44\n- Sales: 0/29 (no interns)\n- Security: 1/25",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Qui est le PDG et combien d'employés sont dans son département ?\nCombien de contractuels y a-t-il au total ?",
+        "category": "STRUCTURED",
+        "language": "French",
+        "answer": "Le PDG s'appelle Alexandra Chen et il y a 1 employé dans son département. Il y a un total de 76 contractuels chez Nexora Solutions.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "كم عدد الموظفين في كل قسم؟\nمن هو المدير التنفيذي؟",
+        "category": "STRUCTURED",
+        "language": "Arabic",
+        "answer": "عدد الموظفين في كل قسم هو:\n- المنتجات: 55 موظفًا\n- العمليات: 53 موظفًا\n- المالية: 47 موظفًا\n- القانونية: 39 موظفًا\n- التسويق: 39 موظفًا\n- المبيعات: 39 موظفًا\n- الهندسة: 39 موظفًا\n- الموارد البشرية: 38 موظفًا\n- الأمن: 36 موظفًا\n- البيانات: 34 موظفًا\n\nالمدير التنفيذي هو Alexandra Chen.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "hr",
+        "question": "Donne moi tous les employés Band5 avec leurs départements et rôles",
+        "category": "STRUCTURED",
+        "language": "French",
+        "answer": "Alexandra Chen, Executive, CEO\nAmir White, Operations, COO\nConnor Williams, Operations, VP Operations\nDina Howard, Legal, Compliance Officer\nDina Nguyen, Marketing, VP Marketing\nFatima Jackson, Sales, CRO\nIvan King, Legal, General Counsel\nLaura Stewart, Legal, Compliance Officer\nMaria Baker, HR, CHRO\nNathan Johnson, Marketing, CMO\nNathan Richardson, Legal, Legal Counsel\nOlivia Parker, Legal, Compliance Officer\nPatricia White, Product, CPO\nPaul Davis, Engineering, CTO\nRachel Cooper, Security, CISO\nRania Martinez, Legal, General Counsel\nStefan Bell, Finance, CFO\nTariq Baker, Data, Chief Data Officer\nTina Nguyen, Legal, General Counsel",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "hr",
+        "question": "¿Cuántos empleados a tiempo completo hay en cada departamento?",
+        "category": "STRUCTURED",
+        "language": "Spanish",
+        "answer": "En el departamento de Ingeniería hay 27 empleados a tiempo completo. En Productividad hay 9 empleados a tiempo completo. En Recursos Humanos hay 15 empleados a tiempo completo. En Seguridad hay 7 empleados a tiempo completo. En Operaciones hay 17 empleados a tiempo completo. En Legalidad hay 14 empleados a tiempo completo. En Ejecutivos hay 1 empleado a tiempo completo. En Finanzas hay 6 empleados a tiempo completos. En Ventas hay 9 empleados a tiempo completo. En Marketing hay 15 empleados a tiempo completo. En Datos hay 12 empleados a tiempo completo.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "من هو أقدم موظف في كل قسم؟",
+        "category": "STRUCTURED",
+        "language": "Arabic",
+        "answer": "أقدم الموظف في قسم البيانات هو دينا روبنسون. وأقدم الموظف في قسم الهندسة هو كونور سانشيز. وأقدم الموظفة في قسم الإدارة هي ألكسندرا تشين. وأقدم الموظفة في قسم الماليات هي ياسمين ستيفنز. وأقدم الموظف في قسم الموارد البشرية هو أمير وRIGHT. وأقدم الموظف في قسم القانون هو أمير روبنسون. وأقدم الموظف في قسم التسويق هو جورج هاروود. وأقدم الموظفة في قسم العمليات هي تينا وايت. وأقدم الموظف في قسم المنتج هو إبراهيم بROWN. وأقدم الموظفة في قسم المبيعات هي خينا سكوت. وأقدم الموظفة في قسم الأمن هي بيتي ريل.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Who does Paul Davis report to?",
+        "category": "GRAPH",
+        "language": "Portuguese",
+        "answer": "Paul Davis relata diretamente a Fatima Nguyen, que é a VP de Engenharia.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "How many direct reports does Alexandra Chen have?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Alexandra Chen has 10 direct reports.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "paul",
+        "question": "Who are all the people in my reporting chain?",
+        "category": "GRAPH",
+        "language": "English",
+        "answer": "Fatima Nguyen, Julia Jackson\n\nFatima Nguyen is the VP Engineering and you report to her. Julia Jackson is an Engineering Manager under Fatima Nguyen and you also report to her.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Which managers have more than 5 direct reports?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Uma Sanchez has 38 direct reports.\nRachel Jones has 34 direct reports.\nGabriel Cook has 32 direct reports.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "What is my start date, contract type and department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Your start date at Nexora Solutions is 2019-03-24. Your contract type is Full-Time. You are assigned to the Engineering department.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "xavier",
+        "question": "Tell me everything about my employment — role, department, start date, contract",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Based on the information provided, here is everything about your employment at Nexora Solutions:\n\n- Role: Accountant\n- Department: Finance\n- Email: x.watson86@nexora.com\n\nThe context does not provide specific details such as start date or contract type. Therefore, I do not have this information to share with you.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "nathan",
+        "question": "What is my role, location and who is my manager?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Your current job title at Nexora Solutions is Legal Counsel. The work location for employees at Nexora Solutions includes options for remote or hybrid working as specified in the Flexible Working Policy. There are no records of your direct supervisor available from the provided data.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "paul",
+        "question": "How long have I been with the company and how many people report to me?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "You have been employed with Nexora Solutions since 2025. You currently have 2 direct reports.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "What are my rights regarding maternity leave and flexible working?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "Regarding maternity leave at Nexora Solutions, you are entitled to 26 weeks of paid maternity leave at full salary, followed by up to 26 additional weeks of unpaid leave if desired. To be eligible for the paid portion, you must have completed a minimum of 12 months of continuous employment with Nexora Solutions prior to your expected week of childbirth. If you have fewer than 12 months of service, you are entitled to statutory maternity pay in accordance with local employment law.\n\nMaternity leave may begin up to 11 weeks before the expected due date. You must notify HR and your line manager at least 15 weeks before the expected due date. Additionally, employees adopting a child are entitled to the same leave provisions as maternity leave. Only one partner in a couple may claim adoption leave equivalent to maternity leave; the other partner is entitled to paternity leave provisions.\n\nFor shared parental leave, eligible employees may opt for this in lieu of part of the maternity or adoption leave entitlement, subject to applicable local legislation and prior agreement with HR.\n\nRegarding flexible working arrangements, all employees have the statutory right to request flexible working from their first day of employment. You must submit a written request to your line manager and HR Business Partner specifying the proposed arrangement, the desired start date, and an assessment of how it would impact the team. Nexora Solutions will consider the request and issue a written decision within 3 months of submission.\n\nFor further information or documentation requirements, please contact HR at hr@nexora.com.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "nathan",
+        "question": "What is the process if I want to raise a grievance about my manager?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "To raise a grievance regarding your manager at Nexora Solutions, you should follow the Whistleblowing Policy provided by the company. This policy offers a safe and confidential channel for employees to raise genuine concerns about wrongdoing, legal breaches, or ethical violations without fear of retaliation. You can contact the HR team at hr@nexora.com or your HR Business Partner to initiate the process.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "xavier",
+        "question": "How does the performance review work and when is it done?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "At Nexora Solutions, the performance review process works as follows:\n\n1. The company operates a bi-annual performance review cycle consisting of:\n   - Mid-Year Review (July)\n   - Annual Review (December/January)\n\n2. The Annual Review serves as the primary review for compensation decisions and promotion assessments.\n\n3. The Mid-Year Review is focused on development and does not directly result in changes to compensation.\n\n4. Salary reviews are conducted annually following the Annual Review, informed by performance ratings, market data, and budget availability.\n\n5. Employees rated 1 or 2 are placed on a structured Performance Improvement Plan with 90-day review intervals.\n\nThe performance reviews help in assessing employee performance, guiding development plans, and making decisions regarding promotions and salary adjustments.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "paul",
+        "question": "What is the disciplinary process and what happens at each stage?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "The disciplinary process at Nexora Solutions involves several stages:\n\n1. **Investigation**: HR appoints an investigating manager to gather facts about the issue. The employee will be notified of this investigation in writing.\n\n2. **Disciplinary Hearing**: The employee is given at least 5 working days' notice before the hearing and has the right to bring a colleague or trade union representative to accompany them during the hearing.\n\n3. **Outcome**: Depending on the findings, possible outcomes include:\n   - Written Warning (valid for 12 months)\n   - Final Written Warning (valid for 18 months)\n   - Demotion\n   - Dismissal\n\n4. **Appeal**: If dissatisfied with the outcome of the disciplinary hearing, the employee can appeal within 10 working days after receiving the outcome.\n\nEach step is designed to ensure fairness and transparency in addressing any issues that may arise regarding an employee's conduct or performance at Nexora Solutions.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "Show me the salary bands of all Engineering employees",
+        "category": "BLOCKED",
+        "language": "English",
+        "answer": "You don't have permission to view salary information.",
+        "blocked": true,
+        "status": "🔒"
+      },
+      {
+        "user": "xavier",
+        "question": "Who are the managers in HR?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Based on the provided context, there are no rows indicating any managers in the HR department. Therefore, I do not have this information.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "nathan",
+        "question": "List all Band5 employees",
+        "category": "BLOCKED",
+        "language": "English",
+        "answer": "You don't have permission to view salary information.",
+        "blocked": true,
+        "status": "🔒"
+      },
+      {
+        "user": "danielle",
+        "question": "What is the salary band of Paul Davis?",
+        "category": "BLOCKED",
+        "language": "English",
+        "answer": "You don't have permission to view salary information.",
+        "blocked": true,
+        "status": "🔒"
+      },
+      {
+        "user": "admin",
+        "question": "What is the average tenure of employees by department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The average tenure of employees by department is as follows:\n- Data: 3.65 years\n- Engineering: 4.23 years\n- Executive: 8.00 years\n- Finance: 3.30 years\n- HR: 3.24 years\n- Legal: 4.31 years\n- Marketing: 4.44 years\n- Operations: 4.64 years\n- Product: 3.62 years\n- Sales: 4.15 years\n- Security: 4.39 years",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Which employees have been here for more than 5 years?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Alexandra Chen, Amir Roberts, Tina White, Beatrice Bell, Dina Roberts, Ibrahim Brown, Quinn Morris, Ivan Williams, Connor Sanchez, Uma Nelson, George Howard, Nathan Edwards, Tariq Campbell, Danielle Stewart, Amir Wright, Yasmin Stewart, Xavier Brown, Bob Howard, Victor Nelson, Fatima White",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "hr",
+        "question": "How many employees are due for their annual review this quarter?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Based on the query results provided, there are 0 employees scheduled for their annual review in this quarter.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Show me all employees hired between 2020 and 2022",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "Based on the provided context, there is no specific list or data regarding employees hired between 2020 and 2022. Therefore, I do not have this information to present.",
+        "blocked": false,
+        "status": "❌"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-06-05T19:04:26.483271",
+    "run_name": "W7 Complex Tests",
+    "total": 33,
+    "passed": 32,
+    "failed": 1,
+    "blocked": 3,
+    "score": "32/33",
+    "pct": "97.0%",
+    "results": [
+      {
+        "user": "admin",
+        "question": "Who is the CEO, CTO and CFO of Nexora and what are their emails?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The CEO of Nexora Solutions is Alexandra Chen with an email address of a.chen@nexora.com. The Chief Technology Officer (CTO) of Nexora Solutions is Paul Davis with an email address of p.davis@nexora.com. The CFO of Nexora Solutions is Stefan Bell with an email address of s.bell@nexora.com.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Which department has the most contractors and how many are there?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The Finance department has the most contractors with a count of 10. However, there are 76 contractors listed for that department. It seems there might be some discrepancy since the first query indicates only 10 contractors but the second query shows 76. Based on the provided data, the Finance department employs the highest number of contractors with 76.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "How many employees joined each year since 2018?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "In 2018, 45 new employees joined the company. In 2019, 67 new employees joined. In 2020, 50 new employees joined. In 2021, 55 new employees joined. In 2022, 55 new employees joined. In 2023, 47 new employees joined. In 2024, 54 new employees joined. In 2025, 46 new employees joined. In 2026, 1 new employee joined.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Give me a comparison of Band1 vs Band5 employee counts per department",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Based on the provided data:\n\n- **Data Department:**\n  - Band1: 14 employees\n  - Band5: 1 employee\n\n- **Engineering Department:**\n  - Band1: 2 employees\n  - Band5: 1 employee\n\n- **Executive Department:**\n  - Band1: 0 employees (only 1 employee in total for this department, and it is in Band5)\n  - Band5: 1 employee\n\n- **Finance Department:**\n  - Band1: 15 employees\n  - Band5: 1 employee\n\n- **HR Department:**\n  - Band1: 11 employees\n  - Band5: 1 employee\n\n- **Legal Department:**\n  - Band1: 8 employees\n  - Band5: 11 employees\n\n- **Marketing Department:**\n  - Band1: 17 employees\n  - Band5: 2 employees\n\n- **Operations Department:**\n  - Band1: 17 employees\n  - Band5: 2 employees\n\n- **Product Department:**\n  - Band1: 11 employees\n  - Band5: 1 employee\n\n- **Sales Department:**\n  - Band1: 9 employees\n  - Band5: 2 employees\n\n- **Security Department:**\n  - Band1: 0 employees (only 1 employee in total for this department, and it is in Band5)\n  - Band5: 1 employee",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Who are the most senior employees in Engineering, Finance and Legal?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "The most senior employees in each department based on start date are as follows:\n\n**Engineering Department:**\n- Dina Kelly (Dina Kelly) - Start Date: 2018-11-10\n- Yusuf Bailey (Yusuf Bailey) - Start Date: 2019-09-17\n- Rania Scott (Rania Scott) - Start Date: 2019-10-23\n- Freya Lopez (Freya Lopez) - Start Date: 2019-10-29\n\n**Finance Department:**\n- Beatrice Taylor (Beatrice Taylor) - Start Date: 2019-11-26\n- Ethan Allen (Ethan Allen) - Start Date: 2020-03-24\n- Paul Richardson (Paul Richardson) - Start Date: 2020-11-07\n- Umar Harris (Umar Harris) - Start Date: 2021-01-26\n\n**Legal Department:**\n- Uma Sanchez (Uma Sanchez) - Start Date: 2020-01-05\n- Rania Martinez (Rania Martinez) - Start Date: 2020-10-08\n- Ivan King (Ivan King) - Start Date: 2020-11-24",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "How many full-time employees are there in each department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Engineering: 28\nProduct: 9\nHR: 15\nSecurity: 7\nOperations: 17\nLegal: 14\nExecutive: 1\nFinance: 6\nSales: 9\nMarketing: 14\nData: 12",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "List all employees who are managers or directors",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "There are no employees listed as Managers or Directors based on the provided query results.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "What is the ratio of interns to full-time employees in each department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The ratios of interns to full-time employees in each department are as follows:\n\n- Data: 4/25\n- Engineering: 2/27\n- Executive: 0/1 (no interns)\n- Finance: 2/32\n- HR: 1/30\n- Legal: 2/28\n- Marketing: 2/29\n- Operations: 2/41\n- Product: 2/44\n- Sales: 0/29 (no interns)\n- Security: 1/25",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Qui est le PDG et combien d'employés sont dans son département ?\nCombien de contractuels y a-t-il au total ?",
+        "category": "STRUCTURED",
+        "language": "French",
+        "answer": "Le PDG s'appelle Alexandra Chen et il y a 1 employé dans son département. Il y a un total de 76 contractuels chez Nexora Solutions.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "كم عدد الموظفين في كل قسم؟\nمن هو المدير التنفيذي؟",
+        "category": "STRUCTURED",
+        "language": "Arabic",
+        "answer": "عدد الموظفين في كل قسم هو:\n- المنتجات: 55 موظف\n- العمليات: 53 موظف\n- المالية: 47 موظف\n- القانونية: 39 موظف\n- التسويق: 39 موظف\n- المبيعات: 39 موظف\n- الهندسة: 39 موظف\n- الموارد البشرية: 38 موظف\n- الأمن: 36 موظف\n- البيانات: 34 موظف\n\nالمدير التنفيذي هو Alexandra Chen.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "hr",
+        "question": "Donne moi tous les employés Band5 avec leurs départements et rôles",
+        "category": "STRUCTURED",
+        "language": "French",
+        "answer": "Alexandra Chen, Executive, CEO\nAmir White, Operations, COO\nConnor Williams, Operations, VP Operations\nDina Howard, Legal, Compliance Officer\nDina Nguyen, Marketing, VP Marketing\nFatima Jackson, Sales, CRO\nIvan King, Legal, General Counsel\nLaura Stewart, Legal, Compliance Officer\nMaria Baker, HR, CHRO\nNathan Johnson, Marketing, CMO\nNathan Richardson, Legal, Legal Counsel\nOlivia Parker, Legal, Compliance Officer\nPatricia White, Product, CPO\nPaul Davis, Engineering, CTO\nRachel Cooper, Security, CISO\nRania Martinez, Legal, General Counsel\nStefan Bell, Finance, CFO\nTariq Baker, Data, Chief Data Officer\nTina Nguyen, Legal, General Counsel",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "hr",
+        "question": "¿Cuántos empleados a tiempo completo hay en cada departamento?",
+        "category": "STRUCTURED",
+        "language": "Spanish",
+        "answer": "En el departamento de Ingeniería hay 27 empleados a tiempo completo. En Productividad hay 9 empleados a tiempo completo. En Recursos Humanos hay 15 empleados a tiempo completo. En Seguridad hay 7 empleados a tiempo completo. En Operaciones hay 17 empleados a tiempo completo. En Legalidad hay 14 empleados a tiempo completo. En Ejecutivos hay 1 empleado a tiempo completo. En Finanzas hay 6 empleados a tiempo completos. En Ventas hay 9 empleados a tiempo completo. En Marketing hay 15 empleados a tiempo completo. En Datos hay 12 empleados a tiempo completo.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "من هو أقدم موظف في كل قسم؟",
+        "category": "STRUCTURED",
+        "language": "Arabic",
+        "answer": "أقدم الموظف في قسم البيانات هو دينا روبرتس، بدء العمل في 3 أبريل 2018.\nأقدم الموظف في قسم الهندسة هو كونور سانشيز، بدء العمل في 29 أبريل 2018.\nأقدم الموظف في قسم الإدارة التنفيذية هو ألكسندرا تشين، بدء العمل في 1 مارس 2018.\nأقدم الموظف في قسم الماليات هو ياسمين ستيفن، بدء العمل في 27 يونيو 2018.\nأقدم الموظف في قسم الموارد البشرية هو أمير وRIGHT، بدء العمل في 26 يونيو 2018.\nأقدم الموظف في قسم القانون هو أمير روبيرتس، بدء العمل في 18 مارس 2018.\nأقدم الموظف في قسم التسويق هو جورج هوارد، بدء العمل في 6 مايو 2018.\nأقدم الموظف في قسم العمليات هو تينا وايت، بدء العمل في 21 مارس 2018.\nأقدم الموظف في قسم المنتج هو إبراهيم بROWN، بدء العمل في 4 أبريل 2018.\nأقدم الموظف في قسم المبيعات هو خينا سكوت، بدء العمل في 10 أغسطس 2018.\nأقدم الموظف في قسم الأمن هو بيتيريس بيل، بدء العمل في 30 مارس 2018.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Who does Paul Davis report to?",
+        "category": "GRAPH",
+        "language": "English",
+        "answer": "Based on the provided organizational data, Paul Davis reports to Fatima Nguyen, who is the VP Engineering at Nexora Solutions.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "How many direct reports does Alexandra Chen have?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Alexandra Chen has 10 direct reports.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "paul",
+        "question": "Who are all the people in my reporting chain?",
+        "category": "GRAPH",
+        "language": "English",
+        "answer": "Fatima Nguyen, Julia Jackson\n\nFatima Nguyen is the VP Engineering and you report to her. Julia Jackson is an Engineering Manager under Fatima Nguyen and reports directly to you as the manager of the Engineering department.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Which managers have more than 5 direct reports?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Uma Sanchez has 38 direct reports.\nRachel Jones has 34 direct reports.\nGabriel Cook has 32 direct reports.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "What is my start date, contract type and department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Your start date at Nexora Solutions is 2019-03-24. Your contract type is Full-Time. You are assigned to the Engineering department.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "xavier",
+        "question": "Tell me everything about my employment — role, department, start date, contract",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Based on the information provided, here is everything about your employment at Nexora Solutions:\n\nRole: Accountant\nDepartment: Finance\nEmail: x.watson86@nexora.com\n\nThe context does not provide a start date or contract details. Therefore, I do not have this information to share with you.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "nathan",
+        "question": "What is my role, location and who is my manager?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Your current job title at Nexora Solutions is Legal Counsel. The work location for employees at Nexora Solutions includes options for remote or hybrid working as specified in the Flexible Working Policy. There are no records of your direct supervisor available from the provided data.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "paul",
+        "question": "How long have I been with the company and how many people report to me?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "You have been employed with Nexora Solutions since 2025. You currently have 2 direct reports.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "What are my rights regarding maternity leave and flexible working?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "Regarding maternity leave, as an eligible employee at Nexora Solutions, you are entitled to 26 weeks of paid maternity leave at full salary. You can also take up to an additional 26 weeks of unpaid leave if desired. To be eligible for the paid portion, you must have completed a minimum of 12 months of continuous employment with Nexora Solutions prior to your expected week of childbirth. If you have fewer than 12 months of service, you are entitled to statutory maternity pay as per local employment law.\n\nMaternity leave may begin up to 11 weeks before the expected due date. You must notify HR and your line manager at least 15 weeks before the expected due date. For adoption leave, which is equivalent for employees adopting a child, only one partner in a couple can claim adoption leave equivalent to maternity leave.\n\nAdditionally, you may opt for shared parental leave instead of part of your maternity or adoption leave entitlement, subject to applicable local legislation and agreement with HR in advance.\n\nFor flexible working arrangements, all employees have the statutory right to request such an arrangement after 26 weeks of continuous service. Nexora Solutions also extends this right from the first day of employment. A request for flexible working must be submitted in writing to your line manager and HR Business Partner, specifying the proposed arrangement, desired start date, and impact on the team. The company will consider the request and provide a written decision within 3 months of submission.\n\nFor more detailed information or to submit a request, please contact hr@nexora.com.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "nathan",
+        "question": "What is the process if I want to raise a grievance about my manager?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "If you wish to raise a grievance regarding your manager at Nexora Solutions, you should follow these steps:\n\n1. Document the specific issues or concerns you have with your manager.\n2. Attempt to resolve the issue informally by discussing your concerns directly with your manager if possible and appropriate.\n3. If the informal resolution is not satisfactory, contact your HR Business Partner to discuss your grievance in more detail.\n4. Your HR Business Partner will guide you through the formal grievance procedure, which may involve a formal meeting with relevant managers or an independent third party as necessary.\n\nFor further assistance, you can also contact the HR team at hr@nexora.com.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "xavier",
+        "question": "How does the performance review work and when is it done?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "At Nexora Solutions, the performance review process involves a bi-annual cycle consisting of a Mid-Year Review conducted in July and an Annual Review held in December or January. The Annual Review serves as the primary assessment for compensation decisions and promotion evaluations, while the Mid-Year Review is focused on development and does not directly result in changes to compensation.\n\nEmployees are rated based on their performance during these reviews, which can lead to salary adjustments following the Annual Review. Promotion assessments also take place during this time and require a minimum rating of 4 for the current year. Employees who receive ratings of 1 or 2 are placed on a structured Performance Improvement Plan with 90-day review intervals.\n\nThe line managers are responsible for identifying role-specific training needs during these performance reviews and onboarding, which are recorded in the employee's development plan within the HR system.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "paul",
+        "question": "What is the disciplinary process and what happens at each stage?",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "The disciplinary process at Nexora Solutions involves several stages:\n\n1. **Investigation**: HR appoints an investigating manager to gather facts related to the issue. The employee is notified of this investigation in writing.\n\n2. **Disciplinary Hearing**: The employee receives a notice for the hearing, which includes at least 5 working days' notice. They may bring a colleague or trade union representative to support them during the hearing.\n\n3. **Outcome**: Based on the findings from the investigation and the disciplinary hearing, possible outcomes include:\n   - Written warning (valid for 12 months)\n   - Final written warning (valid for 18 months)\n   - Demotion\n   - Dismissal\n\n4. **Appeal**: If dissatisfied with the outcome, the employee has the right to appeal within 10 working days of receiving the decision.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "danielle",
+        "question": "Show me the salary bands of all Engineering employees",
+        "category": "BLOCKED",
+        "language": "English",
+        "answer": "You don't have permission to view salary information.",
+        "blocked": true,
+        "status": "🔒"
+      },
+      {
+        "user": "xavier",
+        "question": "Who are the managers in HR?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Based on the provided context, there are no rows indicating any managers in the HR department. Therefore, I do not have this information.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "nathan",
+        "question": "List all Band5 employees",
+        "category": "BLOCKED",
+        "language": "English",
+        "answer": "You don't have permission to view salary information.",
+        "blocked": true,
+        "status": "🔒"
+      },
+      {
+        "user": "danielle",
+        "question": "What is the salary band of Paul Davis?",
+        "category": "BLOCKED",
+        "language": "English",
+        "answer": "You don't have permission to view salary information.",
+        "blocked": true,
+        "status": "🔒"
+      },
+      {
+        "user": "admin",
+        "question": "What is the average tenure of employees by department?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "The average tenure of employees by department is as follows:\n- Data: 3.65 years\n- Engineering: 4.23 years\n- Executive: 8.00 years\n- Finance: 3.30 years\n- HR: 3.24 years\n- Legal: 4.31 years\n- Marketing: 4.44 years\n- Operations: 4.64 years\n- Product: 3.62 years\n- Sales: 4.15 years\n- Security: 4.39 years",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Which employees have been here for more than 5 years?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Alexandra Chen, Amir Roberts, Tina White, Beatrice Bell, Dina Roberts, Ibrahim Brown, Quinn Morris, Ivan Williams, Connor Sanchez, Uma Nelson, George Howard, Nathan Edwards, Tariq Campbell, Danielle Stewart, Amir Wright, Yasmin Stewart, Xavier Brown, Bob Howard, Victor Nelson, Fatima White",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "hr",
+        "question": "How many employees are due for their annual review this quarter?",
+        "category": "STRUCTURED",
+        "language": "English",
+        "answer": "Based on the query results provided, there are 0 employees scheduled for their annual review in this quarter.",
+        "blocked": false,
+        "status": "✅"
+      },
+      {
+        "user": "admin",
+        "question": "Show me all employees hired between 2020 and 2022",
+        "category": "TEXT",
+        "language": "English",
+        "answer": "Based on the provided context, there is no specific list or data about employees hired between 2020 and 2022. Therefore, I do not have this information to provide.",
+        "blocked": false,
+        "status": "❌"
+      }
+    ]
+  }
+]

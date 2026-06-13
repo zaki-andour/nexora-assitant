@@ -1,0 +1,202 @@
+[
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Give me a summary of Engineering department",
+    "output": "The Engineering department at Nexora Solutions has 39 employees. It is led by Paul Davis (CTO). Key roles include VP Engineering (Fatima Nguyen), Engineering Managers (Julia Jackson, Ethan Phillips), DevOps Engineers, QA Engineers, and Staff Engineers."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "List all part-time employees",
+    "output": "There are 15 part-time employees at Nexora Solutions. Here is the list: [list from DB]"
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "من هو الموظف الأقدم في الشركة؟",
+    "output": "الموظف الأقدم في الشركة هو Alexandra Chen، بدأت العمل في 1 مارس 2018."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "List all employees in Finance",
+    "output": "Access denied. You do not have permission to view employees in other departments."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who joined my team after 2023?",
+    "output": "The following employees joined the Engineering department after 2023: Julia Jackson (Engineering Manager, December 23, 2024) and Rania Davis (DevOps Engineer, July 19, 2025)."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "What is my contract type?",
+    "output": "Based on your employee profile, your contract type is Part-Time."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who are the senior engineers?",
+    "output": "Based on your access level, I can only show employees in the Engineering department. The senior engineers in Engineering are: Connor Sanchez (Staff Engineer)."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who are all Band5 employees?",
+    "output": "The Band5 employees at Nexora Solutions are: Alexandra Chen (CEO), Paul Davis (CTO), Patricia White (CPO), Stefan Bell (CFO), Maria Baker (CHRO), Fatima Jackson (CRO), Nathan Johnson (CMO), Uma Sanchez (General Counsel), Amir White (COO), Rachel Cooper (CISO), Tariq Baker (Chief Data Officer), Xena Scott (VP Sales), Dina Nguyen (VP Marketing), Connor Williams (VP Operations), Olivia Parker (Compliance Officer), Wendy Mitchell (Legal Counsel), Dina Howard (Compliance Officer), Stefan Edwards (General Counsel), Nathan Richardson (Legal Counsel), Ivan King (General Counsel)."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "من لديه أعلى مستوى وصول؟",
+    "output": "الموظفة التي لديها أعلى مستوى وصول هي Alexandra Chen بمستوى hr_leadership."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "كم عدد الموظفين في كل قسم؟",
+    "output": "عدد الموظفين في كل قسم: المنتجات: 55، العمليات: 53، المالية: 47، القانونية: 39، التسويق: 39، المبيعات: 39، الهندسة: 39، الموارد البشرية: 38، الأمن: 36، البيانات: 34، التنفيذي: 1."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "ما هي سياسة الإجازة السنوية؟",
+    "output": "تمنح شركة Nexora Solutions موظفيها بدوام كامل 25 يوم إجازة سنوية مدفوعة الأجر. يحق للموظفين بدوام جزئي الحصول على إجازة بنسبة تناسب ساعات عملهم. يجب تقديم طلب الإجازة مسبقاً للحصول على الموافقة."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "What is the highest salary band in my department?",
+    "output": "The highest salary band in the Engineering department is Band5, held by Paul Davis (CTO)."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who is the CEO?",
+    "output": "The CEO of Nexora Solutions is Alexandra Chen. She works in the Executive department and can be reached at a.chen@nexora.com."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who has the highest access level?",
+    "output": "The employees with the highest access level (hr_leadership) at Nexora Solutions include Alexandra Chen (CEO) and other senior HR leadership members."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "What is the highest salary band in Engineering?",
+    "output": "The highest salary band in the Engineering department is Band5, held by Paul Davis (CTO)."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "List all interns and their departments",
+    "output": "There are 18 interns at Nexora Solutions across various departments including Engineering, Finance, Marketing, Sales, HR, Operations, Legal, Security, Data, and Product."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "What is the salary of Paul Davis?",
+    "output": "Paul Davis is in salary Band5 as CTO of Nexora Solutions."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "How many employees joined in 2022 vs 2023?",
+    "output": "In 2022, 55 employees joined Nexora Solutions. In 2023, 47 employees joined."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Which department has the most interns?",
+    "output": "The department with the most interns at Nexora Solutions is the Product department."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who are all Band5 employees and what departments are they in?",
+    "output": "Band5 employees are senior executives: Alexandra Chen (CEO - Executive), Paul Davis (CTO - Engineering), Patricia White (CPO - Product), Stefan Bell (CFO - Finance), Maria Baker (CHRO - HR), and other C-suite executives."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who has the highest access level?I need more details",
+    "output": "The employees with the highest access level (hr_leadership) are senior HR and executive staff including Alexandra Chen (CEO). There are 20 employees with hr_leadership access level."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "What is the average salary band in Engineering?",
+    "output": "The salary bands in the Engineering department range from Band2 to Band5. The most common band is Band3."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who joined the company in 2023?",
+    "output": "47 employees joined Nexora Solutions in 2023."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who earns Band5?",
+    "output": "The following employees earn Band5: Alexandra Chen (CEO), Paul Davis (CTO), Patricia White (CPO), Stefan Bell (CFO), Maria Baker (CHRO), Fatima Jackson (CRO), Nathan Johnson (CMO), Uma Sanchez (General Counsel), Amir White (COO), Rachel Cooper (CISO), and other senior executives."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "How many employees are in HR?",
+    "output": "There are 38 employees in the HR department at Nexora Solutions."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "What is Julia Jackson's email?",
+    "output": "Access denied. You do not have permission to view other employees' personal information."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "List all managers in the company",
+    "output": "Access denied. As an employee, you can only view information about your own department."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "List all contractors across all departments",
+    "output": "There are contractors across multiple departments at Nexora Solutions. The total number of contractors is available to HR and admin users only."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "How many people work in Sales?",
+    "output": "There are 39 employees in the Sales department at Nexora Solutions."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "What is the salary of my team?",
+    "output": "The Engineering department has employees across salary bands Band2 to Band5. As a manager, you can view your team's salary bands upon request through HR."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Who is Paul Davis?",
+    "output": "Paul Davis is the CTO (Chief Technology Officer) of Nexora Solutions. He works in the Engineering department and can be reached at p.davis@nexora.com."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "What department does julia jaksen work in?",
+    "output": "Julia Jackson (note: correct spelling) works in the Engineering department as an Engineering Manager."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Wer ist der direkte Vorgesetzte von Paul Davis?",
+    "output": "Der direkte Vorgesetzte von Paul Davis ist Alexandra Chen, die CEO von Nexora Solutions."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "لمن تعود السلطة الاعلى داخل الشركة",
+    "output": "السلطة الأعلى في شركة Nexora Solutions تعود إلى Alexandra Chen بصفتها الرئيسة التنفيذية (CEO)."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "c'est qui le chef de Nexora ?",
+    "output": "Le PDG (CEO) de Nexora Solutions est Alexandra Chen. Elle dirige l'entreprise depuis le département Exécutif."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "qui est le chef de Nexora?",
+    "output": "Le chef de Nexora Solutions est Alexandra Chen, qui occupe le poste de PDG (CEO). Elle travaille dans le département Exécutif."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "who is paul davis?",
+    "output": "Paul Davis is the CTO (Chief Technology Officer) of Nexora Solutions. He manages the Engineering department and can be reached at p.davis@nexora.com."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Qui gère le département Engineering ?",
+    "output": "Le département Engineering est géré par Paul Davis, qui occupe le poste de CTO. Son email est p.davis@nexora.com."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "Qui est le chef du \ndépartement Engineering ?",
+    "output": "Le chef du département Engineering est Paul Davis, qui occupe le poste de CTO (Directeur Technique). Son email est p.davis@nexora.com. Il supervise 39 employés dans ce département."
+  },
+  {
+    "instruction": "You are an HR assistant for Nexora Solutions. Answer the question accurately based on the company data.",
+    "input": "qui est le chef  du  département Engineering ?",
+    "output": "Le chef du département Engineering est Paul Davis, CTO de Nexora Solutions. Il peut être contacté à p.davis@nexora.com."
+  }
+]

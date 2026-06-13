@@ -33,18 +33,32 @@ Reply with ONLY this JSON:
 }}"""
 
 def decompose_query(question: str) -> dict:
-    # Don't decompose simple person queries
-    simple_patterns = ["who is ", "qui est ", "wer ist ", "quien es ", "من هو", "谁是"]
-    if any(question.lower().startswith(p) for p in simple_patterns):
-        return {"is_complex": False, "sub_questions": [question]}
-    """
-    Decompose a complex question into simpler sub-questions.
-    Returns dict with is_complex flag and list of sub-questions.
-    """
     q_lower = question.lower()
-    complex_signals = [" and ", " also ", " as well as ", " plus ", " both "]
 
-    if not any(signal in q_lower for signal in complex_signals):
+    # ── DETECT MULTIPLE QUESTIONS ─────────────────────
+    # If question contains newline or multiple ? → complex
+    has_newline   = "\n" in question or "\r" in question
+    has_multi_q   = q_lower.count("?") > 1
+    has_complex_kw = any(s in q_lower for s in [" and ", " also ", " as well as ", " plus ", " both "])
+
+    if has_newline or has_multi_q:
+        # Split by newline first
+        parts = [p.strip() for p in re.split(r'[\n\r]+', question) if p.strip()]
+        if len(parts) > 1:
+            logger.info(f"Decomposed into {len(parts)} sub-questions")
+            return {
+                "is_complex":    True,
+                "sub_questions": parts,
+                "method":        "newline"
+            }
+
+    # ── SIMPLE PATTERNS ───────────────────────────────
+    simple_patterns = ["who is ", "qui est ", "wer ist ", "quien es ", "من هو", "谁是"]
+    if any(q_lower.startswith(p) for p in simple_patterns) and not has_complex_kw:
+        return {"is_complex": False, "sub_questions": [question], "method": "simple"}
+
+    # ── NO COMPLEX SIGNALS → SIMPLE ───────────────────
+    if not has_complex_kw:
         logger.info(f"Simple question detected: {question[:50]}")
         return {
             "is_complex":    False,
@@ -52,6 +66,7 @@ def decompose_query(question: str) -> dict:
             "method":        "keyword"
         }
 
+    # ── LLM DECOMPOSITION ─────────────────────────────
     logger.info(f"Complex question — calling LLM decomposer: {question[:50]}")
     response = requests.post(OLLAMA_URL, json={
         "model":   MODEL,
@@ -76,10 +91,7 @@ def decompose_query(question: str) -> dict:
     sub_questions = result.get("sub_questions", [])
     if not sub_questions:
         parts = re.split(r'\s+and\s+', question, maxsplit=2)
-        if len(parts) > 1:
-            sub_questions = [p.strip() for p in parts if p.strip()]
-        else:
-            sub_questions = [question]
+        sub_questions = [p.strip() for p in parts if p.strip()] if len(parts) > 1 else [question]
 
     is_complex = len(sub_questions) > 1
     logger.info(f"Decomposed into {len(sub_questions)} sub-questions")
