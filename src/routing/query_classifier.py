@@ -11,54 +11,40 @@ from src.utils.logger import get_logger
 logger = get_logger("classifier")
 
 LLM_PROMPT = """You are an intelligent multilingual HR query classifier.
-The question can be in ANY language.
+The question can be in ANY language. Classify it into EXACTLY ONE category.
 
-STEP 1 — Look at these examples to understand the patterns:
-
-TEXT examples (HR policies, rules, entitlements):
+TEXT — a company policy, rule, entitlement or procedure (answer = policy documents):
 - "What is the remote work policy?" → TEXT
 - "How many annual leave days do employees get?" → TEXT
 - "What are the sick leave entitlements?" → TEXT
-- "Can I work from home every day?" → TEXT
-- "Quelle est la politique de teletravail ?" → TEXT
+- "Quelle est la politique de télétravail ?" → TEXT
 - "ما هي سياسة الإجازات؟" → TEXT
 
-STRUCTURED — question about a specific person or employee statistics:
-- Any question asking ABOUT A PERSON by name or by role/title
-- Titles include: CEO, CTO, CFO, boss, chef, patron, director, manager, head, 
-  رئيس, مدير, chef, Geschäftsführer, jefe, 老板 — ALL mean a person with a role
-- Employee counts, locations, departments, contracts
-- Department summary queries: 'Give me a summary of Engineering' → STRUCTURED
-- Salary band queries: "What is the highest salary band in Engineering?" → STRUCTURED
-- Any question about salary_band data from the database → STRUCTURED
-- 'who are the X managers', 'who manages X department', 'list managers in X' → STRUCTURED not GRAPH
-- Personal data queries ALWAYS → STRUCTURED:
-  'what is my role', 'quel est mon role', 'what is my contract type', 'quel est mon contrat'
-  'what is my department', 'what is my salary band', 'what is my start date'
-  'what is my job title', 'what is my position' → STRUCTURED
-- These personal queries need DB lookup, NOT policy documents
-- Band level queries: 'Who are all Band5 employees?', 'Who earns Band3?' → STRUCTURED
-- NEVER classify salary/band employee queries as TEXT
-- Key signal: the answer requires looking up a person in the employee database
+STRUCTURED — an ATTRIBUTE or a COUNT about an employee / employees (answer = employee database):
+- One person's field: "What is Julia Jackson's role / department / salary band / contract / location / start date?" → STRUCTURED
+- Personal data: "what is my role", "quel est mon contrat", "what is my salary band" → STRUCTURED
+- Counts & lists: "How many employees are in London?", "How many contractors are there?", "List all Band5 employees" → STRUCTURED
+- Key signal: you look up a FIELD or a NUMBER about a person or about employees.
 
-GRAPH examples (org hierarchy, who manages who, team members):
-- "Who manages the Engineering department?" → GRAPH
-- "Who reports directly to Paul Davis?" → GRAPH
-- "Who are the members of the Engineering team?" → GRAPH
-- "Qui sont les membres de l equipe Engineering ?" → GRAPH
-- "من يدير قسم الهندسة؟" → GRAPH
+GRAPH — a RELATIONSHIP or a POSITION in the org hierarchy (answer = org chart):
+- Head / leader of a department: "Who is the head of the Engineering department?", "Who leads Finance?", "Who manages Sales?" → GRAPH
+- Direct reports of a person: "Who reports to Paul Davis?", "Who are the members of the Engineering team?" → GRAPH
+- The manager OF a person: "Who is the manager of Julia Jackson?", "Who does the CTO report to?" → GRAPH
+- "من يدير قسم الهندسة؟" → GRAPH ; "Qui dirige le département Finance ?" → GRAPH
+- Key signal: the answer is a LINK between a person and a department, or between two people
+  (who-leads-a-department, who-reports-to-whom, who-is-whose-manager).
 
-HYBRID examples (needs both policy AND employee/org data):
-- "What is the maternity leave policy and who in HR approves it?" → HYBRID
-- "Tell me about the HR department and their policies" → HYBRID
-- "What is Paul Davis role and his team?" → HYBRID
+HYBRID — the question needs BOTH a policy AND employee/org data at the same time:
+- A count/person AND a policy: "How many people work in Engineering, and what is the remote work policy?" → HYBRID
+- A person's attribute AND a policy: "What is Julia Jackson's contract type, and what is her sick leave entitlement?" → HYBRID
+- "How many contractors are there, and what maternity leave applies to them?" → HYBRID
+- Key signal: the question has TWO parts — one needs the database/org chart, the other needs a policy document.
 
-STEP 2 — Now reason about the question:
-- What is the user really trying to find out?
-- Does it need policy documents, employee data, org chart, or both?
-- Which example above is most similar to this question?
-
-STEP 3 — Classify based on your reasoning.
+DECISION GUIDE (apply in this order):
+1. TWO things at once (employee/org data AND a policy)             → HYBRID
+2. A hierarchy LINK (head of a dept, manager of a person, reports) → GRAPH
+3. A single RULE / ENTITLEMENT / POLICY                            → TEXT
+4. A single FIELD or NUMBER about employees                        → STRUCTURED
 
 Question: {question}
 

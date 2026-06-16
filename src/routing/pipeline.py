@@ -28,12 +28,62 @@ LANG_MAP = {
 }
 
 def detect_language(text):
+    # Script-based detection first — reliable for CJK and Arabic, which langdetect
+    # frequently misclassifies on short text or when Latin names are present
+    # (e.g. "Nexora Solutions 有多少个部门？" was being detected as English/Korean).
+    if re.search(r'[\u4e00-\u9fff]', text):          # Han (Chinese) characters
+        return "Chinese"
+    if re.search(r'[\u0600-\u06ff\u0750-\u077f]', text):  # Arabic script
+        return "Arabic"
+    # Latin-script languages (English, French, Spanish, German) -> langdetect
     if LANGDETECT_AVAILABLE:
         try:
             return LANG_MAP.get(langdetect_detect(text), "English")
         except:
             return "English"
     return "English"
+
+
+def ensure_language(answer, target_language):
+    """Language-consistency fallback.
+
+    The quantised model sometimes answers in English even when another language
+    was requested (mostly Chinese). If the produced answer is in English while a
+    different language was asked, translate it into the target language with a
+    single extra LLM call. Names, emails, numbers, dates and symbols are kept as
+    is. This only triggers on the English-fallback failure, so answers already in
+    the correct language (or any non-English language) are never altered.
+    """
+    if target_language == "English" or not answer or not answer.strip():
+        return answer
+    try:
+        detected = LANG_MAP.get(langdetect_detect(answer), "English")
+    except Exception:
+        return answer
+    if detected != "English":
+        return answer  # already non-English -> leave untouched
+
+    logger.info(f"Language fallback: answer came out English, target={target_language} — translating")
+    translate_prompt = f"""Translate the following text into {target_language}.
+Keep person names (e.g. Paul Davis, Stefan Bell), email addresses, numbers, dates and currency symbols (£, $) EXACTLY as they are — do NOT translate or modify them.
+Output ONLY the translation in {target_language}, with no preamble and no extra comment.
+
+Text:
+{answer}
+
+Translation in {target_language}:"""
+    try:
+        r = requests.post(_config.OLLAMA_URL, json={
+            "model":   _config.MODEL,
+            "prompt":  translate_prompt,
+            "stream":  False,
+            "options": {"temperature": 0.0, "num_predict": _config.NUM_PREDICT}
+        }, timeout=_config.TIMEOUT)
+        translated = r.json().get("response", "").strip()
+        return translated if translated else answer
+    except Exception as e:
+        logger.warning(f"Translation fallback failed: {e}")
+        return answer
 
 def run_pipeline(question: str, user: dict = None) -> dict:
     logger.info("=" * 50)
@@ -130,14 +180,25 @@ def run_pipeline(question: str, user: dict = None) -> dict:
     else:
         user_context = ""
 
+    # ── Language-aware script guard ───────────────────
+    # Forbid a script ONLY when it is NOT the target language, so we never
+    # block the language we actually want (this fixes Chinese answers coming
+    # out in English) while still preventing script-mixing in other languages.
+    if detected_language == "Chinese":
+        script_rule = "Write the entire answer in Simplified Chinese characters. Do NOT use Cyrillic/Russian characters."
+    elif detected_language == "Arabic":
+        script_rule = ("Write the entire answer in Arabic script. "
+                       "Do NOT use Chinese characters. Do NOT use Cyrillic/Russian characters.")
+    else:
+        script_rule = "Do NOT use Chinese characters. Do NOT use Cyrillic/Russian characters."
+
     prompt = f"""You are an HR assistant for Nexora Solutions.
 {user_context}
 Answer the question based ONLY on the context provided below.
 IMPORTANT: Always respond in {detected_language}.
 CRITICAL: Respond ONLY and ENTIRELY in {detected_language}. NEVER use any other language. NEVER mix languages.
 Every single word in your response must be in {detected_language}.
-Do NOT use Chinese characters under any circumstances.
-Do NOT use Cyrillic/Russian characters under any circumstances.
+{script_rule}
 Person names (like Alexandra Chen, Paul Davis) must NEVER be translated — keep them exactly as written.
 When presenting data, translate English department/role names to {detected_language} naturally.
 For example in French: HR → Ressources Humaines, Engineering → Ingénierie.
@@ -171,6 +232,9 @@ Answer in {detected_language}:"""
     }, timeout=_config.TIMEOUT)
 
     answer = response.json().get("response", "").strip()
+
+    # ── STEP 5.1 : LANGUAGE-CONSISTENCY FALLBACK ──────
+    answer = ensure_language(answer, detected_language)
 
     return {
         "question":      question,

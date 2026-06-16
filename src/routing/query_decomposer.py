@@ -39,7 +39,14 @@ def decompose_query(question: str) -> dict:
     # If question contains newline or multiple ? → complex
     has_newline   = "\n" in question or "\r" in question
     has_multi_q   = q_lower.count("?") > 1
-    has_complex_kw = any(s in q_lower for s in [" and ", " also ", " as well as ", " plus ", " both "])
+    has_complex_kw = any(s in q_lower for s in [
+        " and ", " also ", " as well as ", " plus ", " both ",   # English
+        " et ", " ainsi que ",                                   # French
+        " y ", " además ",                                       # Spanish
+        " und ", " sowie ",                                      # German
+        "，", "、", "和", "以及", "并且",                          # Chinese
+        "، و", "وما", "وكم", "وما هي", "وما هو",                 # Arabic (waw = "and")
+    ])
 
     if has_newline or has_multi_q:
         # Split by newline first

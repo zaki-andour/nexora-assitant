@@ -23,3 +23,9 @@ rag-env/
 models/qwen2.5-q4-finetuned/checkpoint-*/
 # Base HF model si jamais copié dans le projet
 models/qwen2.5-7b-hf/
+*.bak
+*.save
+*.working
+*.bak
+*.save
+*.working

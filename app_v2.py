@@ -116,7 +116,7 @@ async def ask(req: QuestionRequest):
     last_results[req.session_id] = {
         "question": req.question,
         "answer":   result["answer"],
-        "category": result["categories"][0] if result["categories"] else "TEXT",
+        "category": ("HYBRID" if result.get("is_complex") and len(set(result["categories"])) > 1 else (result["categories"][0] if result["categories"] else "TEXT")),
         "sources":  result["sources"],
         "latency":  elapsed,
         "model":    config.MODEL,

@@ -197,16 +197,27 @@ def retrieve_graph(question, rbac_clause=""):
     extract_prompt = f"""Extract information from this HR question (any language).
 Return ONLY this JSON:
 {{
-  "intent": "manages" or "reports_to",
+  "intent": "manages" or "reports_to" or "manager_of",
   "department": "department name in English or null",
   "person_name": "full name or null"
 }}
 
+Meaning of each intent:
+- "manages"    = who is the HEAD / leader of a DEPARTMENT (a department is named)
+- "reports_to" = who are the DIRECT REPORTS / subordinates of a PERSON (a person is named)
+- "manager_of" = who is the MANAGER / superior OF a PERSON, i.e. who that person reports to (a person is named)
+
 Examples:
 - "Who manages Engineering?" → {{"intent": "manages", "department": "Engineering", "person_name": null}}
-- "Qui gère le département Finance ?" → {{"intent": "manages", "department": "Finance", "person_name": null}}
+- "Who is the head of the Finance department?" → {{"intent": "manages", "department": "Finance", "person_name": null}}
+- "Qui dirige le département Finance ?" → {{"intent": "manages", "department": "Finance", "person_name": null}}
+- "من هو رئيس قسم الهندسة؟" → {{"intent": "manages", "department": "Engineering", "person_name": null}}
+- "谁是工程部门的负责人？" → {{"intent": "manages", "department": "Engineering", "person_name": null}}
 - "Who reports to Paul Davis?" → {{"intent": "reports_to", "department": null, "person_name": "Paul Davis"}}
-- "Qui rapporte à Julia Jackson ?" → {{"intent": "reports_to", "department": null, "person_name": "Julia Jackson"}}
+- "Qui relève de Fatima Nguyen ?" → {{"intent": "reports_to", "department": null, "person_name": "Fatima Nguyen"}}
+- "Who is the manager of Julia Jackson?" → {{"intent": "manager_of", "department": null, "person_name": "Julia Jackson"}}
+- "Who does Paul Davis report to?" → {{"intent": "manager_of", "department": null, "person_name": "Paul Davis"}}
+- "Qui est le manager de Julia Jackson ?" → {{"intent": "manager_of", "department": null, "person_name": "Julia Jackson"}}
 
 Question: {question}"""
 
@@ -258,10 +269,20 @@ Question: {question}"""
             """, (emp_node_id,))
             results = cursor.fetchall()
 
+    elif intent == "manager_of" and person:
+        # Who is THIS person's manager (the person they report to)?
+        cursor.execute("""
+            SELECT m.name, m.role, m.email, m.location
+            FROM employees e
+            JOIN employees m ON e.manager_id = m.employee_id
+            WHERE LOWER(e.name) = LOWER(%s)
+        """, (person,))
+        results = cursor.fetchall()
+
     cursor.close()
     conn.close()
     logger.info(f"Graph returned {len(results)} rows — intent: {intent}")
-    return results
+    return results, intent, person, department
 
 # ── BUILD CONTEXT ─────────────────────────────────────
 def build_context(category, question, rbac_clause=""):
@@ -295,25 +316,23 @@ def build_context(category, question, rbac_clause=""):
 
     elif category == "GRAPH":
         logger.info("Routing to PostgreSQL (graph tables)")
-        rows = retrieve_graph(question, rbac_clause=rbac_clause)
+        rows, gintent, gperson, gdept = retrieve_graph(question, rbac_clause=rbac_clause)
         if rows:
-            q = question.lower()
-            if "who manages" in q or "head of" in q or "qui gère" in q or "qui dirige" in q or "qui manage" in q:
-                dept_match = re.search(
-                    r'(engineering|hr|finance|sales|marketing|operations|product|legal|data|security)',
-                    q
-                )
-                dept = dept_match.group(1).capitalize() if dept_match else "the department"
-                context = f"The following person manages the {dept} department:\n"
+            who = gperson if gperson else "the person in question"
+            dep = gdept if gdept else "the department in question"
+            if gintent == "manages":
+                context = f"The following person is the head/manager of the {dep} department:\n"
                 for row in rows:
                     context += f"  Name: {row[0]}, Role: {row[1]}, Email: {row[2]}, Location: {row[3]}\n"
-                context += f"\nThis means {rows[0][0]} ({rows[0][1]}) is the manager of the {dept} department.\n"
-            elif "who reports" in q or "reports to" in q:
-                name_match = re.search(r'to\s+([A-Z][a-z]+\s+[A-Z][a-z]+)', question)
-                manager = name_match.group(1) if name_match else "this manager"
-                context = f"The following people report directly to {manager}:\n"
+                context += f"\nThis means {rows[0][0]} ({rows[0][1]}) is the head of the {dep} department.\n"
+            elif gintent == "reports_to":
+                context = f"The following people report directly to {who}:\n"
                 for row in rows:
                     context += f"  Name: {row[0]}, Role: {row[1]}, Location: {row[2]}, Email: {row[3]}\n"
+            elif gintent == "manager_of":
+                row = rows[0]
+                context = f"The manager of {who} (the person {who} reports to) is:\n"
+                context += f"  Name: {row[0]}, Role: {row[1]}, Email: {row[2]}, Location: {row[3]}\n"
             else:
                 context = "Organizational data:\n"
                 for row in rows:

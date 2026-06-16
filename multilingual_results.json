@@ -1,0 +1,809 @@
+[
+  {
+    "category": "GRAPH",
+    "language": "English",
+    "query": "Who is the head of the Engineering department?",
+    "answer": "Paul Davis is the head of the Engineering department. He holds the role of CTO and can be contacted at p.davis@nexora.com. His location is London, and he started his contract on 2023-01-15.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "French",
+    "query": "Qui est le responsable du département Ingénierie ?",
+    "answer": "Je n'ai pas d'informations sur la personne qui occupe le poste de responsable du département Ingénierie à Nexora Solutions dans les données fournies.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Spanish",
+    "query": "¿Quién es el responsable del departamento de Ingeniería?",
+    "answer": "El responsable del departamento de Ingeniería es Paul Davis, quien ocupa el cargo de CTO. Su correo electrónico es p.davis@nexora.com y se encuentra ubicado en Londres. Tiene un contrato full-time y comenzó su posición el 15 de enero de 2023.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "German",
+    "query": "Wer leitet die Engineering-Abteilung?",
+    "answer": "Paul Davis leitet die Engineering-Abteilung.",
+    "detected": "HYBRID",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Arabic",
+    "query": "من هو رئيس قسم الهندسة؟",
+    "answer": "لا يوجد معلومات حول شخصية رئيس قسم الهندسة في السياق المقدم.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Chinese",
+    "query": "谁是工程部门的负责人？",
+    "answer": "目前在Nexora Solutions担任工程部门负责人的信息未提供。根据现有数据，无法得知此人姓名。",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "English",
+    "query": "Who reports to Fatima Nguyen?",
+    "answer": "The following people report directly to Fatima Nguyen:\nAlice Turner, QA Engineer, Dubai, a.turner75@nexora.com\nConnor Sanchez, Staff Engineer, Casablanca, c.sanchez241@nexora.com\nDanielle Kelly, DevOps Engineer, Paris, d.kelly139@nexora.com\nDanielle Young, Software Engineer, Paris, d.young212@nexora.com\nDina Sanchez, QA Engineer, London, d.sanchez181@nexora.com\nFatou Torres, QA Engineer, Paris, f.torres228@nexora.com\nHelen Phillips, Software Engineer, London, h.phillips350@nexora.com\nIbrahim Collins, DevOps Engineer, Paris, i.collins168@nexora.com\nIvan Brooks, Software Engineer, Dubai, i.brooks276@nexora.com\nIvan Cox, Software Engineer, Paris, i.cox341@nexora.com\nJames Baker, Staff Engineer, Berlin, j.baker319@nexora.com\nJames Jackson, QA Engineer, Paris, j.jackson395@nexora.com\nKhadija Garcia, Software Engineer, Dubai, k.garcia360@nexora.com\nNina Turner, QA Engineer, Berlin, n.turner418@nexora.com\nQuinn Jackson, QA Engineer, London, q.jackson267@nexora.com\nRachel Davis, QA Engineer, Tunis, r.davis245@nexora.com\nRania Davis, DevOps Engineer, Tunis, r.davis189@nexora.com\nUma Young, Senior Software Engineer, Casablanca, u.young125@nexora.com\nVictor Lopez, DevOps Engineer, Amsterdam, v.lopez162@nexora.com\nXena Brown, Senior Software Engineer, Casablanca, x.brown342@nexora.com\nXena Martin, QA Engineer, Dubai, x.martin239@nexora.com\nXena Roberts, Software Engineer, London, x.roberts250@nexora.com\nYusuf Bailey, Staff Engineer, Berlin, y.bailey361@nexora.com",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "French",
+    "query": "Qui relève de Fatima Nguyen ?",
+    "answer": "Paul Davis relève de Fatima Nguyen. Paul Davis est le CTO et travaille dans l'ingénierie à Londres. Son email est p.davis@nexora.com et sa date de début est le 15 janvier 2023.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Spanish",
+    "query": "¿Quién depende de Fatima Nguyen?",
+    "answer": "Las siguientes personas dependen directamente de Fatima Nguyen:\nAlice Turner, Ingeniera QA, Dubai, a.turner75@nexora.com\nConnor Sanchez, Ingeniero de Nivel Superior, Casablanca, c.sanchez241@nexora.com\nDanielle Kelly, Ingeniera DevOps, Paris, d.kelly139@nexora.com\nDanielle Young, Ingeniera de Software, Paris, d.young212@nexora.com\nDina Sanchez, Ingeniera QA, London, d.sanchez181@nexora.com\nFatou Torres, Ingeniera QA, Paris, f.torres228@nexora.com\nHelen Phillips, Ingeniera de Software, London, h.phillips350@nexora.com\nIbrahim Collins, Ingeniero DevOps, Paris, i.collins168@nexora.com\nIvan Brooks, Ingeniero de Software, Dubai, i.brooks276@nexora.com\nIvan Cox, Ingeniero de Software, Paris, i.cox341@nexora.com\nJames Baker, Ingeniero de Nivel Superior, Berlin, j.baker319@nexora.com\nJames Jackson, Ingeniera QA, Paris, j.jackson395@nexora.com\nKhadija Garcia, Ingeniera de Software, Dubai, k.garcia360@nexora.com\nNina Turner, Ingeniera QA, Berlin, n.turner418@nexora.com\nQuinn Jackson, Ingeniera QA, London, q.jackson267@nexora.com\nRachel Davis, Ingeniera QA, Tunis, r.davis245@nexora.com\nRania Davis, Ingeniera DevOps, Tunis, r.davis189@nexora.com\nUma Young, Ingeniera Senior de Software, Casablanca, u.young125@nexora.com\nVictor Lopez, Ingeniero DevOps, Amsterdam, v.lopez162@nexora.com\nXena Brown, Ingeniera Senior de Software, Casablanca, x.brown342@nexora.com\nXena Martin, Ingeniera QA, Dubai, x.martin239@nexora.com\nXena Roberts, Ingeniera de Software, London, x.roberts250@nexora.com\nYusuf Bailey, Ingeniero de Nivel Superior, Berlin, y.bailey361@nexora.com",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "German",
+    "query": "Wer berichtet an Fatima Nguyen?",
+    "answer": "Ich habe keine Informationen über die Berichterstattung an Fatima Nguyen. Die bereitgestellten Daten beinhalten ihren Namen, ihre Rolle als VP Engineering, ihr Department, ihr Vollzeitvertrag, ihren Startdatum, seine Standort und sein Gehaltsschachtel, aber nicht die Information über ihre Berichtskette.",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Arabic",
+    "query": "من يتبع فاطمة نغوين في العمل؟",
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  {
+    "category": "GRAPH",
+    "language": "Chinese",
+    "query": "谁向 Fatima Nguyen 汇报？",
+    "answer": "都直接向 Fatima Nguyen 汇报。",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "English",
+    "query": "Who is the manager of Julia Jackson?",
+    "answer": "The manager of Julia Jackson at Nexora Solutions is Paul Davis. Paul Davis holds the role of CTO and can be contacted via email at p.davis@nexora.com. He is based in London and works in the Engineering department on a full-time contract, having started on 2023-01-15.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "French",
+    "query": "Qui est le manager de Julia Jackson ?",
+    "answer": "Le manager de Julia Jackson est Paul Davis, qui occupe la position de CTO à Nexora Solutions. Son email est p.davis@nexora.com et il travaille à Londres dans le département d'ingénierie.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Spanish",
+    "query": "¿Quién es el gerente de Julia Jackson?",
+    "answer": "El gerente de Julia Jackson es Paul Davis. Sus detalles son los siguientes:\n\nNombre: Paul Davis\nCargo: CTO (Chief Technology Officer)\nEmail: p.davis@nexora.com\nDepartamento: Ingeniería\nUbicación: Londres\nContrato: Tiempo completo\nFecha de inicio: 15 de enero de 2023",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "German",
+    "query": "Wer ist der Vorgesetzte von Julia Jackson?",
+    "answer": "Der Vorgesetzte von Julia Jackson ist Paul Davis. Er hat das Rolle des CTO und arbeitet im Engineering-Department. Seine E-Mail-Adresse lautet p.davis@nexora.com und er befindet sich derzeit in London. Sein Vertrag ist Vollzeit und seine Antrittsdatum war am 15. Januar 2023.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Arabic",
+    "query": "من هو مدير جوليا جاكسون؟",
+    "answer": "مدير جوليا جاكسون هوPaul Davis، وهو في منصب CTO ويعمل في الهندسة ويقع مقره في لندن. البريد الإلكتروني له هو p.davis@nexora.com وقد انضم إلى الشركة كمتعاقد كامل الوقت في 15 يناير 2023.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Chinese",
+    "query": "Julia Jackson 的经理是谁？",
+    "answer": "根据提供的信息，朱莉亚·杰克逊的职位是工程部经理（Engineering Manager），因此她的直接上级应该是该部门的负责人。但是具体是谁没有在提供的数据中提及。",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "English",
+    "query": "How many departments does Nexora Solutions have?",
+    "answer": "Nexora Solutions has 11 departments.",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "French",
+    "query": "Combien de départements compte Nexora Solutions ?",
+    "answer": "Nexora Solutions compte 11 départements.",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Spanish",
+    "query": "¿Cuántos departamentos tiene Nexora Solutions?",
+    "answer": "Nexora Solutions tiene 11 departamentos.",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "German",
+    "query": "Wie viele Abteilungen hat Nexora Solutions?",
+    "answer": "Nexora Solutions hat 11 Abteilungen.",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Arabic",
+    "query": "كم عدد الأقسام في شركة Nexora Solutions؟",
+    "answer": "هناك 11 قسم في شركة نكسور سولوشنز.",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Chinese",
+    "query": "Nexora Solutions 有多少个部门？",
+    "answer": "Nexora Solutions 有 11 个部门。",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "English",
+    "query": "Who is the head of the Finance department?",
+    "answer": "Stefan Bell is the head of the Finance department. He holds the role of CFO and can be contacted at s.bell@nexora.com. Stefan is based in Berlin and has a full-time contract, having started on 2025-02-23.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "French",
+    "query": "Qui dirige le département Finance ?",
+    "answer": "Stefan Bell, en tant que CFO, dirige le département Finance.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Spanish",
+    "query": "¿Quién dirige el departamento de Finanzas?",
+    "answer": "Stefan Bell dirige el departamento de Finanzas en Nexora Solutions.",
+    "detected": "HYBRID",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "German",
+    "query": "Wer leitet die Finanzabteilung?",
+    "answer": "Stefan Bell leitet die Finanzabteilung.",
+    "detected": "HYBRID",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Arabic",
+    "query": "من هو رئيس قسم المالية؟",
+    "answer": "لا يوجد معلومات حول شخصية رئيس قسم المالية في السياق المقدم.",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "GRAPH",
+    "language": "Chinese",
+    "query": "谁是财务部门的负责人？",
+    "answer": "我不确定谁是财务部门的负责人，因为上下文没有提供这方面的信息。",
+    "detected": "GRAPH",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "English",
+    "query": "How many people work in Engineering, and what is the remote work policy?",
+    "answer": "There are 39 people employed in the Engineering department.\n\nThe remote work policy at Nexora Solutions supports flexible working arrangements that enable employees to balance professional effectiveness with personal wellbeing. This includes the option for remote work, which must adhere to specific security requirements such as using company-issued devices and maintaining a secure home working environment. Employees are provided with necessary equipment like a laptop and software, and must use the company's VPN when accessing internal systems remotely. Additional equipment requests can be submitted for approval up to a budget of £300 per employee per year.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "French",
+    "query": "Combien de personnes travaillent dans l'Ingénierie, et quelle est la politique de télétravail ?",
+    "answer": "Il y a 39 personnes qui travaillent dans l'ingénierie à Nexora Solutions. La politique de télétravail de Nexora Solutions soutient des dispositions de travail flexibles qui permettent aux employés d'équilibrer leur efficacité professionnelle avec le bien-être personnel. Cette politique définit les conditions sous lesquelles le télétravail est permis.\n\nLes employés peuvent demander des changements concernant : les heures de travail (début et fin, heures compressées), les jours de travail (partiel, uniquement pendant la période scolaire) ou le lieu de travail (télétravail/hybridation, couverte séparément dans la politique de télétravail).\n\nLes employés doivent s'assurer que les informations confidentielles ne sont pas visibles par des tiers lors des sessions de télétravail. Tous le travail doit être effectué sur un ordinateur fourni par l'entreprise. L'utilisation d'un appareil personnel pour le travail n'est pas autorisée sans une approbation explicite en matière de sécurité informatique.\n\nToute incident de sécurité se produisant lors du télétravail doit être signalée immédiatement au service de sécurité informatique. Nexora Solutions fournit un ordinateur portable et le logiciel nécessaire pour le télétravail. Les employés sont responsables d'entretenir un environnement de travail à domicile sécurisé et productif.\n\nLes employés doivent utiliser le réseau privé virtuel (VPN) de l'entreprise en permanence lorsqu'ils accèdent aux systèmes internes à distance. Des demandes pour des équipements supplémentaires (écran externe, clavier, etc.) peuvent être soumises au service informatique pour approbation. Les articles approuvés sont soumis à un budget de 300 £ par employé par an.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Spanish",
+    "query": "¿Cuántas personas trabajan en Ingeniería y cuál es la política de teletrabajo?",
+    "answer": "En Nexora Solutions, 39 personas trabajan en Ingeniería. La política de teletrabajo establece que se permiten arreglos flexibles de trabajo que incluyen cambios en las horas de trabajo (inicio/final, horas comprimidas), días de trabajo (part-time, solo tiempo escolar) o ubicación de trabajo (teletrabajo/híbrido). Los empleados deben asegurarse de que la información confidencial no sea visible a terceros durante sesiones de teletrabajo y deben usar dispositivos proporcionados por la empresa para el trabajo. Además, se requiere el uso del VPN de la empresa en todo momento al acceder a sistemas internos desde fuera. Se permite solicitar equipo adicional con un presupuesto máximo de £300 por empleado anualmente.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "German",
+    "query": "Wie viele Personen arbeiten im Engineering, und wie lautet die Homeoffice-Richtlinie?",
+    "answer": "Im Engineering-Department arbeiten 39 Personen. Die Homeoffice-Richtlinien bei Nexora Solutions lauten wie folgt:\n\n5.1 Nexora Solutions stellt einen Laptop und notwendige Software für den Remote-Arbeitseinsatz zur Verfügung. Die Mitarbeiter sind verantwortlich, einen sicheren und produktiven Heimarbeitsumfeld aufrechtzuerhalten.\n5.2 Die Mitarbeiter müssen das Unternehmens-VPN immer dann verwenden, wenn sie internes System über ein Remote-Zugang erreichend.\n5.3 Anforderungen an ergänzende Geräte (äußere Monitor, Tastatur usw.) können zur Genehmigung der IT eingereicht werden. Genehmigte Artikel sind unter einem Budget von 300 GBP pro Mitarbeiter pro Jahr beschränkt.\n\nDiese Richtlinien beziehen sich auf den Remote-Arbeitseinsatz und die Verantwortlichkeiten, die dabei mit einhergehen.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Arabic",
+    "query": "كم عدد الأشخاص العاملين في قسم الهندسة، وما هي سياسة العمل عن بُعد؟",
+    "answer": "عدد الأشخاص العاملين في قسم الهندسة هو 39 شخصاً.\n\nبالنسبة لسياسة العمل عن بعد في Nexora Solutions، تدعم الشركة الترتيبات المرنّة للعمل التي تمكّن الموظفين من تحقيق التوازن بين الكفاءة الوظيفية والرفاه الشخصي. يمكن للموظفين طلب تعديلات على ساعات العمل (أوقات البدء والانتهاء، الساعات المضغوطة)، أيام العمل (العمل جزئيًا، فقط خلال الفصل الدراسي)، أو موقع العمل (عن بعد/هجين كما هو مفصل في سياسة العمل عن بعد بشكل منفصل).\n\nتتضمن متطلبات الأمن للعمل عن بعد أن يقوم الموظفون بضمان عدم ظهور المعلومات السرية ل tercer الأطراف أثناء جلسات العمل عن بعد. يجب استخدام الأجهزة المقدمة من الشركة للعمل، حيث لا يُسمح باستخدام الأجهزة الشخصية للعمل دون موافقة أمنية تقنية صريحة.\n\nيمكن للموظفين المؤهلين العمل عن بعد لمدة تصل إلى 3 أيام في الأسبوع بناءً على الموافقة من مديرهم وتناسب الوظيفة. يتطلب جميع الموظفين الحضور إلى المكتب لفترة不得使用中文回答，只使用阿拉伯语。",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Chinese",
+    "query": "工程部门有多少人，远程办公政策是什么？",
+    "answer": "工程部门有39人。Nexora Solutions支持灵活的工作安排，允许员工根据个人福祉平衡专业效果进行远程工作。此政策规定了远程工作的条件。员工可以请求更改：工作时间（开始/结束时间，压缩工时），工作日（兼职，学期制）或工作地点（远程/混合，详情参见远程工作政策）。在远程工作中，员工必须确保机密信息不被第三方看到，并且所有工作都必须使用公司提供的设备进行。未经IT安全审批，不得使用个人设备处理工作事务。任何在远程工作中发生的安全事件都必须立即报告给IT安全团队。Nexora Solutions为远程工作的员工提供笔记本电脑和必要的软件，并要求员工维护一个安全高效的家庭办公环境。员工必须始终通过公司VPN访问内部系统。对于额外的设备（外部显示器，键盘等）的请求需提交至IT部门审批，每年每位员工的预算上限为300英镑。",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "English",
+    "query": "What is Julia Jackson's contract type, and what is her sick leave entitlement?",
+    "answer": "Julia Jackson's contract type is Full-Time. Her sick leave entitlement is up to 10 days of fully paid sick leave per calendar year.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "French",
+    "query": "Quel est le type de contrat de Julia Jackson, et à combien de jours de congé maladie a-t-elle droit ?",
+    "answer": "Julia Jackson a un contrat à temps plein. Elle est donc éligible pour 10 jours de congé maladie payés par an.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Spanish",
+    "query": "¿Cuál es el tipo de contrato de Julia Jackson y a cuántos días de baja por enfermedad tiene derecho?",
+    "answer": "Julia Jackson tiene un contrato full-time. No está especificado en la información proporcionada cuántos días de baja por enfermedad tiene derecho, ya que para ella se indica que no tiene días de baja por enfermedad.",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "German",
+    "query": "Welchen Vertragstyp hat Julia Jackson, und wie viele Krankheitstage stehen ihr zu?",
+    "answer": "Julia Jackson hat einen Full-Time-Vertrag. Der angeforderte Wert für Krankheitstage steht jedoch nicht in den verfügbaren Daten zur Verfügung.",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Arabic",
+    "query": "ما نوع عقد جوليا جاكسون، وما هو رصيدها من الإجازات المرضية؟",
+    "answer": "نوع عقد جوليا جاكسون هو عقد كامل الوقت. لا يوجد في المعلومات المتاحة رصيد إجازة مرضية لها.",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Chinese",
+    "query": "Julia Jackson 的合同类型是什么，她有多少病假天数？",
+    "answer": "Julia Jackson 的合同类型是全职。根据提供的信息，无法确定她有多少病假天数。",
+    "detected": "STRUCTURED",
+    "routing_ok": false,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "English",
+    "query": "How many contractors are there, and what is the maternity leave policy for contractors?",
+    "answer": "There are 76 contractors currently employed at Nexora Solutions.\n\nThe maternity leave policy for contractors at Nexora Solutions states that eligible employees are entitled to 26 weeks of paid maternity leave at full salary, followed by up to 26 additional weeks of unpaid leave if desired. To be eligible for paid maternity leave, an employee must have completed a minimum of 12 months of continuous employment with Nexora Solutions prior to the expected week of childbirth. Employees with fewer than 12 months of service are entitled to statutory maternity pay in accordance with local employment law. Maternity leave may begin up to 11 weeks before the expected due date, and the employee must notify HR and their line manager at least 15 weeks before the expected due date.\n\nFor contractors adopting a child, they are entitled to the same leave provisions as maternity leave. Only one partner in a couple may claim adoption leave equivalent to maternity leave, while the other partner is entitled to paternity leave provisions.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "French",
+    "query": "Combien y a-t-il de prestataires (contractors), et quelle est la politique de congé maternité pour eux ?",
+    "answer": "Il y a 76 prestataires chez Nexora Solutions.\n\nLa politique de congé maternité pour les prestataires est la suivante : \nLes employés contractuels sont éligibles à 26 semaines de congé maternité payé au salaire plein, suivi potentiellement de 26 semaines supplémentaires de congé non付诸行动。",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Spanish",
+    "query": "¿Cuántos contratistas hay y cuál es la política de licencia de maternidad para los contratistas?",
+    "answer": "En Nexora Solutions hay 76 contratistas.\n\nLa política de licencia de maternidad para los contratistas es la siguiente:\n\n2.1 Los empleados contratistas elegibles tienen derecho a 26 semanas de licencia de maternidad pagada a su salario completo, seguidas por hasta 26 semanas adicionales de licencia no remunerada si lo desean.\n2.2 Para ser elegible para la licencia de maternidad pagada, un contratista debe haber completado al menos 12 meses de empleo continuo con Nexora Solutions antes de la semana esperada del parto.\n2.3 Los contratistas que tienen menos de 12 meses de servicio están calificados para recibir el pago por licencia de maternidad estatal en conformidad con la ley laboral local.\n2.4 La licencia de maternidad puede comenzar hasta 11 semanas antes del parto esperado. El contratista debe notificar a Recursos Humanos y al jefe inmediato al menos 15 semanas antes del parto esperado.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "German",
+    "query": "Wie viele Contractors gibt es, und wie lautet die Mutterschaftsurlaubsregelung für sie?",
+    "answer": "Es gibt 76 Contractors bei Nexora Solutions. Die Mutterschaftsurlaubsregelungen für Contractors lauten wie folgt:\n\nEligible employees are entitled to 26 weeks of paid maternity leave at full salary, followed by up to 26 additional weeks of unpaid leave if desired.\n\nDie Mitarbeiter müssen mindestens 12 Monate kontinuierliche Beschäftigung bei Nexora Solutions vor der erwarteten Geburtstage haben, um auf den vollständig bezahlten Mutterschaftsurlaub zu verzichten. Bei weniger als 12 Monaten Dienstzeit sind die Mitarbeiter berechtigt, das gesetzlich vorgeschriebene Mutterschaftsgeld nach lokaler Beschäftigungsgesetzgebung zu erhalten.\n\nDer Mutterschaftsurlaub kann bis zu 11 Wochen vor dem erwarteten Geburtstag beginnen. Die Mitarbeiter müssen mindestens 15 Wochen vor der erwarteten Geburtstage ihre Absicht mit HR und ihrem direkten Vorgesetzten bekanntgeben.\n\nDie Regelungen für Adoption und geteilten Elternurlaub gelten ebenfalls für Contractors, wobei die Anträge mindestens 8 Wochen vor dem geplanten Urlaubsbeginn bei HR eingereicht werden müssen.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Arabic",
+    "query": "كم عدد المتعاقدين، وما هي سياسة إجازة الأمومة الخاصة بهم؟",
+    "answer": "عدد المتعاقدين في Nexora Solutions هو 76.\n\nبالنسبة لسياسة إجازة الأمومة للمتعاقدين، فهم مؤهلون للحصول على 26 أسبوعًا من إجازة الأمومة مدفوعة الأجر براتب كامل، يليها حتى 26 أسبوعًا إضافيًا غير مدفوع الأجر إذا رغبوا في ذلك. يجب أن يكون لدى الموظفة ما لا يقل عن 12 شهرًا من الخدمة المستمرة مع Nexora Solutions قبل تاريخ الولادة المتوقع للحصول على الإجازة المدفوعة الأجر. إذا كان لديهم أقل من 12 شهرًا من الخدمة، فسيحصلون على راتب الأمومة وفقًا للقانون المحلي لحقوق العمل. يمكن بدء إجازة الأمومة حتى 11 أسبوعًا قبل تاريخ الولادة المتوقع. يجب الإبلاغ عن ذلك للموارد البشرية والمنشئ المباشر على الأقل بعد مرور 15 أسبوعًا من تاريخ الولادة المتوقعة.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Chinese",
+    "query": "有多少名合同工，针对合同工的产假政策是什么？",
+    "answer": "Nexora Solutions 目前有 402 名合同工。合同工的产假政策如下：\n\n1. 合同工有权享受 26 周全薪产假，之后可选择额外享受最多 26 周的无薪产假。\n2. 要符合全薪产假资格，员工必须在预计分娩周前至少完成连续一年的服务期。\n3. 如果服务不满一年，合同工将根据当地劳动法享有法定产假津贴。\n4. 产假可以在预计分娩日前 11 周开始。员工需在预计分娩日前至少 15 周通知人力资源部和直接上级。",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "English",
+    "query": "Who leads the Finance department, and what is the expense claim submission deadline?",
+    "answer": "Stefan Bell leads the Finance department. The deadline for submitting expense claims is within 30 calendar days of the date the expense was incurred.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "French",
+    "query": "Qui dirige le département Finance, et quel est le délai de soumission des notes de frais ?",
+    "answer": "Le responsable du département Finance est Stefan Bell. Le délai de soumission des notes de frais est de 30 jours calendaires à partir de la date où les dépenses ont été engagées.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Spanish",
+    "query": "¿Quién dirige el departamento de Finanzas y cuál es el plazo para presentar los gastos?",
+    "answer": "Stefan Bell dirige el departamento de Finanzas. El plazo para presentar los gastos es dentro de 30 días calendario desde la fecha en que se incurrieron los mismos.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "German",
+    "query": "Wer leitet die Finanzabteilung, und bis wann müssen Spesenabrechnungen eingereicht werden?",
+    "answer": "Stefan Bell leitet die Finanzabteilung. Die Spesenabrechnungen müssen innerhalb von 30 Kalendertagen nach dem Datum der Ausgabe eingereicht werden.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Arabic",
+    "query": "من يرأس قسم المالية، وما هو الموعد النهائي لتقديم مطالبات المصاريف؟",
+    "answer": "لا يوجد بيانات حول من يرأس قسم المالية في السياق المقدم. فيما يتعلق بموعد تقديم مطالبات المصاريف، يجب تقديم جميع المصروفات داخل 30 يوماً من تاريخ حدوث المصروف.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Chinese",
+    "query": "谁领导财务部门，报销申请的提交截止时间是什么？",
+    "answer": "Stefan Bell领导财务部门。报销申请的提交截止时间为费用发生后的30个日历日内。",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "English",
+    "query": "How many employees are based in London, and what is the maximum London accommodation rate for business travel?",
+    "answer": "54 employees are based in London, and the maximum London accommodation rate for business travel at Nexora Solutions is £180 per night.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "French",
+    "query": "Combien d'employés sont basés à Londres, et quel est le plafond d'hébergement à Londres pour les voyages d'affaires ?",
+    "answer": "Il y a 54 employés basés à Londres. Le plafond d'hébergement à Londres pour les voyages d'affaires est de £180 par nuit.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Spanish",
+    "query": "¿Cuántos empleados están en Londres y cuál es la tarifa máxima de alojamiento en Londres para viajes de negocios?",
+    "answer": "Según los datos proporcionados, hay 54 empleados que están basados en Londres. La tarifa máxima de alojamiento en Londres para viajes de negocios es de £180 por noche.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "German",
+    "query": "Wie viele Mitarbeiter sind in London tätig, und wie hoch ist der maximale Übernachtungssatz in London für Geschäftsreisen?",
+    "answer": "In London arbeiten aktuell 54 Mitarbeiter. Der maximale Übernachtungssatz in London für Geschäftsreisen beträgt £180 pro Nacht.",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Arabic",
+    "query": "كم عدد الموظفين في لندن، وما هو الحد الأقصى لتكلفة الإقامة في لندن لسفر العمل؟",
+    "answer": "عدد الموظفين في لندن هو 54 موظف.至于问题中的第二部分，根据提供的信息，伦敦的住宿费用上限为 £180 每晚。",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "HYBRID",
+    "language": "Chinese",
+    "query": "有多少名员工在伦敦工作，出差时伦敦住宿的最高标准是多少？",
+    "answer": "有54名员工在伦敦工作。出差时伦敦住宿的最高标准是每晚180英镑。",
+    "detected": "HYBRID",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "English",
+    "query": "How many annual leave days are full-time employees entitled to?",
+    "answer": "Full-time employees are entitled to 25 working days of paid annual leave per calendar year, in addition to public holidays observed in their country of employment. They may also receive an additional 2 days for every year of continuous service up to a maximum of 30 days total.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "French",
+    "query": "À combien de jours de congés annuels les employés à temps plein ont-ils droit ?",
+    "answer": "Les employés à temps plein sont éligibles pour 25 jours de congés payés par an, en plus des jours fériés observés dans le pays d'emploi.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Spanish",
+    "query": "¿A cuántos días de vacaciones anuales tienen derecho los empleados a tiempo completo?",
+    "answer": "Los empleados a tiempo completo tienen derecho a 25 días de vacaciones anuales.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "German",
+    "query": "Wie viele Jahresurlaubstage stehen Vollzeitbeschäftigten zu?",
+    "answer": "Vollzeitbeschäftigten steht nach der Unternehmenspolitik 25 arbeitsgärtige Urlaubstage pro Kalenderjahr zur Verfügung, zusätzlich zu den öffentlichen Feiertagen ihres Landes der Beschäftigung.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Arabic",
+    "query": "كم عدد أيام الإجازة السنوية المستحقة للموظفين بدوام كامل؟",
+    "answer": "الموظفون بدوام كامل مستحقون على 25 يومًا من الإجازة السنوية في السنة المالية، بالإضافة إلى العطل الرسمية المحتسبة بموجب قانون العمل في البلاد التي يعملون فيها.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Chinese",
+    "query": "全职员工每年有多少天年假？",
+    "answer": "全职员工每年有25个工作日的年假。",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "English",
+    "query": "How many days of remote work per week are employees allowed?",
+    "answer": "Eligible employees may work remotely for up to 3 days per week, subject to manager approval and role suitability.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "French",
+    "query": "Combien de jours de télétravail par semaine les employés sont-ils autorisés à prendre ?",
+    "answer": "Les employés peuvent travailler en télétravail pour jusqu'à 3 jours par semaine, sous réserve de l'approbation du manager et de la pertinence du rôle.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Spanish",
+    "query": "¿Cuántos días de teletrabajo por semana se permiten a los empleados?",
+    "answer": "Los empleados pueden trabajar remoto hasta 3 días por semana, siempre y cuando esto sea aprobado por su jefe directo e sea compatible con el rol del empleado.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "German",
+    "query": "Wie viele Homeoffice-Tage pro Woche sind den Mitarbeitern erlaubt?",
+    "answer": "Mitarbeitern ist es nach der Remote Work Policy erlaubt, bis zu 3 Tage pro Woche im Home Office zu arbeiten. Dies unterliegt der Zustimmung des Verantwortlichen Manag者的输入被要求用德语回答，且不允许使用任何标记或星号。由于中文不是德语，所以直接翻译为德文：\n\nMitarbeitern ist es nach der Remote Work Policy erlaubt, bis zu 3 Tage pro Woche im Home Office zu arbeiten.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Arabic",
+    "query": "كم عدد أيام العمل عن بُعد المسموح بها للموظفين في الأسبوع؟",
+    "answer": "المسموح به للعمل عن بعد هو 3 أيام في الأسبوع، مع إمكانية الموافقة على المزيد من الأيام عند موافقة مدير الخط المباشر ورئيس قسم الموظف.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Chinese",
+    "query": "员工每周可以远程办公几天？",
+    "answer": "员工每周可以远程办公最多3天。",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "English",
+    "query": "How long is paid maternity leave at Nexora Solutions?",
+    "answer": "At Nexora Solutions, eligible employees are entitled to 26 weeks of paid maternity leave at full salary.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "French",
+    "query": "Quelle est la durée du congé maternité payé chez Nexora Solutions ?",
+    "answer": "Chez Nexora Solutions, le congé maternité payé dure 26 semaines à temps plein.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Spanish",
+    "query": "¿Cuánto dura la licencia de maternidad remunerada en Nexora Solutions?",
+    "answer": "La licencia de maternidad remunerada en Nexora Solutions dura 26 semanas.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "German",
+    "query": "Wie lange dauert der bezahlte Mutterschaftsurlaub bei Nexora Solutions?",
+    "answer": "Der bezahlte Mutterschaftsurlaub bei Nexora Solutions beträgt 26 Wochen an vollem Lohn.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Arabic",
+    "query": "ما هي مدة إجازة الأمومة المدفوعة في Nexora Solutions؟",
+    "answer": "مدة إجازة الأمومة المدفوعة في Nexora Solutions هي 26 أسبوعًا، حيث يتم دفع راتب كامل خلال هذه الفترة.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Chinese",
+    "query": "Nexora Solutions 的带薪产假有多长？",
+    "answer": "Nexora Solutions 的带薪产假为26周。",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "English",
+    "query": "How many sick days per year are full-time permanent employees entitled to?",
+    "answer": "Full-time permanent employees are entitled to up to 10 days of fully paid sick leave per calendar year.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "French",
+    "query": "À combien de jours de congé maladie par an les employés permanents à temps plein ont-ils droit ?",
+    "answer": "Les employés permanents à temps plein sont titulaires de 10 jours de congé maladie payé par année civile.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Spanish",
+    "query": "¿A cuántos días de baja por enfermedad al año tienen derecho los empleados fijos a tiempo completo?",
+    "answer": "Los empleados fijos a tiempo completo están titulados a recibir hasta 10 días de baja por enfermedad pagada al año.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "German",
+    "query": "Wie viele Krankheitstage pro Jahr stehen unbefristet Vollzeitbeschäftigten zu?",
+    "answer": "Unbefristet stehlen Vollzeitbeschäftigten nach dem Entitlement-Teil der Krankheitsurlaubsrichtlinie 10 Tage vollbezahlter Krankheitstage pro kalenderjahr zur Verfügung.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Arabic",
+    "query": "كم عدد أيام الإجازة المرضية سنويًا المستحقة للموظفين الدائمين بدوام كامل؟",
+    "answer": "المستحقة للموظفين الدائمين بدوام كامل سنويًا هي 10 أيام.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Chinese",
+    "query": "全职正式员工每年有多少天病假？",
+    "answer": "全职正式员工每年有10天的全额带薪病假。",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "English",
+    "query": "Within how many days must expense claims be submitted?",
+    "answer": "All expenses must be submitted within 30 calendar days of the date the expense was incurred.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "French",
+    "query": "Dans quel délai (en jours) les notes de frais doivent-elles être soumises ?",
+    "answer": "Les notes de frais doivent être soumises dans un délai de 30 jours calendaires depuis la date où l'expense a été engagée.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Spanish",
+    "query": "¿Dentro de cuántos días deben presentarse las reclamaciones de gastos?",
+    "answer": "Deben presentarse las reclamaciones de gastos dentro de 30 días calendario desde la fecha en que se incurrieron los gastos.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "German",
+    "query": "Innerhalb wie vieler Tage müssen Spesenabrechnungen eingereicht werden?",
+    "answer": "Müssen die Spesenabrechnungen innerhalb von 30 Kalendertagen eingereicht werden.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Arabic",
+    "query": "خلال كم يومًا يجب تقديم مطالبات المصاريف؟",
+    "answer": "يجب تقديم مطالبات المصاريف داخل 30 يوماً من تاريخ حدوث المصروفات.",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  },
+  {
+    "category": "TEXT",
+    "language": "Chinese",
+    "query": "报销申请必须在多少天内提交？",
+    "answer": "报销申请必须在30个日历日内提交。",
+    "detected": "TEXT",
+    "routing_ok": true,
+    "blocked": false
+  }
+]
