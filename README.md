@@ -1,4 +1,4 @@
-# Nexora HR Assistant — RAG Pipeline
+# Nexora HR Platform — RAG Pipeline
 
 Enterprise Sovereign AI Assistant built on Huawei Cloud ECS.
 

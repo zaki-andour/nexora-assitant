@@ -17,7 +17,7 @@ import src.config as config
 from src.utils.logger import get_logger
 
 logger  = get_logger("app_v2")
-app     = FastAPI(title="Nexora HR Assistant")
+app     = FastAPI(title="Nexora HR Platform")
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")

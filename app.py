@@ -205,7 +205,7 @@ def thumbs_down(comment):
 
 # ── INTERFACE ─────────────────────────────────────────
 with gr.Blocks(
-    title="Nexora HR Assistant",
+    title="Nexora HR Platform",
     theme=gr.themes.Soft(primary_hue="blue"),
     css="""
         footer { display: none !important; }
@@ -236,7 +236,7 @@ with gr.Blocks(
     gr.HTML("""
         <div class="header-box">
             <h1 style="font-size:2rem; font-weight:700; color:#1e3a5f; margin:0;">
-                🏢 Nexora HR Assistant
+                🏢 Nexora HR Platform
             </h1>
             <p style="color:#666; margin:6px 0 0 0; font-size:0.95rem;">
                 Powered by RAG Pipeline &nbsp;·&nbsp; Qwen2.5 Q4 &nbsp;·&nbsp; Tesla T4 GPU
