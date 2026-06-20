@@ -204,6 +204,54 @@ async def logout(req: dict):
         del last_results[session_id]
     return {"status": "ok"}
 
+@app.get("/api/health")
+def health():
+    import socket, requests
+    status = {}
+    try:
+        conn = get_db(); conn.close()
+        status["postgres"] = True
+    except Exception:
+        status["postgres"] = False
+    try:
+        base = config.OLLAMA_URL.split("/api/")[0]
+        r = requests.get(base + "/api/tags", timeout=2)
+        status["ollama"] = (r.status_code == 200)
+    except Exception:
+        status["ollama"] = False
+    try:
+        sk = socket.create_connection((config.MILVUS_HOST, int(config.MILVUS_PORT)), timeout=2)
+        sk.close()
+        status["milvus"] = True
+    except Exception:
+        status["milvus"] = False
+    status["model"] = config.MODEL
+    status["all_ok"] = all([status["postgres"], status["ollama"], status["milvus"]])
+    return status
+
+
+# ---- Voice input (Whisper speech-to-text) ----
+from fastapi import UploadFile, File
+from faster_whisper import WhisperModel
+try:
+    WHISPER_MODEL = WhisperModel("medium", device="cuda", compute_type="int8_float16")
+except Exception:
+    WHISPER_MODEL = WhisperModel("medium", device="cpu", compute_type="int8")
+
+@app.post("/api/transcribe")
+async def transcribe(audio: UploadFile = File(...)):
+    import tempfile, os
+    data = await audio.read()
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".webm") as tmp:
+        tmp.write(data); path = tmp.name
+    try:
+        segments, info = WHISPER_MODEL.transcribe(path, beam_size=5, vad_filter=True)
+        text = " ".join(seg.text for seg in segments).strip()
+        return {"text": text, "language": info.language}
+    finally:
+        os.remove(path)
+
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=7861,

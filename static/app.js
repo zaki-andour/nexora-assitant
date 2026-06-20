@@ -324,3 +324,157 @@ async function logout() {
     document.getElementById("messages").innerHTML = "";
     document.getElementById("chat-history").innerHTML = "";
 }
+
+// Markdown rendering (uses marked if available, fallback otherwise)
+function formatText(text) {
+    if (window.marked && typeof marked.parse === "function") return marked.parse(text);
+    return text.replace(/\n/g, "<br>").replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>").replace(/\*(.*?)\*/g, "<em>$1</em>");
+}
+
+// Category badge + latency under each answer (overrides earlier addMessage)
+function addMessage(role, text, meta = null, save = true) {
+    const msgs   = document.getElementById("messages");
+    const div    = document.createElement("div");
+    div.className = `message ${role}`;
+    const avatar = role === "user" ? currentUser.username[0].toUpperCase() : "N";
+    const catColors = { TEXT:"#3b82f6", STRUCTURED:"#10b981", GRAPH:"#8b5cf6", HYBRID:"#f59e0b", BLOCKED:"#ef4444" };
+    const metaHtml = meta ? `
+        <div class="msg-meta">
+            <span class="cat-badge" style="background:${catColors[meta.category] || '#6b7280'}">${meta.category || ""}</span>
+            <span class="meta-pill">${meta.latency}s</span>
+            ${meta.model ? `<span class="meta-pill">${meta.model}</span>` : ""}
+        </div>` : "";
+    div.innerHTML = `
+        <div class="msg-avatar">${avatar}</div>
+        <div class="msg-content">
+            <div class="msg-bubble">${formatText(text)}</div>
+            ${metaHtml}
+        </div>`;
+    msgs.appendChild(div);
+    msgs.scrollTop = msgs.scrollHeight;
+    if (save) { currentMessages.push({ role, text, meta }); }
+}
+
+// System status panel (calls /api/health)
+async function checkHealth() {
+    const panel = document.getElementById("status-panel");
+    panel.style.display = (panel.style.display === "none") ? "block" : "none";
+    if (panel.style.display === "none") return;
+    panel.innerHTML = "Checking…";
+    try {
+        const res = await fetch(`${API}/api/health`);
+        const s   = await res.json();
+        const dot = ok => `<span class="dot ${ok ? 'up' : 'down'}"></span>`;
+        panel.innerHTML =
+            `<div>${dot(s.postgres)} PostgreSQL</div>` +
+            `<div>${dot(s.ollama)} Ollama <small>(${s.model})</small></div>` +
+            `<div>${dot(s.milvus)} Milvus</div>`;
+    } catch (e) {
+        panel.innerHTML = "Cannot reach the server.";
+    }
+}
+
+// Voice input: record -> /api/transcribe -> fill question box -> send
+let mediaRecorder = null, audioChunks = [];
+async function toggleMic() {
+    const btn = document.getElementById("mic-btn");
+    if (mediaRecorder && mediaRecorder.state === "recording") { mediaRecorder.stop(); return; }
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mediaRecorder = new MediaRecorder(stream);
+        audioChunks = [];
+        mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+        mediaRecorder.onstop = async () => {
+            btn.classList.remove("recording");
+            stream.getTracks().forEach(t => t.stop());
+            const blob = new Blob(audioChunks, { type: "audio/webm" });
+            const fd = new FormData();
+            fd.append("audio", blob, "speech.webm");
+            const input = document.getElementById("question-input");
+            input.value = "Transcribing…";
+            try {
+                const res  = await fetch(`${API}/api/transcribe`, { method: "POST", body: fd });
+                const data = await res.json();
+                input.value = data.text || "";
+                if (input.value.trim()) sendQuestion();
+            } catch (e) {
+                input.value = "";
+                alert("Transcription failed.");
+            }
+        };
+        mediaRecorder.start();
+        btn.classList.add("recording");
+    } catch (e) {
+        alert("Microphone access denied or unavailable.");
+    }
+}
+
+// Improved mic with a visible "Recording…" cue (overrides earlier toggleMic)
+async function toggleMic() {
+    const btn = document.getElementById("mic-btn");
+    const input = document.getElementById("question-input");
+    if (mediaRecorder && mediaRecorder.state === "recording") { mediaRecorder.stop(); return; }
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mediaRecorder = new MediaRecorder(stream);
+        audioChunks = [];
+        const savedPlaceholder = input.placeholder;
+        input.placeholder = "🔴 Recording… click the mic again to stop";
+        mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+        mediaRecorder.onstop = async () => {
+            btn.classList.remove("recording");
+            input.placeholder = savedPlaceholder;
+            stream.getTracks().forEach(t => t.stop());
+            const blob = new Blob(audioChunks, { type: "audio/webm" });
+            const fd = new FormData();
+            fd.append("audio", blob, "speech.webm");
+            input.value = "Transcribing…"; input.disabled = true;
+            try {
+                const res  = await fetch(`${API}/api/transcribe`, { method: "POST", body: fd });
+                const data = await res.json();
+                input.disabled = false; input.value = data.text || "";
+                if (input.value.trim()) sendQuestion();
+            } catch (e) { input.disabled = false; input.value = ""; alert("Transcription failed."); }
+        };
+        mediaRecorder.start();
+        btn.classList.add("recording");
+    } catch (e) { alert("Microphone access denied or unavailable."); }
+}
+
+// Fix: "Transcribing…" must never be sent (placeholder, not value) + disable send while transcribing
+async function toggleMic() {
+    const btn = document.getElementById("mic-btn");
+    const input = document.getElementById("question-input");
+    const sendBtn = document.getElementById("send-btn");
+    if (mediaRecorder && mediaRecorder.state === "recording") { mediaRecorder.stop(); return; }
+    try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        mediaRecorder = new MediaRecorder(stream);
+        audioChunks = [];
+        const savedPlaceholder = input.placeholder;
+        input.placeholder = "🔴 Recording… click the mic again to stop";
+        mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+        mediaRecorder.onstop = async () => {
+            btn.classList.remove("recording");
+            stream.getTracks().forEach(t => t.stop());
+            const blob = new Blob(audioChunks, { type: "audio/webm" });
+            const fd = new FormData(); fd.append("audio", blob, "speech.webm");
+            input.placeholder = "Transcribing…"; input.disabled = true;
+            if (sendBtn) sendBtn.disabled = true;
+            try {
+                const res  = await fetch(`${API}/api/transcribe`, { method: "POST", body: fd });
+                const data = await res.json();
+                input.disabled = false; if (sendBtn) sendBtn.disabled = false;
+                input.placeholder = savedPlaceholder;
+                input.value = (data.text || "").trim();
+                if (input.value) sendQuestion();
+            } catch (e) {
+                input.disabled = false; if (sendBtn) sendBtn.disabled = false;
+                input.placeholder = savedPlaceholder; input.value = "";
+                alert("Transcription failed.");
+            }
+        };
+        mediaRecorder.start();
+        btn.classList.add("recording");
+    } catch (e) { alert("Microphone access denied or unavailable."); }
+}

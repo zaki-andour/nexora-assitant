@@ -112,3 +112,36 @@ body { font-family: 'Segoe UI', sans-serif; background: var(--bg-primary); color
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* Markdown answer styling */
+.msg-bubble table { border-collapse: collapse; margin: 8px 0; font-size: 13px; }
+.msg-bubble th, .msg-bubble td { border: 1px solid #d0d0d0; padding: 4px 8px; text-align: left; }
+.msg-bubble th { background: #f3f4f6; }
+.msg-bubble ul, .msg-bubble ol { margin: 6px 0; padding-left: 22px; }
+.msg-bubble code { background: #f3f4f6; padding: 1px 4px; border-radius: 4px; font-size: 12px; }
+.msg-bubble pre { background: #f3f4f6; padding: 8px; border-radius: 6px; overflow-x: auto; }
+.msg-bubble p { margin: 4px 0; }
+
+/* Category badge under answers */
+.msg-meta { display: flex; gap: 6px; align-items: center; margin-top: 4px; }
+.cat-badge { color: #fff; font-size: 11px; font-weight: 600; letter-spacing: .3px; padding: 2px 8px; border-radius: 10px; text-transform: uppercase; }
+.meta-pill { font-size: 11px; color: #555; background: #eef0f2; padding: 2px 8px; border-radius: 10px; }
+
+/* System status button + panel */
+.status-btn { position: fixed; top: 12px; right: 16px; z-index: 60; font-size: 12px; padding: 5px 10px; border-radius: 8px; border: 1px solid #d0d0d0; background: #fff; cursor: pointer; }
+.status-panel { position: fixed; top: 46px; right: 16px; z-index: 60; background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 10px 14px; font-size: 13px; box-shadow: 0 6px 20px rgba(0,0,0,.12); }
+.status-panel > div { display: flex; align-items: center; gap: 8px; padding: 3px 0; }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.dot.up { background: #10b981; } .dot.down { background: #ef4444; }
+
+/* Microphone button */
+.mic-btn { font-size: 18px; background: none; border: none; cursor: pointer; padding: 0 6px; }
+.mic-btn.recording { color: #ef4444; animation: micpulse 1s infinite; }
+@keyframes micpulse { 0%,100% { opacity: 1; } 50% { opacity: .35; } }
+
+/* status button moved into the topbar (overlap fix) */
+.topbar-left { position: relative; }
+.status-btn { position: static; top: auto; right: auto; margin-left: 10px; vertical-align: middle; }
+.status-panel { position: absolute; top: 118%; left: 0; right: auto; }
+.mic-btn { display: inline-flex; align-items: center; }
+.mic-btn svg { display: block; }
