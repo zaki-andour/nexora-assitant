@@ -29,3 +29,4 @@ models/qwen2.5-7b-hf/
 *.bak
 *.save
 *.working
+*.bak*
