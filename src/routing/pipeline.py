@@ -104,7 +104,7 @@ def run_pipeline(question: str, user: dict = None) -> dict:
     # ── STEP 0.5 : RBAC CHECK ─────────────────────────
     rbac_filter = {"filter": "none"}
     if user:
-        rbac_result = apply_rbac_filter(user, query_for_pipeline)
+        rbac_result = apply_rbac_filter(user, query_for_pipeline, original=question)
         if not rbac_result["allowed"]:
             return {
                 "question":      question,
@@ -159,6 +159,10 @@ def run_pipeline(question: str, user: dict = None) -> dict:
             elif "your " in sq.lower() and emp_id:
                 enriched_sq = sq + f" [Current user: {uname}, employee_id: {emp_id}, department: {dept}]"
         context, sources = build_context(category, enriched_sq, rbac_clause=rbac_clause)
+        if context.startswith("__RBAC_DENIED__"):
+            return {"question": question, "is_complex": False, "sub_questions": [question],
+                    "categories": ["BLOCKED"], "answer": context.replace("__RBAC_DENIED__", "", 1),
+                    "sources": [], "language": detected_language}
         all_contexts.append(f"[{category} — {sq}]\n{context}")
         all_sources.extend(sources)
 
@@ -208,6 +212,7 @@ In Spanish: HR → Recursos Humanos, Engineering → Ingeniería.
 Do NOT use markdown formatting or asterisks.
 Do NOT include sources in your answer.
 Be direct, specific and detailed.
+When the context contains a person's details (department, email, location, start date), include ALL of those fields in your answer, not just the name and role.
 The SQL query already filtered the correct data — ALWAYS trust and list ALL rows from the context.
 NEVER say you don't have information if the context contains rows.
 If the context shows employees with their salary_band filtered, those ARE the Band5 employees — list them all.

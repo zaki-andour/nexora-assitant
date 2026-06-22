@@ -149,22 +149,48 @@ SQL:"""
     # Fix subquery LIMIT issue
     sql = re.sub(r'\)\s*LIMIT\s+\d+\s*\)', ')', sql, flags=re.IGNORECASE)
 
-    # ── APPLY RBAC CLAUSE ─────────────────────────────
-    if rbac_clause and "WHERE" in sql.upper():
-        import re as _re2
-        rbac_dept = rbac_clause.replace("AND department = ", "").replace("'", "").strip()
-        if _re2.search(r"department\s*=\s*'[^']+'", sql, _re2.IGNORECASE):
-            sql = _re2.sub(r"department\s*=\s*'[^']+'", f"department = '{rbac_dept}'", sql, flags=_re2.IGNORECASE)
+    # ── PUBLIC LEADERSHIP CARVE-OUT (CEO/CTO/CFO/COO/Chairman visible to all; salary hidden) ──
+    strip_salary = False
+    if rbac_clause and re.search(r"role\s*=\s*'(CEO|CTO|CFO|COO|Chairman)'", sql, re.IGNORECASE):
+        logger.info("RBAC: public leadership query - bypass scope, hide salary")
+        strip_salary = True
+        rbac_clause = ""
+        # force leadership columns
+        sql = re.sub(r"SELECT\s+.*?\s+FROM",
+                     "SELECT name, role, department, email, location, start_date, salary_band FROM",
+                     sql, count=1, flags=re.IGNORECASE)
+
+    # ── SCOPE CHECK (explicit denial, based on the generated SQL) ──
+    if rbac_clause:
+        if "employee_id" in rbac_clause:
+            mid = re.search(r"employee_id\s*=\s*(\d+)", rbac_clause)
+            self_id = mid.group(1) if mid else None
+            if not self_id or not re.search(r"employee_id\s*=\s*" + re.escape(self_id) + r"\b", sql):
+                logger.warning("RBAC: employee query out of scope -> denied")
+                return {"error": None, "rows": [], "columns": [],
+                        "denied": "Access denied. You can only view your own records."}
+        elif "department" in rbac_clause:
+            mo  = re.search(r"department\s*=\s*'([^']+)'", rbac_clause)
+            own = mo.group(1).lower() if mo else ""
+            depts = [d.lower() for d in re.findall(r"department\s*=\s*'([^']+)'", sql, re.IGNORECASE)]
+            if any(d != own for d in depts):
+                logger.warning("RBAC: manager targets another department -> denied")
+                return {"error": None, "rows": [], "columns": [],
+                        "denied": "Access denied. You can only view information about your own department."}
+
+    # ── APPLY RBAC CLAUSE (department or self) — ALWAYS enforced ──
+    if rbac_clause:
+        cond = rbac_clause.strip()
+        if cond.upper().startswith("AND "):
+            cond = cond[4:].strip()
+        connector = "AND" if re.search(r"\bWHERE\b", sql, re.IGNORECASE) else "WHERE"
+        inject = " " + connector + " " + cond + " "
+        m = re.search(r"\b(GROUP\s+BY|ORDER\s+BY|HAVING|LIMIT)\b", sql, re.IGNORECASE)
+        if m:
+            sql = sql[:m.start()] + inject + sql[m.start():]
         else:
-            if "ORDER BY" in sql.upper():
-                sql = _re2.sub(r'(ORDER\s+BY)', f"AND department = '{rbac_dept}' \1", sql, flags=_re2.IGNORECASE)
-            elif "LIMIT" in sql.upper():
-                sql = _re2.sub(r'(LIMIT)', f"AND department = '{rbac_dept}' \1", sql, flags=_re2.IGNORECASE)
-            elif sql.rstrip().endswith(";"):
-                sql = sql.rstrip()[:-1] + f" AND department = '{rbac_dept}';"
-            else:
-                sql = sql + f" AND department = '{rbac_dept}'"
-        logger.info(f"RBAC clause applied: {rbac_clause}")
+            sql = sql.rstrip().rstrip(";") + inject
+        logger.info(f"RBAC clause enforced: {connector} {cond}")
 
     # Fix CEO/CTO queries that incorrectly add manager_id IS NULL
     if 'manager_id IS NULL' in sql and any(r in sql.upper() for r in ["'CEO'", "'CTO'", "'CFO'"]):
@@ -183,6 +209,10 @@ SQL:"""
         columns = [desc[0] for desc in cursor.description]
         cursor.close()
         conn.close()
+        if strip_salary and "salary_band" in columns:
+            _i = columns.index("salary_band")
+            columns = [c for j, c in enumerate(columns) if j != _i]
+            rows = [tuple(v for j, v in enumerate(r) if j != _i) for r in rows]
         logger.info(f"SQL returned {len(rows)} rows")
         return {"sql": sql, "columns": columns, "rows": rows, "error": None}
     except Exception as e:
@@ -301,6 +331,8 @@ def build_context(category, question, rbac_clause=""):
     elif category == "STRUCTURED":
         logger.info("Routing to PostgreSQL (employees table)")
         result = retrieve_structured(question, rbac_clause=rbac_clause)
+        if result.get("denied"):
+            return "__RBAC_DENIED__" + result["denied"], []
         if result["error"]:
             context = f"SQL Error: {result['error']}"
             logger.error(f"SQL failed: {result['error']}")
@@ -315,8 +347,26 @@ def build_context(category, question, rbac_clause=""):
             sources.append("PostgreSQL employees table")
 
     elif category == "GRAPH":
+        if "employee_id" in rbac_clause and not re.search(r"\b(ceo|cto|cfo|coo|chairman)\b", question, re.IGNORECASE):
+            logger.info("RBAC: employee restricted - graph denied")
+            return "__RBAC_DENIED__Access denied. You can only view your own records.", []
         logger.info("Routing to PostgreSQL (graph tables)")
         rows, gintent, gperson, gdept = retrieve_graph(question, rbac_clause=rbac_clause)
+        if "department" in rbac_clause and rows:
+            mo = re.search(r"department\s*=\s*'([^']+)'", rbac_clause)
+            own = mo.group(1).lower() if mo else ""
+            target = set()
+            if gdept: target.add(gdept.lower())
+            try:
+                conn3 = psycopg2.connect(**DB_CONFIG); cur3 = conn3.cursor()
+                cur3.execute("SELECT DISTINCT LOWER(department) FROM employees WHERE name = ANY(%s)", ([r[0] for r in rows],))
+                target.update(d[0] for d in cur3.fetchall())
+                cur3.close(); conn3.close()
+            except Exception as e:
+                logger.warning(f"graph dept check failed: {e}")
+            if any(d and d != own for d in target):
+                logger.warning("RBAC: manager graph targets another department -> denied")
+                return "__RBAC_DENIED__Access denied. You can only view information about your own department.", []
         if rows:
             who = gperson if gperson else "the person in question"
             dep = gdept if gdept else "the department in question"
@@ -361,8 +411,22 @@ def build_context(category, question, rbac_clause=""):
 
             sources.append("PostgreSQL graph tables")
         else:
-            context = "No graph data found for this query."
-            logger.warning("Graph query returned no results") 
+            logger.warning("Graph query returned no results - falling back to STRUCTURED")
+            result = retrieve_structured(question, rbac_clause=rbac_clause)
+            if not result["error"] and result["rows"]:
+                rows = result["rows"]
+                cols = result["columns"]
+                context = f"Query results ({len(rows)} rows):\n"
+                for row in rows:
+                    context += "  " + " | ".join(f"{cols[i]}: {row[i]}" for i in range(len(cols))) + "\n"
+                if rows:
+                    context += f"\nNOTE: Use EXACTLY these names from the database, not the names from the question.\n"
+                sources.append("PostgreSQL employees table (graph fallback)")
+                logger.info("Graph fallback via STRUCTURED returned %d rows" % len(result["rows"]))
+            else:
+                context = "No graph data found for this query."
+                logger.warning("Graph fallback also returned no results")
+
 
     elif category == "HYBRID":
         logger.info("Routing to Milvus + PostgreSQL (hybrid)")

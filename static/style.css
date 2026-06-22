@@ -145,3 +145,32 @@ body { font-family: 'Segoe UI', sans-serif; background: var(--bg-primary); color
 .status-panel { position: absolute; top: 118%; left: 0; right: auto; }
 .mic-btn { display: inline-flex; align-items: center; }
 .mic-btn svg { display: block; }
+
+/* model switcher theme override */
+.model-select {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.model-select:hover,
+.model-select:focus {
+  border-color: var(--text-primary);
+  background: var(--bg-primary, var(--bg-secondary));
+}
+
+/* email link color override */
+.msg-bubble a[href^="mailto:"] {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.msg-bubble a[href^="mailto:"]:hover { color: var(--accent-hover); }
